@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+env/
+venv/
+flight_env/
+
+# Data & results
+*.npz
+*.csv
+*.xlsx
+*.h5
+*.pkl
+*.npy
+
+# OS/system
+.DS_Store
+Thumbs.db
