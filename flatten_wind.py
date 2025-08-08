@@ -1,7 +1,7 @@
 import pandas as pd
 
 def flatten_wind_blob(blob):
-    rows = [r.split('|') for r in blob.split(';') if r.strip()]
+    rows = [r.split('|') for r in blob.split(';') if r.strip()]     #razdelimo na vrstice, razdelimo na vrednosti
     out = {}
     for row in rows:
         wind_name = row[1]  #Wi

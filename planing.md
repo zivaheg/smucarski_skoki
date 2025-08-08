@@ -367,18 +367,6 @@ under question: (ni ok y)
 
 
 
-Napej plan:
-
-
-
-* sporoči jakobu
-
-* na neki točki daš nekam da bo skupno dostopno ig (maybe git)
-
-* additionally lahko nrdiš ml model, k bo v večih epochih popravu svoje predictions
-
-
-
 
 
 
@@ -417,9 +405,29 @@ W11...-Y  (negativna)
 
 * find the not simulated 3.5 or 2.3 graph... 102834
 
+&nbsp;	(dejansko se konča quite zgodej z repkom navzgor)
 
 
 
+
+
+Napej plan:
+
+
+
+* sporoči jakobu
+* preglednejše/optimizacija
+* additionally lahko nrdiš ml model, k bo v večih epochih popravu svoje predictions
+
+
+
+
+
+
+
+💡 Bonus Suggestion: Combine Approaches
+
+You could train a PINN model offline, and then use a Kalman Filter online to refine the states as you "simulate" or "render" the jump. This hybrid is powerful.
 
 
 
