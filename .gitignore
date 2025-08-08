@@ -17,7 +17,6 @@ flight_env/
 
 # Data & results
 *.npz
-*.csv
 *.xlsx
 *.h5
 *.pkl
