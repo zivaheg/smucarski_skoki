@@ -652,17 +652,7 @@ for a number of mathematical functions in an effort to see if any
 
 correlations aren’t linear but perhaps squared, cubed or another
 
-elementary function. The functions used were: 𝑥
-
-2
-
-, 𝑥
-
-3
-
-, ln 𝑥, sin 𝑥,
-
-cos 𝑥, tan 𝑥, arcsin 𝑥, arccos 𝑥, arctan 𝑥 to try and capture any
+elementary function. The functions used were: 𝑥^2, 𝑥^3, ln 𝑥, sin 𝑥, cos 𝑥, tan 𝑥, arcsin 𝑥, arccos 𝑥, arctan 𝑥 to try and capture any
 
 elementary nonlinear dependence within the model." -urbanč
 
@@ -670,9 +660,37 @@ elementary nonlinear dependence within the model." -urbanč
 
 
 
+Logarithmic Wind Profile: In cases where wind speed needs to be estimated at different heights, the logarithmic wind profile is used: V = (Vt / k) \* ln(h / Z0). 
+
+V is the wind speed at height h.
+
+Vt is the friction velocity.
+
+k is the Karman constant (approximately 0.4).
+
+h is the target height.
+
+Z0 is the roughness length of the surface. 
 
 
 
+
+
+
+
+average train error: 0.10143426384736466
+
+average test\_error: 3.328850756481124
+
+
+
+
+
+
+
+Ideja za takt k maš nekej časa
+
+hočeš vzet 2 krivulji v točkah (x, y, z) ju interpolirat (brez normalizacije) vzet točke za vsako x celo vrednst, obtežit rep oz. over/under simulation in pol lahko vzameš normo med obema.
 
 
 
