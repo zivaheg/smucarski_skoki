@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  27 AUG 2025 11:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  27 AUG 2025 20:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -970,7 +970,7 @@ Overfull \hbox (12.23724pt too wide) in paragraph at lines 149--150
  []
 
 
-Underfull \vbox (badness 4279) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -980,9 +980,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 243.
+(Font)              scaled to size 9.0pt on input line 242.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 243.
+(Font)              scaled to size 7.0pt on input line 242.
 [2.2]
 
 
@@ -1010,18 +1010,18 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `clanek.out' has not changed.
-(rerunfilecheck)             Checksum: 51B38A2B1AED5900F49377F6197173CD;3136.
+(rerunfilecheck)             Checksum: BE6A0EADF424FEE9679B666E26F45658;3159.
  ) 
 Here is how much of TeX's memory you used:
- 22104 strings out of 473523
- 362499 string characters out of 5715598
- 850820 words of memory out of 5000000
+ 22110 strings out of 473523
+ 362643 string characters out of 5715598
+ 852775 words of memory out of 5000000
  44495 multiletter control sequences out of 15000+600000
- 679752 words of font info for 268 fonts, out of 8000000 for 9000
+ 680298 words of font info for 272 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  90i,13n,131p,1063b,607s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb>
-Output written on clanek.pdf (3 pages, 420386 bytes).
+Output written on clanek.pdf (3 pages, 421449 bytes).
 PDF statistics:
  175 PDF objects out of 1000 (max. 8388607)
  28 named destinations out of 1000 (max. 500000)

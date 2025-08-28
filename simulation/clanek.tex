@@ -181,7 +181,6 @@ of the SSM that we tested for the ski jump simulation, followed by describing ou
 and how it predicts the jumps. Finally, we present the description of our ski jump 
 animation app.
 
-metodologija, kaj sva delali, kako sva to delali itd
 \subsection{Different variations as opposed to SSM}
 
 %pač to je tko idejno, recimo k si probala različne stvari, kaj kako dela, sej 
@@ -200,7 +199,7 @@ turned out out to be less effective than a pure SSM approach. But the reason exc
 
 
 
-\subsection{Jump prediction model}
+\subsection{Ski jump prediction model}
 
 In order to fit our data to the SSM, we stored the data in for each file in three vectors.
 The main vector contains states or state variables of the system, which in our case are the
@@ -246,26 +245,48 @@ kok dobr je najin model, mal še s tistimi napakami vrjetn pa tko
 
 \subsection{Models' comparison}
 
-MAYBE CHANGE THE ORDER AND PUT THE NAPAKA NAJPREJ
--pinn vs smm
--napaka
-- smm with all sensors vs smm with selected sensors
-- leave one out cross validation
+In order to evaluate different models, we first had to define a metric for measuring the prediction error.
+Since the actual and simulated jumps are represented with X, Y, Z coordinates, but are measured at different time stamps,
+and can contain a different number of measurements, we had to find a way to compare them. We first tried to project
+the shorter trajectory on to the other one and compute the distance between the the original and the projection, 
+but this method turned out to be computationally expensive. So we later decided to compute the distance between 
+the actual and the simulated jump by interpolating both jumps. The new measurements contain the start and the end point
+and all the ones, where x reaches a natural value. We then compute the error as the norm of the difference between the two jumps.
+And after one of the jumps ends, we just add the distance from the end of the shorter jump to the end of the longer jump
+to the error. This way we penalize the model for not being able to predict the correct length of the jump.
+
+Since we had a limited number of jumps, we used leave-one-out cross-validation to evaluate the models.
+For each jump, we trained the model on all the other jumps and then simulated the left out jump. We then computed 
+the average error between the actual and the simulated jump for both the training and the test set.
 
 In the process of developing our ski jump prediction model, we evaluated several 
 variations to determine the most effective approach. We compared the performance 
 of a pure State Space Model (SSM) against a hybrid model that combined SSM with 
 Physics-informed Neural Networks (PINNs). The pure SSM demonstrated superior predictive 
 accuracy, likely due to its ability to directly model the temporal dynamics of ski jumps 
-without the added complexity of PINNs. In order to assess the actual performance of our
-models, we two main ways of computing the error. The first idea was to project the shorter
-trajectory on to the other one and compute the distance between the the original and the
-projection, but this method turned out to be computationally expensive. So we later decided
-the distance between the actual and the simulated jump using the norm
-
-
+without the added complexity of PINNs. ( MAYBE ADD ACTUAL NUMBERS HERE) 
+We also experimented with different configurations of the SSM, including using
+all available wind sensor data versus an averaged value of the zone. When we used all the sensors,
+the average error for each point (on training data is 1.67m and on test data is 1.89m), while when we averaged the sensors 
+over the zones the error (on training data was 1.76m and on test data 1.82m). This suggests that averaging the wind data helps
+with the simulation.
 
 \subsection{Analysis of our model}
+
+Because the predictions of the model are made with matrix multiplications, 
+they are very fast to compute, but also dependant on the stability of the matrices.
+To ensure the stability of the model, we computed the eigenvalues of the A matrix. 
+And while most of the eigenvalues had an absolute value less than one, some were slightly above one.
+This indicates that the model is not fully stable, but should still produce reasonable results.
+
+Since the wind is a very important factor in ski jumping, we also tried to capture 
+the nonlinear movements of the wind by adding columns containing the square of the wind features.
+(ADD RESULTS IF ANY). 
+
+
+%Because the predictions of the model are not perfect, we analyzed the errors in more detail.
+%We first computed the error for each point of the jump and then averaged it over all the jumps.
+%The error is the smallest at the beginning of the ju
 
 \section{Discussion}
 \label{sec:discussion}

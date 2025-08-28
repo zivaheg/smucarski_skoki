@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1756286504.64941 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek.tex" "clanek.pdf" "clanek" 1756286507.01152 0
+["pdflatex"] 1756321172.14933 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek.tex" "clanek.pdf" "clanek" 1756321176.51577 0
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1755942919 186245 75d4398793f890e4c15683253a84030e ""
   "C:/Users/vsi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1741687351 12035121 729d0b8bc385de9d6b208fe98578324f ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-4.enc" 1557958141 7693 0f2dce6d313c82989ec3a67fc24df2a0 ""
@@ -194,10 +194,10 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
-  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek.tex" 1756286494 17388 9b30a91cbe19750d4626aa095eb4f516 ""
-  "clanek.aux" 1756286506 3264 3e60e16a818ed1fb75cd6d53d6bc8fb8 "pdflatex"
-  "clanek.out" 1756286506 3136 51b38a2b1aed5900f49377f6197173cd "pdflatex"
-  "clanek.tex" 1756286494 17388 9b30a91cbe19750d4626aa095eb4f516 ""
+  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek.tex" 1756321170 19559 cd113a8ab7df67352d73b52ba7706555 ""
+  "clanek.aux" 1756321175 3268 86f941d3ccc95864fb51a19b6e5c5158 "pdflatex"
+  "clanek.out" 1756321175 3159 be6a0eadf424fee9679b666e26f45658 "pdflatex"
+  "clanek.tex" 1756321170 19559 cd113a8ab7df67352d73b52ba7706555 ""
   (generated)
   "clanek.aux"
   "clanek.log"

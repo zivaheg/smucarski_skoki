@@ -688,15 +688,25 @@ average test\_error: 3.328850756481124
 
 
 
-Ideja za takt k maš nekej časa
+more wind:
 
-hočeš vzet 2 krivulji v točkah (x, y, z) ju interpolirat (brez normalizacije) vzet točke za vsako x celo vrednst, obtežit rep oz. over/under simulation in pol lahko vzameš normo med obema.
+average train error: 1.6662157076606074
 
-
-
-
+average test\_error: 1.8887197139099108
 
 
+
+the basics:
+
+average train error: 1.7575570525093653
+
+average test\_error: 1.8242016734144053
+
+
+
+
+
+cinsidering: 21, 22, 34, 41, 61, 89, 97, 109
 
 
 
