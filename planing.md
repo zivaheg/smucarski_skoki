@@ -686,24 +686,23 @@ average test\_error: 3.328850756481124
 
 
 
-
+the basics:
+average train error: 1.8703356296090468
+average test_error: 1.9304972738826247
 
 more wind:
-
-average train error: 1.6662157076606074
-
-average test\_error: 1.8887197139099108
+average train error: 1.7829841594248412
+average test_error: 2.027487604678465
 
 
-
+quad: 
 the basics:
+average train error: 1.801839759037089
+average test_error: 3.268810691066911
 
-average train error: 1.7575570525093653
-
-average test\_error: 1.8242016734144053
-
-
-
+more wind:
+average train error: 1.6363794505908065
+average test_error: 3.7439383977570326
 
 
 cinsidering: 21, 22, 34, 41, 61, 89, 97, 109
