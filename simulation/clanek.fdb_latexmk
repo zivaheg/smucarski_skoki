@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber clanek"] 0 "clanek.bcf" "clanek.bbl" "clanek" 0 0
+["biber clanek"] 0 "clanek.bcf" "clanek.bbl" "clanek" 1756454849.40427 0
   "clanek.bcf" 0 -1 0 "pdflatex"
   "sample-base.bib" 0 -1 0 ""
   (generated)
   "clanek.bbl"
   "clanek.blg"
   (rewritten before read)
-["pdflatex"] 1756452716.77457 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek.tex" "clanek.pdf" "clanek" 1756452719.84409 0
+["pdflatex"] 1756454846.25297 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek.tex" "clanek.pdf" "clanek" 1756454849.40568 0
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1755942919 186245 75d4398793f890e4c15683253a84030e ""
   "C:/Users/vsi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1741687351 12035121 729d0b8bc385de9d6b208fe98578324f ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-4.enc" 1557958141 7693 0f2dce6d313c82989ec3a67fc24df2a0 ""
@@ -222,12 +222,12 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
-  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek.tex" 1756452708 23051 2caf02b433379c93f01b53fe85feda63 ""
-  "clanek.aux" 1756452719 3056 c61c1939e007568db99139336ab5f9e5 "pdflatex"
+  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek.tex" 1756454845 23324 6c517384ba8a1ce17e417069ac28b637 ""
+  "clanek.aux" 1756454848 3084 685cb679ce4b6de960d6c2c6ec578b81 "pdflatex"
   "clanek.bbl" 0 -1 0 "biber clanek"
-  "clanek.out" 1756452719 2862 8e34b80308688689efca67a3dc2c028f "pdflatex"
-  "clanek.run.xml" 1756452719 2568 f4851194cb81712bb2a3dbd1957651d4 "pdflatex"
-  "clanek.tex" 1756452708 23051 2caf02b433379c93f01b53fe85feda63 ""
+  "clanek.out" 1756454848 2994 c268f558811e48f8d542c5440d742bdf "pdflatex"
+  "clanek.run.xml" 1756454848 2568 f4851194cb81712bb2a3dbd1957651d4 "pdflatex"
+  "clanek.tex" 1756454845 23324 6c517384ba8a1ce17e417069ac28b637 ""
   (generated)
   "clanek.aux"
   "clanek.bcf"
