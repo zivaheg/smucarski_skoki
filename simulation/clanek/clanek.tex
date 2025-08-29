@@ -4,29 +4,21 @@
 \settopmatter{printccs=false, printacmref=false}
 
 % Kodiranje/jeziki
-%\usepackage[T1]{fontenc}
-%\usepackage[utf8]{inputenc}
-%\usepackage[english]{babel}
-\usepackage[datamodel=acmdatamodel, style=acmnumeric, backend=biber]{biblatex}
-\addbibresource{sample-base.bib}
-\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
 
-\AtBeginDocument{%
-  \providecommand\BibTeX{{%
-    Bib\TeX}}}
+% Slike – 'demo' nariše nadomestne kvadre, da build ne pade, če slike manjkajo
+%\usepackage[demo]{graphicx}
 
+% Meta (po potrebi prilagodi)
 \setcopyright{rightsretained}
 \copyrightyear{2025}
 \acmDOI{}
 \acmISBN{}
 \acmConference[Information Society 2025]{Information Society 2025: 28th international multiconference}{6--10 October 2025}{Ljubljana, Slovenia}
-\settopmatter{printccs=false, printacmref=false}
 
-\geometry{a4paper}
-\begin{document}
-
-
-\title[Ski Jumping Simulation]{Predicting ski jumps using state-space model}
+\title[Ski Jumping Simulation]{Predicting ski jumps using state space model}
 
 \author{Lars Th{\o}rv{\"a}ld}
 \affiliation{%
@@ -46,6 +38,7 @@
 
 \renewcommand{\shortauthors}{Ž. Hegler and N. Camlek}
 
+\begin{document}
 
 \begin{abstract}
 
