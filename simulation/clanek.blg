@@ -1,0 +1,17 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[1] Config.pm:311> INFO - Logfile is 'clanek.blg'
+[268] biber-MSWIN64:340> INFO - === 
+[363] Biber.pm:420> INFO - Reading 'clanek.bcf'
+[571] Biber.pm:994> INFO - Found 2 citekeys in bib section 0
+[608] Biber.pm:4463> INFO - Processing section 0
+[629] Biber.pm:4654> INFO - Looking for bibtex file 'refs.bib' for section 0
+[723] bibtex.pm:1713> INFO - LaTeX decoding ...
+[749] bibtex.pm:1519> INFO - Found BibTeX data source 'refs.bib'
+[831] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[831] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[831] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[831] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[863] bbl.pm:676> INFO - Writing 'clanek.bbl' with encoding 'UTF-8'
+[865] bbl.pm:779> INFO - Output to clanek.bbl
+[866] Biber.pm:131> WARN - legacy year field '[Year, if known]' in entry 'CERN_SkiJump_Physics' is not an integer - this will probably not sort properly.
+[866] Biber.pm:133> INFO - WARNINGS: 1

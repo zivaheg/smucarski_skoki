@@ -86,7 +86,7 @@
       <file>clanek.bcf</file>
     </requires>
     <requires type="editable">
-      <file>sample-base.bib</file>
+      <file>refs.bib</file>
     </requires>
   </external>
 </requests>

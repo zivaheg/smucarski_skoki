@@ -1,0 +1,526 @@
+% !TeX spellcheck = en_GB
+% !TeX encoding = UTF-8
+% !TeX root = sample-is-2025.tex
+% !TeX TS-program = pdflatex
+% !BIB TS-program = biber
+%%
+%% This is file `sample-sigconf.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `all,proceedings,bibtex,sigconf')
+%%
+%% IMPORTANT NOTICE:
+%%
+%% For the copyright see the source file.
+%%
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-sigconf.tex.
+%%
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%%
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%% Commands for TeXCount
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+%% The first command in your LaTeX source must be the \documentclass
+%% command.
+%%
+\documentclass[sigconf,natbib=false, language=english]{acmart}
+%\documentclass[sigconf,natbib=false, language=english, language=slovene]{acmart}
+%% Uncomment the first line when writing in English and the second one when writing in Slovene.
+%% The last language is the main language of the document.
+%% Translate the title of Keywords section to Slovene
+%\renewcommand\keywordsname{Ključne besede}%
+%% Translate the title of acknowledgments section to Slovene
+%\renewcommand\acksname{Zahvala}
+
+\usepackage[datamodel=acmdatamodel, style=acmnumeric, backend=biber]{biblatex}
+\addbibresource{sample-base.bib}
+
+
+\usepackage{hyperref}
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+\setcopyright{rightsretained}
+\copyrightyear{2025}
+%\acmYear{2018}
+\acmDOI{}
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+\acmConference[Information Society 2025]{Information Society 2025: 28th international multiconference}{6--10 October 2025}{Ljubljana, Slovenia}
+%%
+%%  Uncomment \acmBooktitle if the title of the proceedings is different
+%%  from ``Proceedings of ...''!
+%%
+%%\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
+%%  June 03--05, 2018, Woodstock, NY}
+\acmISBN{}
+\settopmatter{printccs=false, printacmref=false}
+
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% For managing citations, it is recommended to use bibliography
+%% files in BibTeX format.
+%%
+%% You can then either use BibTeX with the ACM-Reference-Format style,
+%% or BibLaTeX with the acmnumeric or acmauthoryear styles, that include
+%% support for advanced citation of software artefact from the
+%% biblatex-software package, also separately available on CTAN.
+%%
+%% Look at the sample-*-biblatex.tex files for templates showcasing
+%% the biblatex styles.
+%%
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+\geometry{a4paper}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title[Ski Jumping Simulation]{Predicting ski jumps using state-space model}
+%% When writing in Slovene, the original Slovenian title should be followed by an English translation.
+%\translatedtitle{english}{The Title of the Paper Translated to English}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+
+
+\author{Lars Th{\o}rv{\"a}ld}
+\affiliation{%
+  \institution{The Th{\o}rv{\"a}ld Group}
+  \city{Hekla}
+  \country{Iceland}}
+\email{larst@affiliation.org}
+
+\author{Živa Hegler}
+\affiliation{%
+  \institution{Univerza v Ljubljani}
+  \city{Ljubljana}
+  \country{Slovenia}
+}
+
+\author{Neca Camlek}
+\affiliation{%
+ \institution{Univerza v Ljubljani}
+ \city{Ljubljana}
+ \country{Slovenia}
+}
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+\renewcommand{\shortauthors}{Živa Hegler and Neca Camlek}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+
+\begin{abstract}
+
+Ski jumping performance is shaped by both athlete technique and environmental 
+conditions, with factors such as wind speed, wind direction, and ski orientation 
+playing a critical role in determining jump trajectories. Accurate modeling of 
+these trajectories is challenging due to the system’s dynamic and time-dependent\linebreak
+nature. In this work, we introduce a dataset of measured ski jumps and present a 
+state-space modeling framework that captures the evolution of jumps under varying 
+conditions. The model parameters are estimated using a ridge regression approach, 
+enabling us to predict trajectories from initial states and wind sensor inputs. 
+We evaluate the predictive performance of the model through leave-one-out cross-validation 
+and analyze its stability, showing that the approach can generate realistic trajectories 
+with reasonable accuracy. To complement the modeling results, we developed an interactive 
+web application that allows users to\linebreak explore both recorded and simulated jumps, adjust 
+environmental factors, and visualize their effects through animations. Together, the 
+dataset, modeling framework, and application offer a foundation for further research in 
+ski jump analysis and provide an accessible tool for exploring the influence of external 
+conditions on performance.
+
+\end{abstract}
+
+\keywords{datasets, SSM, ski jumping, simulations, least square method}
+
+%%\received{20 August 2025}
+%%\received[revised]{13 September 2025}
+%%\received[accepted]{15 September 2025}
+
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+
+%kaj delava
+%kaj je problem in kako ga drugi rešujejo
+%piševa na kakšne načine drugi lahko to delajo, kakšne opcije obstajajo
+
+
+Ski jumping is a sport strongly influenced by both athletic technique and environmental conditions. Factors such as wind speed, wind direction, and different ski angles affect the trajectory and final distance of a jump, making accurate prediction a challenging problem. While statistical models and simulations have been applied in sports research for some time, many approaches\linebreak simplify the problem and do not fully capture the dynamic\linebreak evolution of the jump over time.
+
+Machine learning has introduced methods capable of modeling temporal systems with greater fidelity. In particular, state-space models provide a mathematical framework for representing\linebreak hidden internal states that evolve over time in response to external inputs. This makes them well-suited for modeling ski jumps, where environmental factors determine performance.
+
+In this paper, we present a dataset of ski jumps together with a state-space model trained to predict jump trajectories based on changing environmental conditions. The model is estimated using a least-squares approach and demonstrates how inputs such as wind and ramp adjustments influence the resulting jump. Beyond the modeling framework, we also developed an application that allows general users to interact with the data, run simulations, and visualize jump trajectories through animations. 
+
+The remainder of the paper is as follows. Section~\ref{sec:data} presents the handling of received data. Next, the proposed methodology is described in Section~\ref{sec:method}. The project results are presented in Section~\ref{sec:results}. We discuss the results in Section~\ref{sec:discussion} and conclude the paper in Section~\ref{sec:conclusion}.
+
+\section{Modeling Framework and Dataset}
+\label{sec:data}
+
+This section describes the data handling, focusing on state-space models, least squares method and our data processing.
+
+
+\subsection{State-space model}
+
+State-Space Models (SSMs) are a family of machine learning\linebreak algorithms designed to capture and predict the behavior of\linebreak dynamic systems by describing how their inner state changes over time. 
+Instead of only looking at past inputs and outputs, SSMs explicitly model the underlying dynamics, making them well-suited for sequential data. In state-space modeling, the\linebreak objective is to identify the minimal set of system variables\linebreak required to completely describe the system. These fundamental variables are referred to as the state variables. At any given time, the state of the system can be represented by a state vector, whose components correspond to the values of the respective state variables. SSMs are designed to predict both the manner in which inputs are reflected in the system's outputs and the evolution of a system's internal state over time and in response to specific inputs.
+
+\subsection{Least squares method}
+
+The least squares method (LS) is a regression technique that is used to determine the line that best fits a given set of data. It minimizes the sum of the squared differences between the observed data and the corresponding values implied by the regression function. Each data point reflects the relationship between a known independent variable and an unknown dependent variable.
+
+To enhance the model, we incorporated ridge regression (L2 regularization), which helps reduce overfitting during model training.
+
+\subsection{Data processing}
+
+%vse o podatkih: kakšne podatke sva dobili in kje sva jih dobili, kaj je blo v njih, 
+%kako jih je blo treba spremenit lahko tko po korakih kaj je blo treba spreminjat, 
+%da so bli za uporabo, lahko tko po korakih: naprej je blo treba to in pol to...
+
+For our project we used 223 CSV files, each containing the data of one jump. 
+Each contains 17 columns ('Position', 'Height above ground ', 'Time', 'X', 'Y', 'Z', 
+'Opening Angle', 'Stalling Angle Left', 'Stalling Angle Right', 
+'Roll Angle Left', 'Roll Angle Right', 'Yaw Angle Left', 'Yaw Angle Right', 
+'Speed hor.', 'Speed vert.', 'Speed resulting', 
+'WindTime|WindName|WindSpeed|Wind...') and number of rows corresponding to the length of the jump. Data is recorded for every meter
+of air distance from the take-off point. of air distance from the take-off point.
+
+\bigskip\noindent
+The data required some pre-processing before it could be used for training the model.
+The column Time was written using the format: $0001-01-01\text{T}00:00:00.0000000+01:00$. Here, 
+$0001-01-01$ means the date (January first in the year one), which is a place holder date, so we removed it.
+The $+01:00$ at the end indicates the time zone, which we also removed.
+The remaining part $00:00:00.0000000$ indicates the time of the jump in hours, minutes, seconds and milliseconds.
+We converted this to a numerical value in seconds, which was then used as the time variable in the model.
+The column 'WindTime|WindName|WindSpeed|Wind...' contained multiple pieces of information separated by '|'.
+The wind was recorded on 12 sensors placed along the hill, each measuring one of the seven wind feature in the order 
+represented in the column name. To keep all the data and not multiply the time stamps, we split this 
+column into $12 \cdot 6 = 72$ columns, each representing one of the wind features for one of the sensors (\texttt{sensor\_feature}).
+
+The wind features are as follows:
+\begin{description}
+    \item [WindTime] - time of the wind measurement in the same format as the Time column itself. Since wind measurements
+    are recorded less often, the wind values are applied to the most recent jump measurement and then just \\
+    repeated until a new wind measurement is available. Since the wind is represented by a nonlinear function, it would be hard to capture
+    it's movements with interpolation, so we decided to drop this column.
+    \item [WindName] - name of the sensor ( Wi for i = 1,...,12)
+    \item [WindSpeed] - resulting speed of the wind in km/h 
+    \item [WindSpeedTangent] - speed of the wind tangent measured along the x axis (hill direction) in km/h
+    \item [WindTurbulence] - vertical speed of the wind turbulence in km/h
+    \item [WindSpeedCleanTan] - wind speed tangent with\linebreak
+    turbulence removed in km/h
+    \item [WindSpeedCross] - speed of the wind measurement along the y axis across the hill in km/h
+\end{description}
+
+
+There are 12 wind sensors spread across on the ski jumping hill. To help with
+the analysis we separated the jumping section of the hill into 3 zones. The first zone
+contains wind sensors 1 to 4, the second zone contains sensors 5 to 8 and the third zone
+contains sensors 9 to 12.
+
+And the rest of the columns:
+\begin{description}
+    \item[Position] - air distance from the take-off point in meters. Begins with a negative value, which
+    represents the distance from the starting point to the take-off point. In ski jumping, the starting point
+    is adjusted according to the wind conditions, so this value is not constant.
+    \item[Height above ground] - height above the ground in meters.
+    \item[Time] - time of the jump in seconds from the start of the jump.
+    \item[X, Y, Z] - coordinates of the jumper in a 3D space in meters. The X axis is aligned with the hill direction,
+    the Y axis is across the hill, and the Z axis is vertical. The take-off point is (0,0,0). AS SHOWN IN FIGURE.
+    \item[Opening Angle] - angle between the skis in degrees. IN THE PICTURE...
+    \item[Stalling Angle Left, Stalling Angle Right] - angle
+    between the left/right ski and the horizontal plane in degrees.
+    \item[Roll Angle Left, Roll Angle Right] - angle between the \linebreak left/right ski and the horizontal plane in degrees.
+    \item[Yaw Angle Left, Yaw Angle Right] - angle between the \linebreak
+    left/right ski and the horizontal plane in degrees.
+    \item[Speed hor., Speed vert., Speed resulting] - horizontal,
+    vertical, and the resulting speed of the athlete in km/h.
+\end{description}
+
+
+During processing, we also removed some ski jumps that were incomplete or had corrupted data, so the
+final data set contained around 200 ski jumps.
+
+
+\section{Methodology}
+\label{sec:method}
+
+This section outlines our research methodology. We first present different variations of the SSM that we tested for the ski jump simulation, followed by describing our model and how it predicts the jumps. Finally, we present the description of our ski jump animation app.
+
+\subsection{Different variations as opposed to SSM}
+
+Some of the alternative approaches we considered for modeling ski jumps included classical
+physics-based models, but the data  isn't sufficient to accurately capture all the forces acting on the jumper.
+We also tried a hybrid approach combining SSM and Physics-informed Neural Networks (PINNs), where
+the SSM would provide a baseline prediction, and the PINN would learn to correct any discrepancies, where it takes into
+account physical properties of the system, such as the mass of the pilot, wind properties and gravitational force. 
+These parameters are included in the equations of motion, which are added to the overall loss function. 
+So the model prefers solutions that are consistent with the laws of physics.. This
+turned out out to be less effective than a pure SSM approach. But the reason exceeds the this papers' purpose.
+
+\subsection{Jump prediction model}
+
+In order to fit our data to the SSM, we stored the data in for each file in three vectors.
+The main vector contains states or state variables of the system, which in our case are the
+X, Y and Z coordinates and velocitys of the jumper, and all the angles (opening, stalling, roll and yaw).
+
+The observation vector contains the measured outputs of the system, which in our case are the X, Y and Z coordinates
+and height above ground. And the controls contain the external inputs to the system, which in our case are
+the wind measurements from all the sensors, that are averaged over each zone and feature (speed, tangent, cross and turbulence).
+
+We then used the ridge regression to estimate the matrices A, B, C and D of the SSM, where we minimize the computed values from current
+and previous values and the next time stamp values.Thus the matrix A computes the next state from the current state, 
+B computes the next state from the current control, C computes the next observation from the current state and D computes 
+the next observation from the current control. We then use recursion to predict the next state from the prediction of the 
+previous state and the current control, to get the full simulated jump. This allows us to predict the jump trajectory 
+based on the environmental conditions and the starting state of the jumper.
+
+\subsection{Ski jump animation app}
+
+To make our results accessible beyond the research setting, we developed an interactive web application using Shiny for Python. The application serves as a front-end to the trained state-space model and allows users to explore ski jump simulations under varying environmental conditions or just to observe different measured ski jumps. Through a set of input controls, users can adjust factors such as wind speed, wind directions, or different ski angles, and the application instantly updates the predicted jump trajectory.
+
+The application presents the results as an animated visualization of the ski jump, showing the full trajectory and the final distance. In this way, the application functions both as an analytical tool, helping to test how different conditions affect performance, and as an educational resource that makes the mechanics of ski jumping more easier to understand for a wider audience.
+
+\section{Main Results}
+\label{sec:results}
+
+In this section, we present the results of our simulations. Firstly, we present a statistical error of all the models, followed by a precise analysis of our predictions.
+
+%kokr rezultati, kaj sva dosegli ig
+%natančno opiševa kako sva preverjali kok dober je najin model in pač tudi poveva kok dobr je najin model, mal še s tistimi napakami vrjetn pa tko
+
+
+\subsection{Models' error}
+
+In order to evaluate different models, we first had to define a metric for measuring the prediction error.
+Since the actual and simulated jumps are represented with X, Y, Z coordinates, but are measured at different time stamps,
+and can contain a different number of measurements, we had to find a way to compare them. We first tried to project
+the shorter trajectory on to the other one and compute the distance between the the original and the projection, 
+but this method turned out to be computationally expensive. So we later decided to compute the distance between 
+the actual and the simulated jump by interpolating both jumps. The new measurements contain the start and the end point
+and all the ones, where x reaches a natural value. We then compute the error as the norm of the difference between the two jumps.
+And after one of the jumps ends, we just add the distance from the end of the shorter jump to the end of the longer jump
+to the error. This way we penalize the model for not being able to predict the correct length of the jump.
+
+Since we had a limited number of jumps, we used leave-one-out cross-validation to evaluate the models.
+For each jump, we trained the model on all the other jumps and then simulated the left out jump. We then computed 
+the average error between the actual and the simulated jump for both the training and the test set.
+
+In the process of developing our ski jump prediction model, we evaluated several 
+variations to determine the most effective approach. We compared the performance 
+of a pure State Space Model (SSM) against a hybrid model that combined SSM with 
+Physics-informed Neural Networks (PINNs). The pure SSM demonstrated superior predictive 
+accuracy, likely due to its ability to directly model the temporal dynamics of ski jumps 
+without the added complexity of PINNs.
+We also experimented with different configurations of the SSM, including using
+all available wind sensor data versus an averaged value of the zone. When we used all the sensors,
+the average error for each point (on training data is 1.87m and on test data is 1.93m), while when we averaged the sensors 
+over the zones the error (on training data was 1.78m and on test data 2.03m). This suggests that averaging the wind data helps
+with the simulation.
+Figure~\ref{fig:graph1} shows the difference between actual and simulated ski jump trajectories.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{latex2025/2SSM flight_simulation167.png}
+  \caption{Actual vs. simulated ski jump trajectory}
+  \Description{A graph comparing an actual jump trajectory to the simulated one}
+  \label{fig:graph1}
+\end{figure}
+
+\subsection{Analysis of our model}
+
+Since the wind is a very important factor in ski jumping, we also tried to capture 
+the nonlinear movements of the wind by adding columns containing the square of the wind features.
+When we used all the sensors,
+the average error for each point (on training data is 1.80m and on test data is 3.27m), while when we averaged the sensors 
+over the zones the error (on training data was 1.64m and on test data 3.74m).
+
+\section{Discussion}
+\label{sec:discussion}
+
+%mal razglabljas o vsem, torej mal povežeš skupi kar sva do zdej povedali in predlagava kkšne možne izboljšave mogoče
+%torej najprej kok dobr je najna stvar delala, kako sva bli omejeni (mogoče da nisva meli ful velik podatkov?) in kaj še lahko in bova izboljsali
+
+
+This section examines the predictive performance of the trajectories, highlights the limitations of our current approach, and suggests directions for future improvements.
+
+\subsection{Limitations}
+
+The main limitation of our project is the relatively small number of ski jumps available for training the model. After preprocessing, the dataset contained only about $200$ jumps, which may limit the SSM's ability to represent the full range of trajectory variations under different circumstances. As a result, the model may struggle to accurately predict jumps under novel or extreme conditions.
+
+Additionally, the dataset lacks detailed information, or any information at all about individual jumpers, such as body weight, sex, or other physiological characteristics that are known to influence jump performance. Incorporating these variables could improve model accuracy and provide more personalized predictions.
+
+Lastly, due to limited computing power, only one CPU with - of space was available, restricting the use of possible better models. To address these challenges, using cloud-based resources could help run larger models and improve the prediction of trajectories.
+
+\subsection{Future work and potential improvements}
+
+While the current approach shows promise, there are several avenues for future
+improvements. Some of witch we are working on as of the time of writing this paper.
+
+currently we are working on improving the sliders functions. Since the wind data 
+determined by the user is static throughout the jump this adds a lot of generalization.
+In reality, wind conditions can change rapidly during a jump. So we would like to
+add additional controls to the app that would allow the user to define how the wind changes
+during the jump. They could choose whether the wind would be gaining or losing a certain feature (such as speed or turbulence) during the jump.
+
+Expanding the data set to include more jumps and additional contextual information about individual jumpers could improve the accuracy of the model. We could try to generate more data by using data augmentation techniques, such as adding noise
+to the wind measurements or slightly modifying the angles. 
+
+We could also try to find the nonlinear movements of the wind and interpolating
+the wind measurements by their original time stamps to better capture the wind dynamics.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+This paper presents a method for predicting ski jump trajectories based on environmental conditions. By incorporating external factors into the modeling framework and applying least squares estimation, we demonstrated that the model is capable of capturing the dynamics of ski jumps and producing realistic trajectory predictions. Furthermore, we developed an interactive application that makes the results accessible to a broader audience through simulations and animations of predicted jumps.
+
+
+
+
+\section{Citations and Bibliographies}
+
+The use of \BibTeX\ for the preparation and formatting of one's
+references is strongly recommended. Authors' names should be complete
+--- use full first names (``Donald E. Knuth'') not initials
+(``D. E. Knuth'') --- and the salient identifying features of a
+reference should be included: title, year, volume, number, pages,
+article DOI, etc.
+
+The bibliography is included in your source document with these two
+commands, placed just before the \verb|\end{document}| command:
+\begin{verbatim}
+  \bibliographystyle{ACM-Reference-Format}
+  \bibliography{bibfile}
+\end{verbatim}
+where ``\verb|bibfile|'' is the name, without the ``\verb|.bib|''
+suffix, of the \BibTeX\ file.
+
+Citations and references are numbered by default. A small number of
+ACM publications have citations and references formatted in the
+``author year'' style; for these exceptions, please include this
+command in the {\bfseries preamble} (before the command
+``\verb|\begin{document}|'') of your \LaTeX\ source:
+\begin{verbatim}
+  \citestyle{acmauthoryear}
+\end{verbatim}
+
+
+  Some examples.  A paginated journal article \cite{Abril07}, an
+  enumerated journal article \cite{Cohen07}, a reference to an entire
+  issue \cite{JCohen96}, a monograph (whole book) \cite{Kosiur01}, a
+  monograph/whole book in a series (see 2a in spec. document)
+  \cite{Harel79}, a divisible-book such as an anthology or compilation
+  \cite{Editor00} followed by the same example, however we only output
+  the series if the volume number is given \cite{Editor00a} (so
+  Editor00a's series should NOT be present since it has no vol. no.),
+  a chapter in a divisible book \cite{Spector90}, a chapter in a
+  divisible book in a series \cite{Douglass98}, a multi-volume work as
+  book \cite{Knuth97}, a couple of articles in a proceedings (of a
+  conference, symposium, workshop for example) (paginated proceedings
+  article) \cite{Andler79, Hagerup1993}, a proceedings article with
+  all possible elements \cite{Smith10}, an example of an enumerated
+  proceedings article \cite{VanGundy07}, an informally published work
+  \cite{Harel78}, a couple of preprints \cite{Bornmann2019,
+    AnzarootPBM14}, a doctoral dissertation \cite{Clarkson85}, a
+  master's thesis: \cite{anisi03}, an online document / world wide web
+  resource \cite{Thornburg01, Ablamowicz07, Poker06}, a video game
+  (Case 1) \cite{Obama08} and (Case 2) \cite{Novak03} and \cite{Lee05}
+  and (Case 3) a patent \cite{JoeScientist001}, work accepted for
+  publication \cite{rous08}, 'YYYYb'-test for prolific author
+  \cite{SaeediMEJ10} and \cite{SaeediJETC10}. Other cites might
+  contain 'duplicate' DOI and URLs (some SIAM articles)
+  \cite{Kirschmer:2010:AEI:1958016.1958018}. Boris / Barbara Beeton:
+  multi-volume works as books \cite{MR781536} and \cite{MR781537}. A
+  couple of citations with DOIs:
+  \cite{2004:ITE:1009386.1010128,Kirschmer:2010:AEI:1958016.1958018}. Online
+  citations: \cite{TUGInstmem, Thornburg01, CTANacmart}.
+  Artifacts: \cite{R} and \cite{UMassCitations}.
+
+
+
+%%
+%% The acknowledgments section is defined using the "acks" environment
+%% (and NOT an unnumbered section). This ensures the proper
+%% identification of the section in the article metadata, and the
+%% consistent spelling of the heading.
+\begin{acks}
+This work was supported by the Ski Association of Slovenia (SAS), whom we would like to thank
+for providing the ski jump data. The research was funded by (ADD WHEN YOU FIND OUT). 
+\end{acks}
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+
+%%
+%% If your work has an appendix, this is the place to put it.
+%\appendix
+
+%\bibliographystyle{ACM-Reference-Format}
+%\bibliography{latex2025/sample-base}
+\printbibliography
+
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-sigconf.tex'.

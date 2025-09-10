@@ -705,8 +705,16 @@ average train error: 1.6363794505908065
 average test_error: 3.7439383977570326
 
 
-cinsidering: 21, 22, 34, 41, 61, 89, 97, 109
 
+
+LINKI:
+
+- https://link.springer.com/article/10.1007/s10409-021-01148-1
+- učbenik za NUM
+- CERN ski jumping physics
+- https://www.google.si/books/edition/Ski_Jumping/G2pPEQAAQBAJ?hl=en&gbpv=0
+- SSM yt video
+- NN statquest video
 
 
 

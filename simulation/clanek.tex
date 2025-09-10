@@ -3,13 +3,16 @@
 % Ne dodajaj hyperref (acmart ga že naloži)
 \settopmatter{printccs=false, printacmref=false}
 
-% Kodiranje/jeziki
-%\usepackage[T1]{fontenc}
-%\usepackage[utf8]{inputenc}
-%\usepackage[english]{babel}
+
+% BEGIN BIBLIOGRAPHY CONFIGURATION
+% --------------------------------------------- %
+
 \usepackage[datamodel=acmdatamodel, style=acmnumeric, backend=biber]{biblatex}
-\addbibresource{sample-base.bib}
-\usepackage{hyperref}
+\addbibresource{refs.bib}
+\renewcommand*{\bibfont}{\small}
+
+% --------------------------------------------- %
+% END BIBLIOGRAPHY CONFIGURATION
 
 \AtBeginDocument{%
   \providecommand\BibTeX{{%
@@ -28,16 +31,13 @@
 
 \title[Ski Jumping Simulation]{Predicting ski jumps using state-space model}
 
-\author{Lars Th{\o}rv{\"a}ld}
-\affiliation{%
-  \institution{The Th{\o}rv{\"a}ld Group}
-  \city{Hekla}\country{Iceland}}
-\email{larst@affiliation.org}
 
 \author{Živa Hegler}
 \affiliation{%
   \institution{Univerza v Ljubljani}
   \city{Ljubljana}\country{Slovenia}}
+\email{larst@affiliation.org}
+
 
 \author{Neca Camlek}
 \affiliation{%
@@ -118,7 +118,7 @@ tazga oz ni neka ful razsirjena zadeva, zato se ta odstavek zdej imenuje Data
 This section describes the data handling, focusing on state space models and our 
 data processing.
 
-\subsection{State Space Model}
+\subsection{State Space Model}\label{subsec:ssm}
 State Space Models (SSMs) are a family of machine learning algorithms designed to 
 capture and predict the behavior of dynamic systems by describing how their inner 
 state changes over time. 
@@ -150,10 +150,10 @@ helps reduce overfitting during model training.
 %da so bli za uporabo, lahko tko po korakih: naprej je blo treba to in pol to...
 
 For our project we used 223 CSV files, each containing the data of one jump. 
-Each contains 17 columns ('Position', 'Height above ground ', 'Time', 'X ', 'Y ', 'Z ', 
-'Opening Angle ', 'Stalling Angle Left ', 'Stalling Angle Right ', 
-'Roll Angle Left ', 'Roll Angle Right ', 'Yaw Angle Left ', 'Yaw Angle Right ', 
-'Speed hor. ', 'Speed vert. ', 'Speed resulting ', 
+Each contains 17 columns ('Position', 'Height above ground', 'Time', 'X', 'Y', 'Z', 
+'Opening Angle', 'Stalling Angle Left', 'Stalling Angle Right', 
+'Roll Angle Left', 'Roll Angle Right', 'Yaw Angle Left', 'Yaw Angle Right', 
+'Speed hor.', 'Speed vert.', 'Speed resulting', 
 'WindTime|WindName|WindSpeed|Wind...')
 and number of rows corresponding to the length of the jump. Data is recorded for every meter
 of air distance from the take-off point. of air distance from the take-off point.
@@ -217,7 +217,7 @@ of the SSM that we tested for the ski jump simulation, followed by describing ou
 and how it predicts the jumps. Finally, we present the description of our ski jump 
 animation app.
 
-\subsection{Different variations as opposed to SSM}
+\subsection{Alternative modeling approaches}
 
 %pač to je tko idejno, recimo k si probala različne stvari, kaj kako dela, sej 
 %ne vem če sm prou napisala, če nism lahko popraviš, sam tko se je slišal fensi
@@ -226,19 +226,19 @@ animation app.
 
 Some of the alternative approaches we considered for modeling ski jumps included classical
 physics-based models, but the data  isn't sufficient to accurately capture all the forces acting on the jumper.
-We also tried a hybrid approach combining SSM and Physics-informed Neural Networks (PINNs), where
+We also tried a hybrid approach combining SSM and Physics-informed Neural Networks (PINNs \cite{Cai2021_PINN_FluidMechanics}), where
 the SSM would provide a baseline prediction, and the PINN would learn to correct any discrepancies, where it takes into
 account physical properties of the system, such as the mass of the pilot, wind properties and gravitational force. 
 These parameters are included in the equations of motion, which are added to the overall loss function. 
 So the model prefers solutions that are consistent with the laws of physics.. This
-turned out out to be less effective than a pure SSM approach. But the reason exceeds the this papers' purpose.
+turned out to be less effective than a pure SSM approach. But the reason exceeds the this papers' purpose.
 
 
 \subsection{Ski jump prediction model}
 
 In order to fit our data to the SSM, we stored the data in for each file in three vectors.
 The main vector contains states or state variables of the system, which in our case are the
-X, Y and Z coordinates and velocitys of the jumper, and all the angles (opening, stalling, roll and yaw).
+X, Y and Z coordinates and velocitys of the jumper, and all the angles (opening, stalling, roll and yaw) \cite{CERN_SkiJump_Physics}.
 
 The observation vector contains the measured outputs of the system, which in our case are the X, Y and Z coordinates
 and height above ground. And the controls contain the external inputs to the system, which in our case are
@@ -307,11 +307,6 @@ over the zones the error (on training data was 1.76m and on test data 1.82m). Th
 with the simulation.
 
 \subsection{Analysis of our model}
-Because the predictions of the model are made with matrix multiplications, 
-they are very fast to compute, but also dependant on the stability of the matrices.
-To ensure the stability of the model, we computed the eigenvalues of the A matrix. 
-And while most of the eigenvalues had an absolute value less than one, some were slightly above one.
-This indicates that the model is not fully stable, but should still produce reasonable results.
 
 Since the wind is a very important factor in ski jumping, we also tried to capture 
 the nonlinear movements of the wind by adding columns containing the square of the wind features.
@@ -321,7 +316,7 @@ Since the simulation still requires quite a few inputs, we also made the simulat
 interactive, so the user can adjust the wind and see how it affects the jump.
 On the ski jumping app the user can use sliders to choose the wind speed, wind tangent,
 wind cross and wind turbulence for each of the three zones. This also means that the wind looses 
-rhe actual movement function. The rest of the inputs are set to the average values 
+the actual movement function. The rest of the inputs are set to the average values 
 of all the jumps in the dataset. 
 
 %Because the predictions of the model are not perfect, we analyzed the errors in more detail.
@@ -360,7 +355,7 @@ improve the prediction of trajectories.
 \subsection{Future work and potential improvements}
 
 While the current approach shows promise, there are several avenues for future
-improvements. Some of witch we are working on as of the time of writing this paper.
+improvements. Some of which we are working on as of the time of writing this paper.
 
 currently we are working on improving the sliders functions. Since the wind data 
 determined by the user is static throughout the jump this adds a lot of generalization.
@@ -391,6 +386,9 @@ animations of predicted jumps.
 \section{Acknowledgments}
 This work was supported by the Ski Association of Slovenia (SAS), whom we would like to thank
 for providing the ski jump data. The research was funded by (ADD WHEN YOU FIND OUT). 
+
+
+
 
 
 %%
