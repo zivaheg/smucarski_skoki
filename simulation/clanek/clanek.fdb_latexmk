@@ -1,12 +1,13 @@
 # Fdb version 4
-["biber clanek"] 1757490365.12382 "clanek.bcf" "clanek.bbl" "clanek" 1757498338.84949 0
-  "clanek.bcf" 1757498338 118179 a56b7b2717f0ba6348fe1728ad41eec8 "pdflatex"
-  "refs.bib" 1757488743 1812 5df4dc769b1353a4089b5dd3f2ace2d9 ""
+["biber clanek"] 1757502116.85694 "clanek.bcf" "clanek.bbl" "clanek" 1757502292.41341 0
+  "clanek.bcf" 1757502291 118255 40cb6ab7c8bb8a6e95593b36dbef8966 "pdflatex"
+  "refs.bib" 1757501986 2517 460bcdb92de8643406905df3eb7f8cf4 ""
   (generated)
   "clanek.bbl"
   "clanek.blg"
   (rewritten before read)
-["pdflatex"] 1757498334.4684 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek.tex" "clanek.pdf" "clanek" 1757498338.85038 0
+["pdflatex"] 1757502289.12431 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/clanek.tex" "clanek.pdf" "clanek" 1757502292.41426 0
+  "2SSM flight_simulation167.png" 1756469689 400275 036149028ed6ce70e81d2ad7157e31c8 ""
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1755942919 186245 75d4398793f890e4c15683253a84030e ""
   "C:/Users/vsi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1741687351 12035121 729d0b8bc385de9d6b208fe98578324f ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-4.enc" 1557958141 7693 0f2dce6d313c82989ec3a67fc24df2a0 ""
@@ -107,7 +108,6 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkvutils.tex" 1656236919 7677 9cb1a74d945bc9331f2181c0a59ff34a ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/generic/xstring/xstring.tex" 1693735632 49397 a8071cbd06dd0bb15ae8acf876c73f20 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.cfg" 1616067285 584 2a1075dd71571459f59146da9f7502ad ""
-  "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/acmart/acmart.cls" 1749320737 121725 55c82b1c8415ebc97f8e984a7d310e9c ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/acmart/acmdatamodel.dbx" 1749320736 1093 d912da952f00f54f864aca0b3811e58a ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/acmart/acmnumeric.bbx" 1749320736 19992 2335b5f63b8952dd4de60632fd581697 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/acmart/acmnumeric.cbx" 1749320736 90 c8972fc9c13cc3031e8a6e7930e7b84a ""
@@ -222,12 +222,13 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
-  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek.tex" 1757498333 22881 3f6b17cbe6359323671c663f99942258 ""
-  "clanek.aux" 1757498338 3524 42fe625bd361d1aa4dabb8927759f60f "pdflatex"
-  "clanek.bbl" 1757490368 4186 705a8fa2a9ee262617ccb6431ddd7182 "biber clanek"
-  "clanek.out" 1757498338 2950 64316215d6c91146d3e09dbc9062df86 "pdflatex"
-  "clanek.run.xml" 1757498338 2561 b3d559d3129bf8c0060146eb315523c0 "pdflatex"
-  "clanek.tex" 1757498333 22881 3f6b17cbe6359323671c663f99942258 ""
+  "acmart.cls" 1756452280 124370 98b808b7553ebca0d5ca8dc96583b7f7 ""
+  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/clanek.tex" 1757502284 23183 51f0c3c7f381b20152986c7f81cdcf52 ""
+  "clanek.aux" 1757502291 4004 42869fedfb45b833b5950743a11c33ec "pdflatex"
+  "clanek.bbl" 1757502119 5476 dbcb36d001b73c1db14c49decd360fee "biber clanek"
+  "clanek.out" 1757502291 2925 4f7d8b67df6d95b99e11950f86806a70 "pdflatex"
+  "clanek.run.xml" 1757502291 2561 b3d559d3129bf8c0060146eb315523c0 "pdflatex"
+  "clanek.tex" 1757502284 23183 51f0c3c7f381b20152986c7f81cdcf52 ""
   (generated)
   "clanek.aux"
   "clanek.bcf"

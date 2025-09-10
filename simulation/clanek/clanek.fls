@@ -1,9 +1,9 @@
-PWD c:\Users\vsi\Desktop\ijs\smucarski_skoki\project\simulation
+PWD c:\Users\vsi\Desktop\ijs\smucarski_skoki\project\simulation\clanek
 INPUT C:\Users\vsi\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\vsi\Desktop\ijs\smucarski_skoki\project\simulation\clanek.tex
+INPUT c:\Users\vsi\Desktop\ijs\smucarski_skoki\project\simulation\clanek\clanek.tex
 OUTPUT clanek.log
-INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex\latex\acmart\acmart.cls
-INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex\latex\acmart\acmart.cls
+INPUT .\acmart.cls
+INPUT acmart.cls
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex\generic\xkeyval\xkeyval.tex
@@ -478,6 +478,13 @@ INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\txmiaX.t
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\inconsolata\i4-t1-4.enc
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineTB-tlf-t1.vf
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineTB-tlf-t1--base.tfm
+INPUT .\2SSM flight_simulation167.png
+INPUT .\2SSM flight_simulation167.png
+INPUT .\2SSM flight_simulation167.png
+INPUT .\2SSM flight_simulation167.png
+INPUT .\2SSM flight_simulation167.png
+INPUT .\2SSM flight_simulation167.png
+INPUT .\2SSM flight_simulation167.png
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineTI-tlf-t1.tfm
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-ot1.tfm
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-ot1.tfm

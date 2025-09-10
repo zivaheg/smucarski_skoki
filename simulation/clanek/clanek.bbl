@@ -72,38 +72,66 @@
     \endentry
     \entry{CERN_SkiJump_Physics}{report}{}{}
       \name{author}{1}{}{%
-        {{hash=b12af583973bfd1a75c09ba0d4841d89}{%
-           family={known]},
-           familyi={k\bibinitperiod},
-           given={[Author},
-           giveni={[\bibinitperiod},
-           prefix={if},
-           prefixi={i\bibinitperiod}}}%
+        {{hash=75820a1c82c0273b5a706a464e6f5603}{%
+           family={Müller]},
+           familyi={M\bibinitperiod},
+           given={[W.},
+           giveni={[\bibinitperiod}}}%
       }
       \list{institution}{1}{%
         {CERN}%
       }
-      \strng{namehash}{b12af583973bfd1a75c09ba0d4841d89}
-      \strng{fullhash}{b12af583973bfd1a75c09ba0d4841d89}
-      \strng{fullhashraw}{b12af583973bfd1a75c09ba0d4841d89}
-      \strng{bibnamehash}{b12af583973bfd1a75c09ba0d4841d89}
-      \strng{authorbibnamehash}{b12af583973bfd1a75c09ba0d4841d89}
-      \strng{authornamehash}{b12af583973bfd1a75c09ba0d4841d89}
-      \strng{authorfullhash}{b12af583973bfd1a75c09ba0d4841d89}
-      \strng{authorfullhashraw}{b12af583973bfd1a75c09ba0d4841d89}
-      \field{sortinit}{i}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \strng{namehash}{75820a1c82c0273b5a706a464e6f5603}
+      \strng{fullhash}{75820a1c82c0273b5a706a464e6f5603}
+      \strng{fullhashraw}{75820a1c82c0273b5a706a464e6f5603}
+      \strng{bibnamehash}{75820a1c82c0273b5a706a464e6f5603}
+      \strng{authorbibnamehash}{75820a1c82c0273b5a706a464e6f5603}
+      \strng{authornamehash}{75820a1c82c0273b5a706a464e6f5603}
+      \strng{authorfullhash}{75820a1c82c0273b5a706a464e6f5603}
+      \strng{authorfullhashraw}{75820a1c82c0273b5a706a464e6f5603}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{CERN report on the aerodynamics and physics of ski jumping}
       \field{title}{The physics of ski jumping}
       \field{type}{techreport}
-      \field{year}{[Year, if known]}
+      \field{year}{[2006]}
       \verb{urlraw}
       \verb https://cds.cern.ch/record/1009275/files/p269.pdf
       \endverb
       \verb{url}
       \verb https://cds.cern.ch/record/1009275/files/p269.pdf
+      \endverb
+    \endentry
+    \entry{vanWieringen2015ridge}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ff3388cee5607ea4b85de7e183af17c3}{%
+           family={Wieringen},
+           familyi={W\bibinitperiod},
+           given={Wessel\bibnamedelima N.},
+           giveni={W\bibinitperiod\bibinitdelim N\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff3388cee5607ea4b85de7e183af17c3}
+      \strng{fullhash}{ff3388cee5607ea4b85de7e183af17c3}
+      \strng{fullhashraw}{ff3388cee5607ea4b85de7e183af17c3}
+      \strng{bibnamehash}{ff3388cee5607ea4b85de7e183af17c3}
+      \strng{authorbibnamehash}{ff3388cee5607ea4b85de7e183af17c3}
+      \strng{authornamehash}{ff3388cee5607ea4b85de7e183af17c3}
+      \strng{authorfullhash}{ff3388cee5607ea4b85de7e183af17c3}
+      \strng{authorfullhashraw}{ff3388cee5607ea4b85de7e183af17c3}
+      \field{sortinit}{v}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{arXiv preprint arXiv:1509.09169}
+      \field{note}{Revision v8, submitted 30 September 2015; revised 27 June 2023}
+      \field{title}{Lecture Notes on Ridge Regression}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.48550/arXiv.1509.09169
       \endverb
     \endentry
   \enddatalist
