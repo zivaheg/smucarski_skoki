@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  29 AUG 2025 09:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  10 SEP 2025 11:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -624,23 +624,284 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 )
 Class acmart Info: Suppressing CCS on input line 4.
 Class acmart Info: Suppressing bibformat on input line 4.
- (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks41
-\inpenc@posthook=\toks42
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count322
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count323
+\c@listtotal=\count324
+\c@listcount=\count325
+\c@liststart=\count326
+\c@liststop=\count327
+\c@citecount=\count328
+\c@citetotal=\count329
+\c@multicitecount=\count330
+\c@multicitetotal=\count331
+\c@instcount=\count332
+\c@maxnames=\count333
+\c@minnames=\count334
+\c@maxitems=\count335
+\c@minitems=\count336
+\c@citecounter=\count337
+\c@maxcitecounter=\count338
+\c@savedcitecounter=\count339
+\c@uniquelist=\count340
+\c@uniquename=\count341
+\c@refsection=\count342
+\c@refsegment=\count343
+\c@maxextratitle=\count344
+\c@maxextratitleyear=\count345
+\c@maxextraname=\count346
+\c@maxextradate=\count347
+\c@maxextraalpha=\count348
+\c@abbrvpenalty=\count349
+\c@highnamepenalty=\count350
+\c@lownamepenalty=\count351
+\c@maxparens=\count352
+\c@parenlevel=\count353
+\blx@tempcnta=\count354
+\blx@tempcntb=\count355
+\blx@tempcntc=\count356
+\c@blx@maxsection=\count357
+\blx@maxsegment@0=\count358
+\blx@notetype=\count359
+\blx@parenlevel@text=\count360
+\blx@parenlevel@foot=\count361
+\blx@sectionciteorder@0=\count362
+\blx@sectionciteorderinternal@0=\count363
+\blx@entrysetcounter=\count364
+\blx@biblioinstance=\count365
+\labelnumberwidth=\skip80
+\labelalphawidth=\skip81
+\biblabelsep=\skip82
+\bibitemsep=\skip83
+\bibnamesep=\skip84
+\bibinitsep=\skip85
+\bibparsep=\skip86
+\bibhang=\skip87
+\blx@bcfin=\read4
+\blx@bcfout=\write4
+\blx@langwohyphens=\language80
+\c@mincomprange=\count366
+\c@maxcomprange=\count367
+\c@mincompwidth=\count368
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
 )
-Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 41.
-\c@theorem=\count322
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'acmdatamodel.dbx' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/acmart\acmdatamodel.dbx
+Package biblatex Info: Trying to load biblatex data model extension for software...
+Package biblatex Info: ... file 'software.dbx' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-software\software.dbx
+File: software.dbx 2022/08/01 datamodel extension for software entries, Roberto Di Cosmo
+))
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count369
+\c@savedafterword=\count370
+\c@annotator=\count371
+\c@savedannotator=\count372
+\c@author=\count373
+\c@savedauthor=\count374
+\c@bookauthor=\count375
+\c@savedbookauthor=\count376
+\c@commentator=\count377
+\c@savedcommentator=\count378
+\c@editor=\count379
+\c@savededitor=\count380
+\c@editora=\count381
+\c@savededitora=\count382
+\c@editorb=\count383
+\c@savededitorb=\count384
+\c@editorc=\count385
+\c@savededitorc=\count386
+\c@foreword=\count387
+\c@savedforeword=\count388
+\c@holder=\count389
+\c@savedholder=\count390
+\c@introduction=\count391
+\c@savedintroduction=\count392
+\c@namea=\count393
+\c@savednamea=\count394
+\c@nameb=\count395
+\c@savednameb=\count396
+\c@namec=\count397
+\c@savednamec=\count398
+\c@translator=\count399
+\c@savedtranslator=\count400
+\c@shortauthor=\count401
+\c@savedshortauthor=\count402
+\c@shorteditor=\count403
+\c@savedshorteditor=\count404
+\c@labelname=\count405
+\c@savedlabelname=\count406
+\c@institution=\count407
+\c@savedinstitution=\count408
+\c@lista=\count409
+\c@savedlista=\count410
+\c@listb=\count411
+\c@savedlistb=\count412
+\c@listc=\count413
+\c@savedlistc=\count414
+\c@listd=\count415
+\c@savedlistd=\count416
+\c@liste=\count417
+\c@savedliste=\count418
+\c@listf=\count419
+\c@savedlistf=\count420
+\c@location=\count421
+\c@savedlocation=\count422
+\c@organization=\count423
+\c@savedorganization=\count424
+\c@origlocation=\count425
+\c@savedoriglocation=\count426
+\c@origpublisher=\count427
+\c@savedorigpublisher=\count428
+\c@publisher=\count429
+\c@savedpublisher=\count430
+\c@language=\count431
+\c@savedlanguage=\count432
+\c@origlanguage=\count433
+\c@savedoriglanguage=\count434
+\c@urls=\count435
+\c@savedurls=\count436
+\c@urlsraw=\count437
+\c@savedurlsraw=\count438
+\c@school=\count439
+\c@savedschool=\count440
+\c@license=\count441
+\c@savedlicense=\count442
+\c@pageref=\count443
+\c@savedpageref=\count444
+\shorthandwidth=\skip88
+\shortjournalwidth=\skip89
+\shortserieswidth=\skip90
+\shorttitlewidth=\skip91
+\shortauthorwidth=\skip92
+\shorteditorwidth=\skip93
+\locallabelnumberwidth=\skip94
+\locallabelalphawidth=\skip95
+\localshorthandwidth=\skip96
+\localshortjournalwidth=\skip97
+\localshortserieswidth=\skip98
+\localshorttitlewidth=\skip99
+\localshortauthorwidth=\skip100
+\localshorteditorwidth=\skip101
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count445
+\c@textcitetotal=\count446
+\c@textcitemaxnames=\count447
+\c@biburlbigbreakpenalty=\count448
+\c@biburlbreakpenalty=\count449
+\c@biburlnumpenalty=\count450
+\c@biburlucpenalty=\count451
+\c@biburllcpenalty=\count452
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count453
+)
+Package biblatex Info: Trying to load bibliography style 'acmnumeric'...
+Package biblatex Info: ... file 'acmnumeric.bbx' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/acmart\acmnumeric.bbx
+File: acmnumeric.bbx 2017-09-27 v0.1 biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'trad-plain'...
+Package biblatex Info: ... file 'trad-plain.bbx' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-trad\trad-plain.bbx
+File: trad-plain.bbx 2021/03/06 v0.5 biblatex-trad plain bibliography style
+Package biblatex Info: Trying to load bibliography style 'trad-standard'...
+Package biblatex Info: ... file 'trad-standard.bbx' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-trad\trad-standard.bbx
+File: trad-standard.bbx 2021/03/06 v0.5 biblatex-trad base bibliography style
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count454
+\c@bbx:relatedtotal=\count455
+)))
+Package biblatex Info: Trying to load biblatex style for software...
+Package biblatex Info: ... file 'software.bbx' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-software\software.bbx
+File: software.bbx 2022/08/01 bibliography driver extension for software entries, Roberto Di Cosmo
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/xurl\xurl.sty
+Package: xurl 2022/01/09 v 0.10 modify URL breaks
+
+xurl: Set penalties for biblatex
+)))
+Package biblatex Info: Trying to load citation style 'acmnumeric'...
+Package biblatex Info: ... file 'acmnumeric.cbx' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/acmart\acmnumeric.cbx
+File: acmnumeric.cbx 2017-09-27 v0.1
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx
+File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+))
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count456
+\l__pdf_internal_box=\box62
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2025-01-18 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
+))
+Class acmart Info: Suppressing CCS on input line 26.
+Class acmart Info: Suppressing bibformat on input line 26.
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 29.
+\c@theorem=\count457
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/preprint\balance.sty
 Package: balance 1999/02/23 4.3 (PWD)
 \oldvsize=\dimen195
-) Excluding comment 'screenonly' Include comment 'printonly' Include comment 'anonsuppress' (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count323
-\l__pdf_internal_box=\box62
-)
+) Excluding comment 'screenonly' Include comment 'printonly' Include comment 'anonsuppress'
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count458
+\@quotereset=\count459
 
 LaTeX Warning: Unused global option(s):
     [natbib=false,language=english].
@@ -648,113 +909,113 @@ LaTeX Warning: Unused global option(s):
 (clanek.aux)
 \openout1 = `clanek.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 41.
-LaTeX Font Info:    Trying to load font information for OML+nxlmi on input line 41.
+LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 29.
+LaTeX Font Info:    Trying to load font information for OML+nxlmi on input line 29.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlnxlmi.fd
 File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
 )
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 41.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 41.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 29.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 29.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 41.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 41.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 29.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 29.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 41.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 41.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 29.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 29.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 41.
-LaTeX Font Info:    Trying to load font information for OT1+LinuxLibertineT-TLF on input line 41.
+(Font)              scaled to size 7.0pt on input line 29.
+LaTeX Font Info:    Trying to load font information for OT1+LinuxLibertineT-TLF on input line 29.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/libertine\ot1linuxlibertinet-tlf.fd
 File: OT1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 41.
+(Font)              scaled to size 7.3pt on input line 29.
 <<ot1.cmap>>
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 41.
+(Font)              scaled to size 5.5pt on input line 29.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 7.3pt on input line 41.
+(Font)              scaled to size 7.3pt on input line 29.
 <<oml.cmap>>
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 5.5pt on input line 41.
+(Font)              scaled to size 5.5pt on input line 29.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.3pt on input line 41.
+(Font)              scaled to size 7.3pt on input line 29.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 5.5pt on input line 41.
+(Font)              scaled to size 5.5pt on input line 29.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 41.
+(Font)              scaled to size 7.3pt on input line 29.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 41.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+(Font)              scaled to size 5.5pt on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 41.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 29.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.3pt on input line 41.
+(Font)              scaled to size 7.3pt on input line 29.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 5.5pt on input line 41.
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 41.
+(Font)              scaled to size 5.5pt on input line 29.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 29.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.3pt on input line 41.
+(Font)              scaled to size 7.3pt on input line 29.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 5.5pt on input line 41.
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 41.
+(Font)              scaled to size 5.5pt on input line 29.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 29.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.3pt on input line 41.
+(Font)              scaled to size 7.3pt on input line 29.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 5.5pt on input line 41.
+(Font)              scaled to size 5.5pt on input line 29.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.3pt on input line 41.
+(Font)              scaled to size 7.3pt on input line 29.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 5.5pt on input line 41.
-LaTeX Info: Command `\dddot' is already robust on input line 41.
-LaTeX Info: Command `\ddddot' is already robust on input line 41.
-LaTeX Info: Redefining \microtypecontext on input line 41.
-Package microtype Info: Applying patch `item' on input line 41.
-Package microtype Info: Applying patch `toc' on input line 41.
-Package microtype Info: Applying patch `eqnum' on input line 41.
-Package microtype Info: Applying patch `footnote' on input line 41.
-Package microtype Info: Applying patch `verbatim' on input line 41.
-LaTeX Info: Redefining \microtypesetup on input line 41.
+(Font)              scaled to size 5.5pt on input line 29.
+LaTeX Info: Command `\dddot' is already robust on input line 29.
+LaTeX Info: Command `\ddddot' is already robust on input line 29.
+LaTeX Info: Redefining \microtypecontext on input line 29.
+Package microtype Info: Applying patch `item' on input line 29.
+Package microtype Info: Applying patch `toc' on input line 29.
+Package microtype Info: Applying patch `eqnum' on input line 29.
+Package microtype Info: Applying patch `footnote' on input line 29.
+Package microtype Info: Applying patch `verbatim' on input line 29.
+LaTeX Info: Redefining \microtypesetup on input line 29.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -769,24 +1030,24 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package hyperref Info: Link coloring OFF on input line 41.
+Package hyperref Info: Link coloring OFF on input line 29.
  (clanek.out) (clanek.out)
-\@outlinefile=\write4
-\openout4 = `clanek.out'.
+\@outlinefile=\write5
+\openout5 = `clanek.out'.
 
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count324
+\scratchcounter=\count460
 \scratchdimen=\dimen196
 \scratchbox=\box63
-\nofMPsegments=\count325
-\nofMParguments=\count326
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count327
+\nofMPsegments=\count461
+\nofMParguments=\count462
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count463
 \MPscratchDim=\dimen197
-\MPnumerator=\count328
-\makeMPintoPDFobject=\count329
-\everyMPtoPDFconversion=\toks44
+\MPnumerator=\count464
+\makeMPintoPDFobject=\count465
+\everyMPtoPDFconversion=\toks42
 ) (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -797,16 +1058,16 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: custom
+* paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot twoside heightrounded 
-* h-part:(L,W,R)=(54.0pt, 506.295pt, 54.0pt)
-* v-part:(T,H,B)=(57.0pt, 664.96999pt, 73.0pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=506.295pt
-* \textheight=626.0pt
+* h-part:(L,W,R)=(54.0pt, 489.50787pt, 54.0pt)
+* v-part:(T,H,B)=(57.0pt, 715.04684pt, 73.0pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=489.50787pt
+* \textheight=681.0pt
 * \oddsidemargin=-18.26999pt
 * \evensidemargin=-18.26999pt
 * \topmargin=-15.26999pt
@@ -827,160 +1088,203 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count330
-\c@mv@boldtabular=\count331
+\c@mv@tabular=\count466
+\c@mv@boldtabular=\count467
 (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: Trying to load language 'english' -> 'english-software'...
+Package biblatex Info: ... file 'english-software.lbx' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-software\english-software.lbx
+File: english-software.lbx 2022/08/01 english with additions for software
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+))
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `clanek.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'clanek.bbl' found.
+ (clanek.bbl
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 74.
-LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF on input line 74.
+(Font)              scaled to size 8.0pt on input line 72.
+)
+Package biblatex Info: Reference section=0 on input line 29.
+Package biblatex Info: Reference segment=0 on input line 29.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 17.28pt on input line 80.
+LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF on input line 80.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/libertine\t1linuxbiolinumt-tlf.fd
 File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 74.
+(Font)              scaled to size 17.28pt on input line 80.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 74.
+(Font)              scaled to size 17.28pt on input line 80.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 74.
+(Font)              scaled to size 12.0pt on input line 80.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 74.
+(Font)              scaled to size 10.0pt on input line 80.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 74.
+(Font)              scaled to size 10.0pt on input line 80.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 10.0pt on input line 74.
+(Font)              scaled to size 10.0pt on input line 80.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.0pt on input line 74.
+(Font)              scaled to size 10.0pt on input line 80.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 74.
+(Font)              scaled to size 10.0pt on input line 80.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.0pt on input line 74.
+(Font)              scaled to size 10.0pt on input line 80.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.0pt on input line 74.
+(Font)              scaled to size 10.0pt on input line 80.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.0pt on input line 74.
+(Font)              scaled to size 10.0pt on input line 80.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.0pt on input line 74.
+(Font)              scaled to size 10.0pt on input line 80.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 74.
-LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 74.
+(Font)              scaled to size 7.0pt on input line 80.
+LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 80.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/libertine\ts1linuxlibertinet-tlf.fd
 File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 74.
+(Font)              scaled to size 7.0pt on input line 80.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 74.
+(Font)              scaled to size 9.0pt on input line 80.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 74.
+(Font)              scaled to size 10.95pt on input line 80.
 
 
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 135.
+(Font)              scaled to size 9.0pt on input line 162.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 135.
+(Font)              scaled to size 6.6pt on input line 162.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 9.0pt on input line 135.
+(Font)              scaled to size 9.0pt on input line 162.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 6.6pt on input line 135.
+(Font)              scaled to size 6.6pt on input line 162.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 9.0pt on input line 135.
+(Font)              scaled to size 9.0pt on input line 162.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.6pt on input line 135.
+(Font)              scaled to size 6.6pt on input line 162.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 9.0pt on input line 135.
+(Font)              scaled to size 9.0pt on input line 162.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 135.
+(Font)              scaled to size 6.6pt on input line 162.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 9.0pt on input line 135.
+(Font)              scaled to size 9.0pt on input line 162.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.6pt on input line 135.
+(Font)              scaled to size 6.6pt on input line 162.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 9.0pt on input line 135.
+(Font)              scaled to size 9.0pt on input line 162.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.6pt on input line 135.
+(Font)              scaled to size 6.6pt on input line 162.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 9.0pt on input line 135.
+(Font)              scaled to size 9.0pt on input line 162.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.6pt on input line 135.
+(Font)              scaled to size 6.6pt on input line 162.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 9.0pt on input line 135.
+(Font)              scaled to size 9.0pt on input line 162.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.6pt on input line 135.
-LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 136.
-
-Overfull \hbox (4.3421pt too wide) in paragraph at lines 134--142
-\T1/LinuxLibertineT-TLF/m/n/9 (-20) 'Wind-Time|WindName|WindSpeed|WindSpeedTangent|Wind...') and
- []
-
+(Font)              scaled to size 6.6pt on input line 162.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 144.
+(Font)              scaled to size 6.6pt on input line 162.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 144.
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 152.
+(Font)              scaled to size 5.5pt on input line 162.
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 170.
 (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/inconsolata\t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 152.
+(Font)              scaled to size 9.0pt on input line 170.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (2.9005pt too wide) in paragraph at lines 143--153
-\T1/LinuxLibertineT-TLF/m/n/9 (-20) 'Wind-Time|WindName|WindSpeed|WindSpeedTangent|Wind...' con-
- []
-
-
 
 [1.1{C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}
 
-{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}]
-Overfull \hbox (13.49722pt too wide) in paragraph at lines 165--166
-[]\T1/LinuxLibertineT-TLF/m/n/9 (-20) - an-gle be-tween the left/right
- []
-
-
-Overfull \hbox (12.23724pt too wide) in paragraph at lines 166--167
-[]\T1/LinuxLibertineT-TLF/m/n/9 (-20) - an-gle be-tween the left/right
- []
-
-
+{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_naooyc.enc}]
 
 
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 247.
+(Font)              scaled to size 9.0pt on input line 265.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 247.
-[2.2{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-4.enc}]
+(Font)              scaled to size 7.0pt on input line 265.
+[2.2{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-4.enc}]
+
+
+Underfull \vbox (badness 3049) has occurred while \output is active []
 
 
 
 [3.3]
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 8.0pt on input line 393.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 393.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 393.
+LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
+(Font)              scaled to size 8.0pt on input line 393.
+LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
+(Font)              scaled to size 6.0pt on input line 393.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 8.0pt on input line 393.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 6.0pt on input line 393.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 8.0pt on input line 393.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 6.0pt on input line 393.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 8.0pt on input line 393.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 6.0pt on input line 393.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 8.0pt on input line 393.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 6.0pt on input line 393.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 8.0pt on input line 393.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 6.0pt on input line 393.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 8.0pt on input line 393.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 6.0pt on input line 393.
+
 
 Class acmart Warning: ACM reference format is mandatory 
 (acmart)              for papers over one page. 
@@ -994,10 +1298,7 @@ Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
 
 
-
-Overfull \vbox (1.224pt too high) has occurred while \output is active []
-
- (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-pdfdoc.def
+(C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
@@ -1007,20 +1308,23 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `clanek.out' has not changed.
-(rerunfilecheck)             Checksum: 8E34B80308688689EFCA67A3DC2C028F;2862.
+(rerunfilecheck)             Checksum: 64316215D6C91146D3E09DBC9062DF86;2950.
+Package logreq Info: Writing requests to 'clanek.run.xml'.
+\openout1 = `clanek.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 21788 strings out of 473523
- 358842 string characters out of 5715598
- 846283 words of memory out of 5000000
- 44170 multiletter control sequences out of 15000+600000
- 680844 words of font info for 276 fonts, out of 8000000 for 9000
+ 29346 strings out of 473523
+ 513878 string characters out of 5715598
+ 1426644 words of memory out of 5000000
+ 51628 multiletter control sequences out of 15000+600000
+ 702773 words of font info for 307 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,12n,131p,1063b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,131p,1063b,1815s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb>
-Output written on clanek.pdf (4 pages, 424460 bytes).
+Output written on clanek.pdf (4 pages, 418720 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 68257 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 176 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
+ 76449 words of extra memory for PDF output out of 89155 (max. 10000000)
 

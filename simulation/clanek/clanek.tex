@@ -3,33 +3,41 @@
 % Ne dodajaj hyperref (acmart ga že naloži)
 \settopmatter{printccs=false, printacmref=false}
 
-% Kodiranje/jeziki
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
 
-% Slike – 'demo' nariše nadomestne kvadre, da build ne pade, če slike manjkajo
-%\usepackage[demo]{graphicx}
+% BEGIN BIBLIOGRAPHY CONFIGURATION
+% --------------------------------------------- %
 
-% Meta (po potrebi prilagodi)
+\usepackage[datamodel=acmdatamodel, style=acmnumeric, backend=biber]{biblatex}
+\addbibresource{refs.bib}
+\renewcommand*{\bibfont}{\small}
+
+% --------------------------------------------- %
+% END BIBLIOGRAPHY CONFIGURATION
+
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
 \setcopyright{rightsretained}
 \copyrightyear{2025}
 \acmDOI{}
 \acmISBN{}
 \acmConference[Information Society 2025]{Information Society 2025: 28th international multiconference}{6--10 October 2025}{Ljubljana, Slovenia}
+\settopmatter{printccs=false, printacmref=false}
 
-\title[Ski Jumping Simulation]{Predicting ski jumps using state space model}
+\geometry{a4paper}
+\begin{document}
 
-\author{Lars Th{\o}rv{\"a}ld}
-\affiliation{%
-  \institution{The Th{\o}rv{\"a}ld Group}
-  \city{Hekla}\country{Iceland}}
-\email{larst@affiliation.org}
+
+\title[Ski Jumping Simulation]{Predicting ski jumps using state-space model}
+
 
 \author{Živa Hegler}
 \affiliation{%
   \institution{Univerza v Ljubljani}
   \city{Ljubljana}\country{Slovenia}}
+\email{larst@affiliation.org}
+
 
 \author{Neca Camlek}
 \affiliation{%
@@ -38,14 +46,13 @@
 
 \renewcommand{\shortauthors}{Ž. Hegler and N. Camlek}
 
-\begin{document}
 
 \begin{abstract}
 
 Ski jumping performance is shaped by both athlete technique and environmental 
 conditions, with factors such as wind speed, wind direction, and ski orientation 
 playing a critical role in determining jump trajectories. Accurate modeling of 
-these trajectories is challenging due to the system’s dynamic and time-dependent 
+these trajectories is challenging due to the system’s dynamic and time-dependent\\ 
 nature. In this work, we introduce a dataset of measured ski jumps and present a 
 state-space modeling framework that captures the evolution of jumps under varying 
 conditions. The model parameters are estimated using a ridge regression approach, 
@@ -53,7 +60,8 @@ enabling us to predict trajectories from initial states and wind sensor inputs.
 We evaluate the predictive performance of the model through leave-one-out cross-validation 
 and analyze its stability, showing that the approach can generate realistic trajectories 
 with reasonable accuracy. To complement the modeling results, we developed an interactive 
-web application that allows users to explore both recorded and simulated jumps, adjust 
+web application that allows users to \\
+explore both recorded and simulated jumps, adjust 
 environmental factors, and visualize their effects through animations. Together, the 
 dataset, modeling framework, and application offer a foundation for further research in 
 ski jump analysis and provide an accessible tool for exploring the influence of external 
@@ -63,14 +71,12 @@ conditions on performance.
 
 \keywords{datasets, SSM, ski jumping, simulations, least squares}
 
-% (neobvezno) Teaser figura – deluje tudi z [demo]
-%\begin{teaserfigure}
-%  \centering
-%  \includegraphics[width=\textwidth]{my-teaser-image}
-%  \caption{Teaser (zamenjaj z lastno sliko; odstrani [demo], ko jo dodaš).}
-%  \Description{Opis slike zaradi dostopnosti.}
-%\end{teaserfigure}
+%%\received{20 August 2025}
+%%\received[revised]{13 September 2025}
+%%\received[accepted]{15 September 2025}
 
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
 \maketitle
 
 \section{Introduction}
@@ -79,11 +85,12 @@ conditions on performance.
 %piševa na kakšne načine drugi lahko to delajo, kakšne opcije obstajajo
 
 
-Ski jumping is a sport strongly influenced by both athletic technique and environmental conditions.
+Ski jumping is a sport strongly influenced by both athletic \\
+technique and environmental conditions.
 Factors such as wind speed, wind direction, and different ski angles affect the trajectory 
 and final distance of a jump, making accurate prediction a challenging problem. 
 While statistical models and simulations have been applied in sports research for 
-some time, many approaches simplify the problem and do not fully capture the dynamic 
+some time, many approaches\\ simplify the problem and do not fully capture the dynamic 
 evolution of the jump over time.
 
 Recent advances in machine learning have introduced methods capable of modeling 
@@ -107,11 +114,11 @@ Section~\ref{sec:discussion} and conclude the paper in Section~\ref{sec:conclusi
 %%okej zdi se mi, da nimava za govort o nobenem related work, ker ne vem ce obstaja kej 
 tazga oz ni neka ful razsirjena zadeva, zato se ta odstavek zdej imenuje Data
 
-\section{Data}\label{sec:data}
+\section{Modeling Framework and Dataset}\label{sec:data}
 This section describes the data handling, focusing on state space models and our 
 data processing.
 
-\subsection{State Space Model}
+\subsection{State Space Model}\label{subsec:ssm}
 State Space Models (SSMs) are a family of machine learning algorithms designed to 
 capture and predict the behavior of dynamic systems by describing how their inner 
 state changes over time. 
@@ -125,6 +132,17 @@ SSMs are designed to predict both the manner in which inputs are reflected in th
 system's outputs and the evolution of a system's internal state over time and in 
 response to specific inputs.
 
+\subsection{Least squares method}
+
+The least squares method (LS) is a regression technique that is used to 
+determine the line that best fits a given set of data. It minimizes the sum 
+of the squared differences between the observed data and the corresponding 
+values implied by the regression function. Each data point reflects the relationship 
+between a known independent variable and an unknown dependent variable.
+
+To enhance the model, we incorporated ridge regression (L2 regularization), which 
+helps reduce overfitting during model training.
+
 \subsection{Data Processing}
 
 %vse o podatkih: kakšne podatke sva dobili in kje sva jih dobili, kaj je blo v njih, 
@@ -132,21 +150,21 @@ response to specific inputs.
 %da so bli za uporabo, lahko tko po korakih: naprej je blo treba to in pol to...
 
 For our project we used 223 CSV files, each containing the data of one jump. 
-Each contains 17 columns ('Position', 'Height above ground $[m]$', 'Time', 'X $[m]$', 'Y $[m]$', 'Z $[m]$', 
-'Opening Angle [\textdegree]', 'Stalling Angle Left [\textdegree]', 'Stalling Angle Right [\textdegree]', 
-'Roll Angle Left [\textdegree]', 'Roll Angle Right [\textdegree]', 'Yaw Angle Left [\textdegree]', 'Yaw Angle Right [\textdegree]', 
-'Speed hor. $[km/h]$', 'Speed vert. $[km/h]$', 'Speed resulting $[km/h]$', 
-'WindTime|WindName|WindSpeed|WindSpeedTangent|Wind...')
+Each contains 17 columns ('Position', 'Height above ground', 'Time', 'X', 'Y', 'Z', 
+'Opening Angle', 'Stalling Angle Left', 'Stalling Angle Right', 
+'Roll Angle Left', 'Roll Angle Right', 'Yaw Angle Left', 'Yaw Angle Right', 
+'Speed hor.', 'Speed vert.', 'Speed resulting', 
+'WindTime|WindName|WindSpeed|Wind...')
 and number of rows corresponding to the length of the jump. Data is recorded for every meter
 of air distance from the take-off point. of air distance from the take-off point.
 
-The data required some preprocessing before it could be used for training the model.
-The column Time was written using a format: $0001-01-01\text{T}00:00:00.0000000+01:00$. Here the
+The data required some pre-processing before it could be used for training the model.
+The column Time was written using the format: $0001-01-01\text{T}00:00:00.0000000+01:00$. Here, 
 $0001-01-01$ means the date (January first in the year one), which is a place holder date, so we removed it.
 The $+01:00$ at the end indicates the time zone, which we also removed.
 The remaining part $00:00:00.0000000$ indicates the time of the jump in hours, minutes, seconds and milliseconds.
 We converted this to a numerical value in seconds, which was then used as the time variable in the model.
-The column 'WindTime|WindName|WindSpeed|WindSpeedTangent|Wind...' contained multiple pieces of information separated by '|'.
+The column 'WindTime|WindName|WindSpeed|Wind...' contained multiple pieces of information separated by '|'.
 The wind was recorded on 12 sensors placed along the hill, each measuring one of the seven wind feature in the order 
 represented in the column name. To keep all the data and not multiply the time stamps, we split this 
 column into $12 \cdot 6 = 72$ columns, each representing one of the wind features for one of the sensors (\texttt{sensor\_feature}).
@@ -154,43 +172,44 @@ column into $12 \cdot 6 = 72$ columns, each representing one of the wind feature
 %I THINK DA BI BLO DOBR DA TUD ZA KOTE DODAVA NEKO SLIKO
 \begin{description}
     \item[Position] - air distance from the take-off point in meters. Begins with a negative value, which
-    represents the distance from the starting point to the take-off point. In ski jumping the starting point
+    represents the distance from the starting point to the take-off point. In ski jumping, the starting point
     is adjusted according to the wind conditions, so this value is not constant.
     \item[Height above ground] - height above the ground in meters.
     \item[Time] - time of the jump in seconds from the start of the jump.
     \item[X, Y, Z] - coordinates of the jumper in a 3D space in meters. The X axis is aligned with the hill direction,
-    the Y axis is across the hill and the Z axis is vertical. The take-off point is at (0,0,0). AS SHOWN IN FIGURE.
+    the Y axis is across the hill, and the Z axis is vertical. The take-off point is (0,0,0). AS SHOWN IN FIGURE.
     \item[Opening Angle] - angle between the skis in degrees. IN THE PICTURE...
-    \item[Stalling Angle Left, Stalling Angle Right] - angle between the left/right ski and the horizontal plane in degrees.
-    \item[Roll Angle Left, Roll Angle Right] - angle between the left/right ski and the horizontal plane in degrees.
-    \item[Yaw Angle Left, Yaw Angle Right] - angle between the left/right ski and the horizontal plane in degrees.
-    \item[Speed hor., Speed vert., Speed resulting] - horizontal,
-    vertical and resulting speed of the athlete in km/h.
+    \item[Stalling Angle Left, Stalling Angle Right] - angle \\
+    between the left/right ski and the horizontal plane in degrees.
+    \item[Roll Angle Left, Roll Angle Right] - angle between the \\ left/right ski and the horizontal plane in degrees.
+    \item[Yaw Angle Left, Yaw Angle Right] - angle between the \\ 
+    left/right ski and the horizontal plane in degrees.
+    \item[Speed hor., Speed vert., Speed resulting] - horizontal,\\
+    vertical, and the resulting speed of the athlete in km/h.
 \end{description}
 
-And the wind features are as follows:
+The wind features are as follows:
 \begin{description}
-    \item [WindTime] - time of the wind measurement in the same format as the Time column itself. Since the wind measurements
-    are recorded less often, the wind values are applied to the most recent jump measurement and then just repeated
-    until a new wind measurement is available. Since the wind is represented by a nonlinear function, it would be hard to capture
+    \item [WindTime] - time of the wind measurement in the same format as the Time column itself. Since wind measurements
+    are recorded less often, the wind values are applied to the most recent jump measurement and then just \\
+    repeated until a new wind measurement is available. Since the wind is represented by a nonlinear function, it would be hard to capture
     it's movements with interpolation, so we decided to drop this column.
     \item [WindName] - name of the sensor ( Wi for i = 1,...,12)
     \item [WindSpeed] - resulting speed of the wind in km/h 
-    \item [WindSpeedTangent] - speed of the wind tangent measured alongside the x axis (hill direction) in km/h
+    \item [WindSpeedTangent] - speed of the wind tangent measured along the x axis (hill direction) in km/h
     \item [WindTurbulence] - vertical speed of the wind turbulence in km/h
-    \item [WindSpeedCleanTan] - wind speed tangent with turbulence removed in km/h
-    \item [WindSpeedCross] - speed of the wind measurement alongside y axis across the hill in km/h
+    \item [WindSpeedCleanTan] - wind speed tangent with\\
+     turbulence removed in km/h
+    \item [WindSpeedCross] - speed of the wind measurement along the y axis across the hill in km/h
 \end{description}
 
-Durring the preprocessing we also removed some ski jumps that were incomplete or had corrupted data, so the
-final dataset contained around 200 ski jumps.
-
-
-\subsection{Additional Information}
 There are 12 wind sensors spread across on the ski jumping hill. To help with
 the analysis we separated the jumping section of the hill into 3 zones. The first zone
-contains wind sensos 1 to 4, the second zone contains sensors 5 to 8 and the third zone
+contains wind sensors 1 to 4, the second zone contains sensors 5 to 8 and the third zone
 contains sensors 9 to 12.
+
+During processing, we also removed some ski jumps that were incomplete or had corrupted data, so the
+final data set contained around 200 ski jumps.
 
 \section{Methodology}\label{sec:method}
 This section outlines our research methodology. We first present different variations 
@@ -198,7 +217,7 @@ of the SSM that we tested for the ski jump simulation, followed by describing ou
 and how it predicts the jumps. Finally, we present the description of our ski jump 
 animation app.
 
-\subsection{Different variations as opposed to SSM}
+\subsection{Alternative modeling approaches}
 
 %pač to je tko idejno, recimo k si probala različne stvari, kaj kako dela, sej 
 %ne vem če sm prou napisala, če nism lahko popraviš, sam tko se je slišal fensi
@@ -207,20 +226,19 @@ animation app.
 
 Some of the alternative approaches we considered for modeling ski jumps included classical
 physics-based models, but the data  isn't sufficient to accurately capture all the forces acting on the jumper.
-We also tried a hybrid approach combining SSM and Physics-informed Neural Networks (PINNs), where
+We also tried a hybrid approach combining SSM and Physics-informed Neural Networks (PINNs \cite{Cai2021_PINN_FluidMechanics}), where
 the SSM would provide a baseline prediction, and the PINN would learn to correct any discrepancies, where it takes into
 account physical properties of the system, such as the mass of the pilot, wind properties and gravitational force. 
 These parameters are included in the equations of motion, which are added to the overall loss function. 
 So the model prefers solutions that are consistent with the laws of physics.. This
-turned out out to be less effective than a pure SSM approach. But the reason exceeds the this papes's purpose.
-
+turned out to be less effective than a pure SSM approach. But the reason exceeds the this papers' purpose.
 
 
 \subsection{Ski jump prediction model}
 
 In order to fit our data to the SSM, we stored the data in for each file in three vectors.
 The main vector contains states or state variables of the system, which in our case are the
-X, Y and Z coordinates and velocitys of the jumper, and all the angles (opening, stalling, roll and yaw).
+X, Y and Z coordinates and velocitys of the jumper, and all the angles (opening, stalling, roll and yaw) \cite{CERN_SkiJump_Physics}.
 
 The observation vector contains the measured outputs of the system, which in our case are the X, Y and Z coordinates
 and height above ground. And the controls contain the external inputs to the system, which in our case are
@@ -256,14 +274,14 @@ In this section, we present the results of our simulations. Firstly, we present 
 statistical comparison of all the models, followed by a precise analysis of our 
 predictions.
 
-kokr rezultati, kaj sva dosegli ig
-natančno opiševa kako sva preverjali kok dober je najin model in pač tudi poveva 
-kok dobr je najin model, mal še s tistimi napakami vrjetn pa tko
+%kokr rezultati, kaj sva dosegli ig
+%natančno opiševa kako sva preverjali kok dober je najin model in pač tudi poveva 
+%kok dobr je najin model, mal še s tistimi napakami vrjetn pa tko
 
 \subsection{Models' comparison}
 
 In order to evaluate different models, we first had to define a metric for measuring the prediction error.
-Since the actual and simulated jumps are represented with X, Y, Z coordinates, but are measured at different time stamps,
+Since the actual and simulated jumps are represented with x, y, z coordinates, but are measured at different time stamps,
 and can contain a different number of measurements, we had to find a way to compare them. We first tried to project
 the shorter trajectory on to the other one and compute the distance between the the original and the projection, 
 but this method turned out to be computationally expensive. So we later decided to compute the distance between 
@@ -289,11 +307,6 @@ over the zones the error (on training data was 1.76m and on test data 1.82m). Th
 with the simulation.
 
 \subsection{Analysis of our model}
-Because the predictions of the model are made with matrix multiplications, 
-they are very fast to compute, but also dependant on the stability of the matrices.
-To ensure the stability of the model, we computed the eigenvalues of the A matrix. 
-And while most of the eigenvalues had an absolute value less than one, some were slightly above one.
-This indicates that the model is not fully stable, but should still produce reasonable results.
 
 Since the wind is a very important factor in ski jumping, we also tried to capture 
 the nonlinear movements of the wind by adding columns containing the square of the wind features.
@@ -303,7 +316,7 @@ Since the simulation still requires quite a few inputs, we also made the simulat
 interactive, so the user can adjust the wind and see how it affects the jump.
 On the ski jumping app the user can use sliders to choose the wind speed, wind tangent,
 wind cross and wind turbulence for each of the three zones. This also means that the wind looses 
-rhe actual movement function. The rest of the inputs are set to the average values 
+the actual movement function. The rest of the inputs are set to the average values 
 of all the jumps in the dataset. 
 
 %Because the predictions of the model are not perfect, we analyzed the errors in more detail.
@@ -313,12 +326,13 @@ of all the jumps in the dataset.
 \section{Discussion}
 \label{sec:discussion}
 
-mal razglabljas o vsem, torej mal povežeš skupi kar sva do zdej povedali in 
-predlagava kkšne možne izboljšave mogoče
-torej najprej kok dobr je najna stvar delala, kako sva bli omejeni (mogoče da nisva meli ful velik podatkov?) in kaj še lahko in bova izboljsali
+%mal razglabljas o vsem, torej mal povežeš skupi kar sva do zdej povedali in 
+%predlagava kkšne možne izboljšave mogoče
+%torej najprej kok dobr je najna stvar delala, kako sva bli omejeni (mogoče da nisva meli ful velik podatkov?) in kaj še lahko in bova izboljsali
 
 
-This section examines the predictive performance of the trajectories, highlights the limitations of our current approach, and suggests directions for future improvements.
+This section examines the predictive performance of the trajectories, highlights the 
+limitations of our current approach, and suggests directions for future improvements.
 
 \subsection{Limitations}
 
@@ -341,7 +355,7 @@ improve the prediction of trajectories.
 \subsection{Future work and potential improvements}
 
 While the current approach shows promise, there are several avenues for future
-improvements. Some of witch we are working on as of the time of writing this paper.
+improvements. Some of which we are working on as of the time of writing this paper.
 
 currently we are working on improving the sliders functions. Since the wind data 
 determined by the user is static throughout the jump this adds a lot of generalization.
@@ -369,20 +383,16 @@ trajectory predictions. Furthermore, we developed an interactive application
 that makes the results accessible to a broader audience through simulations and 
 animations of predicted jumps.
 
-
-
-
-
 \section{Acknowledgments}
 This work was supported by the Ski Association of Slovenia (SAS), whom we would like to thank
 for providing the ski jump data. The research was funded by (ADD WHEN YOU FIND OUT). 
 
-% Za to verzijo uporabimo ročno bibliografijo, da build ne pade.
-\begin{thebibliography}{9}
-\bibitem{demo2024}
-J.~Doe and A.~Novak.
-\newblock A Tiny Demo Entry.
-\newblock \emph{Journal of Examples}, 2024.
-\end{thebibliography}
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\printbibliography
+
+\appendix
 
 \end{document}
+\endinput
