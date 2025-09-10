@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  10 SEP 2025 09:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  10 SEP 2025 11:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1251,39 +1251,39 @@ Underfull \vbox (badness 3049) has occurred while \output is active []
 
 [3.3]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 397.
+(Font)              scaled to size 8.0pt on input line 393.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 397.
+(Font)              scaled to size 8.0pt on input line 393.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 397.
+(Font)              scaled to size 6.0pt on input line 393.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 8.0pt on input line 397.
+(Font)              scaled to size 8.0pt on input line 393.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 6.0pt on input line 397.
+(Font)              scaled to size 6.0pt on input line 393.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.0pt on input line 397.
+(Font)              scaled to size 8.0pt on input line 393.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.0pt on input line 397.
+(Font)              scaled to size 6.0pt on input line 393.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 397.
+(Font)              scaled to size 8.0pt on input line 393.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.0pt on input line 397.
+(Font)              scaled to size 6.0pt on input line 393.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.0pt on input line 397.
+(Font)              scaled to size 8.0pt on input line 393.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.0pt on input line 397.
+(Font)              scaled to size 6.0pt on input line 393.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.0pt on input line 397.
+(Font)              scaled to size 8.0pt on input line 393.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.0pt on input line 397.
+(Font)              scaled to size 6.0pt on input line 393.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 397.
+(Font)              scaled to size 8.0pt on input line 393.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 397.
+(Font)              scaled to size 6.0pt on input line 393.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.0pt on input line 397.
+(Font)              scaled to size 8.0pt on input line 393.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.0pt on input line 397.
+(Font)              scaled to size 6.0pt on input line 393.
 
 
 Class acmart Warning: ACM reference format is mandatory 
@@ -1316,7 +1316,7 @@ Package logreq Info: Writing requests to 'clanek.run.xml'.
 Here is how much of TeX's memory you used:
  29346 strings out of 473523
  513878 string characters out of 5715598
- 1426644 words of memory out of 5000000
+ 1426643 words of memory out of 5000000
  51628 multiletter control sequences out of 15000+600000
  702773 words of font info for 307 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191

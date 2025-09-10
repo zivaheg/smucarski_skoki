@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber clanek"] 1757490365.12382 "clanek.bcf" "clanek.bbl" "clanek" 1757490379.0845 0
-  "clanek.bcf" 1757490378 118179 a56b7b2717f0ba6348fe1728ad41eec8 "pdflatex"
+["biber clanek"] 1757490365.12382 "clanek.bcf" "clanek.bbl" "clanek" 1757498149.61054 0
+  "clanek.bcf" 1757498148 118179 a56b7b2717f0ba6348fe1728ad41eec8 "pdflatex"
   "refs.bib" 1757488743 1812 5df4dc769b1353a4089b5dd3f2ace2d9 ""
   (generated)
   "clanek.bbl"
   "clanek.blg"
   (rewritten before read)
-["pdflatex"] 1757490376.17178 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek.tex" "clanek.pdf" "clanek" 1757490379.08544 0
+["pdflatex"] 1757498141.43181 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek.tex" "clanek.pdf" "clanek" 1757498149.6115 0
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1755942919 186245 75d4398793f890e4c15683253a84030e ""
   "C:/Users/vsi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1741687351 12035121 729d0b8bc385de9d6b208fe98578324f ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-4.enc" 1557958141 7693 0f2dce6d313c82989ec3a67fc24df2a0 ""
@@ -222,12 +222,12 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
-  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek.tex" 1757490358 22893 3aea071eebe8be052f368003ce30bad2 ""
-  "clanek.aux" 1757490378 3524 42fe625bd361d1aa4dabb8927759f60f "pdflatex"
+  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek.tex" 1757498139 22885 f9660e6734450e864114b21ecdee53ba ""
+  "clanek.aux" 1757498148 3524 42fe625bd361d1aa4dabb8927759f60f "pdflatex"
   "clanek.bbl" 1757490368 4186 705a8fa2a9ee262617ccb6431ddd7182 "biber clanek"
-  "clanek.out" 1757490378 2950 64316215d6c91146d3e09dbc9062df86 "pdflatex"
-  "clanek.run.xml" 1757490378 2561 b3d559d3129bf8c0060146eb315523c0 "pdflatex"
-  "clanek.tex" 1757490358 22893 3aea071eebe8be052f368003ce30bad2 ""
+  "clanek.out" 1757498148 2950 64316215d6c91146d3e09dbc9062df86 "pdflatex"
+  "clanek.run.xml" 1757498148 2561 b3d559d3129bf8c0060146eb315523c0 "pdflatex"
+  "clanek.tex" 1757498139 22885 f9660e6734450e864114b21ecdee53ba ""
   (generated)
   "clanek.aux"
   "clanek.bcf"
