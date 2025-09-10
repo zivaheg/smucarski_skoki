@@ -278,7 +278,7 @@ predictions.
 %natančno opiševa kako sva preverjali kok dober je najin model in pač tudi poveva 
 %kok dobr je najin model, mal še s tistimi napakami vrjetn pa tko
 
-\subsection{Models' comparison}
+\subsection{Models' error}
 
 In order to evaluate different models, we first had to define a metric for measuring the prediction error.
 Since the actual and simulated jumps are represented with x, y, z coordinates, but are measured at different time stamps,
@@ -305,6 +305,14 @@ all available wind sensor data versus an averaged value of the zone. When we use
 the average error for each point (on training data is 1.67m and on test data is 1.89m), while when we averaged the sensors 
 over the zones the error (on training data was 1.76m and on test data 1.82m). This suggests that averaging the wind data helps
 with the simulation.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{latex2025/2SSM flight_simulation167.png}
+  \caption{Actual vs. simulated ski jump trajectory}
+  \Description{A graph comparing an actual jump trajectory to the simulated one}
+  \label{fig:graph1}
+\end{figure}
 
 \subsection{Analysis of our model}
 
