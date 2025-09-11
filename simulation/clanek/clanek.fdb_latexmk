@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber clanek"] 1757502116.85694 "clanek.bcf" "clanek.bbl" "clanek" 1757502292.41341 0
-  "clanek.bcf" 1757502291 118255 40cb6ab7c8bb8a6e95593b36dbef8966 "pdflatex"
+["biber clanek"] 1757632340.84345 "clanek.bcf" "clanek.bbl" "clanek" 1757632362.33022 0
+  "clanek.bcf" 1757632361 118458 b373d626da2dda1c224068c443a455f0 "pdflatex"
   "refs.bib" 1757501986 2517 460bcdb92de8643406905df3eb7f8cf4 ""
   (generated)
   "clanek.bbl"
   "clanek.blg"
   (rewritten before read)
-["pdflatex"] 1757502289.12431 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/clanek.tex" "clanek.pdf" "clanek" 1757502292.41426 0
-  "2SSM flight_simulation167.png" 1756469689 400275 036149028ed6ce70e81d2ad7157e31c8 ""
+["pdflatex"] 1757632358.98681 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/clanek.tex" "clanek.pdf" "clanek" 1757632362.33111 0
+  "2SSM flight_simulation167.png" 1757631704 323154 d3dbcf2c532592cb460be4c5778ad111 ""
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1755942919 186245 75d4398793f890e4c15683253a84030e ""
   "C:/Users/vsi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1741687351 12035121 729d0b8bc385de9d6b208fe98578324f ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-4.enc" 1557958141 7693 0f2dce6d313c82989ec3a67fc24df2a0 ""
@@ -15,6 +15,7 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_76gpa5.enc" 1497089888 2933 9ad527ce78d7c5fa0a642dead095f172 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_7grukw.enc" 1497089888 2934 a4a9158faed2e9e89c771b4e3b7fc12f ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_naooyc.enc" 1497089888 3357 5261ce65ba03aef9faf6135657b9abb6 ""
+  "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_ncsllp.enc" 1497089888 3288 25b5d43be7be8cba51d85b642598b3b0 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_nh77jq.enc" 1497089888 2933 8d808fcabf70c6c809bb14c283ece4da ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_oexx6f.enc" 1497089888 2807 3bc923a7d38598e901b235df221224cb ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0900.tfm" 993062120 3156 6d4f5755d77638125f6f89de4f3bb757 ""
@@ -32,6 +33,8 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1.tfm" 1732620802 19416 aedd2db224ad278ddf2c411f52d86014 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1--base.tfm" 1732620802 1396 df4e2f70d789eb9c1c42455cf249fa0c ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1.tfm" 1732620802 5612 25e472589a362fc06ccb0764083ac550 ""
+  "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-t1--base.tfm" 1732620802 1700 eb1903cb93ada6655f6ace5bcfb0a2dd ""
+  "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-t1.tfm" 1732620802 15404 b4ba91f16bd331695200640fa8131f38 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm" 1732620802 1740 49980bd9bb6f39f4b265a47e81fabeb3 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm" 1732620802 19504 381664c672fbaa02cfd12dce6d2c400c ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1--base.tfm" 1732620802 1488 cf31654ed44b4729ba2f1bae2d0e7a10 ""
@@ -71,6 +74,7 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/vf/public/libertine/LinBiolinumT-tlf-t1.vf" 1732620847 1728 e76e04a950024a95b620698b679c9810 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/vf/public/libertine/LinBiolinumTB-tlf-t1.vf" 1732620847 1728 4ae633ddccb76ba8d0a0906a5e2e8fdf ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/vf/public/libertine/LinLibertineT-tlf-ot1.vf" 1732620847 968 633f2e9600614ced16b39ff258710cde ""
+  "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/vf/public/libertine/LinLibertineT-tlf-sc-t1.vf" 1732620847 1732 19a98a3416ac208cfc1e8cd877852bec ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf" 1732620847 1728 58c30b3c2a148b5042bfabf244389b2f ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/vf/public/libertine/LinLibertineT-tlf-ts1.vf" 1732620847 640 79c7e833e2c27e0c28913386ebce9f12 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/vf/public/libertine/LinLibertineTB-tlf-t1.vf" 1732620847 1768 5d66dfd9709f1f38b8fb3cb38db46402 ""
@@ -223,12 +227,12 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
   "acmart.cls" 1756452280 124370 98b808b7553ebca0d5ca8dc96583b7f7 ""
-  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/clanek.tex" 1757502284 23183 51f0c3c7f381b20152986c7f81cdcf52 ""
-  "clanek.aux" 1757502291 4004 42869fedfb45b833b5950743a11c33ec "pdflatex"
-  "clanek.bbl" 1757502119 5476 dbcb36d001b73c1db14c49decd360fee "biber clanek"
-  "clanek.out" 1757502291 2925 4f7d8b67df6d95b99e11950f86806a70 "pdflatex"
-  "clanek.run.xml" 1757502291 2561 b3d559d3129bf8c0060146eb315523c0 "pdflatex"
-  "clanek.tex" 1757502284 23183 51f0c3c7f381b20152986c7f81cdcf52 ""
+  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/clanek.tex" 1757632327 23245 aa7f397e42c0311eb60356bc510eb7b1 ""
+  "clanek.aux" 1757632361 4439 c8be3bcf6ead61d443958970fa3eb0bf "pdflatex"
+  "clanek.bbl" 1757632352 9095 bb00ebfabd557a5f0c8fe5b6a110575f "biber clanek"
+  "clanek.out" 1757632361 2925 4f7d8b67df6d95b99e11950f86806a70 "pdflatex"
+  "clanek.run.xml" 1757632361 2561 b3d559d3129bf8c0060146eb315523c0 "pdflatex"
+  "clanek.tex" 1757632327 23245 aa7f397e42c0311eb60356bc510eb7b1 ""
   (generated)
   "clanek.aux"
   "clanek.bcf"

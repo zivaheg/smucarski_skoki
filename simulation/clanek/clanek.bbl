@@ -19,6 +19,41 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{aoki1990state}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=84873b25a48eeabaed21ab700e23beba}{%
+           family={Aoki},
+           familyi={A\bibinitperiod},
+           given={Masanao},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{84873b25a48eeabaed21ab700e23beba}
+      \strng{fullhash}{84873b25a48eeabaed21ab700e23beba}
+      \strng{fullhashraw}{84873b25a48eeabaed21ab700e23beba}
+      \strng{bibnamehash}{84873b25a48eeabaed21ab700e23beba}
+      \strng{authorbibnamehash}{84873b25a48eeabaed21ab700e23beba}
+      \strng{authornamehash}{84873b25a48eeabaed21ab700e23beba}
+      \strng{authorfullhash}{84873b25a48eeabaed21ab700e23beba}
+      \strng{authorfullhashraw}{84873b25a48eeabaed21ab700e23beba}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd, revised and enlarged}
+      \field{isbn}{978-3-642-75883-6}
+      \field{series}{Universitext}
+      \field{title}{State Space Modeling of Time Series}
+      \field{year}{1990}
+      \verb{doi}
+      \verb 10.1007/978-3-642-75883-6
+      \endverb
+    \endentry
     \entry{Cai2021_PINN_FluidMechanics}{article}{}{}
       \name{author}{5}{}{%
         {{hash=446459da16eb3fa7780f7d73fe084c8b}{%
@@ -103,6 +138,56 @@
       \verb{url}
       \verb https://cds.cern.ch/record/1009275/files/p269.pdf
       \endverb
+    \endentry
+    \entry{Plestenjak_NUM}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=a07526e402a3c71acc0ee54f96543a20}{%
+           family={Plestenjak},
+           familyi={P\bibinitperiod},
+           given={Bor},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {[DMFA-založništvo]}%
+      }
+      \strng{namehash}{a07526e402a3c71acc0ee54f96543a20}
+      \strng{fullhash}{a07526e402a3c71acc0ee54f96543a20}
+      \strng{fullhashraw}{a07526e402a3c71acc0ee54f96543a20}
+      \strng{bibnamehash}{a07526e402a3c71acc0ee54f96543a20}
+      \strng{authorbibnamehash}{a07526e402a3c71acc0ee54f96543a20}
+      \strng{authornamehash}{a07526e402a3c71acc0ee54f96543a20}
+      \strng{authorfullhash}{a07526e402a3c71acc0ee54f96543a20}
+      \strng{authorfullhashraw}{a07526e402a3c71acc0ee54f96543a20}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Slovenian textbook on numerical methods}
+      \field{title}{Razširjen uvod v numerične metode}
+      \field{year}{[2016]}
+    \endentry
+    \entry{SSM_YouTube}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=169a74445568cfe3813efef9f79de225}{%
+           family={Serrano.Academy},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{169a74445568cfe3813efef9f79de225}
+      \strng{fullhash}{169a74445568cfe3813efef9f79de225}
+      \strng{fullhashraw}{169a74445568cfe3813efef9f79de225}
+      \strng{bibnamehash}{169a74445568cfe3813efef9f79de225}
+      \strng{authorbibnamehash}{169a74445568cfe3813efef9f79de225}
+      \strng{authornamehash}{169a74445568cfe3813efef9f79de225}
+      \strng{authorfullhash}{169a74445568cfe3813efef9f79de225}
+      \strng{authorfullhashraw}{169a74445568cfe3813efef9f79de225}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://youtu.be/g1AqUhP00Do}}
+      \field{note}{State‐Space Model (SSM) video}
+      \field{title}{State‐Space Model (SSM) tutorial}
+      \field{year}{2025}
     \endentry
     \entry{vanWieringen2015ridge}{misc}{}{}
       \name{author}{1}{}{%
