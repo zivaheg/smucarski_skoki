@@ -175,7 +175,7 @@ The column Time was written using the format: \texttt{0001-01-01T00:00:00.000000
 The \texttt{+01:00} at the end indicates the time zone, which we also removed.
 The remaining part \texttt{00:00:00.0000000} indicates the time of the jump in hours, minutes, seconds and milliseconds.
 We converted this to a numerical value in seconds, which was then used as the time variable in the model.
-The column \texttt{WindTime|WindName|WindSpeed|Wind...} contained multiple pieces of information separated by '\textbar'.
+The column \texttt{WindTime|WindName|WindSpeed|Wind...} contained multiple pieces of information separated by '\texttt{|}'.
 The wind was recorded on 12 sensors placed along the hill, each measuring one of the seven wind features in the order 
 represented in the column name. To keep all the data and not multiply the time stamps, we split this 
 column into $12 \times 6 = 72$ columns, each representing one of the wind features for one of the sensors (\texttt{sensor\_feature}).
