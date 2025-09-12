@@ -239,9 +239,9 @@ animation app.
 
 Some of the alternative approaches we considered for modeling ski jumps included classical
 physics-based models, but the data  isn't sufficient to accurately capture all the forces acting on the jumper.
-We also tried a hybrid approach combining SSM and Physics-informed Neural Networks (PINNs \cite{Cai2021_PINN_FluidMechanics} \cite{StatQuest_NN_YouTube}), where
+We also tried a hybrid approach combining SSM and Physics-informed Neural Networks (PINNs \cite{StatQuest_NN_YouTube}), where
 the SSM would provide a baseline prediction, and the PINN would learn to correct any discrepancies, where it takes into
-account physical properties of the system, such as the mass of the pilot, wind properties and gravitational force. 
+account physical properties of the system, such as the mass of the pilot, wind properties and gravitational force. \cite{Cai2021_PINN_FluidMechanics}
 These parameters are included in the equations of motion, which are added to the overall loss function. 
 So the model prefers solutions that are consistent with the laws of physics.. This
 turned out to be less effective than a pure SSM approach. But the reason exceeds the this papers' purpose.
