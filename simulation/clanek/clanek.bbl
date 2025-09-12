@@ -189,6 +189,29 @@
       \field{title}{State‐Space Model (SSM) tutorial}
       \field{year}{2025}
     \endentry
+    \entry{skisprungschanzen_letalnica}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=fd9ac98d5d57396fb4df573dcffd6f3d}{%
+           family={{Ski Jumping Hill Archive, skisprungschanzen.com}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd9ac98d5d57396fb4df573dcffd6f3d}
+      \strng{fullhash}{fd9ac98d5d57396fb4df573dcffd6f3d}
+      \strng{fullhashraw}{fd9ac98d5d57396fb4df573dcffd6f3d}
+      \strng{bibnamehash}{fd9ac98d5d57396fb4df573dcffd6f3d}
+      \strng{authorbibnamehash}{fd9ac98d5d57396fb4df573dcffd6f3d}
+      \strng{authornamehash}{fd9ac98d5d57396fb4df573dcffd6f3d}
+      \strng{authorfullhash}{fd9ac98d5d57396fb4df573dcffd6f3d}
+      \strng{authorfullhashraw}{fd9ac98d5d57396fb4df573dcffd6f3d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.skisprungschanzen.com/EN/Ski+Jumps/SLO-Slovenia/Planica/0475-Letalnica/}}
+      \field{note}{Accessed: 2025-10-12}
+      \field{title}{Letalnica (Letalnica bratov Gorišek), Planica, Slovenia — Ski Jumping Hill Archive}
+      \field{year}{2025}
+    \endentry
     \entry{vanWieringen2015ridge}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=ff3388cee5607ea4b85de7e183af17c3}{%
