@@ -1,18 +1,18 @@
-[0] Config.pm:308> INFO - This is Biber 2.20
-[1] Config.pm:311> INFO - Logfile is 'clanek.blg'
-[222] biber-MSWIN64:340> INFO - === 
-[272] Biber.pm:420> INFO - Reading 'clanek.bcf'
-[480] Biber.pm:994> INFO - Found 9 citekeys in bib section 0
-[500] Biber.pm:4463> INFO - Processing section 0
-[518] Biber.pm:4654> INFO - Looking for bibtex file 'refs.bib' for section 0
-[603] bibtex.pm:1713> INFO - LaTeX decoding ...
-[623] bibtex.pm:1519> INFO - Found BibTeX data source 'refs.bib'
-[773] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[774] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[774] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[774] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[794] bbl.pm:676> INFO - Writing 'clanek.bbl' with encoding 'UTF-8'
-[800] bbl.pm:779> INFO - Output to clanek.bbl
-[800] Biber.pm:131> WARN - legacy year field '[2016]' in entry 'Plestenjak_NUM' is not an integer - this will probably not sort properly.
-[800] Biber.pm:131> WARN - legacy year field '[2006]' in entry 'CERN_SkiJump_Physics' is not an integer - this will probably not sort properly.
-[801] Biber.pm:133> INFO - WARNINGS: 2
+[2] Config.pm:308> INFO - This is Biber 2.20
+[31] Config.pm:311> INFO - Logfile is 'clanek.blg'
+[970] biber-MSWIN64:340> INFO - === 
+[1050] Biber.pm:420> INFO - Reading 'clanek.bcf'
+[1404] Biber.pm:994> INFO - Found 10 citekeys in bib section 0
+[1449] Biber.pm:4463> INFO - Processing section 0
+[1485] Biber.pm:4654> INFO - Looking for bibtex file 'refs.bib' for section 0
+[1596] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1640] bibtex.pm:1519> INFO - Found BibTeX data source 'refs.bib'
+[1851] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1851] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1851] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1851] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[1894] bbl.pm:676> INFO - Writing 'clanek.bbl' with encoding 'UTF-8'
+[1907] bbl.pm:779> INFO - Output to clanek.bbl
+[1908] Biber.pm:131> WARN - legacy year field '[2016]' in entry 'Plestenjak_NUM' is not an integer - this will probably not sort properly.
+[1908] Biber.pm:131> WARN - legacy year field '[2006]' in entry 'CERN_SkiJump_Physics' is not an integer - this will probably not sort properly.
+[1909] Biber.pm:133> INFO - WARNINGS: 2

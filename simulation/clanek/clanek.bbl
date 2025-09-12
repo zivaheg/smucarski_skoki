@@ -293,6 +293,33 @@
       \verb 10.48550/arXiv.1509.09169
       \endverb
     \endentry
+    \entry{StatQuest_NN_YouTube}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=1d458e4fcf946ae0f9f09391ced3775c}{%
+           family={Josh\bibnamedelima Starmer},
+           familyi={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={StatQuest},
+           giveni={S\bibinitperiod},
+           prefix={with},
+           prefixi={w\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d458e4fcf946ae0f9f09391ced3775c}
+      \strng{fullhash}{1d458e4fcf946ae0f9f09391ced3775c}
+      \strng{fullhashraw}{1d458e4fcf946ae0f9f09391ced3775c}
+      \strng{bibnamehash}{1d458e4fcf946ae0f9f09391ced3775c}
+      \strng{authorbibnamehash}{1d458e4fcf946ae0f9f09391ced3775c}
+      \strng{authornamehash}{1d458e4fcf946ae0f9f09391ced3775c}
+      \strng{authorfullhash}{1d458e4fcf946ae0f9f09391ced3775c}
+      \strng{authorfullhashraw}{1d458e4fcf946ae0f9f09391ced3775c}
+      \field{sortinit}{w}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://youtu.be/CqOfi41LfDw}}
+      \field{note}{Neural networks introduction video}
+      \field{title}{Neural Networks Tutorial}
+      \field{year}{2025}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
