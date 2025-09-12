@@ -2624,6 +2624,7 @@
     <bcf:citekey order="6" intorder="1">skisprungschanzen_letalnica</bcf:citekey>
     <bcf:citekey order="7" intorder="1">Cai2021_PINN_FluidMechanics</bcf:citekey>
     <bcf:citekey order="8" intorder="1">CERN_SkiJump_Physics</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">shiny_python</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

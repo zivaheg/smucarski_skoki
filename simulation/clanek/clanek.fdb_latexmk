@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber clanek"] 1757667542.564 "clanek.bcf" "clanek.bbl" "clanek" 1757667574.02476 0
-  "clanek.bcf" 1757667573 118622 bb63dbd14dd417dc678dff0f1fb6e2a8 "pdflatex"
-  "refs.bib" 1757666975 2916 056b090d1b278067253a989dcdc37f50 ""
+["biber clanek"] 1757667784.04201 "clanek.bcf" "clanek.bbl" "clanek" 1757667954.43544 0
+  "clanek.bcf" 1757667953 118689 3c72acc64cca39e9fe48ca785ab179b8 "pdflatex"
+  "refs.bib" 1757667763 3129 03ba2be8a50c4dfd1c5e023f8bfeaa9a ""
   (generated)
   "clanek.bbl"
   "clanek.blg"
   (rewritten before read)
-["pdflatex"] 1757667567.30557 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/clanek.tex" "clanek.pdf" "clanek" 1757667574.02592 0
+["pdflatex"] 1757667805.22438 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/clanek.tex" "clanek.pdf" "clanek" 1757667954.43951 0
   "2SSM flight_simulation167-small.png" 1756469689 400275 036149028ed6ce70e81d2ad7157e31c8 ""
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1755942919 186245 75d4398793f890e4c15683253a84030e ""
   "C:/Users/vsi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1741687351 12035121 729d0b8bc385de9d6b208fe98578324f ""
@@ -227,12 +227,12 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
   "acmart.cls" 1756452280 124370 98b808b7553ebca0d5ca8dc96583b7f7 ""
-  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/clanek.tex" 1757667529 23570 6a854376efb01e94c51ad1f1fcdb680f ""
-  "clanek.aux" 1757667573 5027 85d58adc0e928806f4629c1f7aaee0b3 "pdflatex"
-  "clanek.bbl" 1757667550 10325 c5b670cd18a88998bcdd3e68c9b5f540 "biber clanek"
-  "clanek.out" 1757667573 2925 4f7d8b67df6d95b99e11950f86806a70 "pdflatex"
-  "clanek.run.xml" 1757667573 2561 b3d559d3129bf8c0060146eb315523c0 "pdflatex"
-  "clanek.tex" 1757667529 23570 6a854376efb01e94c51ad1f1fcdb680f ""
+  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/clanek.tex" 1757667763 23590 580796916057f75c3e5093c00918bf10 ""
+  "clanek.aux" 1757667953 5170 46a90224d042e76b0875c392faccb291 "pdflatex"
+  "clanek.bbl" 1757667789 11468 61653855fc1635327391cb17d3c88cc0 "biber clanek"
+  "clanek.out" 1757667953 2925 4f7d8b67df6d95b99e11950f86806a70 "pdflatex"
+  "clanek.run.xml" 1757667953 2561 b3d559d3129bf8c0060146eb315523c0 "pdflatex"
+  "clanek.tex" 1757667763 23590 580796916057f75c3e5093c00918bf10 ""
   "koncen_graf.jpg" 1757666975 227736 6a1167bb62a01405ad1f7e4c4ff04c1d ""
   (generated)
   "clanek.aux"

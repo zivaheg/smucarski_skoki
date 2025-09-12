@@ -166,6 +166,34 @@
       \field{title}{Razširjen uvod v numerične metode}
       \field{year}{[2016]}
     \endentry
+    \entry{shiny_python}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=2b475ea115c6be635e6a6aaeaf18e343}{%
+           family={{Posit Team}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{2b475ea115c6be635e6a6aaeaf18e343}
+      \strng{fullhash}{2b475ea115c6be635e6a6aaeaf18e343}
+      \strng{fullhashraw}{2b475ea115c6be635e6a6aaeaf18e343}
+      \strng{bibnamehash}{2b475ea115c6be635e6a6aaeaf18e343}
+      \strng{authorbibnamehash}{2b475ea115c6be635e6a6aaeaf18e343}
+      \strng{authornamehash}{2b475ea115c6be635e6a6aaeaf18e343}
+      \strng{authorfullhash}{2b475ea115c6be635e6a6aaeaf18e343}
+      \strng{authorfullhashraw}{2b475ea115c6be635e6a6aaeaf18e343}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-29}
+      \field{title}{Shiny for Python}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://shiny.posit.co/py/
+      \endverb
+      \verb{url}
+      \verb https://shiny.posit.co/py/
+      \endverb
+    \endentry
     \entry{SSM_YouTube}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=169a74445568cfe3813efef9f79de225}{%
@@ -208,7 +236,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.skisprungschanzen.com/EN/Ski+Jumps/SLO-Slovenia/Planica/0475-Letalnica/}}
-      \field{note}{Accessed: 2025-10-12}
+      \field{note}{Accessed: 2025-09-12}
       \field{title}{Letalnica (Letalnica bratov Gorišek), Planica, Slovenia — Ski Jumping Hill Archive}
       \field{year}{2025}
     \endentry
