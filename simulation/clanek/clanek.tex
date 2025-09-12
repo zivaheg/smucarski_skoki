@@ -155,24 +155,24 @@ helps reduce overfitting during model training. \cite{vanWieringen2015ridge}
 %da so bli za uporabo, lahko tko po korakih: naprej je blo treba to in pol to...
 
 For our project we used 223 CSV files, each containing the data of one jump. 
-Each contains 17 columns ('Position', 'Height above ground', 'Time', 'X', 'Y', 'Z', 
-'Opening Angle', 'Stalling Angle Left', 'Stalling Angle Right', 
-'Roll Angle Left', 'Roll Angle Right', 'Yaw Angle Left', 'Yaw Angle Right', 
-'Speed hor.', 'Speed vert.', 'Speed resulting', 
-'WindTime|WindName|WindSpeed|Wind...')
+Each contains 17 columns (\texttt{'Position'}, \texttt{'Height above ground'}, \texttt{'Time'}, \texttt{'X'}, \texttt{'Y'}, \texttt{'Z'}, 
+\texttt{'Opening Angle'}, \texttt{'Stalling Angle Left'}, \texttt{'Stalling Angle Right'}, 
+\texttt{'Roll Angle Left'}, \texttt{'Roll Angle Right'}, \texttt{'Yaw Angle Left'}, \texttt{'Yaw Angle Right'}, 
+\texttt{'Speed hor.'}, \texttt{'Speed vert.'}, \texttt{'Speed resulting'}, 
+\texttt{'WindTime|WindName|WindSpeed|Wind...'})
 and number of rows corresponding to the length of the jump. Data is recorded for every meter
-of air distance from the take-off point. of air distance from the take-off point.
+of air distance from the take-off point.
 
 The data required some pre-processing before it could be used for training the model.
-The column Time was written using the format: $0001-01-01\text{T}00:00:00.0000000+01:00$. Here, 
-$0001-01-01$ means the date (January first in the year one), which is a place holder date, so we removed it.
-The $+01:00$ at the end indicates the time zone, which we also removed.
-The remaining part $00:00:00.0000000$ indicates the time of the jump in hours, minutes, seconds and milliseconds.
+The column Time was written using the format: \texttt{0001-01-01T00:00:00.0000000+01:00}. Here, 
+\texttt{0001-01-01} means the date (January first in the year one), which is a place holder date, so we removed it.
+The \texttt{+01:00} at the end indicates the time zone, which we also removed.
+The remaining part \texttt{00:00:00.0000000} indicates the time of the jump in hours, minutes, seconds and milliseconds.
 We converted this to a numerical value in seconds, which was then used as the time variable in the model.
-The column 'WindTime|WindName|WindSpeed|Wind...' contained multiple pieces of information separated by '|'.
-The wind was recorded on 12 sensors placed along the hill, each measuring one of the seven wind feature in the order 
+The column \texttt{WindTime|WindName|WindSpeed|Wind...} contained multiple pieces of information separated by '\texttt{|}'.
+The wind was recorded on 12 sensors placed along the hill, each measuring one of the seven wind features in the order 
 represented in the column name. To keep all the data and not multiply the time stamps, we split this 
-column into $12 \cdot 6 = 72$ columns, each representing one of the wind features for one of the sensors (\texttt{sensor\_feature}).
+column into $12 \times 6 = 72$ columns, each representing one of the wind features for one of the sensors (\texttt{sensor\_feature}).
 
 %I THINK DA BI BLO DOBR DA TUD ZA KOTE DODAVA NEKO SLIKO
 \begin{description}
@@ -207,7 +207,7 @@ The wind features are as follows:
     are recorded less often, the wind values are applied to the most recent jump measurement and then just \\
     repeated until a new wind measurement is available. Since the wind is represented by a nonlinear function, it would be hard to capture
     it's movements with interpolation, so we decided to drop this column.
-    \item [WindName] - name of the sensor ( Wi for i = 1,...,12)
+    \item [WindName] - name of the sensor (Wi for $i = 1,\ldots,12$)
     \item [WindSpeed] - resulting speed of the wind in km/h 
     \item [WindSpeedTangent] - speed of the wind tangent measured along the x axis (hill direction) in km/h
     \item [WindTurbulence] - vertical speed of the wind turbulence in km/h
@@ -411,7 +411,7 @@ for providing the ski jump data. The research was funded by (ADD WHEN YOU FIND O
 %%
 %% The next two lines define the bibliography style to be used, and
 %% the bibliography file.
-\printbibliography
+% 
 
 \appendix
 

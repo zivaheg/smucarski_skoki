@@ -263,6 +263,33 @@
       \field{title}{Letalnica (Letalnica bratov Gorišek), Planica, Slovenia — Ski Jumping Hill Archive}
       \field{year}{2025}
     \endentry
+    \entry{SkiJumping_Book}{book}{}{}
+      \name{editor}{1}{}{%
+        {{hash=aa1f767d38794bc2c768c3b6d6694fe2}{%
+           family={Thompson]},
+           familyi={T\bibinitperiod},
+           given={[Ava},
+           giveni={[\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {[Publifye AS]}%
+      }
+      \strng{namehash}{aa1f767d38794bc2c768c3b6d6694fe2}
+      \strng{fullhash}{aa1f767d38794bc2c768c3b6d6694fe2}
+      \strng{fullhashraw}{aa1f767d38794bc2c768c3b6d6694fe2}
+      \strng{bibnamehash}{aa1f767d38794bc2c768c3b6d6694fe2}
+      \strng{editorbibnamehash}{aa1f767d38794bc2c768c3b6d6694fe2}
+      \strng{editornamehash}{aa1f767d38794bc2c768c3b6d6694fe2}
+      \strng{editorfullhash}{aa1f767d38794bc2c768c3b6d6694fe2}
+      \strng{editorfullhashraw}{aa1f767d38794bc2c768c3b6d6694fe2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{note}{Found via Google Books at https://www.google.si/books/edition/Ski_Jumping/...}
+      \field{title}{Ski Jumping}
+      \field{year}{[2025]}
+    \endentry
     \entry{vanWieringen2015ridge}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=ff3388cee5607ea4b85de7e183af17c3}{%
