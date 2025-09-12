@@ -49,7 +49,7 @@
   \city{Ljubljana}\country{Slovenia}}
 \email{marko.grobelnik@ijs.si}
 
-\renewcommand{\shortauthors}{Ž. Hegler and N. Camlek}
+\renewcommand{\shortauthors}{Ž. Hegler, N. Camlek et al.}
 
 
 \begin{abstract}
@@ -126,7 +126,7 @@ data processing.
 \subsection{State Space Model}\label{subsec:ssm}
 State Space Models (SSMs) are a family of machine learning algorithms designed to 
 capture and predict the behavior of dynamic systems by describing how their inner 
-state changes over time. \cite{aoki1990state} 
+state changes over time.  
 Instead of only looking at past inputs and outputs, SSMs explicitly model the 
 underlying dynamics, making them well-suited for sequential data. In state space modeling, 
 the objective is to identify the minimal set of system variables required to completely 
@@ -135,7 +135,7 @@ At any given time, the state of the system can be represented by a state vector,
 whose components correspond to the values of the respective state variables. 
 SSMs are designed to predict both the manner in which inputs are reflected in the 
 system's outputs and the evolution of a system's internal state over time and in 
-response to specific inputs. \cite{SSM_YouTube}
+response to specific inputs. \cite{aoki1990state}
 
 \subsection{Least squares method}
 
@@ -190,7 +190,7 @@ column into $12 \times 6 = 72$ columns, each representing one of the wind featur
     \item[Yaw Angle Left, Yaw Angle Right] - angle between the \\ 
     left/right ski and the horizontal plane in degrees.
     \item[Speed hor., Speed vert., Speed resulting] - horizontal,\\
-    vertical, and the resulting speed of the athlete in km/h.
+    vertical, and the resulting speed of the athlete in km/h. \cite{virmavirta2019aerodynamics}
 \end{description}
 
 \begin{figure}[h]
@@ -262,7 +262,7 @@ and previous values and the next time stamp values.Thus the matrix A computes th
 B computes the next state from the current control, C computes the next observation from the current state and D computes 
 the next observation from the current control. We then use recursion to predict the next state from the prediction of the 
 previous state and the current control, to get the full simulated jump. This allows us to predict the jump trajectory 
-based on the environmental conditions and the starting state of the jumper.
+based on the environmental conditions and the starting state of the jumper. \cite{SSM_YouTube}
 
 
 
@@ -366,7 +366,7 @@ model may struggle to accurately predict jumps under novel or extreme conditions
 Additionally, the dataset lacks detailed information, or any information at all 
 about individual jumpers, such as body weight, sex, or other physiological characteristics 
 that are known to influence jump performance. Incorporating these variables 
-could improve model accuracy and provide more personalized predictions.
+could improve model accuracy and provide more personalized predictions. \cite{muller2008performance}
 
 Lastly, due to limited computing power, only one CPU with - of space was 
 available, restricting the use of possible better models. To address these 
@@ -402,7 +402,13 @@ framework and applying least squares estimation, we demonstrated that the model
 is capable of capturing the dynamics of ski jumps and producing realistic 
 trajectory predictions. Furthermore, we developed an interactive application 
 that makes the results accessible to a broader audience through simulations and 
-animations of predicted jumps.
+animations of predicted jumps. While the current model is limited by the size of the dataset 
+and the absence of certain athlete-specific variables, the results 
+show that state-space models are a promising tool for analyzing ski jumping 
+performance. The combination of predictive modeling and interactive visualization 
+offers both researchers and general public new opportunities to explore how 
+environmental conditions influence outcomes, laying the groundwork for future 
+extensions and improvements.
 
 \section{Acknowledgments}
 This work was supported by the Ski Association of Slovenia (SAS), whom we would like to thank
