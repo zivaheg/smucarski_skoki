@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  12 SEP 2025 12:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  12 SEP 2025 12:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -906,12 +906,12 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 LaTeX Warning: Unused global option(s):
     [natbib=false,language=english].
 
-No file clanek.aux.
+(clanek.aux)
 \openout1 = `clanek.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 29.
 LaTeX Font Info:    Trying to load font information for OML+nxlmi on input line 29.
-(C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlnxlmi.fd
+ (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlnxlmi.fd
 File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
 )
 LaTeX Font Info:    ... okay on input line 29.
@@ -1223,7 +1223,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[1.1{C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}
+(C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-pdfdoc.def
+File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
+) (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-utf8.def
+File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
+) [1.1{C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}
 
 {C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_naooyc.enc}]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
@@ -1262,7 +1266,7 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 
 LaTeX Warning: Reference `fig:planica' on page 2 undefined on input line 191.
 
-<koncen_graf.jpg, id=30, 1931.215pt x 1243.64626pt>
+<koncen_graf.jpg, id=31, 1931.215pt x 1243.64626pt>
 File: koncen_graf.jpg Graphic file (type jpg)
 <use koncen_graf.jpg>
 Package pdftex.def Info: koncen_graf.jpg  used on input line 204.
@@ -1283,7 +1287,7 @@ Underfull \vbox (badness 1895) has occurred while \output is active []
 
 
 
-<2SSM flight_simulation167-small.png, id=62, 377.4903pt x 319.9152pt>
+<2SSM flight_simulation167-small.png, id=63, 377.4903pt x 319.9152pt>
 File: 2SSM flight_simulation167-small.png Graphic file (type png)
 <use 2SSM flight_simulation167-small.png>
 Package pdftex.def Info: 2SSM flight_simulation167-small.png  used on input line 330.
@@ -1356,14 +1360,12 @@ my insertion and my current dilemma will both disappear.
 Package balance Warning: You have called \balance in second column
 (balance)                Columns might not be balanced.
 
-[4.4{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}] (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-pdfdoc.def
-File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
-) (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-utf8.def
-File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-)
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 432.
- [5.4] (clanek.aux)
+[4.4{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}]
+
+LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (1 not 4).
+               Rerun to correct this.
+
+(clanek.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1374,9 +1376,6 @@ LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-LaTeX Warning: Temporary extra page added at the end. Rerun to get it removed.
 
 
 Package rerunfilecheck Warning: File `clanek.out' has changed.
@@ -1396,17 +1395,17 @@ Package logreq Info: Writing requests to 'clanek.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29471 strings out of 473523
- 517962 string characters out of 5715598
- 1424354 words of memory out of 5000000
- 51674 multiletter control sequences out of 15000+600000
- 711001 words of font info for 356 fonts, out of 8000000 for 9000
+ 29458 strings out of 473523
+ 517683 string characters out of 5715598
+ 1425345 words of memory out of 5000000
+ 51669 multiletter control sequences out of 15000+600000
+ 705192 words of font info for 350 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  90i,12n,131p,1070b,1835s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/LibertineMathMI5.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/LibertineMathMI7.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb>
-Output written on clanek.pdf (5 pages, 983953 bytes).
+Output written on clanek.pdf (4 pages, 982903 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
+ 181 PDF objects out of 1000 (max. 8388607)
  41 named destinations out of 1000 (max. 500000)
- 80411 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 76315 words of extra memory for PDF output out of 89155 (max. 10000000)
 
