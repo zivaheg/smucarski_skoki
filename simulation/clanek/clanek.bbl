@@ -39,7 +39,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://3dmdb.com/en/3d-model/ski-jumping-planica/8386000/?free=True&q=Ski+jump}}
       \field{note}{Free model; accessed: 2025-08-26}
-      \field{title}{“Ski Jumping Planica” [3D model]}
+      \field{title}{"Ski Jumping Planica" [3D model]}
       \field{year}{2025}
     \endentry
     \entry{aoki1990state}{book}{}{}
@@ -158,6 +158,7 @@
       \strng{editornamehash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
       \strng{editorfullhash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
       \strng{editorfullhashraw}{fa6b3125a5cf61f2ea69c12ade9d98f7}
+      \field{extraname}{1}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
@@ -177,23 +178,24 @@
     \endentry
     \entry{CERN_SkiJump_Physics}{report}{}{}
       \name{author}{1}{}{%
-        {{hash=75820a1c82c0273b5a706a464e6f5603}{%
-           family={Müller]},
+        {{hash=bff8ba09075b68193b96c9c4f715dbd8}{%
+           family={Müller},
            familyi={M\bibinitperiod},
-           given={[W.},
-           giveni={[\bibinitperiod}}}%
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
       }
       \list{institution}{1}{%
         {CERN}%
       }
-      \strng{namehash}{75820a1c82c0273b5a706a464e6f5603}
-      \strng{fullhash}{75820a1c82c0273b5a706a464e6f5603}
-      \strng{fullhashraw}{75820a1c82c0273b5a706a464e6f5603}
-      \strng{bibnamehash}{75820a1c82c0273b5a706a464e6f5603}
-      \strng{authorbibnamehash}{75820a1c82c0273b5a706a464e6f5603}
-      \strng{authornamehash}{75820a1c82c0273b5a706a464e6f5603}
-      \strng{authorfullhash}{75820a1c82c0273b5a706a464e6f5603}
-      \strng{authorfullhashraw}{75820a1c82c0273b5a706a464e6f5603}
+      \strng{namehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{fullhash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{fullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{bibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authorbibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authornamehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authorfullhash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authorfullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
+      \field{extraname}{2}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
@@ -201,7 +203,7 @@
       \field{note}{CERN report on the aerodynamics and physics of ski jumping}
       \field{title}{The physics of ski jumping}
       \field{type}{techreport}
-      \field{year}{[2006]}
+      \field{year}{2006}
       \verb{urlraw}
       \verb https://cds.cern.ch/record/1009275/files/p269.pdf
       \endverb
@@ -218,7 +220,7 @@
            giveni={B\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {[DMFA-založništvo]}%
+        {DMFA-založništvo}%
       }
       \strng{namehash}{a07526e402a3c71acc0ee54f96543a20}
       \strng{fullhash}{a07526e402a3c71acc0ee54f96543a20}
@@ -234,7 +236,7 @@
       \field{labeltitlesource}{title}
       \field{note}{Slovenian textbook on numerical methods}
       \field{title}{Razširjen uvod v numerične metode}
-      \field{year}{[2016]}
+      \field{year}{2016}
     \endentry
     \entry{shiny_python}{online}{}{}
       \name{author}{1}{}{%
@@ -312,30 +314,30 @@
     \endentry
     \entry{SkiJumping_Book}{book}{}{}
       \name{editor}{1}{}{%
-        {{hash=aa1f767d38794bc2c768c3b6d6694fe2}{%
-           family={Thompson]},
+        {{hash=22dfdbf9a3cc3e2137863a9a3a774b26}{%
+           family={Thompson},
            familyi={T\bibinitperiod},
-           given={[Ava},
-           giveni={[\bibinitperiod}}}%
+           given={Ava},
+           giveni={A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {[Publifye AS]}%
+        {Publifye AS}%
       }
-      \strng{namehash}{aa1f767d38794bc2c768c3b6d6694fe2}
-      \strng{fullhash}{aa1f767d38794bc2c768c3b6d6694fe2}
-      \strng{fullhashraw}{aa1f767d38794bc2c768c3b6d6694fe2}
-      \strng{bibnamehash}{aa1f767d38794bc2c768c3b6d6694fe2}
-      \strng{editorbibnamehash}{aa1f767d38794bc2c768c3b6d6694fe2}
-      \strng{editornamehash}{aa1f767d38794bc2c768c3b6d6694fe2}
-      \strng{editorfullhash}{aa1f767d38794bc2c768c3b6d6694fe2}
-      \strng{editorfullhashraw}{aa1f767d38794bc2c768c3b6d6694fe2}
+      \strng{namehash}{22dfdbf9a3cc3e2137863a9a3a774b26}
+      \strng{fullhash}{22dfdbf9a3cc3e2137863a9a3a774b26}
+      \strng{fullhashraw}{22dfdbf9a3cc3e2137863a9a3a774b26}
+      \strng{bibnamehash}{22dfdbf9a3cc3e2137863a9a3a774b26}
+      \strng{editorbibnamehash}{22dfdbf9a3cc3e2137863a9a3a774b26}
+      \strng{editornamehash}{22dfdbf9a3cc3e2137863a9a3a774b26}
+      \strng{editorfullhash}{22dfdbf9a3cc3e2137863a9a3a774b26}
+      \strng{editorfullhashraw}{22dfdbf9a3cc3e2137863a9a3a774b26}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{note}{Found via Google Books at https://www.google.si/books/edition/Ski_Jumping/...}
       \field{title}{Ski Jumping}
-      \field{year}{[2025]}
+      \field{year}{2025}
     \endentry
     \entry{vanWieringen2015ridge}{misc}{}{}
       \name{author}{1}{}{%
