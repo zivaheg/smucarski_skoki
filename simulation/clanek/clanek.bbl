@@ -19,6 +19,29 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{3dmdb_skijumping_planica}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=668cc5ad2bad705c42c26a9ee09e03f3}{%
+           family={{3DWarehouse via 3dmdb.com}},
+           familyi={3\bibinitperiod}}}%
+      }
+      \strng{namehash}{668cc5ad2bad705c42c26a9ee09e03f3}
+      \strng{fullhash}{668cc5ad2bad705c42c26a9ee09e03f3}
+      \strng{fullhashraw}{668cc5ad2bad705c42c26a9ee09e03f3}
+      \strng{bibnamehash}{668cc5ad2bad705c42c26a9ee09e03f3}
+      \strng{authorbibnamehash}{668cc5ad2bad705c42c26a9ee09e03f3}
+      \strng{authornamehash}{668cc5ad2bad705c42c26a9ee09e03f3}
+      \strng{authorfullhash}{668cc5ad2bad705c42c26a9ee09e03f3}
+      \strng{authorfullhashraw}{668cc5ad2bad705c42c26a9ee09e03f3}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://3dmdb.com/en/3d-model/ski-jumping-planica/8386000/?free=True&q=Ski+jump}}
+      \field{note}{Free model; accessed: 2025-08-26}
+      \field{title}{“Ski Jumping Planica” [3D model]}
+      \field{year}{2025}
+    \endentry
     \entry{aoki1990state}{book}{}{}
       \name{author}{1}{}{%
         {{hash=84873b25a48eeabaed21ab700e23beba}{%
