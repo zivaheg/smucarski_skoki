@@ -2617,9 +2617,9 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">aoki1990state</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">SSM_YouTube</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">Plestenjak_NUM</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">vanWieringen2015ridge</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">Plestenjak_NUM</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">vanWieringen2015ridge</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">virmavirta2019aerodynamics</bcf:citekey>
     <bcf:citekey order="5" intorder="1">skisprungschanzen_letalnica</bcf:citekey>
     <bcf:citekey order="6" intorder="1">3dmdb_skijumping_planica</bcf:citekey>
     <bcf:citekey order="7" intorder="1">skisprungschanzen_letalnica</bcf:citekey>
@@ -2628,7 +2628,9 @@
     <bcf:citekey order="10" intorder="1">StatQuest_NN_YouTube</bcf:citekey>
     <bcf:citekey order="11" intorder="1">Cai2021_PINN_FluidMechanics</bcf:citekey>
     <bcf:citekey order="12" intorder="1">CERN_SkiJump_Physics</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">shiny_python</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">SSM_YouTube</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">shiny_python</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">muller2008performance</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

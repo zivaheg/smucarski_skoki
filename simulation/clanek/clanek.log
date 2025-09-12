@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  12 SEP 2025 12:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  12 SEP 2025 12:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1241,7 +1241,7 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 [1.1{C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}
 
 {C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-4.enc}]
-<koncen_graf.jpg, id=105, 1931.215pt x 1243.64626pt>
+<koncen_graf.jpg, id=104, 1931.215pt x 1243.64626pt>
 File: koncen_graf.jpg Graphic file (type jpg)
 <use koncen_graf.jpg>
 Package pdftex.def Info: koncen_graf.jpg  used on input line 198.
@@ -1255,8 +1255,11 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 7.0pt on input line 266.
 [2.2{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_oexx6f.enc} <./koncen_graf.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<2SSM flight_simulation167-small.png, id=131, 377.4903pt x 319.9152pt>
+
+
+<2SSM flight_simulation167-small.png, id=132, 377.4903pt x 319.9152pt>
 File: 2SSM flight_simulation167-small.png Graphic file (type png)
 <use 2SSM flight_simulation167-small.png>
 Package pdftex.def Info: 2SSM flight_simulation167-small.png  used on input line 324.
@@ -1293,15 +1296,21 @@ Package logreq Info: Writing requests to 'clanek.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29293 strings out of 473523
- 512998 string characters out of 5715598
- 1426403 words of memory out of 5000000
- 51614 multiletter control sequences out of 15000+600000
+ 29298 strings out of 473523
+ 513217 string characters out of 5715598
+ 1426501 words of memory out of 5000000
+ 51617 multiletter control sequences out of 15000+600000
  673993 words of font info for 259 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,12n,131p,1070b,1832s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,13n,131p,1070b,1832s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{cite.0@muller2008performance} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{cite.0@shiny_python} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@SSM_YouTube} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{cite.0@CERN_SkiJump_Physics} has been referenced but does not exist, replaced by a fixed one
@@ -1322,21 +1331,21 @@ pdfTeX warning (dest): name{cite.0@3dmdb_skijumping_planica} has been referenced
 pdfTeX warning (dest): name{cite.0@skisprungschanzen_letalnica} has been referenced but does not exist, replaced by a fixed one
 
 
+pdfTeX warning (dest): name{cite.0@virmavirta2019aerodynamics} has been referenced but does not exist, replaced by a fixed one
+
+
 pdfTeX warning (dest): name{cite.0@vanWieringen2015ridge} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{cite.0@Plestenjak_NUM} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{cite.0@SSM_YouTube} has been referenced but does not exist, replaced by a fixed one
-
-
 pdfTeX warning (dest): name{cite.0@aoki1990state} has been referenced but does not exist, replaced by a fixed one
 
 <C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb>
-Output written on clanek.pdf (4 pages, 949124 bytes).
+Output written on clanek.pdf (4 pages, 950010 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 500000)
+ 208 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
  62123 words of extra memory for PDF output out of 74296 (max. 10000000)
 

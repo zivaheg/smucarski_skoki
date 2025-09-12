@@ -128,6 +128,53 @@
       \verb 10.1007/s10409-021-01148-1
       \endverb
     \endentry
+    \entry{muller2008performance}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{hash=bff8ba09075b68193b96c9c4f715dbd8}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=fa6b3125a5cf61f2ea69c12ade9d98f7}{%
+           family={Nørstrud},
+           familyi={N\bibinitperiod},
+           given={Helge},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Vienna}%
+      }
+      \strng{namehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{fullhash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{fullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{bibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authorbibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authornamehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authorfullhash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authorfullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{editorbibnamehash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
+      \strng{editornamehash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
+      \strng{editorfullhash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
+      \strng{editorfullhashraw}{fa6b3125a5cf61f2ea69c12ade9d98f7}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Sport Aerodynamics}
+      \field{isbn}{978-3-211-89296-1}
+      \field{note}{Online ISBN: 978-3-211-89297-8}
+      \field{series}{CISM International Centre for Mechanical Sciences}
+      \field{title}{Performance factors in ski jumping}
+      \field{volume}{506}
+      \field{year}{2008}
+      \field{pages}{139\bibrangedash 160}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/978-3-211-89297-8_8
+      \endverb
+    \endentry
     \entry{CERN_SkiJump_Physics}{report}{}{}
       \name{author}{1}{}{%
         {{hash=75820a1c82c0273b5a706a464e6f5603}{%
@@ -318,6 +365,45 @@
       \field{year}{2015}
       \verb{doi}
       \verb 10.48550/arXiv.1509.09169
+      \endverb
+    \endentry
+    \entry{virmavirta2019aerodynamics}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b93492f7e9dbd1b5e9670b58f939b0d1}{%
+           family={Virmavirta},
+           familyi={V\bibinitperiod},
+           given={Mikko},
+           giveni={M\bibinitperiod}}}%
+        {{hash=12610f0ebd14212132a5e24d4118ff12}{%
+           family={Kivekäs},
+           familyi={K\bibinitperiod},
+           given={Juha},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{fullhash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{fullhashraw}{01164efec020f2445c4f57dec5a4246f}
+      \strng{bibnamehash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{authorbibnamehash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{authornamehash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{authorfullhash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{authorfullhashraw}{01164efec020f2445c4f57dec5a4246f}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sports Engineering}
+      \field{number}{1}
+      \field{title}{Aerodynamics of an isolated ski jumping ski}
+      \field{volume}{22}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1007/s12283-019-0298-1
       \endverb
     \endentry
     \entry{StatQuest_NN_YouTube}{misc}{}{}
