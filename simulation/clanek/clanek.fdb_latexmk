@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber clanek"] 1757673717.24385 "clanek.bcf" "clanek.bbl" "clanek" 1757675897.16586 0
-  "clanek.bcf" 1757675896 119153 66bde0ec2fb13395975e06727ef43667 "pdflatex"
+["biber clanek"] 1757673717.24385 "clanek.bcf" "clanek.bbl" "clanek" 1759057891.36746 0
+  "clanek.bcf" 1759057890 119153 66bde0ec2fb13395975e06727ef43667 "pdflatex"
   "refs.bib" 1757673714 4396 c3a086cbc8c3512798a35963503e927f ""
   (generated)
   "clanek.bbl"
   "clanek.blg"
   (rewritten before read)
-["pdflatex"] 1757675892.98306 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/clanek.tex" "clanek.pdf" "clanek" 1757675897.16707 2
+["pdflatex"] 1759057882.5973 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/clanek.tex" "clanek.pdf" "clanek" 1759057891.36961 2
   "2SSM flight_simulation167-small.png" 1756469689 400275 036149028ed6ce70e81d2ad7157e31c8 ""
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1755942919 186245 75d4398793f890e4c15683253a84030e ""
   "C:/Users/vsi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1741687351 12035121 729d0b8bc385de9d6b208fe98578324f ""
@@ -236,11 +236,11 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
   "acmart.cls" 1756452280 124370 98b808b7553ebca0d5ca8dc96583b7f7 ""
-  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/clanek.tex" 1757675885 24897 e83cb20ed7ad54347853afce42dd04e9 ""
-  "clanek.aux" 1757675896 6470 853d2d7976a12c303906a3488cf97c8a "pdflatex"
+  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/clanek.tex" 1759057857 24900 32646011c00af14afda346af2f299b15 ""
+  "clanek.aux" 1759057890 6470 5cd5c157acb6a15fa48c1c7142473fda "pdflatex"
   "clanek.bbl" 1757673726 18626 2b629e24fa369db7a1d686b04803496d "biber clanek"
-  "clanek.out" 1757675896 2925 4f7d8b67df6d95b99e11950f86806a70 "pdflatex"
-  "clanek.tex" 1757675885 24897 e83cb20ed7ad54347853afce42dd04e9 ""
+  "clanek.out" 1759057890 2925 4f7d8b67df6d95b99e11950f86806a70 "pdflatex"
+  "clanek.tex" 1759057857 24900 32646011c00af14afda346af2f299b15 ""
   "koncen_graf.jpg" 1757666975 227736 6a1167bb62a01405ad1f7e4c4ff04c1d ""
   "koti.png" 1757675885 189551 691638392e513e80a392828b87872926 ""
   (generated)
