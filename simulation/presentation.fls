@@ -443,13 +443,13 @@ INPUT .\SSM2.png
 INPUT .\SSM2.png
 INPUT .\SSM2.png
 INPUT .\SSM2.png
-INPUT .\2SSM flight_simulation167.png
-INPUT .\2SSM flight_simulation167.png
-INPUT .\2SSM flight_simulation167.png
-INPUT .\2SSM flight_simulation167.png
-INPUT .\2SSM flight_simulation167.png
-INPUT .\2SSM flight_simulation167.png
-INPUT .\2SSM flight_simulation167.png
+INPUT .\flight_simulation167.png
+INPUT .\flight_simulation167.png
+INPUT .\flight_simulation167.png
+INPUT .\flight_simulation167.png
+INPUT .\flight_simulation167.png
+INPUT .\flight_simulation167.png
+INPUT .\flight_simulation167.png
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss2488.tfm
 OUTPUT presentation.nav
 OUTPUT presentation.toc

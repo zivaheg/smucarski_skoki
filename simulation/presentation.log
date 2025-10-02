@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  2 OCT 2025 11:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  2 OCT 2025 11:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -803,10 +803,10 @@ Package pdftex.def Info: SSM2.png  used on input line 101.
 [9
 
 ]
-<2SSM flight_simulation167.png, id=352, 578.16pt x 361.35pt>
-File: 2SSM flight_simulation167.png Graphic file (type png)
-<use 2SSM flight_simulation167.png>
-Package pdftex.def Info: 2SSM flight_simulation167.png  used on input line 118.
+<flight_simulation167.png, id=352, 578.16pt x 361.35pt>
+File: flight_simulation167.png Graphic file (type png)
+<use flight_simulation167.png>
+Package pdftex.def Info: flight_simulation167.png  used on input line 118.
 (pdftex.def)             Requested size: 171.14764pt x 106.96674pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:question}) has been already used, duplicate ignored
@@ -817,7 +817,7 @@ l.118 \end{frame}
 
 [10
 
- <./2SSM flight_simulation167.png>]
+ <./flight_simulation167.png>]
 
 [11
 
@@ -853,7 +853,7 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  23303 strings out of 473523
- 454080 string characters out of 5715598
+ 454045 string characters out of 5715598
  822773 words of memory out of 5000000
  46000 multiletter control sequences out of 15000+600000
  575702 words of font info for 81 fonts, out of 8000000 for 9000
