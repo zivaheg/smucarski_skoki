@@ -1,7 +1,7 @@
 \documentclass{beamer}
 
 % Theme
-\usetheme{Madrid}  % you can try: Warsaw, CambridgeUS, Berlin, etc.
+\usetheme{CambridgeUS}  % you can try: Warsaw, CambridgeUS, Berlin, etc.
 
 % Packages
 \usepackage[utf8]{inputenc}
@@ -14,6 +14,17 @@
 \author{Živa Hegler and Neca Camlek}
 \institute{JSI}
 \date{\today}
+
+% Change itemize bullets to red triangles
+%\definecolor{darkred}{rgb}{0.8,0,0}
+\setbeamertemplate{itemize item}{\color{darkred}\small$\blacktriangleright$}
+\setbeamertemplate{itemize subitem}{\color{darkred}\scriptsize$\blacktriangleright$}
+\setbeamertemplate{itemize subsubitem}{\color{darkred}\tiny$\blacktriangleright$}
+
+\setbeamertemplate{section in toc}{\color{black}$\bullet$~\inserttocsection}
+\setbeamertemplate{subsection in toc}{\hspace{1.2em}\color{black}$\bullet$~\inserttocsubsection}
+\setbeamertemplate{subsubsection in toc}{\hspace{2.4em}\color{black}$\bullet$~\inserttocsubsubsection}
+
 
 \begin{document}
 
