@@ -710,17 +710,19 @@ average test_error: 3.7439383977570326
 LINKI:
 
 - https://link.springer.com/article/10.1007/s10409-021-01148-1
-- učbenik za NUM
-- CERN ski jumping physics
+- učbenik za NUM (Razširjen uvod v numerične metode
+Bor Plestenjak)
+- CERN ski jumping physics (https://cds.cern.ch/record/1009275/files/p269.pdf)
 - https://www.google.si/books/edition/Ski_Jumping/G2pPEQAAQBAJ?hl=en&gbpv=0
-- SSM yt video
-- NN statquest video
+- SSM yt video (https://youtu.be/g1AqUhP00Do?si=NlCog3HoVHhqQLEh)
+- NN statquest video (https://youtu.be/CqOfi41LfDw?si=zhH_LABzN-28G1j0)
 
 
 
 
 
-
+ergmann. 2025. What is a state space model? Accessed: 2025-09-24.
+https://www.ibm.com/think/topics/state-space-model
 
 
 
