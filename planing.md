@@ -725,7 +725,11 @@ ergmann. 2025. What is a state space model? Accessed: 2025-09-24.
 https://www.ibm.com/think/topics/state-space-model
 
 
+STUFF ZA NAPREJ
 
+-kote v U in povezat s sliders
+-distribucije stvari as in analiza podatkov
+-dodajanje več funkcij v model
 
 
 

@@ -21,10 +21,13 @@
 \setbeamertemplate{itemize subitem}{\color{darkred}\scriptsize$\blacktriangleright$}
 \setbeamertemplate{itemize subsubitem}{\color{darkred}\tiny$\blacktriangleright$}
 
-\setbeamertemplate{section in toc}{\color{black}$\bullet$~\inserttocsection}
-\setbeamertemplate{subsection in toc}{\hspace{1.2em}\color{black}$\bullet$~\inserttocsubsection}
-\setbeamertemplate{subsubsection in toc}{\hspace{2.4em}\color{black}$\bullet$~\inserttocsubsubsection}
+%\setbeamertemplate{section in toc}{\color{black}$\bullet$~\inserttocsection}
+%\setbeamertemplate{subsection in toc}{\hspace{1.2em}\color{black}$\bullet$~\inserttocsubsection}
+%\setbeamertemplate{subsubsection in toc}{\hspace{2.4em}\color{black}$\bullet$~\inserttocsubsubsection}
 
+\setbeamertemplate{section in toc}{\color{darkred}\large\textbullet~\inserttocsection\par}
+\setbeamertemplate{subsection in toc}{\hspace{1.5em}\color{darkred}\normalsize\textbullet~\inserttocsubsection\par}
+\setbeamertemplate{subsubsection in toc}{\hspace{3em}\color{darkred}\small\textbullet~\inserttocsubsubsection\par}
 
 \begin{document}
 
@@ -45,11 +48,22 @@
   \begin{itemize}
     \item Why this topic matters
     \item What we aim to achieve
-    \item Contributions
   \end{itemize}
 \end{frame}
 
 \section{Modeling Framework and Dataset}
+
+\subsection{State-space models and Least squares method}
+
+\begin{frame}
+  \begin{itemize}
+    \item State-space models (SSM)
+    \item Least squares method (LS)
+  \end{itemize}
+\end{frame}
+
+\subsection{Data processing}
+
 \begin{frame}{Data Description}
   \begin{itemize}
     \item Source of data
@@ -82,6 +96,8 @@ first figure I have inserted in beamer.
 
 \section{Methodology}
 
+\subsection{Different approaches and error function}
+
 \begin{frame}{Approach}
   \begin{enumerate}
     \item Step one
@@ -100,6 +116,12 @@ first figure I have inserted in beamer.
 \end{figure}
 \end{frame}
 
+\subsection{Animation app}
+\begin{frame}{App}
+  \begin{itemize}
+    \item Description of the app
+    \item Key features
+  \end{itemize}
 \section{Main Results}
 
 \begin{frame}{Main Findings}
