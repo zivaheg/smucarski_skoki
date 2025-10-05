@@ -44,18 +44,13 @@
 \headcommand {\beamer@framepages {12}{12}}
 \headcommand {\beamer@sectionpages {11}{12}}
 \headcommand {\beamer@subsectionpages {11}{12}}
-\headcommand {\sectionentry {5}{Discussion}{13}{Discussion}{0}}
+\headcommand {\sectionentry {5}{Discussion and Conclusion}{13}{Discussion and Conclusion}{0}}
 \headcommand {\slideentry {5}{0}{1}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@sectionpages {13}{13}}
-\headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\sectionentry {6}{Conclusion}{14}{Conclusion}{0}}
-\headcommand {\slideentry {6}{0}{1}{14/14}{}{0}}
+\headcommand {\slideentry {5}{0}{2}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {6}{0}{2}{15/15}{}{0}}
-\headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@partpages {1}{15}}
-\headcommand {\beamer@subsectionpages {14}{15}}
-\headcommand {\beamer@sectionpages {14}{15}}
-\headcommand {\beamer@documentpages {15}}
-\headcommand {\gdef \inserttotalframenumber {15}}
+\headcommand {\beamer@partpages {1}{14}}
+\headcommand {\beamer@subsectionpages {13}{14}}
+\headcommand {\beamer@sectionpages {13}{14}}
+\headcommand {\beamer@documentpages {14}}
+\headcommand {\gdef \inserttotalframenumber {14}}

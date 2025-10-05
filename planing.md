@@ -730,6 +730,8 @@ STUFF ZA NAPREJ
 -kote v U in povezat s sliders
 -distribucije stvari as in analiza podatkov
 -dodajanje več funkcij v model
+-nearest neighbour v ssm (da bi med files k jih mamo poiskal ene 20 najbolj podobnih skokov glede na dano situacijo in bi z njimi ocenl kakšn bo rezultat
+-preuči A matriko
 
 
 
