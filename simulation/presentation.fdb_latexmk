@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1759680857.55956 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/presentation.tex" "presentation.pdf" "presentation" 1759680860.8385 0
+["pdflatex"] 1759680905.80365 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/presentation.tex" "presentation.pdf" "presentation" 1759680908.9905 0
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1759391788 186245 75d4398793f890e4c15683253a84030e ""
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecss0600.pk" 1742080833 12340 e6545e78efb9adec82704586c8870e1e ""
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecss0800.pk" 1742080839 15956 9b84c35b02f03ab857b8552624671cd2 ""
@@ -211,19 +211,18 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "SSM1.png" 1759395091 28050 af0be546e9fa88eb538a0c01679977f6 ""
   "SSM2.png" 1759395108 31714 9e2e098f4b58661589efec36c6a0d4fb ""
-  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/presentation.tex" 1759680856 5519 9de107459a1122eeb4515cd9582843ed ""
+  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/presentation.tex" 1759680901 5288 89e988a6cb23820e5f4290d0c8891c23 ""
   "flight_simulation167.png" 1759005796 323154 d3dbcf2c532592cb460be4c5778ad111 ""
   "koti.png" 1757675885 189551 691638392e513e80a392828b87872926 ""
   "planica.jpg" 1759394882 114044 18e445be483a746929282f5033f473fd ""
   "planica_foto.jpg" 1759671347 1579733 cd68c1b0b5a455dd350dbe3b20d8b4a0 ""
-  "presentation.aux" 1759680860 5526 5ccd62e2045bd96d88bfd1ab00c9b512 "pdflatex"
-  "presentation.nav" 1759680860 3020 a2fae51cc0c9a0b9c5ad1a8a27e59e37 "pdflatex"
-  "presentation.out" 1759680860 1495 fa86e2a2f24533479a6de313f17c3c0c "pdflatex"
-  "presentation.tex" 1759680856 5519 9de107459a1122eeb4515cd9582843ed ""
-  "presentation.toc" 1759680860 581 978e9f069818c339383541c1067dedf4 "pdflatex"
+  "presentation.aux" 1759680908 5351 9f462dd68d17b60f7105d44fa23fc578 "pdflatex"
+  "presentation.nav" 1759680908 2882 796b49d3a711ada8c00643926a7c0c0d "pdflatex"
+  "presentation.out" 1759680908 1495 ba9e15ae9dcb4bc46379e7c336421b3f "pdflatex"
+  "presentation.tex" 1759680901 5288 89e988a6cb23820e5f4290d0c8891c23 ""
+  "presentation.toc" 1759680908 580 f0b0a0c5f15187494383adf7855b1a9c "pdflatex"
   "skok_app.png" 1759666442 108876 4f956b25a145f0d90296a5fa4e9e5e1f ""
   "sliders_app.png" 1759666442 56759 2a4b9c458dfe64f94d37947ff09a59d4 ""
-  "ssm_shema.png" 1759671347 132344 74a68e978e8d8435277b7282326c8b74 ""
   (generated)
   "presentation.aux"
   "presentation.log"
