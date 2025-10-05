@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  5 OCT 2025 18:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  5 OCT 2025 18:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -815,44 +815,44 @@ Package pdftex.def Info: planica.jpg  used on input line 118.
 [9
 
 ]
-<sliders_app.png, id=369, 1157.32375pt x 501.875pt>
-File: sliders_app.png Graphic file (type png)
-<use sliders_app.png>
-Package pdftex.def Info: sliders_app.png  used on input line 158.
-(pdftex.def)             Requested size: 164.30028pt x 71.24223pt.
-<skok_app.png, id=370, 701.62125pt x 753.81625pt>
-File: skok_app.png Graphic file (type png)
-<use skok_app.png>
-Package pdftex.def Info: skok_app.png  used on input line 158.
-(pdftex.def)             Requested size: 164.30028pt x 176.51422pt.
-
-Overfull \vbox (41.75713pt too high) detected at line 158
- []
-
-
 
 [10
 
- <./sliders_app.png> <./skok_app.png>]
-
-[11
-
 ]
-<flight_simulation167.png, id=447, 578.16pt x 361.35pt>
+<flight_simulation167.png, id=411, 578.16pt x 361.35pt>
 File: flight_simulation167.png Graphic file (type png)
 <use flight_simulation167.png>
-Package pdftex.def Info: flight_simulation167.png  used on input line 194.
-(pdftex.def)             Requested size: 171.14764pt x 106.96674pt.
+Package pdftex.def Info: flight_simulation167.png  used on input line 168.
+(pdftex.def)             Requested size: 273.83728pt x 171.14679pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:question}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.194 \end{frame}
+l.168 \end{frame}
                  
+
+[11
+
+ <./flight_simulation167.png>]
+<sliders_app.png, id=442, 1157.32375pt x 501.875pt>
+File: sliders_app.png Graphic file (type png)
+<use sliders_app.png>
+Package pdftex.def Info: sliders_app.png  used on input line 194.
+(pdftex.def)             Requested size: 164.30028pt x 71.24223pt.
+<skok_app.png, id=443, 701.62125pt x 753.81625pt>
+File: skok_app.png Graphic file (type png)
+<use skok_app.png>
+Package pdftex.def Info: skok_app.png  used on input line 194.
+(pdftex.def)             Requested size: 164.30028pt x 176.51422pt.
+
+Overfull \vbox (41.75713pt too high) detected at line 194
+ []
+
+
 
 [12
 
- <./flight_simulation167.png>]
+ <./sliders_app.png> <./skok_app.png>]
 
 [13
 
@@ -880,20 +880,20 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 59DF40A0B5E928007FF0C7F8731C5074;1495.
+(rerunfilecheck)             Checksum: FA86E2A2F24533479A6DE313F17C3C0C;1495.
  ) 
 Here is how much of TeX's memory you used:
  23310 strings out of 473523
  454152 string characters out of 5715598
- 822794 words of memory out of 5000000
+ 822797 words of memory out of 5000000
  46002 multiletter control sequences out of 15000+600000
  571622 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,123p,447b,619s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss2488.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1200.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1200.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on presentation.pdf (14 pages, 2531001 bytes).
+Output written on presentation.pdf (14 pages, 2532052 bytes).
 PDF statistics:
- 788 PDF objects out of 1000 (max. 8388607)
+ 791 PDF objects out of 1000 (max. 8388607)
  41 named destinations out of 1000 (max. 500000)
  238 words of extra memory for PDF output out of 10000 (max. 10000000)
 

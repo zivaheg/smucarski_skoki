@@ -440,6 +440,13 @@ INPUT .\planica.jpg
 INPUT .\planica.jpg
 INPUT .\planica.jpg
 INPUT .\planica.jpg
+INPUT .\flight_simulation167.png
+INPUT .\flight_simulation167.png
+INPUT .\flight_simulation167.png
+INPUT .\flight_simulation167.png
+INPUT .\flight_simulation167.png
+INPUT .\flight_simulation167.png
+INPUT .\flight_simulation167.png
 INPUT .\sliders_app.png
 INPUT .\sliders_app.png
 INPUT .\sliders_app.png
@@ -454,13 +461,6 @@ INPUT .\skok_app.png
 INPUT .\skok_app.png
 INPUT .\skok_app.png
 INPUT .\skok_app.png
-INPUT .\flight_simulation167.png
-INPUT .\flight_simulation167.png
-INPUT .\flight_simulation167.png
-INPUT .\flight_simulation167.png
-INPUT .\flight_simulation167.png
-INPUT .\flight_simulation167.png
-INPUT .\flight_simulation167.png
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss2488.tfm
 OUTPUT presentation.nav
 OUTPUT presentation.toc
