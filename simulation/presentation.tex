@@ -115,47 +115,39 @@
 \subsection{Different approaches and error function}
 
 \begin{frame}{Different approaches and error function}
+  Different approaches:
   \begin{itemize}
     \item pure SSM
     \item SSM + PINN (Physics Informed Neural Networks)
   \end{itemize}
+  Error function:
+  \begin{itemize}
+    \item Error function
+    \item leave-one-out cross-validation
+  \end{itemize}
 \end{frame}
 
-
-%\begin{frame}{Application}
-%  \begin{itemize}
-%    \item Description of the application
-%    \item Observing measured and predicted jumps
-%  \end{itemize}
-%  \begin{figure}
-%  \centering
-%    \includegraphics[width=0.5\textwidth]{sliders_app.png}
-%    \caption{Adjusted sliders in the app}
-%    \label{fig:sliders}
-%\end{figure}
-%\begin{figure}
-%\centering
-%    \includegraphics[width=0.5\textwidth]{skok_app.png}
-%    \caption{Predicted ski jump according to the sliders}
-%    \label{fig:skok-app}
-%\end{figure}
-%\end{frame}
 
 \section{Main Results}
 
-\begin{frame}{Main Findings}
-  \begin{block}{Key Result}
-    Your important result goes here.
-  \end{block}
-\end{frame}
+%\begin{frame}{Main Findings}
+%  \begin{block}{Key Result}
+%    Your important result goes here.
+%  \end{block}
+%\end{frame}
 
 \begin{frame}{Flight simulation example}
-\begin{figure}
-\centering
-    \includegraphics[width=0.8\textwidth]{flight_simulation167.png}
-    \caption{Graph with a simulated and actual flight trajectory.}
-    \label{fig:question}
-\end{figure}
+  Results:
+  \begin{itemize}
+    \item train error 1.76 m 
+    \item test error 1.84 m.
+  \end{itemize}
+  \begin{figure}
+    \centering
+      \includegraphics[width=0.6\textwidth]{flight_simulation167.png}
+      \caption{Graph with a simulated and actual flight trajectory.}
+      \label{fig:graph}
+  \end{figure}
 \end{frame}
 
 \subsection{Animation app}
@@ -183,6 +175,25 @@
       \end{figure}
   \end{columns}
 \end{frame}
+
+%\begin{frame}{Application}
+%  \begin{itemize}
+%    \item Description of the application
+%    \item Observing measured and predicted jumps
+%  \end{itemize}
+%  \begin{figure}
+%  \centering
+%    \includegraphics[width=0.5\textwidth]{sliders_app.png}
+%    \caption{Adjusted sliders in the app}
+%    \label{fig:sliders}
+%\end{figure}
+%\begin{figure}
+%\centering
+%    \includegraphics[width=0.5\textwidth]{skok_app.png}
+%    \caption{Predicted ski jump according to the sliders}
+%    \label{fig:skok-app}
+%\end{figure}
+%\end{frame}
 
 
 \section{Discussion and Conclusion}
