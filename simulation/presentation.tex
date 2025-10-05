@@ -12,7 +12,7 @@
 \title[Ski jump predictions]{Predicting Ski Jumps using State-Space Model}
 %\subtitle{Optional Subtitle}
 \author{Živa Hegler and Neca Camlek}
-\institute{JSI}
+\institute{JSI (Jožef Stefan Institute)}
 \date{\today}
 
 % Change itemize bullets to red triangles
@@ -82,17 +82,14 @@
 
 \begin{frame}{Data Description}
   \begin{itemize}
+    \item Cleaning the data
     \item Data structure
     \item Angles
     \item coordinate system on a main ski jumping hill in Planica
   \end{itemize}
-\end{frame}
-
-\begin{frame}{Angles}
-  %Observe Figure \ref{fig:question}: it is the
   \begin{figure}
   \centering
-      \includegraphics[width=0.6\linewidth]{koti.png}
+      \includegraphics[width=0.45\linewidth]{koti.png}
       \caption{Representation of different measured angles.}
       %\label{fig:question}
   \end{figure}
@@ -109,7 +106,6 @@
 \end{frame}
 
 
-
 \section{Methodology}
 
 \subsection{Different approaches and error function}
@@ -124,6 +120,11 @@
   \begin{itemize}
     \item Error function
     \item leave-one-out cross-validation
+  \end{itemize}
+  different add-ons to the model:
+  \begin{itemize}
+    \item all 12 wind sensors or only 3 wind zones
+    \item squared wind values
   \end{itemize}
 \end{frame}
 

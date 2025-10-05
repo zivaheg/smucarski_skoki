@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  5 OCT 2025 18:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  5 OCT 2025 20:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -728,16 +728,45 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (presentation.nav)
+Overfull \hbox (55.08765pt too wide) in paragraph at lines 35--35
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (55.08765pt too wide) in paragraph at lines 40--40
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
+
+
+
+Overfull \hbox (55.08765pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
 
 [1
 
-{C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (presentation.toc)
+{C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Overfull \hbox (55.08765pt too wide) in paragraph at lines 45--45
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
+(presentation.toc)
+
+
+Overfull \hbox (55.08765pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
 
 [2
 
 ]
+Overfull \hbox (55.08765pt too wide) in paragraph at lines 61--61
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
 LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
- (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
@@ -755,9 +784,18 @@ Package pdftex.def Info: planica_foto.jpg  used on input line 61.
 (pdftex.def)             Requested size: 171.14764pt x 128.36009pt.
 
 
+
+Overfull \hbox (55.08765pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
 [3
 
  <./planica_foto.jpg>]
+Overfull \hbox (55.08765pt too wide) in paragraph at lines 79--79
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
 <SSM1.png, id=174, 674.52pt x 337.26pt>
 File: SSM1.png Graphic file (type png)
 <use SSM1.png>
@@ -770,72 +808,139 @@ Package pdftex.def Info: SSM2.png  used on input line 79.
 (pdftex.def)             Requested size: 171.14764pt x 85.57045pt.
 
 
+
+Overfull \hbox (55.08765pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
 [4
 
  <./SSM1.png> <./SSM2.png>]
+Overfull \hbox (55.08765pt too wide) in paragraph at lines 96--96
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
+<koti.png, id=211, 971.63pt x 760.8425pt>
+File: koti.png Graphic file (type png)
+<use koti.png>
+Package pdftex.def Info: koti.png  used on input line 96.
+(pdftex.def)             Requested size: 154.03183pt x 120.61116pt.
+
+
+
+Overfull \hbox (55.08765pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
 
 [5
 
-]
-<koti.png, id=242, 971.63pt x 760.8425pt>
-File: koti.png Graphic file (type png)
-<use koti.png>
-Package pdftex.def Info: koti.png  used on input line 99.
-(pdftex.def)             Requested size: 205.37926pt x 160.81488pt.
-
-
-[6
-
  <./koti.png>]
-<planica.jpg, id=274, 1448.41125pt x 932.73468pt>
+Overfull \hbox (55.08765pt too wide) in paragraph at lines 106--106
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
+<planica.jpg, id=243, 1448.41125pt x 932.73468pt>
 File: planica.jpg Graphic file (type jpg)
 <use planica.jpg>
-Package pdftex.def Info: planica.jpg  used on input line 109.
+Package pdftex.def Info: planica.jpg  used on input line 106.
 (pdftex.def)             Requested size: 239.60567pt x 154.29309pt.
 
 
-[7
+
+Overfull \hbox (55.08765pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
+[6
 
  <./planica.jpg>]
-
-[8
-
-]
-<flight_simulation167.png, id=335, 578.16pt x 361.35pt>
-File: flight_simulation167.png Graphic file (type png)
-<use flight_simulation167.png>
-Package pdftex.def Info: flight_simulation167.png  used on input line 151.
-(pdftex.def)             Requested size: 205.37926pt x 128.36009pt.
-
-
-[9
-
- <./flight_simulation167.png>]
-<sliders_app.png, id=367, 1157.32375pt x 501.875pt>
-File: sliders_app.png Graphic file (type png)
-<use sliders_app.png>
-Package pdftex.def Info: sliders_app.png  used on input line 177.
-(pdftex.def)             Requested size: 164.30028pt x 71.24223pt.
-<skok_app.png, id=368, 701.62125pt x 753.81625pt>
-File: skok_app.png Graphic file (type png)
-<use skok_app.png>
-Package pdftex.def Info: skok_app.png  used on input line 177.
-(pdftex.def)             Requested size: 164.30028pt x 176.51422pt.
-
-Overfull \vbox (41.75713pt too high) detected at line 177
+Overfull \hbox (55.08765pt too wide) in paragraph at lines 129--129
+ [][]  \T1/cmss/m/n/6 ([])  
  []
 
 
 
-[10
 
- <./sliders_app.png> <./skok_app.png>]
+Overfull \hbox (55.08765pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
 
-[11
+[7
 
 ]
+Overfull \hbox (55.08765pt too wide) in paragraph at lines 152--152
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
 
-[12
+<flight_simulation167.png, id=304, 578.16pt x 361.35pt>
+File: flight_simulation167.png Graphic file (type png)
+<use flight_simulation167.png>
+Package pdftex.def Info: flight_simulation167.png  used on input line 152.
+(pdftex.def)             Requested size: 205.37926pt x 128.36009pt.
+
+
+
+Overfull \hbox (55.08765pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
+[8
+
+ <./flight_simulation167.png>]
+Overfull \hbox (55.08765pt too wide) in paragraph at lines 178--178
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
+<sliders_app.png, id=336, 1157.32375pt x 501.875pt>
+File: sliders_app.png Graphic file (type png)
+<use sliders_app.png>
+Package pdftex.def Info: sliders_app.png  used on input line 178.
+(pdftex.def)             Requested size: 164.30028pt x 71.24223pt.
+<skok_app.png, id=337, 701.62125pt x 753.81625pt>
+File: skok_app.png Graphic file (type png)
+<use skok_app.png>
+Package pdftex.def Info: skok_app.png  used on input line 178.
+(pdftex.def)             Requested size: 164.30028pt x 176.51422pt.
+
+Overfull \vbox (41.75713pt too high) detected at line 178
+ []
+
+
+
+
+Overfull \hbox (55.08765pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
+[9
+
+ <./sliders_app.png> <./skok_app.png>]
+Overfull \hbox (55.08765pt too wide) in paragraph at lines 207--207
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
+
+
+
+Overfull \hbox (55.08765pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
+[10
+
+]
+Overfull \hbox (55.08765pt too wide) in paragraph at lines 214--214
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
+
+
+
+Overfull \hbox (55.08765pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/m/n/6 ([])  
+ []
+
+[11
 
 ]
 \tf@nav=\write6
@@ -853,20 +958,20 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 91C3B627D063BE62BC1782566467ACA2;1495.
+(rerunfilecheck)             Checksum: 6A9362BDC5F427CB31E0BB0E9535BA18;1494.
  ) 
 Here is how much of TeX's memory you used:
- 23262 strings out of 473523
- 452944 string characters out of 5715598
- 822823 words of memory out of 5000000
- 45957 multiletter control sequences out of 15000+600000
+ 23258 strings out of 473523
+ 452907 string characters out of 5715598
+ 822899 words of memory out of 5000000
+ 45955 multiletter control sequences out of 15000+600000
  571622 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,123p,447b,619s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss2488.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1200.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1200.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on presentation.pdf (12 pages, 2390104 bytes).
+Output written on presentation.pdf (11 pages, 2388876 bytes).
 PDF statistics:
- 715 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 500000)
+ 696 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
  191 words of extra memory for PDF output out of 10000 (max. 10000000)
 
