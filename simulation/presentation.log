@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  5 OCT 2025 14:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  5 OCT 2025 15:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -740,44 +740,56 @@ Dictionary: translator-theorem-dictionary, Language: English
 [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 55.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 61.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
+<planica_foto.jpg, id=142, 803.0pt x 602.25pt>
+File: planica_foto.jpg Graphic file (type jpg)
+<use planica_foto.jpg>
+Package pdftex.def Info: planica_foto.jpg  used on input line 61.
+(pdftex.def)             Requested size: 171.14764pt x 128.36009pt.
+
 
 [3
 
-]
+ <./planica_foto.jpg>]
+<ssm_shema.png, id=174, 1173.38374pt x 421.575pt>
+File: ssm_shema.png Graphic file (type png)
+<use ssm_shema.png>
+Package pdftex.def Info: ssm_shema.png  used on input line 78.
+(pdftex.def)             Requested size: 171.14764pt x 61.49025pt.
+
 
 [4
 
-]
+ <./ssm_shema.png>]
 
 [5
 
 ]
-<koti.png, id=234, 971.63pt x 760.8425pt>
+<koti.png, id=239, 971.63pt x 760.8425pt>
 File: koti.png Graphic file (type png)
 <use koti.png>
-Package pdftex.def Info: koti.png  used on input line 86.
+Package pdftex.def Info: koti.png  used on input line 98.
 (pdftex.def)             Requested size: 205.37926pt x 160.81488pt.
 
 
 [6
 
  <./koti.png>]
-<planica.jpg, id=268, 1448.41125pt x 932.73468pt>
+<planica.jpg, id=271, 1448.41125pt x 932.73468pt>
 File: planica.jpg Graphic file (type jpg)
 <use planica.jpg>
-Package pdftex.def Info: planica.jpg  used on input line 96.
+Package pdftex.def Info: planica.jpg  used on input line 108.
 (pdftex.def)             Requested size: 239.60567pt x 154.29309pt.
 
 
@@ -788,39 +800,54 @@ Package pdftex.def Info: planica.jpg  used on input line 96.
 [8
 
 ]
-<SSM1.png, id=333, 674.52pt x 337.26pt>
+<SSM1.png, id=336, 674.52pt x 337.26pt>
 File: SSM1.png Graphic file (type png)
 <use SSM1.png>
-Package pdftex.def Info: SSM1.png  used on input line 120.
+Package pdftex.def Info: SSM1.png  used on input line 132.
 (pdftex.def)             Requested size: 171.14764pt x 85.57045pt.
-<SSM2.png, id=334, 674.52pt x 337.26pt>
+<SSM2.png, id=337, 674.52pt x 337.26pt>
 File: SSM2.png Graphic file (type png)
 <use SSM2.png>
-Package pdftex.def Info: SSM2.png  used on input line 120.
+Package pdftex.def Info: SSM2.png  used on input line 132.
 (pdftex.def)             Requested size: 171.14764pt x 85.57045pt.
 
 
 [9
 
  <./SSM1.png> <./SSM2.png>]
+<sliders_app.png, id=371, 1157.32375pt x 501.875pt>
+File: sliders_app.png Graphic file (type png)
+<use sliders_app.png>
+Package pdftex.def Info: sliders_app.png  used on input line 152.
+(pdftex.def)             Requested size: 171.14764pt x 74.21353pt.
+<skok_app.png, id=372, 701.62125pt x 753.81625pt>
+File: skok_app.png Graphic file (type png)
+<use skok_app.png>
+Package pdftex.def Info: skok_app.png  used on input line 152.
+(pdftex.def)             Requested size: 171.14764pt x 183.87569pt.
+
+Overfull \vbox (146.81538pt too high) detected at line 152
+ []
+
+
 
 [10
 
-]
+ <./sliders_app.png> <./skok_app.png>]
 
 [11
 
 ]
-<flight_simulation167.png, id=440, 578.16pt x 361.35pt>
+<flight_simulation167.png, id=449, 578.16pt x 361.35pt>
 File: flight_simulation167.png Graphic file (type png)
 <use flight_simulation167.png>
-Package pdftex.def Info: flight_simulation167.png  used on input line 145.
+Package pdftex.def Info: flight_simulation167.png  used on input line 169.
 (pdftex.def)             Requested size: 171.14764pt x 106.96674pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:question}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.145 \end{frame}
+l.169 \end{frame}
                  
 
 [12
@@ -856,17 +883,17 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: 8B678B44B7BA19EC887DB739BF5FF127;1495.
  ) 
 Here is how much of TeX's memory you used:
- 23311 strings out of 473523
- 454321 string characters out of 5715598
- 822715 words of memory out of 5000000
- 46005 multiletter control sequences out of 15000+600000
+ 23343 strings out of 473523
+ 454955 string characters out of 5715598
+ 822794 words of memory out of 5000000
+ 46035 multiletter control sequences out of 15000+600000
  571622 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,123p,447b,640s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss2488.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1200.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1200.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on presentation.pdf (14 pages, 698904 bytes).
+Output written on presentation.pdf (14 pages, 2530880 bytes).
 PDF statistics:
- 775 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
- 224 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 786 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
+ 244 words of extra memory for PDF output out of 10000 (max. 10000000)
 
