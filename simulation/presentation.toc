@@ -1,0 +1,11 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Modeling Framework and Dataset}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{State-space models and Least squares method}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Data processing}{5}{0}{2}
+\beamer@sectionintoc {3}{Methodology}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{Different approaches and error function}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{Animation app}{10}{0}{3}
+\beamer@sectionintoc {4}{Main Results}{11}{0}{4}
+\beamer@sectionintoc {5}{Discussion}{13}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{14}{0}{6}

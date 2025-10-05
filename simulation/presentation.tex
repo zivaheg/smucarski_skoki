@@ -16,7 +16,6 @@
 \date{\today}
 
 % Change itemize bullets to red triangles
-%\definecolor{darkred}{rgb}{0.8,0,0}
 \setbeamertemplate{itemize item}{\color{darkred}\small$\blacktriangleright$}
 \setbeamertemplate{itemize subitem}{\color{darkred}\scriptsize$\blacktriangleright$}
 \setbeamertemplate{itemize subsubitem}{\color{darkred}\tiny$\blacktriangleright$}
@@ -25,9 +24,21 @@
 %\setbeamertemplate{subsection in toc}{\hspace{1.2em}\color{black}$\bullet$~\inserttocsubsection}
 %\setbeamertemplate{subsubsection in toc}{\hspace{2.4em}\color{black}$\bullet$~\inserttocsubsubsection}
 
-\setbeamertemplate{section in toc}{\color{darkred}\large\textbullet~\inserttocsection\par}
-\setbeamertemplate{subsection in toc}{\hspace{1.5em}\color{darkred}\normalsize\textbullet~\inserttocsubsection\par}
-\setbeamertemplate{subsubsection in toc}{\hspace{3em}\color{darkred}\small\textbullet~\inserttocsubsubsection\par}
+%\setbeamertemplate{section in toc}{\color{darkred}\large\textbullet~\inserttocsection\par}
+%\setbeamertemplate{subsection in toc}{\hspace{1.5em}\color{darkred}\normalsize\textbullet~\inserttocsubsection\par}
+%\setbeamertemplate{subsubsection in toc}{\hspace{3em}\color{darkred}\small\textbullet~\inserttocsubsubsection\par}
+
+\usepackage{xcolor}
+\definecolor{darkred}{rgb}{0.8,0,0}
+
+\setbeamertemplate{section in toc}{%
+  \leavevmode\color{darkred}\large\textbullet\ \inserttocsection\par}
+\setbeamertemplate{subsection in toc}{%
+  \hspace*{1.5em}\color{darkred}\normalsize\textbullet\ \inserttocsubsection\par}
+\setbeamertemplate{subsubsection in toc}{%
+  \hspace*{3em}\color{darkred}\small\textbullet\ \inserttocsubsubsection\par}
+
+
 
 \begin{document}
 
@@ -46,8 +57,9 @@
 
 \begin{frame}{Motivation}
   \begin{itemize}
-    \item Why this topic matters
-    \item What we aim to achieve
+    \item Planning of ski jump enlargement and anticipating risky conditions
+    \item Goal: Predict ski jumps based on external factors
+    \item Contributions
   \end{itemize}
 \end{frame}
 
@@ -73,25 +85,25 @@
 \end{frame}
 
 \begin{frame}{Images in beamer}
-%Observe Figure \ref{fig:question}: it is the
-first figure I have inserted in beamer.
-\begin{figure}
-\centering
-    \includegraphics[width=0.5\linewidth]{planica.jpg}
-    \caption{My first figure in beamer.}
-    %\label{fig:question}
-\end{figure}
+  %Observe Figure \ref{fig:question}: it is the
+  first figure I have inserted in beamer.
+  \begin{figure}
+  \centering
+      \includegraphics[width=0.5\linewidth]{planica.jpg}
+      \caption{My first figure in beamer.}
+      %\label{fig:question}
+  \end{figure}
 \end{frame}
 
 \begin{frame}{Images in beamer}
-%Observe Figure \ref{fig:question}: it is the
-first figure I have inserted in beamer.
-\begin{figure}
-\centering
-    \includegraphics[width=0.5\linewidth]{koti.png}
-    \caption{My first figure in beamer.}
-    %\label{fig:question}
-\end{figure}
+  %Observe Figure \ref{fig:question}: it is the
+  first figure I have inserted in beamer.
+  \begin{figure}
+  \centering
+      \includegraphics[width=0.5\linewidth]{koti.png}
+      \caption{My first figure in beamer.}
+      %\label{fig:question}
+  \end{figure}
 \end{frame}
 
 \section{Methodology}
@@ -107,13 +119,13 @@ first figure I have inserted in beamer.
 \end{frame}
 
 \begin{frame}{Customized caption}
-\begin{figure}
-\centering
-    \includegraphics[width=0.5\textwidth]{SSM1.png}
-    \includegraphics[width=0.5\textwidth]{SSM2.png}
-    \caption{My first figure in beamer.}
-    \label{fig:question}
-\end{figure}
+  \begin{figure}
+  \centering
+      \includegraphics[width=0.5\textwidth]{SSM1.png}
+      \includegraphics[width=0.5\textwidth]{SSM2.png}
+      \caption{My first figure in beamer.}
+      \label{fig:question}
+  \end{figure}
 \end{frame}
 
 \subsection{Animation app}
@@ -122,6 +134,8 @@ first figure I have inserted in beamer.
     \item Description of the app
     \item Key features
   \end{itemize}
+\end{frame}
+
 \section{Main Results}
 
 \begin{frame}{Main Findings}
