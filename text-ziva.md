@@ -6,11 +6,11 @@
 
 
 
-For this part, I’ll walk you through how we prepared the data and how the model works.
+For this part, I’ll talk about how we prepared the data and how the model works.
 
 
 
-We started with around 220 CSV files, but after removing incomplete or corrupted jumps, we ended up with about 210 clean jumps for modeling. Each file represents one ski jump from the main flying hill in Planica and contains measurements of position in XYZ coordinares, time, length (which is measured in a straight line from the take-off point to the ski-jumpers location), height above ground 3 speed components, a set of ski angles and a compact “wind” column that actually crams multiple wind attributes together. **(change slide to slika)** A few things to note, on how the coordinate system was placed. The take-off point is at the centre at (0, 0, 0). X coordinate runs along side the hill, Y across (so it measures width)and Z measures height. **(change slide to slika)** The angles measured are opening, and then for each ski a yaw, stalling and roll angle. And the compact wind column stores data for 12 wind sensors placed along the Planica jumping hill each measuring 5 features like wind speed, the strength of cross wind, turbulence,... For analysis we grouped them into three zones.
+We started with around 220 CSV files, but after removing incomplete or corrupted jumps, we ended up with about 210 clean jumps for modeling. Each file represents one ski jump from the main flying hill in Planica and contains measurements of position in XYZ coordinares, time, length (which is measured in a straight line from the take-off point to the ski-jumpers location), height above ground, 3 speed components, a set of ski angles and a compact “wind” column that actually crams multiple wind attributes together. **(change slide to slika)** A few things to note, on how the coordinate system was placed. The take-off point is at the centre at (0, 0, 0). X coordinate runs along side the hill, Y across (so it measures width)and Z measures height. **(change slide to slika)** The angles measured are opening, and then for each ski a yaw, stalling and roll angle. And the compact wind column stores data for 12 wind sensors placed along the Planica jumping hill each measuring 5 features like wind speed, the strength of cross wind, turbulence,... For analysis we grouped them into three zones.
 
 
 
@@ -20,15 +20,17 @@ We started with around 220 CSV files, but after removing incomplete or corrupted
 
 
 
-At the start we tried a few different approaches. We used a pure SSM model and also a SSM model we tried enhancing with physics informed neural networks, but it turned out the second and more complex option performed worse, since all the flight trajectories were sent out of bounds of the Planica ski jumping hill. But to be able to have a more accurate comparison we needed a way to calculate en error. To compare simulated vs. real jumps, we couldn’t rely on timestamps, because sampling and lengths differ.
+At the start we tried a few different approaches. We used a pure SSM model and also a SSM model we tried enhancing with physics informed neural networks, but it turned out the second and more complex option performed worse, since all the flight trajectories were sent out of bounds of the Planica ski jumping hill. But to be able to have a more accurate comparison we needed a way to calculate en error. 
 
-So we interpolated both trajectories and compared the distances for each x value, computed the pointwise distance, and if one jump ended earlier, we penalized the length mismatch by adding the tail distance. That way, models are graded both on path shape and final distance.
+To compare simulated vs. real jumps, we couldn’t rely on timestamps, because jumps were measured at different time stamps.
+
+So we interpolated both trajectories and compared the distances in each point, and if one jump ended earlier, we penalized the length mismatch by adding the tail distance. That way, models are graded both on path shape and final distance.
 
 For final estimation, we used leave-one-out cross-validation: train on all but one, predict the held-out jump, repeat for every jump.
 
 
 
-We then compared feeding all 12 wind sensors directly vs. feeding zone-averaged wind. Surprisingly zone-averaged had the best result. We also tried to capture wind nonlinearities by adding squared wind terms. Which also improved the results. Currently the best version uses winds averaged by zone and with added square wind values. The error comes up to
+We then compared feeding all 12 wind sensors directly vs. feeding zone-averaged wind. Surprisingly zone-averaged had the best result. We also tried to capture wind nonlinearities by adding squared wind values. Which also improved the results. Currently the best version uses winds averaged by zone and with added square wind values. The error comes up to
 
 train error 1.76 m and test error 1.84 m.
 
