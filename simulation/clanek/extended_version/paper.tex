@@ -158,11 +158,11 @@ contains 17 columns (\texttt{Position}, \texttt{Height above ground},
 \texttt{Roll Angle Left}, \texttt{Roll Angle Right}, \texttt{Yaw Angle Left},
 \texttt{Yaw Angle Right}, \texttt{Speed hor.}, \texttt{Speed vert.},
 \texttt{Speed resulting}, \texttt{WindTime|WindName|WindSpeed|Wind...}) and the
-number of rows corresponding to the length of the jump. Data are recorded for
+number of rows corresponding to the length of the jump. Data is recorded for
 every meter of air distance from the take-off point.
 
 The data required some pre-processing before it could be used for training the
-model. The column \texttt{WindTime|WindName|WindSpeed|...} combined multiple
+model. The column \texttt{WindTime|WindName|Wind...} combined multiple
 attributes separated by \texttt{|}. Data from 12 sensors, each measuring six
 wind characteristics, were expanded into $12 \times 6 = 72$ columns, one per
 sensor--feature pair (\texttt{sensor\_feature}).
@@ -254,24 +254,31 @@ Section~4.1.
 \subsection{Ski jump prediction model}
 In order to fit our data to the SSM, we stored the data in each file in three
 vectors. The main vector contains states or state variables of the system,
-which in our case are the X, Y, and Z coordinates, jumper velocities, and all
-angles (opening, stalling, roll, and yaw) \cite{mueller2006}.
+which in our case are the X, Y, and Z coordinates, jumper velocities for each 
+of the directions, resulting speed and all angles (opening, stalling, roll, and 
+yaw) \cite{mueller2006}.
 
 The observation vector contains the measured outputs of the system, which in
 our case are the X, Y, and Z coordinates and height above ground. The controls
 contain the external inputs to the system, which in our case are the wind
-measurements from all the sensors that are averaged over each zone and feature
-(speed, tangent, cross and turbulence).
+measurements from all the sensors for each of the features that are then averaged 
+over each zone (speed, tangent, cross and turbulence) combined with all the angles
+(resulting speed, opening, and for both left and right ski the roll, waw and stall angles).
 
 We then used ridge regression to estimate the matrices $A$, $B$, $C$ and $D$ of
 the SSM, as shown in Figure~\ref{fig:ssm_schema}, where we minimized the
 computed values from the current and previous values and the next time-stamped
-values. Thus, matrix $A$ computes the next state from the current state, $B$
+values. The next value is simulated through matrix multiplication with state, 
+controls and observations vectors. For our simulation we specifically focus on 
+$A$ and $B$ matrices, since we want to predict the next state from the current
+state and the current control. The $C$ and $D$ matrices are used to predict the
+next observation, but since we are interested in the trajectory, we don't use them
+for simulation.Thus, matrix $A$ computes the next state from the current state, $B$
 computes the next state from the current control, $C$ computes the next
 observation from the current state, and $D$ computes the next observation from
-the current control. We then use recursion to predict the next state from the
-prediction of the previous state and the current control, to get the full
-simulated jump. This allows us to predict the jump trajectory based on the
+the current control. We then combine the predictions for next state and the next 
+control to get the next simulated value, which allows us to then use recursion to 
+get the full simulated jump. This allows us to predict the jump trajectory based on the
 environmental conditions and the starting state of the jumper \cite{serranno2025}.
 
 \begin{figure}
@@ -280,6 +287,16 @@ environmental conditions and the starting state of the jumper \cite{serranno2025
   \caption{Schema of SSM matrices \cite{bergmann2025}}
   \label{fig:ssm_schema}
 \end{figure}
+
+\subsection{Average file starter}
+Since the goal is to have an interactive application where users can adjust
+the wind conditions and observe the impact on the jump, we needed to find a way
+to start the simulation with the inital state of the jumper, that wouldn't be 
+too specific to a single jump. So we created an average file, where the values
+for each column are averaged over all the jumps in the dataset. Since the flights
+are of different lengths and measured at different time stamps, we first had to
+interpolate the jumps to get the average number of time stemps and the average 
+length of the jump. 
 
 \subsection{Ski jump animation app}
 To make our results accessible beyond the research setting, we developed an
