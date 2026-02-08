@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex paper"] 1770557374.61338 "paper.aux" "paper.bbl" "paper" 1770557378.97069 0
+["bibtex paper"] 1770559733.06867 "paper.aux" "paper.bbl" "paper" 1770559736.60309 0
   "./paper.bib" 1770546388 4227 65ef51602e77df13d4bd52038304c846 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/unsrt.bst" 1291864736 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "paper.aux" 1770557377 5397 3bf5c17e9c9eaff11df911cc0e20bbb7 "pdflatex"
+  "paper.aux" 1770559735 5397 b0c749414709b34da444ade71356db14 "pdflatex"
   (generated)
   "paper.bbl"
   "paper.blg"
   (rewritten before read)
-["pdflatex"] 1770557375.18113 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/extended_version/paper.tex" "paper.pdf" "paper" 1770557378.97199 0
+["pdflatex"] 1770559733.42061 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/extended_version/paper.tex" "paper.pdf" "paper" 1770559736.60434 0
   "2SSM_flight_simulation167-small.png" 1756469689 400275 036149028ed6ce70e81d2ad7157e31c8 ""
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1762524085 188945 f90228b2c2ed7e43d9b39352231d9eef ""
   "C:/Users/vsi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1741687351 12035121 729d0b8bc385de9d6b208fe98578324f ""
@@ -196,13 +196,13 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
-  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/extended_version/paper.tex" 1770557367 23385 fbb1796b7b8f266fc626ce9011ef3d98 ""
+  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/extended_version/paper.tex" 1770559725 23911 694a7a448f835518fed68efc2bf9611c ""
   "koncen_graf.jpg" 1757666975 227736 6a1167bb62a01405ad1f7e4c4ff04c1d ""
   "koti.png" 1757675885 189551 691638392e513e80a392828b87872926 ""
-  "paper.aux" 1770557377 5397 3bf5c17e9c9eaff11df911cc0e20bbb7 "pdflatex"
-  "paper.bbl" 1770557375 2628 95bb74d927b372fe07a665fddc475b36 "bibtex paper"
-  "paper.out" 1770557377 3197 b22f5dd7a33078348cfbe000d31e90cf "pdflatex"
-  "paper.tex" 1770557367 23385 fbb1796b7b8f266fc626ce9011ef3d98 ""
+  "paper.aux" 1770559735 5397 b0c749414709b34da444ade71356db14 "pdflatex"
+  "paper.bbl" 1770559733 2628 95bb74d927b372fe07a665fddc475b36 "bibtex paper"
+  "paper.out" 1770559735 3197 b22f5dd7a33078348cfbe000d31e90cf "pdflatex"
+  "paper.tex" 1770559725 23911 694a7a448f835518fed68efc2bf9611c ""
   "sample-franklin.png" 1756452354 95030 b5b117690b64777baa16f25a8c628f74 ""
   (generated)
   "paper.aux"

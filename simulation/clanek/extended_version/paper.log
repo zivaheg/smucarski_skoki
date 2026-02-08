@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  8 FEB 2026 14:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  8 FEB 2026 15:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -989,20 +989,18 @@ Underfull \vbox (badness 5533) has occurred while \output is active []
 
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 318.
+(Font)              scaled to size 6.6pt on input line 327.
 
 
 [3.3 <./sample-franklin.png>]
-<2SSM_flight_simulation167-small.png, id=154, 377.4903pt x 319.9152pt>
+
+<2SSM_flight_simulation167-small.png, id=153, 377.4903pt x 319.9152pt>
 File: 2SSM_flight_simulation167-small.png Graphic file (type png)
 <use 2SSM_flight_simulation167-small.png>
-Package pdftex.def Info: 2SSM_flight_simulation167-small.png  used on input line 376.
+Package pdftex.def Info: 2SSM_flight_simulation167-small.png  used on input line 385.
 (pdftex.def)             Requested size: 241.14749pt x 204.36914pt.
 
-
-Class acmart Warning: A possible image without description on input line 379.
-
-
+Class acmart Warning: A possible image without description on input line 388.
 
 
 
@@ -1031,8 +1029,11 @@ Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
 
 
+
+Overfull \vbox (1.924pt too high) has occurred while \output is active []
+
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.8pt on input line 445.
+(Font)              scaled to size 8.8pt on input line 454.
 
 Overfull \hbox (4.592pt too wide) has occurred while \output is active
  [][][][] 
@@ -1058,13 +1059,13 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 Here is how much of TeX's memory you used:
  21255 strings out of 473523
  347059 string characters out of 5715598
- 825742 words of memory out of 5000000
+ 827013 words of memory out of 5000000
  43586 multiletter control sequences out of 15000+600000
  700339 words of font info for 325 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  90i,12n,131p,1086b,638s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb>
-Output written on paper.pdf (5 pages, 1157663 bytes).
+Output written on paper.pdf (5 pages, 1158167 bytes).
 PDF statistics:
  233 PDF objects out of 1000 (max. 8388607)
  48 named destinations out of 1000 (max. 500000)

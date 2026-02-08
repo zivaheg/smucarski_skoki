@@ -298,6 +298,15 @@ are of different lengths and measured at different time stamps, we first had to
 interpolate the jumps to get the average number of time stemps and the average 
 length of the jump. 
 
+We then used the first row of the average file as the starting point for the 
+simulation, which contains the average values for all the features at the take-off
+point. This allows the simulation to start with realistic initial conditions that
+are representative of the average jump in the dataset. 
+
+We then calculated the matricies $A$ and $B$ using the same proces as before on
+all of the jumps in the dataset. This allowed us to connect them with the app,
+so the user gets a realistic jump trajectory based on his inputs.
+
 \subsection{Ski jump animation app}
 To make our results accessible beyond the research setting, we developed an
 interactive web application using Shiny for Python \cite{posit2025}. The
