@@ -1,0 +1,83 @@
+\begin{thebibliography}{10}
+
+\bibitem{warehouse2025}
+{3DWarehouse via 3dmdb.com}.
+\newblock ``ski jumping planica'' [3d model].
+\newblock Free model; accessed: 2025-08-26, 2025.
+
+\bibitem{aoki1990}
+Masanao Aoki.
+\newblock {\em State Space Modeling of Time Series}.
+\newblock Universitext. Springer Berlin Heidelberg, Berlin, Heidelberg, 2nd,
+  revised and enlarged edition, 1990.
+
+\bibitem{bergmann2025}
+Dave Bergmann.
+\newblock What is a state space model?
+\newblock Accessed: 2025-09-24, 2025.
+
+\bibitem{cai2021}
+Shengze Cai, Zhiping Mao, Zhicheng Wang, Minglang Yin, and George~E.
+  Karniadakis.
+\newblock Physics-informed neural networks (pinns) for fluid mechanics: a
+  review.
+\newblock {\em Acta Mechanica Sinica}, 37(12):1727--1738, 2021.
+
+\bibitem{mueller2008}
+Wolfram M{\"u}ller.
+\newblock Performance factors in ski jumping.
+\newblock In Helge N{\o}rstrud, editor, {\em Sport Aerodynamics}, volume 506 of
+  {\em CISM International Centre for Mechanical Sciences}, pages 139--160.
+  Springer, Vienna, 2008.
+\newblock Online ISBN: 978-3-211-89297-8.
+
+\bibitem{mueller2006}
+Wolfram M{\"u}ller.
+\newblock The physics of ski jumping.
+\newblock Cern report on the aerodynamics and physics of ski jumping, CERN,
+  2006.
+
+\bibitem{plestenjak2016}
+Bor Plestenjak.
+\newblock {\em Raz{\v{s}}irjen uvod v numeri{\v{c}}ne metode}.
+\newblock DMFA-zalo{\v{z}}ni{\v{s}}tvo, 2016.
+\newblock Slovenian textbook on numerical methods.
+
+\bibitem{posit2025}
+{Posit Team}.
+\newblock Shiny for python.
+\newblock Accessed: 2025-08-29, 2025.
+
+\bibitem{serrano2025}
+{Serrano.Academy}.
+\newblock State-space model (ssm) tutorial.
+\newblock State-Space Model (SSM) video, 2025.
+
+\bibitem{skijumphillarchive2025}
+{Ski Jumping Hill Archive, skisprungschanzen.com}.
+\newblock Letalnica (letalnica bratov gori{\v{s}}ek), planica, slovenia --- ski
+  jumping hill archive.
+\newblock Accessed: 2025-09-12, 2025.
+
+\bibitem{thompson2025}
+Ava Thompson, editor.
+\newblock {\em Ski Jumping}.
+\newblock Publifye AS, 2025.
+
+\bibitem{vanwieringen2015}
+Wessel~N. van Wieringen.
+\newblock Lecture notes on ridge regression.
+\newblock arXiv preprint arXiv:1509.09169. Revision v8, submitted 30 September
+  2015; revised 27 June 2023, 2015.
+
+\bibitem{virmavirta2019}
+Mikko Virmavirta and Juha Kivek{\"a}s.
+\newblock Aerodynamics of an isolated ski jumping ski.
+\newblock {\em Sports Engineering}, 22(1):1--6, 2019.
+
+\bibitem{statquest2025}
+{StatQuest with Josh Starmer}.
+\newblock Neural networks tutorial.
+\newblock Neural networks introduction video, 2025.
+
+\end{thebibliography}

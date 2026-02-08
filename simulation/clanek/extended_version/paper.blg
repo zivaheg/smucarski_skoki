@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: paper.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+Database file #1: paper.bib
+Warning--I didn't find a database entry for "serranno2025"
+You've used 14 entries,
+            1791 wiz_defined-function locations,
+            525 strings with 5280 characters,
+and the built_in function-call counts, 2431 in all, are:
+= -- 224
+> -- 78
+< -- 2
++ -- 34
+- -- 20
+* -- 95
+:= -- 389
+add.period$ -- 46
+call.type$ -- 14
+change.case$ -- 13
+chr.to.int$ -- 0
+cite$ -- 14
+duplicate$ -- 113
+empty$ -- 282
+format.name$ -- 20
+if$ -- 564
+int.to.chr$ -- 0
+int.to.str$ -- 14
+missing$ -- 8
+newline$ -- 75
+num.names$ -- 17
+pop$ -- 64
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 48
+stack$ -- 0
+substring$ -- 76
+swap$ -- 24
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 22
+width$ -- 16
+write$ -- 156
+(There was 1 warning)
