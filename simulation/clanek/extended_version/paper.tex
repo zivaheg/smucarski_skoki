@@ -261,9 +261,10 @@ yaw) \cite{mueller2006}.
 The observation vector contains the measured outputs of the system, which in
 our case are the X, Y, and Z coordinates and height above ground. The controls
 contain the external inputs to the system, which in our case are the wind
-measurements from all the sensors for each of the features that are then averaged 
-over each zone (speed, tangent, cross and turbulence) combined with all the angles
-(resulting speed, opening, and for both left and right ski the roll, waw and stall angles).
+measurements from all the sensors for each of the features (speed, tangent, 
+cross and turbulence) that are then averaged over each zone  combined with 
+all the angles (resulting speed, opening, and for both left and right ski the 
+roll, yaw and stall angles).
 
 We then used ridge regression to estimate the matrices $A$, $B$, $C$ and $D$ of
 the SSM, as shown in Figure~\ref{fig:ssm_schema}, where we minimized the
@@ -273,7 +274,7 @@ controls and observations vectors. For our simulation we specifically focus on
 $A$ and $B$ matrices, since we want to predict the next state from the current
 state and the current control. The $C$ and $D$ matrices are used to predict the
 next observation, but since we are interested in the trajectory, we don't use them
-for simulation.Thus, matrix $A$ computes the next state from the current state, $B$
+for simulation. Thus, matrix $A$ computes the next state from the current state, $B$
 computes the next state from the current control, $C$ computes the next
 observation from the current state, and $D$ computes the next observation from
 the current control. We then combine the predictions for next state and the next 
@@ -290,9 +291,9 @@ environmental conditions and the starting state of the jumper \cite{serranno2025
 
 \subsection{Average file starter}
 Since the goal is to have an interactive application where users can adjust
-the wind conditions and observe the impact on the jump, we needed to find a way
+the wind conditions and angles and observe the impact on the jump, we needed to find a way
 to start the simulation with the inital state of the jumper, that wouldn't be 
-too specific to a single jump. So we created an average file, where the values
+too specific to a single jump. We created an average file, where the values
 for each column are averaged over all the jumps in the dataset. Since the flights
 are of different lengths and measured at different time stamps, we first had to
 interpolate the jumps to get the average number of time stemps and the average 
@@ -301,7 +302,10 @@ length of the jump.
 We then used the first row of the average file as the starting point for the 
 simulation, which contains the average values for all the features at the take-off
 point. This allows the simulation to start with realistic initial conditions that
-are representative of the average jump in the dataset. 
+are representative of the average jump in the dataset. And in case there is no
+external input from the user for a certain wind or angle, the simulation will just
+use the average values from the file as the default input, which allows the user to 
+see a realistic jump trajectory even without adjusting the inputs.
 
 We then calculated the matricies $A$ and $B$ using the same proces as before on
 all of the jumps in the dataset. This allowed us to connect them with the app,
@@ -336,7 +340,12 @@ In order to evaluate different models, we first had to define a metric to
 measure the prediction error. Since actual and simulated jumps are represented
 with x, y, and z coordinates but are measured at different time stamps and can
 contain a different number of measurements, we had to find a way to compare
-them. We first tried to project the shorter trajectory on to the other one and
+them. Since time stamps represent the athlete's position on a coordinate system 
+at different times, we decided the time information isn't as cruical as the 
+position and consequently the distance of the jump. Which allowed us to compare
+the actual and simulated jumps irrespective of the information about time.
+
+We first tried to project the shorter trajectory on to the other one and
 compute the distance between the original and the projection, but this method
 turned out to be computationally expensive. So we decided to compute the
 distance between the actual and the simulated jumps by interpolating both
@@ -344,33 +353,72 @@ jumps. The new measurements contain the start and end point and all the ones,
 where x reaches a natural value. We then compute the error as the norm of the
 difference between the two jumps. And after one of the jumps ends, we just add
 the distance from the end of the shorter jump to the end of the longer jump to
-the error. In this way, we penalize the model for not being able to predict the
-correct length of the jump.
+the error. This way, we penalize the model for not being able to predict the
+correct length of the jump, while still keeping the interpretability of the
+error as the distance between the two jumps.
 
-Since we had a limited number of jumps, we used leave-one-out cross-validation
-to evaluate the models. For each jump, we trained the model on all other jumps
-and then simulated the left-out jump. We then calculated the average error
-between the actual jump and the simulated jump for both the training set and
-the test set, as shown in Figure~\ref{fig:actual_vs_sim}.
+We then used a KFold cross-validation to evaluate the models. KFold is a method 
+of splitting the dataset into $K$ subsets, or folds, and then train the model $K$ times,
+each time using a different fold as a test set and the remaining folds as a training set.
+Since we already had a very limited number of jumps, we used the leave-one-out 
+cross-validation version of the algorithm, where $K$ is equal to the number of jumps 
+in the dataset. This allows us to use as much data as possible for training while 
+still providing a robust evaluation of the model's performance on unseen data.
+We then computed the average error between the actual jump and the simulated jump 
+for both the training set and the test set, as shown in Figure~\ref{fig:actual_vs_sim}. 
 
+At the end it turned out that the best model was the pure SSM with averaged wind
+data over the zones, which with the leave-one-out algorithm achieved an average 
+error of 1.32 m on the training data and 1.37 m on the test data. And when we use
+starting point from the average file instead of the actual starting point of the 
+jump, the error is 1.58 m on the training data and 1.63 m on the test data.
+So we can interpret the error as: If we were to choose a random point on the simulated
+path, then the athlete would be on average 1.63 m away from the actual path of the jump.
+
+This suggests that averaging the wind data over the zones helps to
+reduce noise and improve the model's ability to generalize from the training data 
+to unseen jumps.
+
+
+\subsection{Analysis of our model}
 In the process of developing our ski jump prediction model, we evaluated several
 variations to determine the most effective approach. We compared the
 performance of a pure SSM with a hybrid model that combined SSM with PINN. The
 pure SSM demonstrated superior predictive accuracy, probably due to its ability
 to directly model the temporal dynamics of ski jumps without the added
-complexity of PINNs. We also experimented with different configurations of the
-SSM, including using all available wind sensor data versus an averaged value of
-the zone. When we used all sensors, the average error for each point (in the
-training data is 1.67 m and in the test data is 1.89 m), while when we averaged
-the sensors over the zones, the error (in the training data was 1.76 m and in
-the test data 1.82 m). This suggests that averaging the wind data helps with
-the simulation.
+complexity of PINNs.
 
-\subsection{Analysis of our model}
+We tested the impact of wind features on the model's performance by training
+the models with the information of every wind sensor instead of averaging the wind
+data over zones. However, this approach resulted in a higher prediction error 
+(with the error measuring 1.62 m on the training data and 1.82 m on the test data),
+likely due to the increased noise and variability in the data from the individual
+sensors, which may have made it more difficult for the model to learn the underlying
+patterns in the data. 
+
 Wind is a critical factor in ski jumping, so we attempted to capture its
 nonlinear effects by including columns for the squared wind features. However,
-we found that adding these squared terms did not significantly reduce the
-prediction error.
+we found that adding these squared terms did not help with the prediction, and 
+in fact, it increased the error (with the error measuring 1.33 m on training 
+data and 1.43 m on test data). This suggests that the relationship between wind
+and jump trajectory may not be well captured by simple polynomial terms.
+
+Here we present all the results of the different models in Table~\ref{tab:models_comparison}.
+\begin{table}
+  \centering
+  \begin{tabular}{p{4.68cm}cc}
+    \toprule
+    Model & Training Error & Test Error \\
+    \midrule
+    SSM with averaged wind data & 1.32 m & 1.37 m \\
+    SSM with averaged wind data and average starting point & 1.58 m & 1.63 m \\
+    SSM with individual wind sensor data & 1.62 m & 1.82 m \\
+    SSM with squared wind features & 1.33 m & 1.43 m \\
+    \bottomrule
+  \end{tabular}
+  \caption{Comparison of different models based on training and test error}
+  \label{tab:models_comparison}
+\end{table}
 
 Since the simulation still requires numerous inputs, we made it interactive,
 allowing users to adjust the wind conditions and observe their impact on the
@@ -387,6 +435,32 @@ dataset.
   \label{fig:actual_vs_sim}
 \end{figure}
 
+\subsection{Analysis of model's parameters}
+To better understand the model's behavior, we analyzed the parameters of the 
+matrices $A$ and $B$. 
+
+Matrix $A$ suggests that the SSM is capturing two different physical regimes: 
+slow kinematics and fast aerodynamic control. The strongest values are the 
+diagonal terms for X, Y, and Z, which show that position depends overwhelmingly 
+on its previous state. By contrast, posture variables are more reactive than 
+persistent, especially Opening Angle, Roll, and Yaw, indicating active correction 
+during the jump. The strongest non-diagonal dependency is Vy $\rightarrow$  Roll Left ($0.302$), 
+followed by Vy $\rightarrow$ Roll Right ($0.233$), which implies that vertical motion is a major 
+trigger for balance corrections. Another meaningful pattern is Opening Angle $\rightarrow$ Yaw 
+Left/Right with opposite signs, suggesting that changing ski opening may also 
+influence heading asymmetrically. In real-world terms, the jumper's path is smooth, 
+but the body-ski system is continuously making small directional and balance adjustments 
+to preserve lift and control.
+
+Matrix $B$ indicates that environmental conditions are concentrated in the control layer 
+of the system. The strongest dependencies are not on position, but on \texttt{Opening Angle}, 
+\texttt{Roll}, \texttt{Yaw}, and \texttt{Stalling}, meaning the athlete mainly responds to 
+disturbances by changing posture. The dominant external source is a variable
+ \texttt{landing\_Turbulence}, which strongly pushes opening, roll, and stalling responses. 
+This makes physical sense: wind or unstable air does not instantly move the jumper's whole 
+trajectory, but first forces the body-ski system to react, and those reactions then propagate 
+into flight behavior.
+
 \section{Discussion}
 This section examines the predictive performance of the trajectories, highlights
 the limitations of our current approach, and suggests directions for future
@@ -396,7 +470,7 @@ improvements.
 Given the relatively small dataset of ski jumps, the main limitation of our
 project lies in the limited data available for training the model. After
 preprocessing, the dataset contained only about 200 jumps, which may limit the
-SSM’s ability to represent the full range of trajectory variations under
+SSM's ability to represent the full range of trajectory variations under
 different circumstances. As a result, the model may struggle to accurately
 predict jumps under novel or extreme conditions.
 
