@@ -5,6 +5,6 @@
 \beamer@subsectionintoc {2}{2}{Data processing}{5}{0}{2}
 \beamer@sectionintoc {3}{Methodology}{7}{0}{3}
 \beamer@subsectionintoc {3}{1}{Different approaches and error function}{7}{0}{3}
-\beamer@sectionintoc {4}{Main Results}{8}{0}{4}
-\beamer@subsectionintoc {4}{1}{Animation app}{9}{0}{4}
-\beamer@sectionintoc {5}{Discussion and Conclusion}{10}{0}{5}
+\beamer@sectionintoc {4}{Main Results}{9}{0}{4}
+\beamer@subsectionintoc {4}{1}{Animation app}{10}{0}{4}
+\beamer@sectionintoc {5}{Discussion and Conclusion}{11}{0}{5}

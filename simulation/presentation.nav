@@ -27,24 +27,26 @@
 \headcommand {\beamer@subsectionentry {0}{3}{1}{7}{Different approaches and error function}}
 \headcommand {\slideentry {3}{1}{1}{7/7}{Different approaches and error function}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@sectionpages {7}{7}}
-\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\sectionentry {4}{Main Results}{8}{Main Results}{0}}
-\headcommand {\slideentry {4}{0}{1}{8/8}{}{0}}
+\headcommand {\slideentry {3}{1}{2}{8/8}{Different approaches and error function}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{9}{Animation app}}
-\headcommand {\slideentry {4}{1}{1}{9/9}{Animation app}{0}}
+\headcommand {\beamer@sectionpages {7}{8}}
+\headcommand {\beamer@subsectionpages {7}{8}}
+\headcommand {\sectionentry {4}{Main Results}{9}{Main Results}{0}}
+\headcommand {\slideentry {4}{0}{1}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@sectionpages {8}{9}}
 \headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\sectionentry {5}{Discussion and Conclusion}{10}{Discussion and Conclusion}{0}}
-\headcommand {\slideentry {5}{0}{1}{10/10}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{10}{Animation app}}
+\headcommand {\slideentry {4}{1}{1}{10/10}{Animation app}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {5}{0}{2}{11/11}{}{0}}
+\headcommand {\beamer@sectionpages {9}{10}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\sectionentry {5}{Discussion and Conclusion}{11}{Discussion and Conclusion}{0}}
+\headcommand {\slideentry {5}{0}{1}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@partpages {1}{11}}
-\headcommand {\beamer@subsectionpages {10}{11}}
-\headcommand {\beamer@sectionpages {10}{11}}
-\headcommand {\beamer@documentpages {11}}
-\headcommand {\gdef \inserttotalframenumber {11}}
+\headcommand {\slideentry {5}{0}{2}{12/12}{}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@partpages {1}{12}}
+\headcommand {\beamer@subsectionpages {11}{12}}
+\headcommand {\beamer@sectionpages {11}{12}}
+\headcommand {\beamer@documentpages {12}}
+\headcommand {\gdef \inserttotalframenumber {12}}

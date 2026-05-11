@@ -87,7 +87,8 @@
   \begin{itemize}
     \item Cleaning the data
     \item Data structure
-    \item Angles
+    \item Angles: opening, stalling, yaw, roll
+    \item wind features : Speed, Tangent, Cross, Turbulence
     \item coordinate system on a main ski jumping hill in Planica
   \end{itemize}
   \begin{figure}
@@ -113,12 +114,28 @@
 
 \subsection{Different approaches and error function}
 
-\begin{frame}{Different approaches and error function}
+\begin{frame}{Different approaches}
   Different approaches:
   \begin{itemize}
-    \item pure SSM
     \item SSM + PINN (Physics Informed Neural Networks)
+    \item pure SSM:
+    \begin{itemize}
+      \item State vector (x, y, z coordinates and their speed, jumper's speed, and angles)
+      \item Observation vector (x, y, z, height)
+      \item Controls vector (averaged wind features and angles)
+    \end{itemize}
   \end{itemize}
+
+  Average file starter:
+  \begin{itemize}
+    \item interpolation over the data points 
+    \item average number of time stamps
+    \item first realistic input of the jump
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Error function}
   Error function:
   \begin{itemize}
     \item Error function
@@ -131,7 +148,6 @@
   \end{itemize}
 \end{frame}
 
-
 \section{Main Results}
 
 %\begin{frame}{Main Findings}
@@ -141,15 +157,24 @@
 %\end{frame}
 
 \begin{frame}{Flight simulation example}
-  Results:
-  \begin{itemize}
-    \item train error 1.76 m 
-    \item test error 1.84 m.
-  \end{itemize}
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Model & Training Error & Test Error \\ \hline
+    SSM + wind zones & 1.32 m & 1.37 m \\
+    SSM + wind zones + average file & 1.58 m & 1.63 m \\
+    SSM & 1.62 m & 1.82 m \\
+    SSM + squared wind features & 1.33 m & 1.43 m \\
+    \hline
+  \end{tabular}
+
+  %\caption{Comparison of different models based on training and test error}
+  %\label{tab:models_comparison}
+%\end{table}
   \begin{figure}
     \centering
-      \includegraphics[width=0.6\textwidth]{flight_simulation167.png}
-      \caption{Graph with a simulated and actual flight trajectory.}
+      \includegraphics[width=0.6\textwidth]{2SSM flight_simulation29.png}
+      % \caption{Graph with a simulated and actual flight trajectory.}
       \label{fig:graph}
   \end{figure}
 \end{frame}
