@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  12 MAY 2026 11:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  12 MAY 2026 17:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -777,11 +777,11 @@ Package pdftex.def Info: SSM2.png  used on input line 81.
 [4
 
  <./SSM1.png> <./SSM2.png>]
-<least-square-method-2-1650276832.png, id=212, 664.884pt x 372.1905pt>
+<least-square-method-2-1650276832.png, id=212, 1996.0974pt x 1017.5616pt>
 File: least-square-method-2-1650276832.png Graphic file (type png)
 <use least-square-method-2-1650276832.png>
 Package pdftex.def Info: least-square-method-2-1650276832.png  used on input line 92.
-(pdftex.def)             Requested size: 273.83728pt x 153.28627pt.
+(pdftex.def)             Requested size: 308.06367pt x 157.03725pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:question}) has been already used, duplicate ignored
 <to be read again> 
@@ -824,45 +824,53 @@ Package pdftex.def Info: planica.jpg  used on input line 142.
 [10
 
 ]
-<2SSM flight_simulation29.png, id=402, 578.16pt x 361.35pt>
-File: 2SSM flight_simulation29.png Graphic file (type png)
-<use 2SSM flight_simulation29.png>
-Package pdftex.def Info: 2SSM flight_simulation29.png  used on input line 213.
-(pdftex.def)             Requested size: 205.37926pt x 128.36009pt.
-
 
 [11
 
- <./2SSM flight_simulation29.png>]
-
-[12
-
 ]
-<sliders_app.png, id=463, 1157.32375pt x 501.875pt>
-File: sliders_app.png Graphic file (type png)
-<use sliders_app.png>
-Package pdftex.def Info: sliders_app.png  used on input line 252.
-(pdftex.def)             Requested size: 164.30028pt x 71.24223pt.
-<skok_app.png, id=464, 701.62125pt x 753.81625pt>
-File: skok_app.png Graphic file (type png)
-<use skok_app.png>
-Package pdftex.def Info: skok_app.png  used on input line 252.
-(pdftex.def)             Requested size: 164.30028pt x 176.51422pt.
+<2SSM flight_simulation29.png, id=432, 578.16pt x 361.35pt>
+File: 2SSM flight_simulation29.png Graphic file (type png)
+<use 2SSM flight_simulation29.png>
+Package pdftex.def Info: 2SSM flight_simulation29.png  used on input line 226.
+(pdftex.def)             Requested size: 342.2953pt x 213.93349pt.
 
-Overfull \vbox (41.75713pt too high) detected at line 252
+Overfull \vbox (3.07637pt too high) detected at line 226
  []
 
 
 
+[12
+
+ <./2SSM flight_simulation29.png>]
+
 [13
 
- <./sliders_app.png> <./skok_app.png>]
+]
+<sliders_app.png, id=493, 1157.32375pt x 501.875pt>
+File: sliders_app.png Graphic file (type png)
+<use sliders_app.png>
+Package pdftex.def Info: sliders_app.png  used on input line 265.
+(pdftex.def)             Requested size: 164.30028pt x 71.24223pt.
+<skok_app.png, id=494, 701.62125pt x 753.81625pt>
+File: skok_app.png Graphic file (type png)
+<use skok_app.png>
+Package pdftex.def Info: skok_app.png  used on input line 265.
+(pdftex.def)             Requested size: 164.30028pt x 176.51422pt.
+
+Overfull \vbox (41.75713pt too high) detected at line 265
+ []
+
+
 
 [14
 
-]
+ <./sliders_app.png> <./skok_app.png>]
 
 [15
+
+]
+
+[16
 
 ]
 \tf@nav=\write6
@@ -884,20 +892,20 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 0D8F87D5E7BF12BEC25E935E7D3459AE;1495.
+(rerunfilecheck)             Checksum: 28488256C729B5EEE588D40A262BB68A;1495.
  ) 
 Here is how much of TeX's memory you used:
- 23367 strings out of 473523
- 455588 string characters out of 5715598
- 822864 words of memory out of 5000000
- 46049 multiletter control sequences out of 15000+600000
+ 23371 strings out of 473523
+ 455623 string characters out of 5715598
+ 822863 words of memory out of 5000000
+ 46051 multiletter control sequences out of 15000+600000
  578243 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,123p,447b,619s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss2488.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1200.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1200.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on presentation.pdf (15 pages, 2454120 bytes).
+Output written on presentation.pdf (16 pages, 2601367 bytes).
 PDF statistics:
- 874 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
+ 907 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
  196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

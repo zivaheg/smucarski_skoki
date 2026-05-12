@@ -6,5 +6,5 @@
 \beamer@sectionintoc {3}{Methodology}{9}{0}{3}
 \beamer@subsectionintoc {3}{1}{Different approaches and error function}{9}{0}{3}
 \beamer@sectionintoc {4}{Main Results}{11}{0}{4}
-\beamer@subsectionintoc {4}{1}{Animation app}{13}{0}{4}
-\beamer@sectionintoc {5}{Discussion and Conclusion}{14}{0}{5}
+\beamer@subsectionintoc {4}{1}{Animation app}{14}{0}{4}
+\beamer@sectionintoc {5}{Discussion and Conclusion}{15}{0}{5}

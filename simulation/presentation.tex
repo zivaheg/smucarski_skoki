@@ -153,31 +153,30 @@
     \item SSM + PINN
     \item pure SSM:
     \begin{itemize}
-      \item State vector (x, y, z coordinates and their speed, jumper's speed, and angles)
+      \item State vector (x, y, z coordinates and their speed, jumpers' speed, and angles)
       \item Observation vector (x, y, z, height)
       \item Controls vector (averaged wind features and angles)
     \end{itemize}
   \end{itemize}
+  Model structure:
+  \begin{itemize}
+    \item A: state -> state, B: control -> state
+    \item c: state -> observation, D: control -> observation
+  \end{itemize}
+\end{frame}
 
+
+\begin{frame}{Average file and Error function}
   Average file starter:
   \begin{itemize}
     \item interpolation over the data points 
     \item average number of time stamps
     \item first realistic input of the jump
   \end{itemize}
-\end{frame}
-
-
-\begin{frame}{Error function}
-  Error function:
+  Model's error:
   \begin{itemize}
     \item Error function
     \item leave-one-out cross-validation
-  \end{itemize}
-  different add-ons to the model:
-  \begin{itemize}
-    \item all 12 wind sensors or only 3 wind zones
-    \item squared wind values
   \end{itemize}
 \end{frame}
 
@@ -190,6 +189,11 @@
 %\end{frame}
 
 \begin{frame}{Results}
+  Different add-ons to the model:
+  \begin{itemize}
+    \item all 12 wind sensors or only 3 wind zones
+    \item squared wind values
+  \end{itemize}
   \centering
   \begin{tabular}{|c|c|c|}
     \hline
@@ -204,10 +208,19 @@
   %\caption{Comparison of different models based on training and test error}
   %\label{tab:models_comparison}
 %\end{table}
+  %\begin{figure}
+  %  \centering
+  %    \includegraphics[width=0.6\textwidth]{2SSM flight_simulation29.png}
+  %    % \caption{Graph with a simulated and actual flight trajectory.}
+  %    \label{fig:graph}
+  %\end{figure}
+\end{frame}
+
+\begin{frame}
   \begin{figure}
     \centering
-      \includegraphics[width=0.6\textwidth]{2SSM flight_simulation29.png}
-      % \caption{Graph with a simulated and actual flight trajectory.}
+      \includegraphics[width=1\textwidth]{2SSM flight_simulation29.png}
+      \caption{Graph with a simulated and actual flight trajectory.}
       \label{fig:graph}
   \end{figure}
 \end{frame}
