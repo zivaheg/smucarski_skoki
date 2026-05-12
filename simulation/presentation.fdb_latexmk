@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1778600418.57515 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/presentation.tex" "presentation.pdf" "presentation" 1778600428.62424 0
+["pdflatex"] 1778600569.74881 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/presentation.tex" "presentation.pdf" "presentation" 1778600580.55964 0
   "2SSM flight_simulation29.png" 1773342752 324132 4506faeb1dd992f5764333e2d4fbb545 ""
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1774961679 188945 f90228b2c2ed7e43d9b39352231d9eef ""
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecss0600.pk" 1742080833 12340 e6545e78efb9adec82704586c8870e1e ""
@@ -225,16 +225,16 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "SSM1.png" 1759395091 28050 af0be546e9fa88eb538a0c01679977f6 ""
   "SSM2.png" 1759395108 31714 9e2e098f4b58661589efec36c6a0d4fb ""
-  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/presentation.tex" 1778600407 8206 4e44df95c63983184ee29e3254b81bb6 ""
+  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/presentation.tex" 1778600567 8209 8f7db36300bf7fccfd064152f5600d17 ""
   "koti.png" 1757675885 189551 691638392e513e80a392828b87872926 ""
   "least-square-method-2-1650276832.png" 1778578386 203138 104013f40867280f96ea7fdbbac81f72 ""
   "planica.jpg" 1759394882 114044 18e445be483a746929282f5033f473fd ""
   "planica_foto.jpg" 1759671347 1579733 cd68c1b0b5a455dd350dbe3b20d8b4a0 ""
-  "presentation.aux" 1778600427 5957 240aac893526ee33315e8a9dc4867ac4 "pdflatex"
-  "presentation.nav" 1778600427 3245 99416226e3b684b60de5c312e1215f4a "pdflatex"
-  "presentation.out" 1778600427 1495 28488256c729b5eee588d40a262bb68a "pdflatex"
-  "presentation.tex" 1778600407 8206 4e44df95c63983184ee29e3254b81bb6 ""
-  "presentation.toc" 1778600427 581 8cadcc20588b02a952a7e5c3b162e224 "pdflatex"
+  "presentation.aux" 1778600579 5957 240aac893526ee33315e8a9dc4867ac4 "pdflatex"
+  "presentation.nav" 1778600579 3245 99416226e3b684b60de5c312e1215f4a "pdflatex"
+  "presentation.out" 1778600579 1495 28488256c729b5eee588d40a262bb68a "pdflatex"
+  "presentation.tex" 1778600567 8209 8f7db36300bf7fccfd064152f5600d17 ""
+  "presentation.toc" 1778600579 581 8cadcc20588b02a952a7e5c3b162e224 "pdflatex"
   "skok_app.png" 1759666442 108876 4f956b25a145f0d90296a5fa4e9e5e1f ""
   "sliders_app.png" 1759666442 56759 2a4b9c458dfe64f94d37947ff09a59d4 ""
   (generated)
