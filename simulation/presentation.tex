@@ -86,10 +86,27 @@
 \begin{frame}{Data Description}
   \begin{itemize}
     \item Cleaning the data
-    \item Data structure
+    \item Data structure %(Position, Height above ground, Time, X, Y, Z, Angles, Speed hor., Speed vert., Speed resulting and wind column \texttt{WindTime|WindName|WindSpeed|Wind...} )
+    \begin{itemize}
+      \item timestamps as rows
+      \item 17 columns
+      \begin{itemize}
+        \item Time
+        \item Position
+        \item Speed 
+        \item Angles
+        \item Wind column
+      \end{itemize}
+    \end{itemize}
+\end{itemize}
+    
+\end{frame}
+
+\begin{frame}{Data Description}
+  \begin{itemize}
     \item Angles: opening, stalling, yaw, roll
-    \item wind features : Speed, Tangent, Cross, Turbulence
-    \item coordinate system on a main ski jumping hill in Planica
+    \item Wind column \texttt{WindTime|WindName|WindSpeed|Wind...}
+
   \end{itemize}
   \begin{figure}
   \centering
@@ -100,11 +117,16 @@
 \end{frame}
 
 \begin{frame}{Ski jumping hill}
+  \begin{itemize}
+    \item wind features : Speed, Tangent, Cross, Turbulence
+    \item zones
+    \item Coordinate system on a main ski jumping hill in Planica
+  \end{itemize}
   %Observe Figure \ref{fig:question}: it is the
   \begin{figure}
   \centering
       \includegraphics[width=0.7\linewidth]{planica.jpg}
-      \caption{Ski jumping hill with a coordinate system placed on top.}
+      %\caption{Ski jumping hill with a coordinate system placed on top.}
       %\label{fig:question}
   \end{figure}
 \end{frame}
@@ -156,7 +178,7 @@
 %  \end{block}
 %\end{frame}
 
-\begin{frame}{Flight simulation example}
+\begin{frame}{Results}
   \centering
   \begin{tabular}{|c|c|c|}
     \hline
@@ -177,6 +199,19 @@
       % \caption{Graph with a simulated and actual flight trajectory.}
       \label{fig:graph}
   \end{figure}
+\end{frame}
+
+\begin{frame}{Parameter analysis}
+  A:
+  \begin{itemize}
+    \item X, Y, Z position -> previous state
+    \item velocity on y axis -> yaw angles % horizontal speed is a major trigger for balance corrections
+    \item opening angle -> yaw angles
+  \end{itemize}
+  B:
+  \begin{itemize}
+    \item Landing turbulence -> angles
+  \end{itemize}
 \end{frame}
 
 \subsection{Animation app}
