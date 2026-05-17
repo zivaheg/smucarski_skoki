@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  12 MAR 2026 23:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  12 MAY 2026 10:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -973,43 +973,37 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 7.0pt on input line 238.
 [2.2{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_oexx6f.enc} <./koncen_graf.jpg> <./koti.png>]
 
-Package natbib Warning: Citation `serranno2025' on page 3 undefined on input line 283.
+Package natbib Warning: Citation `serranno2025' on page 3 undefined on input line 287.
 
 <sample-franklin.png, id=141, 411.5375pt x 323.2075pt>
 File: sample-franklin.png Graphic file (type png)
 <use sample-franklin.png>
-Package pdftex.def Info: sample-franklin.png  used on input line 287.
+Package pdftex.def Info: sample-franklin.png  used on input line 291.
 (pdftex.def)             Requested size: 241.14749pt x 189.3888pt.
 
-Class acmart Warning: A possible image without description on input line 290.
+Class acmart Warning: A possible image without description on input line 294.
 
 
-Underfull \vbox (badness 5533) has occurred while \output is active []
-
-
-
-
-Underfull \vbox (badness 3229) has occurred while \output is active []
 
 
 
 [3.3 <./sample-franklin.png>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 331.
+(Font)              scaled to size 6.6pt on input line 335.
 
 
 
-Overfull \hbox (12.52408pt too wide) in paragraph at lines 409--419
+Overfull \hbox (12.52408pt too wide) in paragraph at lines 413--423
  [][] 
  []
 
 <2SSM_flight_simulation167-small.png, id=158, 377.4903pt x 319.9152pt>
 File: 2SSM_flight_simulation167-small.png Graphic file (type png)
 <use 2SSM_flight_simulation167-small.png>
-Package pdftex.def Info: 2SSM_flight_simulation167-small.png  used on input line 433.
+Package pdftex.def Info: 2SSM_flight_simulation167-small.png  used on input line 437.
 (pdftex.def)             Requested size: 241.14749pt x 204.36914pt.
 
-Class acmart Warning: A possible image without description on input line 436.
+Class acmart Warning: A possible image without description on input line 440.
 
 
 Underfull \vbox (badness 5022) has occurred while \output is active []
@@ -1017,9 +1011,6 @@ Underfull \vbox (badness 5022) has occurred while \output is active []
 
 
 [4.4]
-Underfull \vbox (badness 2165) has occurred while \output is active []
-
-
 
 (paper.bbl
 
@@ -1049,7 +1040,7 @@ Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.8pt on input line 528.
+(Font)              scaled to size 8.8pt on input line 532.
 
 Overfull \hbox (4.592pt too wide) has occurred while \output is active
  [][][][] 
@@ -1073,15 +1064,15 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: FA7D5B26454820491983DF11A7D23CF0;3438.
  ) 
 Here is how much of TeX's memory you used:
- 21272 strings out of 473523
- 347442 string characters out of 5715598
+ 21273 strings out of 473523
+ 347472 string characters out of 5715598
  823410 words of memory out of 5000000
  43594 multiletter control sequences out of 15000+600000
- 700877 words of font info for 329 fonts, out of 8000000 for 9000
+ 700991 words of font info for 330 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  90i,13n,131p,1086b,672s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb>
-Output written on paper.pdf (6 pages, 1164388 bytes).
+Output written on paper.pdf (6 pages, 1164539 bytes).
 PDF statistics:
  244 PDF objects out of 1000 (max. 8388607)
  51 named destinations out of 1000 (max. 500000)

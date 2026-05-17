@@ -161,7 +161,7 @@
   Model structure:
   \begin{itemize}
     \item A: state -> state, B: control -> state
-    \item c: state -> observation, D: control -> observation
+    \item C: state -> observation, D: control -> observation
   \end{itemize}
 \end{frame}
 
@@ -228,7 +228,7 @@
 \begin{frame}{Parameter analysis}
   A:
   \begin{itemize}
-    \item X, Y, Z position -> previous state
+    \item X, Y, Z position -> next state
     \item velocity on y axis -> yaw angles % horizontal speed is a major trigger for balance corrections
     \item opening angle -> yaw angles
   \end{itemize}

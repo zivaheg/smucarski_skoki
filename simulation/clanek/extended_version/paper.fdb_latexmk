@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex paper"] 1773354258.41144 "paper.aux" "paper.bbl" "paper" 1773354262.63403 0
+["bibtex paper"] 1773354258.41144 "paper.aux" "paper.bbl" "paper" 1778574572.53173 0
   "./paper.bib" 1770546388 4227 65ef51602e77df13d4bd52038304c846 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/unsrt.bst" 1291864736 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "paper.aux" 1773354261 5840 64e20c0267a5df12dd9ff48c2d44e554 "pdflatex"
+  "paper.aux" 1778574567 5840 64e20c0267a5df12dd9ff48c2d44e554 "pdflatex"
   (generated)
   "paper.bbl"
   "paper.blg"
   (rewritten before read)
-["pdflatex"] 1773354258.80473 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/extended_version/paper.tex" "paper.pdf" "paper" 1773354262.63487 0
+["pdflatex"] 1778574549.97349 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/extended_version/paper.tex" "paper.pdf" "paper" 1778574572.53361 0
   "2SSM_flight_simulation167-small.png" 1756469689 400275 036149028ed6ce70e81d2ad7157e31c8 ""
-  "C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1762524085 188945 f90228b2c2ed7e43d9b39352231d9eef ""
+  "C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1774961679 188945 f90228b2c2ed7e43d9b39352231d9eef ""
   "C:/Users/vsi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1741687351 12035121 729d0b8bc385de9d6b208fe98578324f ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-4.enc" 1557958141 7693 0f2dce6d313c82989ec3a67fc24df2a0 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc" 1497089888 2921 8ca0eb0831f9bc5da080d3697cfe67bf ""
@@ -196,13 +196,13 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
-  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/extended_version/paper.tex" 1773354253 28386 d985d81b9cc0b0a1015849b9fdd4f9cf ""
+  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/simulation/clanek/extended_version/paper.tex" 1778574547 28626 f7523cab75eb86518ac7ec2c26979664 ""
   "koncen_graf.jpg" 1757666975 227736 6a1167bb62a01405ad1f7e4c4ff04c1d ""
   "koti.png" 1757675885 189551 691638392e513e80a392828b87872926 ""
-  "paper.aux" 1773354261 5840 64e20c0267a5df12dd9ff48c2d44e554 "pdflatex"
+  "paper.aux" 1778574567 5840 64e20c0267a5df12dd9ff48c2d44e554 "pdflatex"
   "paper.bbl" 1773354258 2628 95bb74d927b372fe07a665fddc475b36 "bibtex paper"
-  "paper.out" 1773354261 3438 fa7d5b26454820491983df11a7d23cf0 "pdflatex"
-  "paper.tex" 1773354253 28386 d985d81b9cc0b0a1015849b9fdd4f9cf ""
+  "paper.out" 1778574567 3438 fa7d5b26454820491983df11a7d23cf0 "pdflatex"
+  "paper.tex" 1778574547 28626 f7523cab75eb86518ac7ec2c26979664 ""
   "sample-franklin.png" 1756452354 95030 b5b117690b64777baa16f25a8c628f74 ""
   (generated)
   "paper.aux"
