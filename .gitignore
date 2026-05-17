@@ -9,6 +9,9 @@ __pycache__/
 # Notebooks
 .ipynb_checkpoints/
 
+# Maps
+project\simulation\2024_03_Planica_12_winds
+
 # Environments
 .venv/
 env/
