@@ -1,0 +1,76 @@
+%----------------------------------------%
+
+@article{PBaldi,
+    author = {P. Baldi, P. Sadowski, P. & Whiteson D},
+    title = {Searching for exotic particles in high-energy physics with deep learning.},
+    journal = {Nat Commun},
+    year = {2014},
+    url = {https://www.nature.com/articles/ncomms5308},
+    doi = {https://doi.org/10.1038/ncomms5308},
+
+}
+
+%----------------------------------------%
+
+@online{Mastnak,
+    Author = {Elijan Mastnak},
+    title = {Convolutional Neural Networks and Particle Physics},
+    url = {https://ejmastnak.com/projects/seminar/},
+    urldate = {2024-09-05},
+}
+
+%----------------------------------------%
+
+@online{MythBustersGPU,
+    Author = {NVIDIA, Adam Savage & Jamie Hyneman},
+    title = {Mythbusters Demo GPU versus CPU},
+    url = {https://www.youtube.com/watch?v=-P28LKWTzrI},
+    urldate = {2024-09-05},
+}
+
+%----------------------------------------%
+% LHC Instrumentation:
+% https://cds.cern.ch/record/1129806?ln=en
+@article{lhc,
+      author = {Evans, Lyndon R and Bryant, Philip},
+      title = {LHC Machine},
+      journal = {JINST},
+      volume = {3},
+      pages = {S08001. 164 p},
+      year = {2008},
+      url = {https://cds.cern.ch/record/1129806},
+      doi = {10.1088/1748-0221/3/08/S08001},
+}
+
+%----------------------------------------%
+
+@article{GANforfastsim,
+      author = {S.Vallecorsa},
+      title = {Generative models for fast simulation},
+      journal = {Journal of Physics: Conference Series},
+      volume = {Volume 1085, Issue 2},
+      pages = {10 p},
+      year = {2018},
+      url = {https://indico.cern.ch/event/567550/papers/2656673/files/5841-SofiaVallecorsa_Plenary.pdf},
+      doi = {10.1088/1742-6596/1085/2/022005},
+}
+
+%----------------------------------------%
+
+% WLCG website
+@online{WLCG,
+  author = {CERN},
+  title = {Worldwide LHC Computing Grid},
+  year = 2024,
+  url = {https://wlcg.web.cern.ch/},
+  urldate = {2024-03-21}
+}
+
+%----------------------------------------%
+
+@online{Dataset,
+    author = {CERN},
+    title = {D. Whiteson. HIGGS. UCI Machine Learning Repository},
+    url = {https://mlphysics.ics.uci.edu/data/higgs/},
+    urldate = {2024-09-05},
+}
