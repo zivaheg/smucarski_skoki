@@ -68,9 +68,9 @@
 
 \begin{abstract}
 
-Ski jumping performance is shaped by both athlete technique and environmental conditions, with factors such as wind speed, wind direction, and ski orientation playing a critical role in determining jump trajectories. Accurate modeling of these trajectories is challenging due to dynamic and time-dependent nature of the system. In this work, we introduce a dataset of measured ski jumps and present a state-space modeling framework that captures the evolution of jumps under varying conditions. The model parameters are estimated using a ridge regression approach, 
+Ski jumping performance is shaped by both athlete technique and environmental conditions, with factors such as wind speed, wind direction, and ski orientation playing a critical role in determining jump trajectories. Accurate modeling of these trajectories is challenging due to dynamic and time-dependent nature of the data. In this work, we introduce a dataset of measured ski jumps and present a state-space modeling framework that captures the evolution of jumps under varying conditions. The model parameters are estimated using a ridge regression approach, 
 enabling us to predict trajectories from initial states and wind sensor inputs. 
-We evaluated the predictive performance of the model through leave-one-out cross-validation and analyzed its stability, showing that the approach can generate realistic trajectories with reasonable accuracy. To complement the modeling results, we developed an interactive web application that allows users to explore both recorded and simulated jumps, adjust environmental factors, and visualize their effects through animations. Together, the dataset, modeling framework, and the application offer a foundation for further research in ski jump analysis and provide an accessible tool for exploring the influence of external conditions on performance.
+We evaluated the predictive performance of the model through leave-one-out cross-validation and analyzed its stability, showing that the approach can predict realistic trajectories with reasonable accuracy. To complement the modeling results, we developed an interactive web application that allows users to explore both recorded and simulated jumps, adjust environmental factors, and visualize their effects through animations. Together, the dataset, modeling framework, and the web application offer a foundation for further research in ski jump analysis and provide an accessible tool for exploring the influence of external conditions on performance.
 
 \end{abstract}
 
@@ -140,7 +140,7 @@ not require large datasets or deep learning infrastructure. We explicitly
 incorporate wind sensor measurements as control inputs, allowing the model to
 simulate how changing environmental conditions affect the full jump trajectory.
 
-\section{Modeling Framework and Dataset}\label{sec:data}
+\section{Approach to Modeling}\label{sec:data}
 This section describes the handling of data, focusing on state-space models and our data processing.
 
 \subsection{State-Space Model}\label{subsec:ssm}
@@ -474,7 +474,7 @@ This section examines the predictive performance of the trajectories, highlights
 
 \subsection{Limitations}
 
-Given the relatively small dataset of ski jumps, the main limitation of our project lies in the limited data available for training the model.
+Given the relatively small dataset of ski jumps, the main limitation of our model lies in the limited data available for training the model.
 %The main limitation of our project is the relatively small number of ski jumps available to train the model. 
 After preprocessing, the dataset contained only about $200$ jumps, which may limit the SSM's ability to represent the full range of trajectory variations under different circumstances. As a result, the model may struggle to accurately predict jumps under novel or extreme conditions.
 
@@ -489,7 +489,7 @@ Although the current approach shows promise, there are several avenues for
 future improvements. Some of which we are working on at the time of writing
 this paper.
 
-Currently, we are working on improving the sliders’ functions. Since the wind
+Currently, we are working on improving the sliders’ functions on the web application. Since the wind
 data determined by the user is static throughout the jump, this adds a lot of
 generalization. In reality, wind conditions can change rapidly during a jump.
 So we would like to add additional controls to the app that would allow the
@@ -511,8 +511,7 @@ dynamics.
 This paper presents a method for predicting ski jump trajectories based on environmental conditions. By incorporating external factors into the modeling framework and applying least squares estimation, we demonstrated that the model is capable of capturing the dynamics of ski jumps and producing realistic trajectory predictions. In addition, we developed an interactive application that makes the results accessible to a broader audience through simulations and animations of predicted jumps. Although the current model is limited by the size of the dataset and the absence of certain athlete-specific variables, the results show that state-space models are a promising tool for analyzing ski jumping performance.
 
 \section{Acknowledgments}
-This work was supported by Smučarska Zveza Slovenije (Ski Association of Slovenia), whom we would like to thank for providing the ski jump data. %%The research was funded by (ADD WHEN YOU FIND OUT). 
-%Ski Association of Slovenia (SAS)
+This work was supported by the Slovenian Research and Innovation Agency(ARIS) via the Research Program Knowledge Technologies(grant P2-0103) and the European Commission through the Horizon Europe projects SLAIF (grant 101254461), ELIAS (grant 101120237), and HumAlne (grant 101120218). We would like to thank Smučarska Zveza Slovenije (Ski Association of Slovenia) for providing the ski jump data.
 %%
 %% The next two lines define the bibliography style to be used, and
 %% the bibliography file.

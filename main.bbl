@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{3dmdb_skijumping_planica}{misc}{}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{3dmdb_skijumping_planica}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=668cc5ad2bad705c42c26a9ee09e03f3}{%
            family={{3DWarehouse via 3dmdb.com}},
@@ -27,10 +27,12 @@
       }
       \strng{namehash}{668cc5ad2bad705c42c26a9ee09e03f3}
       \strng{fullhash}{668cc5ad2bad705c42c26a9ee09e03f3}
+      \strng{fullhashraw}{668cc5ad2bad705c42c26a9ee09e03f3}
       \strng{bibnamehash}{668cc5ad2bad705c42c26a9ee09e03f3}
       \strng{authorbibnamehash}{668cc5ad2bad705c42c26a9ee09e03f3}
       \strng{authornamehash}{668cc5ad2bad705c42c26a9ee09e03f3}
       \strng{authorfullhash}{668cc5ad2bad705c42c26a9ee09e03f3}
+      \strng{authorfullhashraw}{668cc5ad2bad705c42c26a9ee09e03f3}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -40,7 +42,7 @@
       \field{title}{"Ski Jumping Planica" [3D model]}
       \field{year}{2025}
     \endentry
-    \entry{aoki1990state}{book}{}
+    \entry{aoki1990state}{book}{}{}
       \name{author}{1}{}{%
         {{hash=84873b25a48eeabaed21ab700e23beba}{%
            family={Aoki},
@@ -56,10 +58,12 @@
       }
       \strng{namehash}{84873b25a48eeabaed21ab700e23beba}
       \strng{fullhash}{84873b25a48eeabaed21ab700e23beba}
+      \strng{fullhashraw}{84873b25a48eeabaed21ab700e23beba}
       \strng{bibnamehash}{84873b25a48eeabaed21ab700e23beba}
       \strng{authorbibnamehash}{84873b25a48eeabaed21ab700e23beba}
       \strng{authornamehash}{84873b25a48eeabaed21ab700e23beba}
       \strng{authorfullhash}{84873b25a48eeabaed21ab700e23beba}
+      \strng{authorfullhashraw}{84873b25a48eeabaed21ab700e23beba}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
@@ -73,7 +77,7 @@
       \verb 10.1007/978-3-642-75883-6
       \endverb
     \endentry
-    \entry{bergmann2025state_space_model}{online}{}
+    \entry{bergmann2025state_space_model}{online}{}{}
       \name{author}{1}{}{%
         {{hash=145cb942e2c6e0e141b825eb8cebbdb1}{%
            family={Bergmann},
@@ -86,10 +90,12 @@
       }
       \strng{namehash}{145cb942e2c6e0e141b825eb8cebbdb1}
       \strng{fullhash}{145cb942e2c6e0e141b825eb8cebbdb1}
+      \strng{fullhashraw}{145cb942e2c6e0e141b825eb8cebbdb1}
       \strng{bibnamehash}{145cb942e2c6e0e141b825eb8cebbdb1}
       \strng{authorbibnamehash}{145cb942e2c6e0e141b825eb8cebbdb1}
       \strng{authornamehash}{145cb942e2c6e0e141b825eb8cebbdb1}
       \strng{authorfullhash}{145cb942e2c6e0e141b825eb8cebbdb1}
+      \strng{authorfullhashraw}{145cb942e2c6e0e141b825eb8cebbdb1}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
@@ -104,7 +110,7 @@
       \verb https://www.ibm.com/think/topics/state-space-model
       \endverb
     \endentry
-    \entry{Cai2021_PINN_FluidMechanics}{article}{}
+    \entry{Cai2021_PINN_FluidMechanics}{article}{}{}
       \name{author}{5}{}{%
         {{hash=446459da16eb3fa7780f7d73fe084c8b}{%
            family={Cai},
@@ -134,10 +140,12 @@
       }
       \strng{namehash}{61726ce182153bce3cdf8d7fd435b6ce}
       \strng{fullhash}{5723c593b707185c0d6d901f8bfbdf5d}
+      \strng{fullhashraw}{5723c593b707185c0d6d901f8bfbdf5d}
       \strng{bibnamehash}{5723c593b707185c0d6d901f8bfbdf5d}
       \strng{authorbibnamehash}{5723c593b707185c0d6d901f8bfbdf5d}
       \strng{authornamehash}{61726ce182153bce3cdf8d7fd435b6ce}
       \strng{authorfullhash}{5723c593b707185c0d6d901f8bfbdf5d}
+      \strng{authorfullhashraw}{5723c593b707185c0d6d901f8bfbdf5d}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
@@ -153,7 +161,7 @@
       \verb 10.1007/s10409-021-01148-1
       \endverb
     \endentry
-    \entry{fang2020trajectory}{article}{}
+    \entry{fang2020trajectory}{article}{}{}
       \name{author}{6}{}{%
         {{hash=a62d273a7329e7640aceb70d2ddc5c8b}{%
            family={Fang},
@@ -188,10 +196,12 @@
       }
       \strng{namehash}{fe985e431dffa91ab76d6c8fb5327775}
       \strng{fullhash}{c7abe766959b67042ab92f56fdf70fa9}
+      \strng{fullhashraw}{c7abe766959b67042ab92f56fdf70fa9}
       \strng{bibnamehash}{c7abe766959b67042ab92f56fdf70fa9}
       \strng{authorbibnamehash}{c7abe766959b67042ab92f56fdf70fa9}
       \strng{authornamehash}{fe985e431dffa91ab76d6c8fb5327775}
       \strng{authorfullhash}{c7abe766959b67042ab92f56fdf70fa9}
+      \strng{authorfullhashraw}{c7abe766959b67042ab92f56fdf70fa9}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{labelnamesource}{author}
@@ -207,7 +217,7 @@
       \verb 10.3390/s20071995
       \endverb
     \endentry
-    \entry{muller2008performance}{incollection}{}
+    \entry{muller2008performance}{incollection}{}{}
       \name{author}{1}{}{%
         {{hash=bff8ba09075b68193b96c9c4f715dbd8}{%
            family={Müller},
@@ -227,13 +237,16 @@
       }
       \strng{namehash}{bff8ba09075b68193b96c9c4f715dbd8}
       \strng{fullhash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{fullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
       \strng{bibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
       \strng{authorbibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
       \strng{authornamehash}{bff8ba09075b68193b96c9c4f715dbd8}
       \strng{authorfullhash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authorfullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
       \strng{editorbibnamehash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
       \strng{editornamehash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
       \strng{editorfullhash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
+      \strng{editorfullhashraw}{fa6b3125a5cf61f2ea69c12ade9d98f7}
       \field{extraname}{1}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
@@ -252,7 +265,7 @@
       \verb 10.1007/978-3-211-89297-8_8
       \endverb
     \endentry
-    \entry{CERN_SkiJump_Physics}{report}{}
+    \entry{CERN_SkiJump_Physics}{report}{}{}
       \name{author}{1}{}{%
         {{hash=bff8ba09075b68193b96c9c4f715dbd8}{%
            family={Müller},
@@ -265,10 +278,12 @@
       }
       \strng{namehash}{bff8ba09075b68193b96c9c4f715dbd8}
       \strng{fullhash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{fullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
       \strng{bibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
       \strng{authorbibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
       \strng{authornamehash}{bff8ba09075b68193b96c9c4f715dbd8}
       \strng{authorfullhash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authorfullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
       \field{extraname}{2}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
@@ -285,7 +300,7 @@
       \verb https://cds.cern.ch/record/1009275/files/p269.pdf
       \endverb
     \endentry
-    \entry{Plestenjak_NUM}{book}{}
+    \entry{Plestenjak_NUM}{book}{}{}
       \name{author}{1}{}{%
         {{hash=a07526e402a3c71acc0ee54f96543a20}{%
            family={Plestenjak},
@@ -298,10 +313,12 @@
       }
       \strng{namehash}{a07526e402a3c71acc0ee54f96543a20}
       \strng{fullhash}{a07526e402a3c71acc0ee54f96543a20}
+      \strng{fullhashraw}{a07526e402a3c71acc0ee54f96543a20}
       \strng{bibnamehash}{a07526e402a3c71acc0ee54f96543a20}
       \strng{authorbibnamehash}{a07526e402a3c71acc0ee54f96543a20}
       \strng{authornamehash}{a07526e402a3c71acc0ee54f96543a20}
       \strng{authorfullhash}{a07526e402a3c71acc0ee54f96543a20}
+      \strng{authorfullhashraw}{a07526e402a3c71acc0ee54f96543a20}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
@@ -310,7 +327,7 @@
       \field{title}{Razširjen uvod v numerične metode}
       \field{year}{2016}
     \endentry
-    \entry{shiny_python}{online}{}
+    \entry{shiny_python}{online}{}{}
       \name{author}{1}{}{%
         {{hash=2b475ea115c6be635e6a6aaeaf18e343}{%
            family={{Posit Team}},
@@ -318,10 +335,12 @@
       }
       \strng{namehash}{2b475ea115c6be635e6a6aaeaf18e343}
       \strng{fullhash}{2b475ea115c6be635e6a6aaeaf18e343}
+      \strng{fullhashraw}{2b475ea115c6be635e6a6aaeaf18e343}
       \strng{bibnamehash}{2b475ea115c6be635e6a6aaeaf18e343}
       \strng{authorbibnamehash}{2b475ea115c6be635e6a6aaeaf18e343}
       \strng{authornamehash}{2b475ea115c6be635e6a6aaeaf18e343}
       \strng{authorfullhash}{2b475ea115c6be635e6a6aaeaf18e343}
+      \strng{authorfullhashraw}{2b475ea115c6be635e6a6aaeaf18e343}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
@@ -336,7 +355,7 @@
       \verb https://shiny.posit.co/py/
       \endverb
     \endentry
-    \entry{schwinn2022xlength}{article}{}
+    \entry{schwinn2022xlength}{article}{}{}
       \name{author}{5}{}{%
         {{hash=5c0be88ffaeedc45ac7b0e093b5247d1}{%
            family={Schwinn},
@@ -366,10 +385,12 @@
       }
       \strng{namehash}{95bbdcc614cbee75684204ab7a1b4dc0}
       \strng{fullhash}{304917bd83f83df77ecd7d8a6cf1cea2}
+      \strng{fullhashraw}{304917bd83f83df77ecd7d8a6cf1cea2}
       \strng{bibnamehash}{304917bd83f83df77ecd7d8a6cf1cea2}
       \strng{authorbibnamehash}{304917bd83f83df77ecd7d8a6cf1cea2}
       \strng{authornamehash}{95bbdcc614cbee75684204ab7a1b4dc0}
       \strng{authorfullhash}{304917bd83f83df77ecd7d8a6cf1cea2}
+      \strng{authorfullhashraw}{304917bd83f83df77ecd7d8a6cf1cea2}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -385,7 +406,7 @@
       \verb 10.3390/s22218474
       \endverb
     \endentry
-    \entry{SSM_YouTube}{misc}{}
+    \entry{SSM_YouTube}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=169a74445568cfe3813efef9f79de225}{%
            family={Serrano.Academy},
@@ -393,10 +414,12 @@
       }
       \strng{namehash}{169a74445568cfe3813efef9f79de225}
       \strng{fullhash}{169a74445568cfe3813efef9f79de225}
+      \strng{fullhashraw}{169a74445568cfe3813efef9f79de225}
       \strng{bibnamehash}{169a74445568cfe3813efef9f79de225}
       \strng{authorbibnamehash}{169a74445568cfe3813efef9f79de225}
       \strng{authornamehash}{169a74445568cfe3813efef9f79de225}
       \strng{authorfullhash}{169a74445568cfe3813efef9f79de225}
+      \strng{authorfullhashraw}{169a74445568cfe3813efef9f79de225}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -406,7 +429,7 @@
       \field{title}{State‐Space Model (SSM) tutorial}
       \field{year}{2025}
     \endentry
-    \entry{skisprungschanzen_letalnica}{misc}{}
+    \entry{skisprungschanzen_letalnica}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=fd9ac98d5d57396fb4df573dcffd6f3d}{%
            family={{Ski Jumping Hill Archive, skisprungschanzen.com}},
@@ -414,10 +437,12 @@
       }
       \strng{namehash}{fd9ac98d5d57396fb4df573dcffd6f3d}
       \strng{fullhash}{fd9ac98d5d57396fb4df573dcffd6f3d}
+      \strng{fullhashraw}{fd9ac98d5d57396fb4df573dcffd6f3d}
       \strng{bibnamehash}{fd9ac98d5d57396fb4df573dcffd6f3d}
       \strng{authorbibnamehash}{fd9ac98d5d57396fb4df573dcffd6f3d}
       \strng{authornamehash}{fd9ac98d5d57396fb4df573dcffd6f3d}
       \strng{authorfullhash}{fd9ac98d5d57396fb4df573dcffd6f3d}
+      \strng{authorfullhashraw}{fd9ac98d5d57396fb4df573dcffd6f3d}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -427,7 +452,7 @@
       \field{title}{Letalnica (Letalnica bratov Gorišek), Planica, Slovenia — Ski Jumping Hill Archive}
       \field{year}{2025}
     \endentry
-    \entry{SkiJumping_Book}{book}{}
+    \entry{SkiJumping_Book}{book}{}{}
       \name{editor}{1}{}{%
         {{hash=22dfdbf9a3cc3e2137863a9a3a774b26}{%
            family={Thompson},
@@ -440,10 +465,12 @@
       }
       \strng{namehash}{22dfdbf9a3cc3e2137863a9a3a774b26}
       \strng{fullhash}{22dfdbf9a3cc3e2137863a9a3a774b26}
+      \strng{fullhashraw}{22dfdbf9a3cc3e2137863a9a3a774b26}
       \strng{bibnamehash}{22dfdbf9a3cc3e2137863a9a3a774b26}
       \strng{editorbibnamehash}{22dfdbf9a3cc3e2137863a9a3a774b26}
       \strng{editornamehash}{22dfdbf9a3cc3e2137863a9a3a774b26}
       \strng{editorfullhash}{22dfdbf9a3cc3e2137863a9a3a774b26}
+      \strng{editorfullhashraw}{22dfdbf9a3cc3e2137863a9a3a774b26}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{editor}
@@ -452,7 +479,7 @@
       \field{title}{Ski Jumping}
       \field{year}{2025}
     \endentry
-    \entry{vanWieringen2015ridge}{misc}{}
+    \entry{vanWieringen2015ridge}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=ff3388cee5607ea4b85de7e183af17c3}{%
            family={Wieringen},
@@ -464,10 +491,12 @@
       }
       \strng{namehash}{ff3388cee5607ea4b85de7e183af17c3}
       \strng{fullhash}{ff3388cee5607ea4b85de7e183af17c3}
+      \strng{fullhashraw}{ff3388cee5607ea4b85de7e183af17c3}
       \strng{bibnamehash}{ff3388cee5607ea4b85de7e183af17c3}
       \strng{authorbibnamehash}{ff3388cee5607ea4b85de7e183af17c3}
       \strng{authornamehash}{ff3388cee5607ea4b85de7e183af17c3}
       \strng{authorfullhash}{ff3388cee5607ea4b85de7e183af17c3}
+      \strng{authorfullhashraw}{ff3388cee5607ea4b85de7e183af17c3}
       \field{sortinit}{v}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{labelnamesource}{author}
@@ -480,7 +509,7 @@
       \verb 10.48550/arXiv.1509.09169
       \endverb
     \endentry
-    \entry{virmavirta2019aerodynamics}{article}{}
+    \entry{virmavirta2019aerodynamics}{article}{}{}
       \name{author}{2}{}{%
         {{hash=b93492f7e9dbd1b5e9670b58f939b0d1}{%
            family={Virmavirta},
@@ -498,10 +527,12 @@
       }
       \strng{namehash}{01164efec020f2445c4f57dec5a4246f}
       \strng{fullhash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{fullhashraw}{01164efec020f2445c4f57dec5a4246f}
       \strng{bibnamehash}{01164efec020f2445c4f57dec5a4246f}
       \strng{authorbibnamehash}{01164efec020f2445c4f57dec5a4246f}
       \strng{authornamehash}{01164efec020f2445c4f57dec5a4246f}
       \strng{authorfullhash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{authorfullhashraw}{01164efec020f2445c4f57dec5a4246f}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{labelnamesource}{author}
@@ -517,7 +548,7 @@
       \verb 10.1007/s12283-019-0298-1
       \endverb
     \endentry
-    \entry{StatQuest_NN_YouTube}{misc}{}
+    \entry{StatQuest_NN_YouTube}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=1d458e4fcf946ae0f9f09391ced3775c}{%
            family={Josh\bibnamedelima Starmer},
@@ -529,10 +560,12 @@
       }
       \strng{namehash}{1d458e4fcf946ae0f9f09391ced3775c}
       \strng{fullhash}{1d458e4fcf946ae0f9f09391ced3775c}
+      \strng{fullhashraw}{1d458e4fcf946ae0f9f09391ced3775c}
       \strng{bibnamehash}{1d458e4fcf946ae0f9f09391ced3775c}
       \strng{authorbibnamehash}{1d458e4fcf946ae0f9f09391ced3775c}
       \strng{authornamehash}{1d458e4fcf946ae0f9f09391ced3775c}
       \strng{authorfullhash}{1d458e4fcf946ae0f9f09391ced3775c}
+      \strng{authorfullhashraw}{1d458e4fcf946ae0f9f09391ced3775c}
       \field{sortinit}{w}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
@@ -542,7 +575,7 @@
       \field{title}{Neural Networks Tutorial}
       \field{year}{2025}
     \endentry
-    \entry{zecha2018convolutional}{inproceedings}{}
+    \entry{zecha2018convolutional}{inproceedings}{}{}
       \name{author}{5}{}{%
         {{hash=9132f49f9f226ac000015112b8ed45f1}{%
            family={Zecha},
@@ -572,10 +605,12 @@
       }
       \strng{namehash}{4df883fa59096c4bd12e93af006e323a}
       \strng{fullhash}{7ac1239c8ef93ad623ce890a10513e14}
+      \strng{fullhashraw}{7ac1239c8ef93ad623ce890a10513e14}
       \strng{bibnamehash}{7ac1239c8ef93ad623ce890a10513e14}
       \strng{authorbibnamehash}{7ac1239c8ef93ad623ce890a10513e14}
       \strng{authornamehash}{4df883fa59096c4bd12e93af006e323a}
       \strng{authorfullhash}{7ac1239c8ef93ad623ce890a10513e14}
+      \strng{authorfullhashraw}{7ac1239c8ef93ad623ce890a10513e14}
       \field{sortinit}{Z}
       \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
       \field{labelnamesource}{author}
