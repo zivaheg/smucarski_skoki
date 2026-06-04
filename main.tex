@@ -143,6 +143,14 @@ simulate how changing environmental conditions affect the full jump trajectory.
 \section{Approach to Modeling}\label{sec:data}
 This section describes the handling of data, focusing on state-space models and our data processing.
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{architecture.png}
+  \caption{Architecture of the paper}
+  \Description{A visual representation of the paper architecture }
+  \label{fig:planica}
+\end{figure}
+
 \subsection{State-Space Model}\label{subsec:ssm}
 State-Space Models (SSMs) are a family of machine learning algorithms designed to capture and predict the behavior of dynamic systems by describing how their inner states change over time.  
 Instead of only looking at past inputs and outputs, SSMs explicitly model the underlying dynamics, making them well-suited for sequential data. In state-space modeling, 
@@ -361,6 +369,9 @@ in the dataset. This allows us to use as much data as possible for training whil
 still providing a robust evaluation of the model's performance on unseen data.
 We then computed the average error between the actual jump and the simulated jump 
 for both the training set and the test set, as shown in Figure~\ref{fig:actual_vs_sim}. 
+We also made a baseline evaluation of the error by comparing the actual jump to the
+average jump from the average file. The error for both the trained and the test dataset 
+is the same ($2.72$ m) since the average file is the same for both datasets.
 
 At the end it turned out that the best model was the pure SSM with averaged wind
 data over the zones, which with the leave-one-out algorithm achieved an average 

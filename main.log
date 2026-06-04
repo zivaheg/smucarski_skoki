@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  31 MAY 2026 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  4 JUN 2026 15:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -906,7 +906,11 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 LaTeX Warning: Unused global option(s):
     [natbib=false,language=english].
 
-(main.aux)
+(main.aux
+
+LaTeX Warning: Label `fig:planica' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 30.
@@ -1251,98 +1255,106 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [1.1{C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_naooyc.enc}
 
 {C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_7grukw.enc}]
+<architecture.png, id=121, 1122.44344pt x 620.3175pt>
+File: architecture.png Graphic file (type png)
+<use architecture.png>
+Package pdftex.def Info: architecture.png  used on input line 148.
+(pdftex.def)             Requested size: 232.75394pt x 128.62357pt.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 166.
+(Font)              scaled to size 9.0pt on input line 174.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 9.0pt on input line 166.
+(Font)              scaled to size 9.0pt on input line 174.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 9.0pt on input line 166.
+(Font)              scaled to size 9.0pt on input line 174.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 9.0pt on input line 166.
+(Font)              scaled to size 9.0pt on input line 174.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 9.0pt on input line 166.
+(Font)              scaled to size 9.0pt on input line 174.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 9.0pt on input line 166.
+(Font)              scaled to size 9.0pt on input line 174.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 9.0pt on input line 166.
+(Font)              scaled to size 9.0pt on input line 174.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 9.0pt on input line 166.
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 167.
+(Font)              scaled to size 9.0pt on input line 174.
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 175.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/inconsolata\t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 167.
+(Font)              scaled to size 9.0pt on input line 175.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (4.03052pt too wide) in paragraph at lines 174--183
+Overfull \hbox (4.03052pt too wide) in paragraph at lines 182--191
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) The col-umn \T1/zi4/m/n/9 WindTime|WindName|WindSpeed|... \T1/LinuxLibertineT-TLF/m/n/9 (-20) com-bined mul-
  []
 
 
 
 
-Overfull \hbox (3.24062pt too wide) in paragraph at lines 192--193
+Overfull \hbox (3.24062pt too wide) in paragraph at lines 200--201
 []\T1/LinuxLibertineT-TLF/m/n/9 (-20) - an-gle be-tween
  []
 
-<koncen_graf.jpg, id=127, 1931.215pt x 1243.64626pt>
+<koncen_graf.jpg, id=129, 1931.215pt x 1243.64626pt>
 File: koncen_graf.jpg Graphic file (type jpg)
 <use koncen_graf.jpg>
-Package pdftex.def Info: koncen_graf.jpg  used on input line 201.
+Package pdftex.def Info: koncen_graf.jpg  used on input line 209.
 (pdftex.def)             Requested size: 232.75394pt x 149.87631pt.
-<koti.png, id=132, 971.63pt x 760.8425pt>
+<koti.png, id=134, 971.63pt x 760.8425pt>
 File: koti.png Graphic file (type png)
 <use koti.png>
-Package pdftex.def Info: koti.png  used on input line 209.
+Package pdftex.def Info: koti.png  used on input line 217.
 (pdftex.def)             Requested size: 232.75394pt x 182.25764pt.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 218.
+(Font)              scaled to size 9.0pt on input line 229.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 218.
-[2.2{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-4.enc} <./koncen_graf.jpg> <./koti.png>]
+(Font)              scaled to size 7.0pt on input line 229.
+[2.2{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-4.enc} <./architecture.png> <./koncen_graf.jpg>]
 
-<shema_matrik.png, id=160, 1107.13625pt x 720.6925pt>
+<shema_matrik.png, id=162, 1107.13625pt x 720.6925pt>
 File: shema_matrik.png Graphic file (type png)
 <use shema_matrik.png>
-Package pdftex.def Info: shema_matrik.png  used on input line 290.
+Package pdftex.def Info: shema_matrik.png  used on input line 298.
 (pdftex.def)             Requested size: 232.75394pt x 151.50385pt.
 
 
-[3.3 <./shema_matrik.png>]
+[3.3 <./koti.png> <./shema_matrik.png>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 328.
+(Font)              scaled to size 6.6pt on input line 336.
 
 
-<2SSM_flight_simulation123.png, id=178, 1553.805pt x 1414.28375pt>
+<2SSM_flight_simulation123.png, id=181, 1553.805pt x 1414.28375pt>
 File: 2SSM_flight_simulation123.png Graphic file (type png)
 <use 2SSM_flight_simulation123.png>
-Package pdftex.def Info: 2SSM_flight_simulation123.png  used on input line 379.
+Package pdftex.def Info: 2SSM_flight_simulation123.png  used on input line 390.
 (pdftex.def)             Requested size: 232.75394pt x 211.85286pt.
 
 
 [4.4 <./2SSM_flight_simulation123.png>]
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 413--423
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 424--434
  [][] 
  []
 
 
 
 
-Underfull \vbox (badness 1072) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [5.5]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 524.
+(Font)              scaled to size 7.0pt on input line 535.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 7.0pt on input line 524.
+(Font)              scaled to size 7.0pt on input line 535.
 
 
 Class acmart Warning: ACM reference format is mandatory 
@@ -1358,7 +1370,7 @@ Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.8pt on input line 525.
+(Font)              scaled to size 8.8pt on input line 536.
 
 Overfull \hbox (4.592pt too wide) has occurred while \output is active
  [][][][] 
@@ -1378,6 +1390,10 @@ File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: DE2F65D0D701CC74D15256F373E5C3F6;3406.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1385,17 +1401,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29598 strings out of 473523
- 521025 string characters out of 5715598
- 1433581 words of memory out of 5000000
- 51739 multiletter control sequences out of 15000+600000
+ 29606 strings out of 473523
+ 521202 string characters out of 5715598
+ 1438620 words of memory out of 5000000
+ 51746 multiletter control sequences out of 15000+600000
  718715 words of font info for 383 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,13n,131p,1050b,1903s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,131p,1050b,1904s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/LibertineMathMI7.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (6 pages, 1374975 bytes).
+Output written on main.pdf (6 pages, 2162540 bytes).
 PDF statistics:
- 296 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 86733 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 300 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 86738 words of extra memory for PDF output out of 89155 (max. 10000000)
 

@@ -464,6 +464,13 @@ INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinL
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineTI-tlf-t1.vf
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineTI-tlf-t1--base.tfm
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\libertine\lbtn_7grukw.enc
+INPUT .\architecture.png
+INPUT .\architecture.png
+INPUT .\architecture.png
+INPUT .\architecture.png
+INPUT .\architecture.png
+INPUT .\architecture.png
+INPUT .\architecture.png
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-ot1.tfm
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\nxlmi.tfm
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxsy.tfm
@@ -496,6 +503,8 @@ INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinB
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinBiolinumT-tlf-t1.tfm
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinBiolinumT-tlf-t1.vf
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinBiolinumT-tlf-t1--base.tfm
+INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineTB-tlf-t1.vf
+INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineTB-tlf-t1--base.tfm
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineT-tlf-ot1.vf
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-ot1--base.tfm
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\libertine\lbtn_oexx6f.enc
@@ -507,8 +516,6 @@ INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\vf\public\newtx\nxlmia.vf
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\LibertineMathRM.tfm
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\txmiaSTbb.tfm
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\txmiaX.tfm
-INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineTB-tlf-t1.vf
-INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineTB-tlf-t1--base.tfm
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\vf\public\newtx\nxlmi.vf
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\LibertineMathMI.tfm
 INPUT C:\Users\vsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\NewTXMI.tfm
