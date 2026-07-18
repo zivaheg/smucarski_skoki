@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1780244370.40306 "main.bcf" "main.bbl" "main" 1784044088.87738 0
-  "main.bcf" 1784044087 119912 29bcc1dc1bcc08877532a9cea389e176 "pdflatex"
+["biber main"] 1780244370.40306 "main.bcf" "main.bbl" "main" 1784371205.23505 0
+  "main.bcf" 1784371204 119912 29bcc1dc1bcc08877532a9cea389e176 "pdflatex"
   "refs.bib" 1780157824 6026 fac1f819d8a0b9f2adfa4e2c33c270bb ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1784044079.18712 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/main.tex" "main.pdf" "main" 1784044088.8796 0
+["pdflatex"] 1784371197.5858 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/main.tex" "main.pdf" "main" 1784371205.23699 0
   "2SSM_flight_simulation123.png" 1780157824 333840 73fef214afdcbd2e3bb12c2bac2e403e ""
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1774961679 188945 f90228b2c2ed7e43d9b39352231d9eef ""
   "C:/Users/vsi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1741687351 12035121 729d0b8bc385de9d6b208fe98578324f ""
@@ -232,14 +232,14 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
   "acmart.cls" 1780157824 124370 98b808b7553ebca0d5ca8dc96583b7f7 ""
   "architecture.png" 1780835906 967339 14266d1a0a4e12e4f1acea8f12548e00 ""
-  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/main.tex" 1784043758 37262 21ca0f4b1a9c606883f7a6d076981784 ""
+  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/main.tex" 1784371193 37264 ef632b07c44964da59cc871cf7e18a52 ""
   "koncen_graf.jpg" 1780157824 227736 6a1167bb62a01405ad1f7e4c4ff04c1d ""
   "koti.png" 1780157824 189551 691638392e513e80a392828b87872926 ""
-  "main.aux" 1784044087 9170 f0b94d549bd00969bf67dad4b131314d "pdflatex"
+  "main.aux" 1784371204 9170 f0b94d549bd00969bf67dad4b131314d "pdflatex"
   "main.bbl" 1780244375 26391 dd57006d7a483eb953a5bfbfcbae7954 "biber main"
-  "main.out" 1784044087 3671 53e63afa54a1e9af278a9c56ffb9e0c7 "pdflatex"
-  "main.run.xml" 1784044087 2547 ab452c9c62b2412bc1d16b8219832f93 "pdflatex"
-  "main.tex" 1784043758 37262 21ca0f4b1a9c606883f7a6d076981784 ""
+  "main.out" 1784371204 3671 53e63afa54a1e9af278a9c56ffb9e0c7 "pdflatex"
+  "main.run.xml" 1784371204 2547 ab452c9c62b2412bc1d16b8219832f93 "pdflatex"
+  "main.tex" 1784371193 37264 ef632b07c44964da59cc871cf7e18a52 ""
   "shema_matrik.png" 1780157824 339361 2fad51185fda1a4316a20cfff865bf21 ""
   (generated)
   "main.aux"
