@@ -44,6 +44,7 @@ export interface ModelData {
     regression: string
     alpha: number
     fitIntercept: boolean
+    maximumSequenceLength: number
     reportedCrossValidationErrorMetres: number
     reportedAverageFlightBaselineErrorMetres: number
   }
@@ -96,6 +97,11 @@ export interface HillData {
   }
   surfaceHalfWidth: number
   distanceMarkers: number[]
+  landmarks: Array<{
+    key: string
+    label: string
+    x: number
+  }>
   points: Array<[number, number]>
   note: string
 }
@@ -105,6 +111,8 @@ export interface SimulationResult {
   controls: ControlSequence
   observations: StateSequence
   times: number[]
+  termination: 'horizon' | 'landing' | 'extension-limit'
+  extensionSteps: number
 }
 
 export interface JumpMetrics {
@@ -115,6 +123,9 @@ export interface JumpMetrics {
   maxAbsY: number
   minimumClearance: number | null
   landingClearance: number | null
+  landingTime: number | null
+  landingSpeed: number | null
+  landed: boolean
   finite: boolean
 }
 
@@ -123,4 +134,3 @@ export interface AppData {
   baseline: BaselineData
   hill: HillData
 }
-

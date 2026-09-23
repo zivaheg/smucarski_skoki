@@ -6,7 +6,7 @@ import type { CameraPreset } from './scene/JumpScene'
 import { defaultSliders } from './simulation/controls'
 import { calculateMetrics } from './simulation/metrics'
 import type { AppData, JumpMetrics, Vector } from './simulation/model-types'
-import { simulateSSM, stateAtTime } from './simulation/ssm'
+import { simulateToLanding, stateAtTime } from './simulation/ssm'
 
 const JumpScene = lazy(() =>
   import('./scene/JumpScene').then((module) => ({ default: module.JumpScene })),
@@ -33,7 +33,7 @@ function MetricCards({ metrics, currentState, time }: { metrics: JumpMetrics; cu
       <article className="metric-card metric-card--featured">
         <div className="metric-card__icon" aria-hidden="true">↗</div>
         <div>
-          <span>Jump distance</span>
+          <span>{metrics.landed ? 'Landing distance' : 'Unresolved endpoint'}</span>
           <strong>{format(metrics.displayedDistance)} <small>m</small></strong>
           <Delta value={metrics.distanceDelta} />
         </div>
@@ -54,9 +54,9 @@ function MetricCards({ metrics, currentState, time }: { metrics: JumpMetrics; cu
         <small>Maximum across flight</small>
       </article>
       <article className="metric-card">
-        <span>Landing clearance</span>
-        <strong>{format(metrics.landingClearance)} <small>m</small></strong>
-        <small>Above hill profile</small>
+        <span>{metrics.landed ? 'Landing speed' : 'Endpoint speed'}</span>
+        <strong>{format(metrics.landed ? metrics.landingSpeed : currentState[6]!)} <small>m/s</small></strong>
+        <small>{metrics.landed ? `Hill contact at ${format(metrics.landingTime)} s` : 'Duration limit reached'}</small>
       </article>
       <article className="metric-card">
         <span>Live speed · {time.toFixed(2)} s</span>
@@ -81,16 +81,20 @@ function Dashboard({ data }: { data: AppData }) {
   })
 
   const baselineResult = useMemo(
-    () => simulateSSM(model, baseline, defaultSliders(model)),
-    [baseline, model],
+    () => simulateToLanding(model, baseline, hill, defaultSliders(model)),
+    [baseline, hill, model],
   )
   const result = useMemo(
-    () => simulateSSM(model, baseline, sliders),
-    [baseline, model, sliders],
+    () => simulateToLanding(model, baseline, hill, sliders),
+    [baseline, hill, model, sliders],
+  )
+  const baselineMetrics = useMemo(
+    () => calculateMetrics(baselineResult, hill, 0),
+    [baselineResult, hill],
   )
   const metrics = useMemo(
-    () => calculateMetrics(result, hill, baseline.referenceSimulation.displayedDistance),
-    [baseline.referenceSimulation.displayedDistance, hill, result],
+    () => calculateMetrics(result, hill, baselineMetrics.displayedDistance),
+    [baselineMetrics.displayedDistance, hill, result],
   )
   const duration = result.times[result.times.length - 1] ?? 0
   const playback = usePlayback(duration)
@@ -203,8 +207,8 @@ function Dashboard({ data }: { data: AppData }) {
             </section>
 
             <div className="context-strip">
-              <span className="context-strip__number">139</span>
-              <span>flight states</span>
+              <span className="context-strip__number">{result.states.length}</span>
+              <span>states to hill contact</span>
               <i />
               <span className="context-strip__number">{model.sampleIntervalSeconds.toFixed(2)} s</span>
               <span>sample interval</span>
@@ -214,6 +218,8 @@ function Dashboard({ data }: { data: AppData }) {
           <div className={`control-drawer${controlsOpen ? ' is-open' : ''}`}>
             <ControlPanel
               model={model}
+              baseline={baseline}
+              hill={hill}
               sliders={sliders}
               onSlidersChange={setSliders}
               playback={playback}

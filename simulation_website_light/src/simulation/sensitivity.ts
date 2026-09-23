@@ -1,6 +1,6 @@
 import type { BaselineData, HillData, ModelData, Vector } from './model-types'
 import { calculateMetrics } from './metrics'
-import { simulateSSM } from './ssm'
+import { simulateToLanding } from './ssm'
 
 export interface SensitivityResult {
   index: number
@@ -16,7 +16,7 @@ export function calculateSensitivity(
   hill: HillData,
   sliders: Vector,
 ): SensitivityResult[] {
-  const baseResult = simulateSSM(model, baseline, sliders)
+  const baseResult = simulateToLanding(model, baseline, hill, sliders)
   const baseDistance = calculateMetrics(baseResult, hill, 0).displayedDistance
   const definitions = [...model.controls, model.globalAngleOffset]
   return definitions.map((definition, index) => {
@@ -28,7 +28,7 @@ export function calculateSensitivity(
     } else {
       adjusted[index] = positive
     }
-    const result = simulateSSM(model, baseline, adjusted)
+    const result = simulateToLanding(model, baseline, hill, adjusted)
     const distance = calculateMetrics(result, hill, baseDistance).displayedDistance
     return {
       index,
@@ -39,4 +39,3 @@ export function calculateSensitivity(
     }
   })
 }
-

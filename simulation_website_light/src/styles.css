@@ -139,6 +139,7 @@ input[type="checkbox"] { accent-color: var(--green); }
 .scene-viewport canvas { display: block; }
 .module-loader { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); font-size: 0.76rem; }
 .scene-label { display: inline-block; padding: 3px 6px; border: 1px solid rgba(73, 98, 86, 0.25); border-radius: 5px; background: rgba(255, 255, 255, 0.88); box-shadow: 0 3px 10px rgba(30, 50, 39, 0.08); color: #365044; font-size: 8px; font-weight: 700; white-space: nowrap; }
+.scene-label--landmark { color: #9f351c; border-color: rgba(215, 91, 50, 0.55); }
 .wind-marker { display: grid; gap: 1px; min-width: 86px; padding: 5px 7px; border: 1px solid color-mix(in srgb, var(--wind-color) 50%, white); border-left: 3px solid var(--wind-color); border-radius: 5px; background: rgba(255, 255, 255, 0.9); box-shadow: 0 5px 14px rgba(29, 49, 39, 0.12); white-space: nowrap; }
 .wind-marker strong { color: var(--wind-color); font-size: 7px; letter-spacing: 0.035em; text-transform: uppercase; }
 .wind-marker small { color: #65736c; font-size: 6px; }
@@ -170,8 +171,8 @@ input[type="checkbox"] { accent-color: var(--green); }
 .section-heading span { color: var(--green); font-variant-numeric: tabular-nums; }
 .playback-buttons select { flex: 1; min-width: 62px; }
 .preset-grid .chip { flex: 1; min-width: 64px; padding-inline: 7px; }
+.preset-grid .chip--optimal { flex-basis: 100%; }
 .timeline { width: 100%; margin-top: 11px; }
-.warning-note { margin-top: 10px; padding: 9px 10px; border: 1px solid #efc79c; border-radius: 8px; background: #fff8ec; color: #83571f; font-size: 0.69rem; line-height: 1.45; }
 .control-scroll { min-height: 0; overflow: auto; display: flex; flex-direction: column; gap: 8px; padding: 1px 4px 16px 0; scrollbar-color: #b8c7be transparent; }
 .control-group { overflow: clip; flex: none; }
 .control-group summary { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 11px; list-style: none; color: #35463d; font-size: 0.75rem; font-weight: 750; cursor: pointer; }

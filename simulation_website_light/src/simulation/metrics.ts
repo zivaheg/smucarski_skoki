@@ -46,6 +46,7 @@ export function calculateMetrics(
     })
     .filter((value): value is number => value !== null)
   const landingGround = hillZAt(hill, endpoint[0])
+  const landed = result.termination === 'landing'
   return {
     endpoint,
     displayedDistance: distance,
@@ -54,6 +55,9 @@ export function calculateMetrics(
     maxAbsY: Math.max(...result.states.map((state) => Math.abs(state[1]!))),
     minimumClearance: clearances.length > 0 ? Math.min(...clearances) : null,
     landingClearance: landingGround === null ? null : endpoint[2] - landingGround,
+    landingTime: landed ? result.times[result.times.length - 1]! : null,
+    landingSpeed: landed ? endpointState[6]! : null,
+    landed,
     finite: result.states.every((state) => state.every(Number.isFinite)),
   }
 }

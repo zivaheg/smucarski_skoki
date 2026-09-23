@@ -19,7 +19,7 @@ import numpy as np
 
 WEBSITE_DIR = Path(__file__).resolve().parents[1]
 PROJECT_DIR = WEBSITE_DIR.parent
-SOURCE_DIR = PROJECT_DIR / "skijump_app"
+SOURCE_DIR = PROJECT_DIR / "old_skijumping_app"
 OUTPUT_DIR = WEBSITE_DIR / "public" / "data"
 
 STATE_NAMES = [
@@ -109,6 +109,63 @@ BODY_MEAN_LIMITS = [
     [-7.7, 5.3],
     [-6.9, 7.1],
 ]
+
+PLANICA_K_X = 170.45
+PLANICA_HS_X = 205.0
+PLANICA_HS_Z = -122.57
+PLANICA_U_Z = -135.0
+PLANICA_LANDING_ANGLE_DEGREES = 29.6
+PLANICA_OUTRUN_LENGTH = 130.0
+PLANICA_OUTRUN_ANGLE_DEGREES = 4.5
+
+
+def extend_planica_profile(points: list[list[float]]) -> tuple[list[list[float]], float]:
+    """Extend the measured average-flight surface through the certified outrun."""
+    x0, z0 = points[-1]
+    start_slope = -0.64
+    landing_slope = -math.tan(math.radians(PLANICA_LANDING_ANGLE_DEGREES))
+    span = PLANICA_HS_X - x0
+
+    def landing_z(x: float) -> float:
+        t = (x - x0) / span
+        return (
+            (2 * t**3 - 3 * t**2 + 1) * z0
+            + (t**3 - 2 * t**2 + t) * span * start_slope
+            + (-2 * t**3 + 3 * t**2) * PLANICA_HS_Z
+            + (t**3 - t**2) * span * landing_slope
+        )
+
+    for x in np.arange(179.0, PLANICA_HS_X, 2.0):
+        points.append([float(x), landing_z(float(x))])
+    points.append([PLANICA_HS_X, PLANICA_HS_Z])
+
+    outrun_angle = math.radians(PLANICA_OUTRUN_ANGLE_DEGREES)
+    outrun_slope = -math.tan(outrun_angle)
+    transition_span = (
+        2 * (PLANICA_U_Z - PLANICA_HS_Z) / (landing_slope + outrun_slope)
+    )
+    u_x = PLANICA_HS_X + transition_span
+
+    def transition_z(x: float) -> float:
+        offset = x - PLANICA_HS_X
+        return (
+            PLANICA_HS_Z
+            + landing_slope * offset
+            + (outrun_slope - landing_slope) * offset**2 / (2 * transition_span)
+        )
+
+    for x in np.arange(210.0, u_x, 5.0):
+        points.append([float(x), transition_z(float(x))])
+    points.append([u_x, PLANICA_U_Z])
+
+    outrun_dx = PLANICA_OUTRUN_LENGTH * math.cos(outrun_angle)
+    outrun_dz = PLANICA_OUTRUN_LENGTH * math.sin(outrun_angle)
+    for step in range(1, 11):
+        fraction = step / 10
+        points.append(
+            [u_x + outrun_dx * fraction, PLANICA_U_Z - outrun_dz * fraction]
+        )
+    return points, u_x
 
 
 def load_matrix(name: str) -> np.ndarray:
@@ -220,6 +277,7 @@ def main() -> None:
             "regression": "Ridge",
             "alpha": 10.0,
             "fitIntercept": False,
+            "maximumSequenceLength": 163,
             "reportedCrossValidationErrorMetres": 1.625906478498713,
             "reportedAverageFlightBaselineErrorMetres": 2.7208366614042823,
         },
@@ -259,8 +317,7 @@ def main() -> None:
         "warnings": [
             "Outputs are predictions of a fitted linear model, not causal physical conclusions.",
             "Speed and body-angle values occur in both state and control vectors.",
-            "Do not extrapolate beyond the trained 139-point flight horizon.",
-            "Several individually valid slider extremes can form an unusual combined scenario.",
+            "Landing detection may continue to the maximum observed 163-point sequence while holding the final body-control values constant.",
         ],
         "provenance": {
             key: {
@@ -295,6 +352,7 @@ def main() -> None:
         hill_points = [
             [float(row["X [m]"]), float(row["Ground Z [m]"])] for row in rows
         ]
+    hill_points, planica_u_x = extend_planica_profile(hill_points)
 
     hill_asset = {
         "schemaVersion": 1,
@@ -304,9 +362,19 @@ def main() -> None:
             "z": "vertical elevation relative to takeoff [m]",
         },
         "surfaceHalfWidth": 18.0,
-        "distanceMarkers": list(range(25, 176, 25)),
+        "distanceMarkers": list(range(50, 351, 50)),
+        "landmarks": [
+            {"key": "K", "label": "K 200 m", "x": PLANICA_K_X},
+            {"key": "HS", "label": "HS 240 m", "x": PLANICA_HS_X},
+            {"key": "U", "label": "Outrun U", "x": planica_u_x},
+        ],
         "points": hill_points,
-        "note": "Longitudinal measured profile extruded laterally for visualization; not a surveyed 3D terrain mesh.",
+        "note": (
+            "Measured longitudinal profile through X=177 m, extended through the "
+            "FIS-certified Planica K=200 m, HS=240 m, U=-135 m and 130 m outrun "
+            "geometry; extruded laterally for visualization, not a surveyed 3D "
+            "terrain mesh."
+        ),
     }
 
     write_json("model.json", model)

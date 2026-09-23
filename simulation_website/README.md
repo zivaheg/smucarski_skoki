@@ -9,10 +9,12 @@ The application runs the full 14-state, 20-control model locally in the browser,
 - Exact `x[t+1] = A·x[t] + B·u[t]` recurrence used by `skijump_app`.
 - `y[t] = C·x[t] + D·u[t]` observation diagnostics.
 - All 12 wind offsets, eight speed/body profile means, and the overall angle offset.
+- Exhaustive bounded wind optimization for maximum interpolated hill-contact distance.
 - Baseline-versus-modified trajectory comparison.
 - Play, pause, restart, timeline scrubber, and playback speeds.
 - Rotatable, zoomable, pannable Three.js hill with camera presets.
 - Animated jumper, wind-zone indicators, distance markers, and landing point.
+- Planica K=200 m and HS=240 m landmarks plus the certified-scale outrun.
 - Selectable trajectory, state, control, observation, sensitivity, and matrix plots.
 - Responsive dark interface with an off-canvas control drawer on small screens.
 - No simulation server: after the static assets load, calculations remain in the browser.
@@ -68,7 +70,7 @@ The deployable static application is written to `dist/`. Vite uses a relative ba
 
 ## Regenerating browser model assets
 
-The application never reads from `skijump_app` at runtime. Versioned JSON assets are generated from its audited CSV files:
+The application never reads from `old_skijumping_app` at runtime. Versioned JSON assets are generated from its audited CSV files:
 
 ```powershell
 npm run export:model
@@ -111,22 +113,24 @@ turbulence:     takeoff, middle, landing
 speed, opening, roll L/R, yaw L/R, stall L/R
 ```
 
-Wind sliders are offsets from the fitted average wind values. Speed and angle sliders shift the means of their complete 139-point baseline profiles. The global angle offset affects the seven angle controls, not speed.
+Wind sliders are offsets from the fitted average wind values. They enter the learned `B` matrix and therefore affect position, velocity, resulting speed, and the other modeled states through the fitted recurrence. Speed and angle sliders shift the means of their complete 139-point baseline profiles. The global angle offset affects the seven angle controls, not speed.
+
+The **Optimal wind** preset preserves the current jumper configuration, checks all 4,096 corners of the 12 wind bounds, detects each trajectory's first interpolated hill contact, selects the greatest landing distance, fills the wind sliders, and starts playback. Affine state responses make this exhaustive search inexpensive even though hill contact makes the final objective nonlinear.
 
 ### Time and distance
 
 - Sampling interval: 0.05 seconds.
-- Supported horizon: 139 points / 138 transitions / 6.90 seconds.
-- Displayed distance: `sqrt(X_endpoint² + Z_endpoint²)`, retained for parity with the existing app.
+- Reference profile: 139 points / 138 transitions / 6.90 seconds.
+- Landing detection may continue to 163 points, the maximum observed training-sequence length. During this short tail the final body-control values are held constant.
+- Landing distance: `sqrt(X_contact² + Z_contact²)` at the first interpolated intersection with the hill profile.
 
 ## Interpretation and limitations
 
 - Results are predictions of a fitted linear SSM, not causal physical conclusions.
 - Speed and body angles occur in both state and control vectors, which limits coefficient-level causal interpretation.
-- The A matrix spectral radius is approximately 1.0135. The UI therefore limits simulation to the trained horizon.
+- The A matrix spectral radius is approximately 1.0135. The UI therefore stops at hill contact and never continues beyond the maximum observed 163-point sequence length.
 - Slider limits come from observed training ranges, but combining multiple extremes can still produce an unusual scenario.
-- The landing surface is a longitudinal X/Z profile extruded across Y. It is not a surveyed 3D Planica terrain mesh.
+- The measured landing surface is extended with Planica's certified K=200 m, HS=240 m, U=-135 m, and 130 m outrun parameters, then extruded across Y. It is not a surveyed 3D Planica terrain mesh.
 - The `C/D` height observation is available as a model diagnostic. Terrain clearance is separately calculated against the displayed hill profile.
 
 See [plan..md](./plan..md) for the investigation, rationale, phased plan, and future extensions.
-

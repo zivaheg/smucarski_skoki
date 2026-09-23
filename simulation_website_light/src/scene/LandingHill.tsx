@@ -86,7 +86,35 @@ export function LandingHill({ hill, showLabels }: LandingHillProps) {
                 distanceFactor={55}
                 style={{ pointerEvents: 'none' }}
               >
-                <span className="scene-label">{x} m</span>
+                <span className="scene-label">X {x} m</span>
+              </Html>
+            )}
+          </group>
+        )
+      })}
+
+      {hill.landmarks.map((landmark) => {
+        const z = hillZAt(hill, landmark.x) ?? 0
+        return (
+          <group key={landmark.key}>
+            <Line
+              points={[
+                [landmark.x, z + 0.16, -hill.surfaceHalfWidth],
+                [landmark.x, z + 0.16, hill.surfaceHalfWidth],
+              ]}
+              color="#d75b32"
+              lineWidth={1.8}
+              transparent
+              opacity={0.9}
+            />
+            {showLabels && (
+              <Html
+                position={[landmark.x, z + 2.15, -hill.surfaceHalfWidth - 0.8]}
+                center
+                distanceFactor={55}
+                style={{ pointerEvents: 'none' }}
+              >
+                <span className="scene-label scene-label--landmark">{landmark.label}</span>
               </Html>
             )}
           </group>

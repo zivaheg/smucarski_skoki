@@ -1,10 +1,13 @@
 import type { PlaybackController } from '../hooks/usePlayback'
-import { clampSliders, unusualScenario } from '../simulation/controls'
-import type { ModelData, Vector } from '../simulation/model-types'
+import { clampSliders } from '../simulation/controls'
+import type { BaselineData, HillData, ModelData, Vector } from '../simulation/model-types'
+import { optimizeWindForDistance } from '../simulation/optimization'
 import { ParameterSlider } from './ParameterSlider'
 
 interface ControlPanelProps {
   model: ModelData
+  baseline: BaselineData
+  hill: HillData
   sliders: Vector
   onSlidersChange: (values: Vector) => void
   playback: PlaybackController
@@ -25,6 +28,8 @@ function zoneTitle(zone: keyof typeof WIND_ZONE_INDICES): string {
 
 export function ControlPanel({
   model,
+  baseline,
+  hill,
   sliders,
   onSlidersChange,
   playback,
@@ -54,7 +59,13 @@ export function ControlPanel({
     onSlidersChange(clampSliders(model, next))
   }
 
-  const isUnusual = unusualScenario(model, sliders)
+  const applyOptimalWind = () => {
+    const optimum = optimizeWindForDistance(model, baseline, hill, sliders)
+    onSlidersChange(optimum.sliders)
+    playback.restart()
+    playback.play()
+    onClose?.()
+  }
 
   return (
     <aside className="control-panel" aria-label="Simulation controls">
@@ -109,15 +120,17 @@ export function ControlPanel({
         <div className="section-heading" id="scenario-heading">Scenarios</div>
         <div className="preset-grid">
           <button className="chip" onClick={reset}>Average</button>
+          <button
+            className="chip chip--optimal"
+            onClick={applyOptimalWind}
+            title="Set all wind offsets to the bounded maximum of interpolated hill-contact distance and play the jump"
+          >
+            Optimal wind
+          </button>
           <button className="chip" onClick={() => applyPreset('speed')} title="Add 1 m/s to the current takeoff-speed setting">Speed +1</button>
           <button className="chip" onClick={() => applyPreset('crosswind')}>Crosswind</button>
           <button className="chip" onClick={() => applyPreset('angles')} title="Add 0.7° to the current global angle offset">Angles +0.7°</button>
         </div>
-        {isUnusual && (
-          <div className="warning-note" role="status">
-            Several settings form an unusual combined scenario. Interpret the result cautiously.
-          </div>
-        )}
       </section>
 
       <div className="control-scroll">

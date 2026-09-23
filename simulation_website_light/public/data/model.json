@@ -10,6 +10,7 @@
     "regression": "Ridge",
     "alpha": 10.0,
     "fitIntercept": false,
+    "maximumSequenceLength": 163,
     "reportedCrossValidationErrorMetres": 1.625906478498713,
     "reportedAverageFlightBaselineErrorMetres": 2.7208366614042823
   },
@@ -1123,8 +1124,7 @@
   "warnings": [
     "Outputs are predictions of a fitted linear model, not causal physical conclusions.",
     "Speed and body-angle values occur in both state and control vectors.",
-    "Do not extrapolate beyond the trained 139-point flight horizon.",
-    "Several individually valid slider extremes can form an unusual combined scenario."
+    "Landing detection may continue to the maximum observed 163-point sequence while holding the final body-control values constant."
   ],
   "provenance": {
     "A": {

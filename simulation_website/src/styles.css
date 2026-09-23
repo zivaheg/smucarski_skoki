@@ -67,8 +67,8 @@ h2 { margin-bottom: 0; font-size: 1.16rem; }
 .button:active, .chip:active { transform: translateY(1px); }
 .button--primary, .chip.is-active { background: linear-gradient(135deg, #087f94, #11687b); border-color: #2da8bd; color: #f5fdff; }
 .preset-grid .chip { flex: 1; min-width: 70px; }
+.preset-grid .chip--optimal { flex-basis: 100%; }
 .timeline { width: 100%; margin-top: 11px; }
-.warning-note { margin-top: 10px; padding: 9px 10px; color: #ffe49a; border: 1px solid rgba(245, 199, 95, 0.28); border-radius: 8px; background: rgba(245, 199, 95, 0.08); font-size: 0.72rem; line-height: 1.45; }
 .control-scroll { min-height: 0; overflow: auto; display: flex; flex-direction: column; gap: 9px; padding: 1px 4px 18px 0; scrollbar-color: #365763 transparent; }
 .control-group { overflow: clip; flex: none; }
 .control-group summary { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 11px 12px; cursor: pointer; list-style: none; color: #d9e8ec; font-size: 0.8rem; font-weight: 700; }
@@ -135,6 +135,7 @@ input[type="checkbox"] { accent-color: #18a5bd; }
 .module-loader { position: absolute; inset: 0; }
 .analysis-placeholder { min-height: 260px; margin-top: 16px; border: 1px solid var(--line); border-radius: 15px; background: rgba(10, 24, 32, 0.9); }
 .scene-label { display: inline-block; padding: 2px 5px; color: #d8edf1; border: 1px solid rgba(112, 160, 174, 0.45); border-radius: 4px; background: rgba(7, 18, 25, 0.8); font-size: 8px; white-space: nowrap; }
+.scene-label--landmark { color: #ffd1b8; border-color: rgba(255, 155, 102, 0.72); font-weight: 750; }
 .wind-marker { display: grid; gap: 1px; min-width: 84px; padding: 4px 7px; color: #edf8fa; border: 1px solid color-mix(in srgb, var(--wind-color) 65%, transparent); border-left: 3px solid var(--wind-color); border-radius: 5px; background: rgba(5, 16, 23, 0.88); box-shadow: 0 5px 14px rgba(0, 0, 0, 0.25); white-space: nowrap; }
 .wind-marker strong { color: var(--wind-color); font-size: 7px; letter-spacing: 0.04em; text-transform: uppercase; }
 .wind-marker small { color: #b3c8ce; font-size: 6px; }

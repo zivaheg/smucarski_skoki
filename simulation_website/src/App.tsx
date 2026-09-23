@@ -7,7 +7,7 @@ import { defaultSliders } from './simulation/controls'
 import { calculateMetrics } from './simulation/metrics'
 import type { AppData, JumpMetrics, Vector } from './simulation/model-types'
 import { calculateSensitivity } from './simulation/sensitivity'
-import { simulateSSM, stateAtTime } from './simulation/ssm'
+import { simulateToLanding, stateAtTime } from './simulation/ssm'
 
 const JumpScene = lazy(() =>
   import('./scene/JumpScene').then((module) => ({ default: module.JumpScene })),
@@ -31,10 +31,10 @@ function MetricCards({ metrics, currentState, time }: { metrics: JumpMetrics; cu
   return (
     <div className="metric-grid" aria-label="Simulation outcomes">
       <article className="metric-card metric-card--featured">
-        <span>Displayed distance</span>
+        <span>{metrics.landed ? 'Landing distance' : 'Unresolved endpoint'}</span>
         <strong>{format(metrics.displayedDistance)} <small>m</small></strong>
         <Delta value={metrics.distanceDelta} />
-        <small>X/Z range · Y is lateral</small>
+        <small>{metrics.landed ? 'Interpolated hill contact · X/Z plane' : 'No hill contact in supported duration'}</small>
       </article>
       <article className="metric-card">
         <span>Landing X / Y</span>
@@ -52,9 +52,9 @@ function MetricCards({ metrics, currentState, time }: { metrics: JumpMetrics; cu
         <small>|Y| across the flight</small>
       </article>
       <article className="metric-card">
-        <span>Landing clearance</span>
-        <strong>{format(metrics.landingClearance)} <small>m</small></strong>
-        <small>against model hill profile</small>
+        <span>{metrics.landed ? 'Landing speed' : 'Endpoint speed'}</span>
+        <strong>{format(metrics.landed ? metrics.landingSpeed : currentState[6]!)} <small>m/s</small></strong>
+        <small>{metrics.landed ? `hill contact at ${format(metrics.landingTime)} s` : 'simulation duration limit reached'}</small>
       </article>
       <article className="metric-card">
         <span>Live state · {time.toFixed(2)} s</span>
@@ -79,17 +79,20 @@ function Dashboard({ data }: { data: AppData }) {
   })
 
   const baselineResult = useMemo(
-    () => simulateSSM(model, baseline, defaultSliders(model)),
-    [baseline, model],
+    () => simulateToLanding(model, baseline, hill, defaultSliders(model)),
+    [baseline, hill, model],
   )
   const result = useMemo(
-    () => simulateSSM(model, baseline, sliders),
-    [baseline, model, sliders],
+    () => simulateToLanding(model, baseline, hill, sliders),
+    [baseline, hill, model, sliders],
   )
-  const baselineDistance = baseline.referenceSimulation.displayedDistance
+  const baselineMetrics = useMemo(
+    () => calculateMetrics(baselineResult, hill, 0),
+    [baselineResult, hill],
+  )
   const metrics = useMemo(
-    () => calculateMetrics(result, hill, baselineDistance),
-    [baselineDistance, hill, result],
+    () => calculateMetrics(result, hill, baselineMetrics.displayedDistance),
+    [baselineMetrics.displayedDistance, hill, result],
   )
   const sensitivity = useMemo(
     () => calculateSensitivity(model, baseline, hill, sliders),
@@ -107,6 +110,8 @@ function Dashboard({ data }: { data: AppData }) {
       <div className={`control-drawer${controlsOpen ? ' is-open' : ''}`}>
         <ControlPanel
           model={model}
+          baseline={baseline}
+          hill={hill}
           sliders={sliders}
           onSlidersChange={setSliders}
           playback={playback}
@@ -125,7 +130,7 @@ function Dashboard({ data }: { data: AppData }) {
           </div>
           <div className="model-status">
             <i /> Model loaded
-            <small>{model.trainedHorizon} states · Δt {model.sampleIntervalSeconds}s</small>
+            <small>up to {model.training.maximumSequenceLength ?? 163} states · Δt {model.sampleIntervalSeconds}s</small>
           </div>
         </header>
 
@@ -229,7 +234,7 @@ function Dashboard({ data }: { data: AppData }) {
           </div>
           <div>
             <span>Hill surface: extruded longitudinal profile, not surveyed 3D terrain.</span>
-            <span>Displayed distance uses the X/Z flight plane; Y is lateral drift and is reported separately.</span>
+            <span>Landing distance is interpolated at first hill contact; the final learned control is held during any short extension.</span>
           </div>
         </footer>
       </main>

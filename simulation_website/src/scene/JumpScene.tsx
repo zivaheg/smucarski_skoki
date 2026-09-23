@@ -28,13 +28,13 @@ interface JumpSceneProps {
 }
 
 const CAMERA_POSITIONS: Record<CameraPreset, [number, number, number]> = {
-  perspective: [82, 38, 135],
-  side: [90, -40, 145],
-  top: [90, 145, 0.01],
-  landing: [195, -85, 55],
+  perspective: [135, 75, 300],
+  side: [145, -50, 340],
+  top: [145, 330, 0.01],
+  landing: [245, -95, 155],
 }
 
-const CAMERA_TARGET: [number, number, number] = [72, -38, 0]
+const CAMERA_TARGET: [number, number, number] = [145, -65, 0]
 
 function CameraRig({ command }: { command: CameraCommand }) {
   const controls = useRef<OrbitControlsImpl>(null)
@@ -56,7 +56,7 @@ function CameraRig({ command }: { command: CameraCommand }) {
       zoomSpeed={0.8}
       panSpeed={0.75}
       minDistance={20}
-      maxDistance={330}
+      maxDistance={700}
       maxPolarAngle={Math.PI * 0.94}
       zoomToCursor
     />
@@ -109,7 +109,7 @@ function SceneContent({
   return (
     <>
       <color attach="background" args={['#08131b']} />
-      <fog attach="fog" args={['#08131b', 150, 340]} />
+      <fog attach="fog" args={['#08131b', 260, 720]} />
       <ambientLight intensity={0.85} color="#bad9e1" />
       <hemisphereLight args={['#9ed6df', '#10252d', 1.1]} />
       <directionalLight
@@ -166,7 +166,7 @@ function SceneContent({
 export function JumpScene(props: JumpSceneProps) {
   return (
     <Canvas
-      camera={{ position: CAMERA_POSITIONS.perspective, fov: 46, near: 0.1, far: 700 }}
+      camera={{ position: CAMERA_POSITIONS.perspective, fov: 46, near: 0.1, far: 1000 }}
       dpr={[1, 1.75]}
       gl={{ antialias: true, powerPreference: 'high-performance' }}
       frameloop="demand"

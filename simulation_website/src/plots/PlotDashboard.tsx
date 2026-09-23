@@ -148,8 +148,8 @@ function createOption(
   sensitivity: SensitivityResult[],
   currentTime: number,
 ): EChartsOption {
-  const timed = (sequence: number[][], index: number) =>
-    result.times.map((time, row) => [time, sequence[row]![index]!])
+  const timed = (simulation: SimulationResult, sequence: number[][], index: number) =>
+    simulation.times.map((time, row) => [time, sequence[row]![index]!])
   const comparison = (xIndex: number, yIndex: number) => [
     { name: 'Modified', data: result.states.map((state) => [state[xIndex]!, state[yIndex]!]), color: '#ff9b55' },
     { name: 'Baseline', data: baseline.states.map((state) => [state[xIndex]!, state[yIndex]!]), color: '#44d7ef', dashed: true },
@@ -159,35 +159,39 @@ function createOption(
   if (id === 'top') return lineOption('X [m]', 'Y [m]', comparison(0, 1))
   if (id === 'position') {
     return lineOption('Time [s]', 'Position [m]', [
-      { name: 'X', data: timed(result.states, 0) },
-      { name: 'Y', data: timed(result.states, 1) },
-      { name: 'Z', data: timed(result.states, 2) },
-      { name: 'Baseline X', data: timed(baseline.states, 0), dashed: true },
+      { name: 'X', data: timed(result, result.states, 0) },
+      { name: 'Y', data: timed(result, result.states, 1) },
+      { name: 'Z', data: timed(result, result.states, 2) },
+      { name: 'Baseline X', data: timed(baseline, baseline.states, 0), dashed: true },
     ], currentTime)
   }
   if (id === 'velocity') {
-    return lineOption('Time [s]', 'Velocity [m/s]', [3, 4, 5].map((index, color) => ({
-      name: model.states[index]!.label,
-      data: timed(result.states, index),
-      color: COLORS[color],
-    })), currentTime)
+    return lineOption('Time [s]', 'Velocity [m/s]', [
+      ...[3, 4, 5].map((index, color) => ({
+        name: model.states[index]!.label,
+        data: timed(result, result.states, index),
+        color: COLORS[color],
+      })),
+      { name: model.states[6]!.label, data: timed(result, result.states, 6), color: COLORS[3] },
+      { name: 'Baseline resulting speed', data: timed(baseline, baseline.states, 6), color: COLORS[3], dashed: true },
+    ], currentTime)
   }
   if (id === 'angles') {
     return lineOption('Time [s]', 'Angle [deg]', [7, 8, 9, 10, 11, 12, 13].map((index) => ({
       name: model.states[index]!.label,
-      data: timed(result.states, index),
+      data: timed(result, result.states, index),
     })), currentTime)
   }
   if (id === 'wind') {
     return lineOption('Time [s]', 'Wind control', model.controls.slice(0, 12).map((control) => ({
       name: `${control.group} · ${control.label}`,
-      data: timed(result.controls, control.index),
+      data: timed(result, result.controls, control.index),
     })), currentTime)
   }
   if (id === 'observations') {
     return lineOption('Time [s]', 'Observation', model.observations.map((observation) => ({
       name: observation.label,
-      data: timed(result.observations, observation.index),
+      data: timed(result, result.observations, observation.index),
     })), currentTime)
   }
   if (id === 'sensitivity') {
@@ -200,7 +204,7 @@ function createOption(
         formatter: (params: any) => `${params.name}<br/><strong>${Number(params.value).toFixed(3)} m</strong> per slider step`,
         backgroundColor: '#10232d', borderColor: '#335260', textStyle: { color: '#eef7fa' },
       },
-      xAxis: { type: 'value', ...axisStyle('Δ displayed distance [m]') },
+      xAxis: { type: 'value', ...axisStyle('Δ landing distance [m]') },
       yAxis: { type: 'category', data: sorted.map((item) => item.label), axisLabel: { color: '#9fb3bd', fontSize: 10 }, axisLine: { lineStyle: { color: '#35505d' } } },
       series: [{ type: 'bar', data: sorted.map((item) => ({ value: item.distanceDelta, itemStyle: { color: item.distanceDelta >= 0 ? '#ff9b55' : '#44d7ef' } })) }],
     }
@@ -289,4 +293,3 @@ export function PlotDashboard({
     </section>
   )
 }
-

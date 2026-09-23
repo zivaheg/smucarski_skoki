@@ -2,9 +2,10 @@ import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { buildControlSequence, defaultSliders } from '../simulation/controls'
-import { calculateMetrics } from '../simulation/metrics'
+import { calculateMetrics, hillZAt } from '../simulation/metrics'
 import type { BaselineData, HillData, ModelData } from '../simulation/model-types'
-import { simulateSSM, stateAtTime } from '../simulation/ssm'
+import { optimizeWindForDistance } from '../simulation/optimization'
+import { simulateSSM, simulateToLanding, stateAtTime } from '../simulation/ssm'
 
 function asset<T>(name: string): T {
   const file = resolve(process.cwd(), 'public', 'data', name)
@@ -89,5 +90,63 @@ describe('production state-space model', () => {
       expect(value).toBeCloseTo((result.states[0]![index]! + result.states[1]![index]!) / 2, 12)
     })
   })
-})
 
+  it('continues the reference flight to its first interpolated hill contact', () => {
+    const result = simulateToLanding(model, baseline, hill, defaultSliders(model))
+    const endpoint = result.states.at(-1)!
+    expect(result.termination).toBe('landing')
+    expect(result.extensionSteps).toBe(3)
+    expect(result.states.length).toBeGreaterThan(model.trainedHorizon)
+    expect(endpoint[2]).toBeCloseTo(hillZAt(hill, endpoint[0]!)!, 9)
+    expect(Math.hypot(endpoint[0]!, endpoint[2]!)).toBeCloseTo(210.4166019215, 6)
+    result.states.slice(0, -1).forEach((state) => {
+      expect(state[2]! - hillZAt(hill, state[0]!)!).toBeGreaterThan(0)
+    })
+  })
+
+  it('propagates wind controls into the resulting-speed state', () => {
+    const defaults = defaultSliders(model)
+    const windy = defaults.slice()
+    windy[0] = model.controls[0]!.max
+    const reference = simulateSSM(model, baseline, defaults)
+    const changed = simulateSSM(model, baseline, windy)
+    const largestSpeedChange = Math.max(...changed.states.map((state, index) =>
+      Math.abs(state[6]! - reference.states[index]![6]!),
+    ))
+    expect(model.matrices.B[6]!.slice(0, 12).some((value) => Math.abs(value) > 0)).toBe(true)
+    expect(largestSpeedChange).toBeGreaterThan(0.01)
+  })
+
+  it('finds the exact bounded wind optimum while preserving body settings', () => {
+    const sliders = defaultSliders(model)
+    sliders[13] = 24.7
+    const optimum = optimizeWindForDistance(model, baseline, hill, sliders)
+
+    expect(optimum.sliders.slice(0, 12)).toEqual([
+      0.9, 1, 1.2, -1, 1.5, 1.7, 0.5, -0.6, 0.5, 0.13, -0.1, 0.12,
+    ])
+    expect(optimum.sliders.slice(12)).toEqual(sliders.slice(12))
+
+    const simulated = simulateToLanding(model, baseline, hill, optimum.sliders)
+    const simulatedEndpoint = simulated.states.at(-1)!
+    optimum.endpoint.forEach((value, index) => {
+      expect(value).toBeCloseTo(simulatedEndpoint[index]!, 9)
+    })
+    expect(optimum.displayedDistance).toBeCloseTo(
+      Math.hypot(simulatedEndpoint[0]!, simulatedEndpoint[2]!),
+      9,
+    )
+    expect(simulated.termination).toBe('landing')
+    expect(simulatedEndpoint[2]).toBeCloseTo(hillZAt(hill, simulatedEndpoint[0]!)!, 9)
+    expect(optimum.displayedDistance).toBeGreaterThan(210.4)
+  })
+
+  it('includes the certified Planica landing area and full outrun scale', () => {
+    expect(hill.landmarks.map((landmark) => landmark.label)).toEqual([
+      'K 200 m', 'HS 240 m', 'Outrun U',
+    ])
+    expect(hill.points.at(-1)![0]).toBeGreaterThan(370)
+    expect(hill.points.at(-1)![1]).toBeCloseTo(-145.2, 2)
+    expect(hill.points.every((point, index) => index === 0 || point[0] > hill.points[index - 1]![0])).toBe(true)
+  })
+})
