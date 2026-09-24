@@ -210,14 +210,23 @@ function createOption(
     }
   }
 
-  const matrices = {
-    matrixA: [model.matrices.A, model.states, model.states],
-    matrixB: [model.matrices.B, model.states, model.controls],
-    matrixC: [model.matrices.C, model.observations, model.states],
-    matrixD: [model.matrices.D, model.observations, model.controls],
-  } as const
+  const stateLabels = model.states.map((item) => item.label)
+  const observationLabels = model.observations.map((item) => item.label)
+  const controlLabels = model.controls.map((control) => {
+    const zone = control.group[0]!.toUpperCase() + control.group.slice(1)
+    return `${zone} · ${control.label}`
+  })
+  const matrices: Record<
+    'matrixA' | 'matrixB' | 'matrixC' | 'matrixD',
+    [number[][], string[], string[]]
+  > = {
+    matrixA: [model.matrices.A, stateLabels, stateLabels],
+    matrixB: [model.matrices.B, stateLabels, controlLabels],
+    matrixC: [model.matrices.C, observationLabels, stateLabels],
+    matrixD: [model.matrices.D, observationLabels, controlLabels],
+  }
   const [matrix, rows, columns] = matrices[id as keyof typeof matrices]
-  return matrixOption(matrix, rows.map((item) => item.label), columns.map((item) => item.label))
+  return matrixOption(matrix, rows, columns)
 }
 
 export function PlotDashboard({

@@ -47,6 +47,14 @@ describe('production state-space model', () => {
     ])
   })
 
+  it('exposes a -3 to +3 m/s exploratory range for every wind slider', () => {
+    model.controls.slice(0, 12).forEach((control) => {
+      expect(control.unit).toBe('m/s')
+      expect(control.min).toBe(-3)
+      expect(control.max).toBe(3)
+    })
+  })
+
   it('matches the Python default trajectory reference', () => {
     const result = simulateSSM(model, baseline, defaultSliders(model))
     const endpoint = result.states.at(-1)!.slice(0, 3)
@@ -123,7 +131,7 @@ describe('production state-space model', () => {
     const optimum = optimizeWindForDistance(model, baseline, hill, sliders)
 
     expect(optimum.sliders.slice(0, 12)).toEqual([
-      0.9, 1, 1.2, -1, 1.5, 1.7, 0.5, -0.6, 0.5, 0.13, -0.1, 0.12,
+      -3, 3, 3, 3, 3, 3, 3, -3, 3, -3, -3, 3,
     ])
     expect(optimum.sliders.slice(12)).toEqual(sliders.slice(12))
 

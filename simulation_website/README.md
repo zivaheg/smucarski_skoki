@@ -129,7 +129,7 @@ The **Optimal wind** preset preserves the current jumper configuration, checks a
 - Results are predictions of a fitted linear SSM, not causal physical conclusions.
 - Speed and body angles occur in both state and control vectors, which limits coefficient-level causal interpretation.
 - The A matrix spectral radius is approximately 1.0135. The UI therefore stops at hill contact and never continues beyond the maximum observed 163-point sequence length.
-- Slider limits come from observed training ranges, but combining multiple extremes can still produce an unusual scenario.
+- Wind sliders allow exploratory offsets from -3 to +3 m/s. These bounds extend beyond the observed training ranges, so large or combined offsets are extrapolations of the fitted model.
 - The measured landing surface is extended with Planica's certified K=200 m, HS=240 m, U=-135 m, and 130 m outrun parameters, then extruded across Y. It is not a surveyed 3D Planica terrain mesh.
 - The `C/D` height observation is available as a model diagnostic. Terrain clearance is separately calculated against the displayed hill profile.
 
