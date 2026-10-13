@@ -1,9 +1,8 @@
 """Export the production SSM used by the slider app.
 
-This follows the training setup validated by fit_ssm_cv_AVG in notebook 10:
-the non-quadratic 20-control dataset, Ridge(alpha=10), and no intercept. Cross
-validation estimates performance; the production matrices are then fitted on
-all accepted sequences so the app can use one model.
+This uses the corrected non-quadratic 20-control dataset, Ridge(alpha=10), and
+no intercept. Cross-validation estimates performance; the production matrices
+are then fitted on all accepted sequences so the app can use one model.
 """
 
 from pathlib import Path
@@ -14,18 +13,16 @@ from sklearn.linear_model import Ridge
 
 ALPHA = 10.0
 STATE_DIM = 14
-EXCLUDED_SEQUENCE_INDEX = 169  # Same problematic sequence removed in notebook 10.
-
 SIMULATION_DIR = Path(__file__).resolve().parent
 PROJECT_DIR = SIMULATION_DIR.parent
 DATASET_PATH = (
     SIMULATION_DIR
     / "2024_03_Planica_12_winds"
     / "cleaned"
-    / "normalized"
+    / "normalized_corrected"
     / "combined_dataset.npz"
 )
-APP_DIR = PROJECT_DIR / "skijump_app"
+APP_DIR = PROJECT_DIR / "old_skijumping_app"
 
 
 def load_training_sequences():
@@ -33,10 +30,8 @@ def load_training_sequences():
     states = list(dataset["X"])
     observations = list(dataset["Y"])
     controls = list(dataset["U"])
-
-    states.pop(EXCLUDED_SEQUENCE_INDEX)
-    observations.pop(EXCLUDED_SEQUENCE_INDEX)
-    controls.pop(EXCLUDED_SEQUENCE_INDEX)
+    if len(states) != 203:
+        raise ValueError(f"Expected 203 accepted sequences, found {len(states)}")
     return states, observations, controls
 
 

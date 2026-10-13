@@ -14,6 +14,8 @@ def flatten_wind_blob(blob):
     return pd.Series(out)   #series da lahko dodamo v tabelo
 
 def timestamp_to_seconds(ts):
-    time_str = ts.split('T')[1].split('+')[0]  #ignoriramo izven T in +
+    """Return seconds within the local day, including hours and minutes."""
+    time_str = ts.split('T', 1)[1]
+    time_str = time_str.removesuffix('Z').split('+', 1)[0]
     h, m, s = time_str.split(':')
-    return float(s)
+    return int(h) * 3600 + int(m) * 60 + float(s)
