@@ -1,0 +1,99 @@
+{
+  "trajectory_error_actual_start_m": {
+    "mean": 1.3394605897764642,
+    "median": 1.183705297413861,
+    "sample_std": 0.6836649357876309,
+    "ci95_t": [
+      1.2448470767365738,
+      1.4340741028163546
+    ],
+    "min": 0.37738662543811313,
+    "max": 4.598350002223778
+  },
+  "trajectory_error_training_mean_start_m": {
+    "mean": 1.3452379333775455,
+    "median": 1.1779833573048308,
+    "sample_std": 0.6949359874102313,
+    "ci95_t": [
+      1.2490646009965627,
+      1.4414112657585283
+    ],
+    "min": 0.35848737821331056,
+    "max": 4.6999713046322045
+  },
+  "trajectory_error_constant_velocity_m": {
+    "mean": 58.32875676212732,
+    "median": 59.20122464593346,
+    "sample_std": 14.044967439844573,
+    "ci95_t": [
+      56.385050656323244,
+      60.272462867931395
+    ],
+    "min": 25.482554037799606,
+    "max": 148.34464719162145
+  },
+  "trajectory_error_training_average_path_m": {
+    "mean": 2.6437267840922103,
+    "median": 2.1834138876166373,
+    "sample_std": 2.342951452533152,
+    "ci95_t": [
+      2.319481885455292,
+      2.9679716827291287
+    ],
+    "min": 0.31763076616532704,
+    "max": 18.950500794710035
+  },
+  "endpoint_error_actual_start_m": {
+    "mean": 3.5549963141727625,
+    "median": 3.1415801541579578,
+    "sample_std": 2.0350127723193014,
+    "ci95_t": [
+      3.273367555125238,
+      3.836625073220287
+    ],
+    "min": 0.6255920711671741,
+    "max": 17.1000870062328
+  },
+  "landing_distance_absolute_error_actual_start_m": {
+    "mean": 1.6841698490051502,
+    "median": 1.2461845006656915,
+    "sample_std": 1.8274031473844217,
+    "ci95_t": [
+      1.4312725268468869,
+      1.9370671711634135
+    ],
+    "min": 0.00041091665366366215,
+    "max": 16.357830781274657
+  },
+  "spectral_radius": {
+    "mean": 1.0134947592009513,
+    "median": 1.0134949789023375,
+    "sample_std": 3.06140064236473e-05,
+    "ci95_t": [
+      1.0134905224783342,
+      1.0134989959235685
+    ],
+    "min": 1.0133490962353136,
+    "max": 1.0136321290978259
+  },
+  "dataset": {
+    "accepted_jumps": 203,
+    "samples_min": 88,
+    "samples_median": 137.0,
+    "samples_mean": 136.6206896551724,
+    "samples_max": 164,
+    "duration_seconds_min": 4.3500000000000005,
+    "duration_seconds_median": 6.800000000000001,
+    "duration_seconds_mean": 6.7810344827586215,
+    "duration_seconds_max": 8.15,
+    "sample_interval_seconds": 0.05,
+    "source_archive": "simulation/2024_03_Planica_12_winds/cleaned/normalized_corrected/combined_dataset.npz"
+  },
+  "configuration": {
+    "ridge_alpha": 10.0,
+    "fit_intercept": false,
+    "state_dimension": 14,
+    "control_dimension": 20,
+    "resampled_average_path_points": 1000
+  }
+}

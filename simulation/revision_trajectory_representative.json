@@ -1,0 +1,28 @@
+{
+  "selection_rule": "Closest joint match to the 10th, 50th, or 90th percentile of measured terminal distance and the median held-out trajectory error, scaled by their respective interquartile ranges",
+  "dataset_terminal_distance_quantiles_m": {
+    "q10": 181.67973611310782,
+    "q50": 208.73823046162312,
+    "q90": 228.92703681057898
+  },
+  "examples": {
+    "short": {
+      "jump_index": 116,
+      "filename": "999_999_Jumper_Anon_ANO_1_20240409-103607_C_OfficialResults.csv",
+      "measured_terminal_distance_m": 181.550415904071,
+      "trajectory_error_m": 1.0920083778898526
+    },
+    "typical": {
+      "jump_index": 18,
+      "filename": "999_999_Jumper_Anon_ANO_1_20240409-102847_C_OfficialResults.csv",
+      "measured_terminal_distance_m": 209.90428510472367,
+      "trajectory_error_m": 1.1685541539571906
+    },
+    "long": {
+      "jump_index": 166,
+      "filename": "999_999_Jumper_Anon_ANO_1_20240409-103756_C_OfficialResults.csv",
+      "measured_terminal_distance_m": 229.89167884188248,
+      "trajectory_error_m": 1.1598991113476216
+    }
+  }
+}

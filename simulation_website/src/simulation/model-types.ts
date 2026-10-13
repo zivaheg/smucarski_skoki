@@ -40,13 +40,19 @@ export interface ModelData {
   trainedHorizon: number
   training: {
     acceptedSequences: number
-    excludedSequenceIndex: number
+    excludedSequenceFile: string
     regression: string
     alpha: number
     fitIntercept: boolean
     maximumSequenceLength: number
     reportedCrossValidationErrorMetres: number
     reportedAverageFlightBaselineErrorMetres: number
+    timestampRepair: {
+      filesWithDecreases: number
+      filesWithDuplicates: number
+      filesRepaired: number
+      valuesRepaired: number
+    }
   }
   states: NamedDimension[]
   controls: ControlDefinition[]

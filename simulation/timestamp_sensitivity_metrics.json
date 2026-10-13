@@ -1,0 +1,15 @@
+{
+  "description": "LOOCV sensitivity restricted to accepted jumps requiring no timestamp repair",
+  "jumps": 144,
+  "trajectory_error_actual_start_m": {
+    "mean": 1.3923443260534936,
+    "median": 1.2203246719584446,
+    "sample_std": 0.7446784029808248,
+    "ci95_t": [
+      1.2696776602926738,
+      1.5150109918143133
+    ],
+    "min": 0.36642625263435213,
+    "max": 4.752639077946079
+  }
+}

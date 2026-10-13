@@ -106,7 +106,7 @@ describe('production state-space model', () => {
     expect(result.extensionSteps).toBe(3)
     expect(result.states.length).toBeGreaterThan(model.trainedHorizon)
     expect(endpoint[2]).toBeCloseTo(hillZAt(hill, endpoint[0]!)!, 9)
-    expect(Math.hypot(endpoint[0]!, endpoint[2]!)).toBeCloseTo(210.4166019215, 6)
+    expect(Math.hypot(endpoint[0]!, endpoint[2]!)).toBeCloseTo(208.4986444804, 6)
     result.states.slice(0, -1).forEach((state) => {
       expect(state[2]! - hillZAt(hill, state[0]!)!).toBeGreaterThan(0)
     })
@@ -131,7 +131,7 @@ describe('production state-space model', () => {
     const optimum = optimizeWindForDistance(model, baseline, hill, sliders)
 
     expect(optimum.sliders.slice(0, 12)).toEqual([
-      -3, 3, 3, 3, 3, 3, 3, -3, 3, -3, -3, 3,
+      3, 3, 3, -3, 3, 3, 3, -3, -3, 3, -3, 3,
     ])
     expect(optimum.sliders.slice(12)).toEqual(sliders.slice(12))
 

@@ -21,6 +21,15 @@ WEBSITE_DIR = Path(__file__).resolve().parents[1]
 PROJECT_DIR = WEBSITE_DIR.parent
 SOURCE_DIR = PROJECT_DIR / "old_skijumping_app"
 OUTPUT_DIR = WEBSITE_DIR / "public" / "data"
+REVISION_METRICS = PROJECT_DIR / "simulation" / "revision_metrics.json"
+DATASET_SUMMARY = (
+    PROJECT_DIR
+    / "simulation"
+    / "2024_03_Planica_12_winds"
+    / "cleaned"
+    / "normalized_corrected"
+    / "dataset_summary.json"
+)
 
 STATE_NAMES = [
     ("x", "X position", "m"),
@@ -212,6 +221,8 @@ def main() -> None:
     c = load_matrix("matrixC_AVG.csv")
     d = load_matrix("matrixD_AVG.csv")
     baseline = load_matrix("xImportant_AVG.csv")
+    revision_metrics = json.loads(REVISION_METRICS.read_text(encoding="utf-8"))
+    dataset_summary = json.loads(DATASET_SUMMARY.read_text(encoding="utf-8"))
 
     expected = [(14, 14), (14, 20), (4, 14), (4, 20), (139, 14)]
     actual = [a.shape, b.shape, c.shape, d.shape, baseline.shape]
@@ -259,14 +270,28 @@ def main() -> None:
         "sampleIntervalSeconds": 0.05,
         "trainedHorizon": len(baseline),
         "training": {
-            "acceptedSequences": 203,
-            "excludedSequenceIndex": 169,
+            "acceptedSequences": dataset_summary["accepted_files"],
+            "excludedSequenceFile": dataset_summary["excluded_file"],
             "regression": "Ridge",
             "alpha": 10.0,
             "fitIntercept": False,
-            "maximumSequenceLength": 163,
-            "reportedCrossValidationErrorMetres": 1.625906478498713,
-            "reportedAverageFlightBaselineErrorMetres": 2.7208366614042823,
+            "maximumSequenceLength": dataset_summary["samples_max"],
+            "reportedCrossValidationErrorMetres": revision_metrics[
+                "trajectory_error_actual_start_m"
+            ]["mean"],
+            "reportedAverageFlightBaselineErrorMetres": revision_metrics[
+                "trajectory_error_training_average_path_m"
+            ]["mean"],
+            "timestampRepair": {
+                "filesWithDecreases": dataset_summary[
+                    "files_with_source_timestamp_decreases"
+                ],
+                "filesWithDuplicates": dataset_summary[
+                    "files_with_source_timestamp_duplicates"
+                ],
+                "filesRepaired": dataset_summary["files_with_timestamp_repairs"],
+                "valuesRepaired": dataset_summary["timestamps_repaired"],
+            },
         },
         "states": [
             {"index": index, "key": key, "label": label, "unit": unit}
@@ -304,7 +329,7 @@ def main() -> None:
         "warnings": [
             "Outputs are predictions of a fitted linear model, not causal physical conclusions.",
             "Speed and body-angle values occur in both state and control vectors.",
-            "Landing detection may continue to the maximum observed 163-point sequence while holding the final body-control values constant.",
+            f"Landing detection may continue to the maximum observed {dataset_summary['samples_max']}-point sequence while holding the final body-control values constant.",
         ],
         "provenance": {
             key: {

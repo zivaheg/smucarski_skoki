@@ -1,0 +1,6 @@
+opencv-contrib-python>=4.8
+mediapipe>=0.10.14
+numpy
+yt-dlp
+rapidocr-onnxruntime   # on-screen graphics (OCR); optional
+matplotlib             # only for --plot
