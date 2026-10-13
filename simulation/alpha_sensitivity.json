@@ -1,0 +1,61 @@
+{
+  "description": "Post-hoc, non-nested LOOCV sensitivity of the unstandardized 14-state/20-control model to the ridge penalty",
+  "alphas": [
+    {
+      "alpha": 0.001,
+      "trajectory_mean_m": 1.3411653753805395,
+      "trajectory_median_m": 1.1911990077391073,
+      "endpoint_mean_m": 3.5606138496848723,
+      "terminal_distance_mae_m": 1.6868881104217028,
+      "spectral_radius_mean": 1.0135899811185558
+    },
+    {
+      "alpha": 0.01,
+      "trajectory_mean_m": 1.341161460126059,
+      "trajectory_median_m": 1.1909955003883328,
+      "endpoint_mean_m": 3.5606103017477415,
+      "terminal_distance_mae_m": 1.6869097050404247,
+      "spectral_radius_mean": 1.0135898947435678
+    },
+    {
+      "alpha": 0.1,
+      "trajectory_mean_m": 1.341144709721624,
+      "trajectory_median_m": 1.1909084074996135,
+      "endpoint_mean_m": 3.5605538253017825,
+      "terminal_distance_mae_m": 1.6868799154007692,
+      "spectral_radius_mean": 1.0135890370574905
+    },
+    {
+      "alpha": 1.0,
+      "trajectory_mean_m": 1.340980156611904,
+      "trajectory_median_m": 1.1902627345750836,
+      "endpoint_mean_m": 3.56001121608984,
+      "terminal_distance_mae_m": 1.6866218952837808,
+      "spectral_radius_mean": 1.0135804620340099
+    },
+    {
+      "alpha": 10.0,
+      "trajectory_mean_m": 1.3394605897764642,
+      "trajectory_median_m": 1.183705297413861,
+      "endpoint_mean_m": 3.5549963141727625,
+      "terminal_distance_mae_m": 1.6841698490051502,
+      "spectral_radius_mean": 1.0134947592009513
+    },
+    {
+      "alpha": 100.0,
+      "trajectory_mean_m": 1.3296975943026899,
+      "trajectory_median_m": 1.1776754660173874,
+      "endpoint_mean_m": 3.5276987266945325,
+      "terminal_distance_mae_m": 1.6692781701606365,
+      "spectral_radius_mean": 1.012642171451565
+    },
+    {
+      "alpha": 1000.0,
+      "trajectory_mean_m": 1.3973559823580703,
+      "trajectory_median_m": 1.274586669389132,
+      "endpoint_mean_m": 3.6644144912130576,
+      "terminal_distance_mae_m": 1.6135162772619374,
+      "spectral_radius_mean": 1.0044080926680612
+    }
+  ]
+}
