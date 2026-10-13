@@ -18,29 +18,306 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global/global}
-    \entry{3dmdb_skijumping_planica}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=668cc5ad2bad705c42c26a9ee09e03f3}{%
-           family={{3DWarehouse via 3dmdb.com}},
-           familyi={3\bibinitperiod}}}%
+  \datalist[entry]{none/global//global/global/global}
+    \entry{muller1996dynamics}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=bff8ba09075b68193b96c9c4f715dbd8}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+        {{hash=202679ca0977fa30b1e4ccf602c0e0c4}{%
+           family={Platzer},
+           familyi={P\bibinitperiod},
+           given={Dieter},
+           giveni={D\bibinitperiod}}}%
+        {{hash=82e2f1dd3b8b5844de52dadb283db223}{%
+           family={Schmölzer},
+           familyi={S\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod}}}%
       }
-      \strng{namehash}{668cc5ad2bad705c42c26a9ee09e03f3}
-      \strng{fullhash}{668cc5ad2bad705c42c26a9ee09e03f3}
-      \strng{fullhashraw}{668cc5ad2bad705c42c26a9ee09e03f3}
-      \strng{bibnamehash}{668cc5ad2bad705c42c26a9ee09e03f3}
-      \strng{authorbibnamehash}{668cc5ad2bad705c42c26a9ee09e03f3}
-      \strng{authornamehash}{668cc5ad2bad705c42c26a9ee09e03f3}
-      \strng{authorfullhash}{668cc5ad2bad705c42c26a9ee09e03f3}
-      \strng{authorfullhashraw}{668cc5ad2bad705c42c26a9ee09e03f3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \strng{namehash}{94e3655c23c8ac3182a7e74e34257196}
+      \strng{fullhash}{94e3655c23c8ac3182a7e74e34257196}
+      \strng{fullhashraw}{94e3655c23c8ac3182a7e74e34257196}
+      \strng{bibnamehash}{94e3655c23c8ac3182a7e74e34257196}
+      \strng{authorbibnamehash}{94e3655c23c8ac3182a7e74e34257196}
+      \strng{authornamehash}{94e3655c23c8ac3182a7e74e34257196}
+      \strng{authorfullhash}{94e3655c23c8ac3182a7e74e34257196}
+      \strng{authorfullhashraw}{94e3655c23c8ac3182a7e74e34257196}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://3dmdb.com/en/3d-model/ski-jumping-planica/8386000/?free=True&q=Ski+jump}}
-      \field{note}{Free model; accessed: 2025-08-26}
-      \field{title}{"Ski Jumping Planica" [3D model]}
-      \field{year}{2025}
+      \field{journaltitle}{Journal of Biomechanics}
+      \field{number}{8}
+      \field{title}{Dynamics of Human Flight on Skis: Improvements in Safety and Fairness in Ski Jumping}
+      \field{volume}{29}
+      \field{year}{1996}
+      \field{pages}{1061\bibrangedash 1068}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/0021-9290(95)00169-7
+      \endverb
+    \endentry
+    \entry{meile2006aerodynamics}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=1b89b49103ad224d4222cae196e7ba74}{%
+           family={Meile},
+           familyi={M\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=023a6c8feb13955e330f292036a1868d}{%
+           family={Reisenberger},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=901dea2148836a9b85e259ab04833110}{%
+           family={Mayer},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d5c8b12468c3fdcbbe1c9e98f845f64d}{%
+           family={Schmölzer},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d19161a7a0f2d3dd541f522428fc1baa}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=d94f3c325d0f374e0c5ae9f2e35ca28b}{%
+           family={Brenn},
+           familyi={B\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{05745f2528d9c469406951d2c0ee0350}
+      \strng{fullhash}{8d43e3dd14eaa25392e42dff545dec9c}
+      \strng{fullhashraw}{8d43e3dd14eaa25392e42dff545dec9c}
+      \strng{bibnamehash}{05745f2528d9c469406951d2c0ee0350}
+      \strng{authorbibnamehash}{05745f2528d9c469406951d2c0ee0350}
+      \strng{authornamehash}{05745f2528d9c469406951d2c0ee0350}
+      \strng{authorfullhash}{8d43e3dd14eaa25392e42dff545dec9c}
+      \strng{authorfullhashraw}{8d43e3dd14eaa25392e42dff545dec9c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Experiments in Fluids}
+      \field{number}{6}
+      \field{title}{Aerodynamics of Ski Jumping: Experiments and {CFD} Simulations}
+      \field{volume}{41}
+      \field{year}{2006}
+      \field{pages}{949\bibrangedash 964}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/s00348-006-0213-y
+      \endverb
+    \endentry
+    \entry{seo2004optimal}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=541fb63aeb2bc485dfb1ee2c2583c1ca}{%
+           family={Seo},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3f7b26cead053ea1cefc168f95cd74d0}{%
+           family={Murakami},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f324f57b44d8e3fb900c6e12fd6c2a23}{%
+           family={Yoshida},
+           familyi={Y\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{06868522ac5cbf0b3761554ae8b90784}
+      \strng{fullhash}{06868522ac5cbf0b3761554ae8b90784}
+      \strng{fullhashraw}{06868522ac5cbf0b3761554ae8b90784}
+      \strng{bibnamehash}{06868522ac5cbf0b3761554ae8b90784}
+      \strng{authorbibnamehash}{06868522ac5cbf0b3761554ae8b90784}
+      \strng{authornamehash}{06868522ac5cbf0b3761554ae8b90784}
+      \strng{authorfullhash}{06868522ac5cbf0b3761554ae8b90784}
+      \strng{authorfullhashraw}{06868522ac5cbf0b3761554ae8b90784}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sports Engineering}
+      \field{number}{2}
+      \field{title}{Optimal Flight Technique for {V}-Style Ski Jumping}
+      \field{volume}{7}
+      \field{year}{2004}
+      \field{pages}{97\bibrangedash 103}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1007/BF02915921
+      \endverb
+    \endentry
+    \entry{fang2020trajectory}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=6245d4ea1aeffd70ffd7f5d82b96779d}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Xiang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ae4e4194a9debb3a30df737b23bf6f83}{%
+           family={Grüter},
+           familyi={G\bibinitperiod},
+           given={Benedikt},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1bc30c1a32eaccaed8ac773e045a44ca}{%
+           family={Piprek},
+           familyi={P\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=814058a6db1bc02d000a5fa8181a84e6}{%
+           family={Bessone},
+           familyi={B\bibinitperiod},
+           given={Veronica},
+           giveni={V\bibinitperiod}}}%
+        {{hash=4dae4efe0f1988868526e7d82548900b}{%
+           family={Petrat},
+           familyi={P\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0be9187a6606480819fc7791c865e755}{%
+           family={Holzapfel},
+           familyi={H\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{95eae647166f468ff161299635f6305d}
+      \strng{fullhash}{bfb68269917af2ea41ebc2f42103cf68}
+      \strng{fullhashraw}{bfb68269917af2ea41ebc2f42103cf68}
+      \strng{bibnamehash}{95eae647166f468ff161299635f6305d}
+      \strng{authorbibnamehash}{95eae647166f468ff161299635f6305d}
+      \strng{authornamehash}{95eae647166f468ff161299635f6305d}
+      \strng{authorfullhash}{bfb68269917af2ea41ebc2f42103cf68}
+      \strng{authorfullhashraw}{bfb68269917af2ea41ebc2f42103cf68}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors}
+      \field{number}{7}
+      \field{title}{Ski Jumping Trajectory Reconstruction Using Wearable Sensors via Extended {Rauch-Tung-Striebel} Smoother with State Constraints}
+      \field{volume}{20}
+      \field{year}{2020}
+      \field{pages}{1995}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s20071995
+      \endverb
+    \endentry
+    \entry{schwinn2022xlength}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=1bc0b68380b494c672537296e1cbcc62}{%
+           family={Link},
+           familyi={L\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5c0be88ffaeedc45ac7b0e093b5247d1}{%
+           family={Schwinn},
+           familyi={S\bibinitperiod},
+           given={Leo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=cce8f36983e3f82231756cdd80f503f9}{%
+           family={Pulsmeyer},
+           familyi={P\bibinitperiod},
+           given={Falk},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a12fe09a037d367e55f2c466b60242e3}{%
+           family={Kautz},
+           familyi={K\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6e27a34bacfed09f0f547167affa9740}{%
+           family={Eskofier},
+           familyi={E\bibinitperiod},
+           given={Bjoern\bibnamedelima M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2085118ce6ac10ee3a2063cb2701874a}
+      \strng{fullhash}{5c5a4f78497562c3e1e8e781878eec49}
+      \strng{fullhashraw}{5c5a4f78497562c3e1e8e781878eec49}
+      \strng{bibnamehash}{2085118ce6ac10ee3a2063cb2701874a}
+      \strng{authorbibnamehash}{2085118ce6ac10ee3a2063cb2701874a}
+      \strng{authornamehash}{2085118ce6ac10ee3a2063cb2701874a}
+      \strng{authorfullhash}{5c5a4f78497562c3e1e8e781878eec49}
+      \strng{authorfullhashraw}{5c5a4f78497562c3e1e8e781878eec49}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors}
+      \field{number}{21}
+      \field{title}{{xLength}: Predicting Expected Ski Jump Length Shortly after Take-Off Using Deep Learning}
+      \field{volume}{22}
+      \field{year}{2022}
+      \field{pages}{8474}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s22218474
+      \endverb
+    \endentry
+    \entry{zecha2018convolutional}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=9132f49f9f226ac000015112b8ed45f1}{%
+           family={Zecha},
+           familyi={Z\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f0e24523a631aaf777589c6fcd271a1e}{%
+           family={Eggert},
+           familyi={E\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=6939186917ae22ca3309e0762b148691}{%
+           family={Einfalt},
+           familyi={E\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ebc232f25cc5938e552bab1725fe20b9}{%
+           family={Brehm},
+           familyi={B\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=42799a7004bdddef8e2efeda20abcc68}{%
+           family={Lienhart},
+           familyi={L\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{4df883fa59096c4bd12e93af006e323a}
+      \strng{fullhash}{7ac1239c8ef93ad623ce890a10513e14}
+      \strng{fullhashraw}{7ac1239c8ef93ad623ce890a10513e14}
+      \strng{bibnamehash}{4df883fa59096c4bd12e93af006e323a}
+      \strng{authorbibnamehash}{4df883fa59096c4bd12e93af006e323a}
+      \strng{authornamehash}{4df883fa59096c4bd12e93af006e323a}
+      \strng{authorfullhash}{7ac1239c8ef93ad623ce890a10513e14}
+      \strng{authorfullhashraw}{7ac1239c8ef93ad623ce890a10513e14}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 1st International Workshop on Multimedia Content Analysis in Sports}
+      \field{title}{A Convolutional Sequence to Sequence Model for Multimodal Dynamics Prediction in Ski Jumps}
+      \field{year}{2018}
+      \field{pages}{11\bibrangedash 19}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/3265845.3265853
+      \endverb
     \endentry
     \entry{aoki1990state}{book}{}{}
       \name{author}{1}{}{%
@@ -64,11 +341,11 @@
       \strng{authornamehash}{84873b25a48eeabaed21ab700e23beba}
       \strng{authorfullhash}{84873b25a48eeabaed21ab700e23beba}
       \strng{authorfullhashraw}{84873b25a48eeabaed21ab700e23beba}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{2nd, revised and enlarged}
+      \field{edition}{2}
       \field{isbn}{978-3-642-75883-6}
       \field{series}{Universitext}
       \field{title}{State Space Modeling of Time Series}
@@ -77,37 +354,813 @@
       \verb 10.1007/978-3-642-75883-6
       \endverb
     \endentry
-    \entry{bergmann2025state_space_model}{online}{}{}
+    \entry{ljung1999system}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=145cb942e2c6e0e141b825eb8cebbdb1}{%
-           family={Bergmann},
-           familyi={B\bibinitperiod},
-           given={Dave},
-           giveni={D\bibinitperiod}}}%
+        {{hash=f7cffd38dd9d98d3fd91ec52f00c4c77}{%
+           family={Ljung},
+           familyi={L\bibinitperiod},
+           given={Lennart},
+           giveni={L\bibinitperiod}}}%
       }
-      \list{institution}{1}{%
-        {IBM}%
+      \list{location}{1}{%
+        {Upper Saddle River, NJ}%
       }
-      \strng{namehash}{145cb942e2c6e0e141b825eb8cebbdb1}
-      \strng{fullhash}{145cb942e2c6e0e141b825eb8cebbdb1}
-      \strng{fullhashraw}{145cb942e2c6e0e141b825eb8cebbdb1}
-      \strng{bibnamehash}{145cb942e2c6e0e141b825eb8cebbdb1}
-      \strng{authorbibnamehash}{145cb942e2c6e0e141b825eb8cebbdb1}
-      \strng{authornamehash}{145cb942e2c6e0e141b825eb8cebbdb1}
-      \strng{authorfullhash}{145cb942e2c6e0e141b825eb8cebbdb1}
-      \strng{authorfullhashraw}{145cb942e2c6e0e141b825eb8cebbdb1}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{f7cffd38dd9d98d3fd91ec52f00c4c77}
+      \strng{fullhash}{f7cffd38dd9d98d3fd91ec52f00c4c77}
+      \strng{fullhashraw}{f7cffd38dd9d98d3fd91ec52f00c4c77}
+      \strng{bibnamehash}{f7cffd38dd9d98d3fd91ec52f00c4c77}
+      \strng{authorbibnamehash}{f7cffd38dd9d98d3fd91ec52f00c4c77}
+      \strng{authornamehash}{f7cffd38dd9d98d3fd91ec52f00c4c77}
+      \strng{authorfullhash}{f7cffd38dd9d98d3fd91ec52f00c4c77}
+      \strng{authorfullhashraw}{f7cffd38dd9d98d3fd91ec52f00c4c77}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-09-24}
-      \field{title}{What is a state space model?}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://www.ibm.com/think/topics/state-space-model
+      \field{edition}{2}
+      \field{isbn}{978-0-13-656695-3}
+      \field{title}{System Identification: Theory for the User}
+      \field{year}{1999}
+    \endentry
+    \entry{bjorck1996least}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=573bbd339542b82a86a003ec760ee5cd}{%
+           family={Björck},
+           familyi={B\bibinitperiod},
+           given={Åke},
+           giveni={Å\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Philadelphia, PA}%
+      }
+      \list{publisher}{2}{%
+        {Society for Industrial}%
+        {Applied Mathematics}%
+      }
+      \strng{namehash}{573bbd339542b82a86a003ec760ee5cd}
+      \strng{fullhash}{573bbd339542b82a86a003ec760ee5cd}
+      \strng{fullhashraw}{573bbd339542b82a86a003ec760ee5cd}
+      \strng{bibnamehash}{573bbd339542b82a86a003ec760ee5cd}
+      \strng{authorbibnamehash}{573bbd339542b82a86a003ec760ee5cd}
+      \strng{authornamehash}{573bbd339542b82a86a003ec760ee5cd}
+      \strng{authorfullhash}{573bbd339542b82a86a003ec760ee5cd}
+      \strng{authorfullhashraw}{573bbd339542b82a86a003ec760ee5cd}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Numerical Methods for Least Squares Problems}
+      \field{year}{1996}
+      \verb{doi}
+      \verb 10.1137/1.9781611971484
       \endverb
-      \verb{url}
-      \verb https://www.ibm.com/think/topics/state-space-model
+    \endentry
+    \entry{hoerl1970ridge}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=073bf156684ab93b481fb9a5dd6a82c7}{%
+           family={Hoerl},
+           familyi={H\bibinitperiod},
+           given={Arthur\bibnamedelima E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=39f4e06a9e51f345e243e2b24175e7e4}{%
+           family={Kennard},
+           familyi={K\bibinitperiod},
+           given={Robert\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ca383125b65b015cb46067f1150f462}
+      \strng{fullhash}{5ca383125b65b015cb46067f1150f462}
+      \strng{fullhashraw}{5ca383125b65b015cb46067f1150f462}
+      \strng{bibnamehash}{5ca383125b65b015cb46067f1150f462}
+      \strng{authorbibnamehash}{5ca383125b65b015cb46067f1150f462}
+      \strng{authornamehash}{5ca383125b65b015cb46067f1150f462}
+      \strng{authorfullhash}{5ca383125b65b015cb46067f1150f462}
+      \strng{authorfullhashraw}{5ca383125b65b015cb46067f1150f462}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Technometrics}
+      \field{number}{1}
+      \field{title}{Ridge Regression: Biased Estimation for Nonorthogonal Problems}
+      \field{volume}{12}
+      \field{year}{1970}
+      \field{pages}{55\bibrangedash 67}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1080/00401706.1970.10488634
+      \endverb
+    \endentry
+    \entry{sarkka2013bayesian}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=89f4b98fe43f3c9f7ffdc081904d4781}{%
+           family={Särkkä},
+           familyi={S\bibinitperiod},
+           given={Simo},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{89f4b98fe43f3c9f7ffdc081904d4781}
+      \strng{fullhash}{89f4b98fe43f3c9f7ffdc081904d4781}
+      \strng{fullhashraw}{89f4b98fe43f3c9f7ffdc081904d4781}
+      \strng{bibnamehash}{89f4b98fe43f3c9f7ffdc081904d4781}
+      \strng{authorbibnamehash}{89f4b98fe43f3c9f7ffdc081904d4781}
+      \strng{authornamehash}{89f4b98fe43f3c9f7ffdc081904d4781}
+      \strng{authorfullhash}{89f4b98fe43f3c9f7ffdc081904d4781}
+      \strng{authorfullhashraw}{89f4b98fe43f3c9f7ffdc081904d4781}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bayesian Filtering and Smoothing}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1017/CBO9781139344203
+      \endverb
+    \endentry
+    \entry{seo2004aerodynamic}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=541fb63aeb2bc485dfb1ee2c2583c1ca}{%
+           family={Seo},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=971cb05f2823dd870d3b22d864971c5a}{%
+           family={Watanabe},
+           familyi={W\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=3f7b26cead053ea1cefc168f95cd74d0}{%
+           family={Murakami},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{93864461ef233a15d051f6f629610265}
+      \strng{fullhash}{93864461ef233a15d051f6f629610265}
+      \strng{fullhashraw}{93864461ef233a15d051f6f629610265}
+      \strng{bibnamehash}{93864461ef233a15d051f6f629610265}
+      \strng{authorbibnamehash}{93864461ef233a15d051f6f629610265}
+      \strng{authornamehash}{93864461ef233a15d051f6f629610265}
+      \strng{authorfullhash}{93864461ef233a15d051f6f629610265}
+      \strng{authorfullhashraw}{93864461ef233a15d051f6f629610265}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sports Engineering}
+      \field{number}{1}
+      \field{title}{Aerodynamic Force Data for a {V}-Style Ski Jumping Flight}
+      \field{volume}{7}
+      \field{year}{2004}
+      \field{pages}{31\bibrangedash 39}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1007/BF02843971
+      \endverb
+    \endentry
+    \entry{virmavirta2019aerodynamics}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b93492f7e9dbd1b5e9670b58f939b0d1}{%
+           family={Virmavirta},
+           familyi={V\bibinitperiod},
+           given={Mikko},
+           giveni={M\bibinitperiod}}}%
+        {{hash=12610f0ebd14212132a5e24d4118ff12}{%
+           family={Kivekäs},
+           familyi={K\bibinitperiod},
+           given={Juha},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{fullhash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{fullhashraw}{01164efec020f2445c4f57dec5a4246f}
+      \strng{bibnamehash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{authorbibnamehash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{authornamehash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{authorfullhash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{authorfullhashraw}{01164efec020f2445c4f57dec5a4246f}
+      \field{extraname}{1}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{8}
+      \field{journaltitle}{Sports Engineering}
+      \field{number}{1}
+      \field{title}{Aerodynamics of an isolated ski jumping ski}
+      \field{volume}{22}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1007/s12283-019-0298-1
+      \endverb
+    \endentry
+    \entry{barnes2022flight}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=09ee0596e9901673b99fe6d3dc1a8205}{%
+           family={Barnes},
+           familyi={B\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+        {{hash=73f162c1f25b333a9280616ffc4c6786}{%
+           family={Tuplin},
+           familyi={T\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ab0f6da11e37f9c66e31237d1fb3fdb5}{%
+           family={Walker},
+           familyi={W\bibinitperiod},
+           given={Alastair\bibnamedelima Duncan},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3872c17b2990fa8a1ca3c1edb55c29e2}
+      \strng{fullhash}{3872c17b2990fa8a1ca3c1edb55c29e2}
+      \strng{fullhashraw}{3872c17b2990fa8a1ca3c1edb55c29e2}
+      \strng{bibnamehash}{3872c17b2990fa8a1ca3c1edb55c29e2}
+      \strng{authorbibnamehash}{3872c17b2990fa8a1ca3c1edb55c29e2}
+      \strng{authornamehash}{3872c17b2990fa8a1ca3c1edb55c29e2}
+      \strng{authorfullhash}{3872c17b2990fa8a1ca3c1edb55c29e2}
+      \strng{authorfullhashraw}{3872c17b2990fa8a1ca3c1edb55c29e2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Institution of Mechanical Engineers, Part P: Journal of Sports Engineering and Technology}
+      \field{number}{2}
+      \field{title}{Flight Dynamics of Ski Jumping: Wind Tunnel Testing and Numerical Modeling to Optimize Flight Position}
+      \field{volume}{239}
+      \field{year}{2025}
+      \field{pages}{193\bibrangedash 204}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1177/17543371221111625
+      \endverb
+    \endentry
+    \entry{ryu2015aerodynamic}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=de1e769a6ae42570e2ed359e6291d1cf}{%
+           family={Ryu},
+           familyi={R\bibinitperiod},
+           given={Minhyoung},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b393d3b1b76de59734402883854461b6}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Leesang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=63f412763befe5cde2a9b1529dea9845}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Jinsoo},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{43a4935bab819981afbbab6128b0eed1}
+      \strng{fullhash}{43a4935bab819981afbbab6128b0eed1}
+      \strng{fullhashraw}{43a4935bab819981afbbab6128b0eed1}
+      \strng{bibnamehash}{43a4935bab819981afbbab6128b0eed1}
+      \strng{authorbibnamehash}{43a4935bab819981afbbab6128b0eed1}
+      \strng{authornamehash}{43a4935bab819981afbbab6128b0eed1}
+      \strng{authorfullhash}{43a4935bab819981afbbab6128b0eed1}
+      \strng{authorfullhashraw}{43a4935bab819981afbbab6128b0eed1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Transactions of the Japan Society for Aeronautical and Space Sciences}
+      \field{number}{4}
+      \field{title}{Aerodynamic Analysis on Postures of Ski Jumpers during Flight Using Computational Fluid Dynamics}
+      \field{volume}{58}
+      \field{year}{2015}
+      \field{pages}{204\bibrangedash 212}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.2322/tjsass.58.204
+      \endverb
+    \endentry
+    \entry{yamamoto2022transient}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=a331fc3a447bd84bdce2ea5bcd3dd116}{%
+           family={Yamamoto},
+           familyi={Y\bibinitperiod},
+           given={Keizo},
+           giveni={K\bibinitperiod}}}%
+        {{hash=55031b57478985603c82ebf85af0156e}{%
+           family={Nishino},
+           familyi={N\bibinitperiod},
+           given={Takahiro},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ef13bbf1f97fd948f51c15c64364b99f}{%
+           family={Bale},
+           familyi={B\bibinitperiod},
+           given={Rahul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=05721b778f575793e7bacb5a7b4d5634}{%
+           family={Shimada},
+           familyi={S\bibinitperiod},
+           given={Tokimasa},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a4acb7863b31218764ca39952159e2fb}{%
+           family={Miyamoto},
+           familyi={M\bibinitperiod},
+           given={Naoto},
+           giveni={N\bibinitperiod}}}%
+        {{hash=00423597504f60d9ad0643d6dcbe3097}{%
+           family={Tsubokura},
+           familyi={T\bibinitperiod},
+           given={Makoto},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{52cb020ebe4ebf04e9bdecd8579a50e4}
+      \strng{fullhash}{dd1f379925315d1128148bd382b12124}
+      \strng{fullhashraw}{dd1f379925315d1128148bd382b12124}
+      \strng{bibnamehash}{52cb020ebe4ebf04e9bdecd8579a50e4}
+      \strng{authorbibnamehash}{52cb020ebe4ebf04e9bdecd8579a50e4}
+      \strng{authornamehash}{52cb020ebe4ebf04e9bdecd8579a50e4}
+      \strng{authorfullhash}{dd1f379925315d1128148bd382b12124}
+      \strng{authorfullhashraw}{dd1f379925315d1128148bd382b12124}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sports Biomechanics}
+      \field{number}{3}
+      \field{title}{Numerical Study of Transient Aerodynamic Forces Acting on a Ski Jumper Considering Dynamic Posture Change from Takeoff to Landing}
+      \field{volume}{24}
+      \field{year}{2025}
+      \field{pages}{763\bibrangedash 777}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1080/14763141.2022.2154256
+      \endverb
+    \endentry
+    \entry{hu2024unfavorable}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=bdc5cac9f6b76c79fbfd14efe8e7a3c0}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Qi},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=4ab0d55c1738dd7d68f04979cfffbe2a}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Weidi},
+           giveni={W\bibinitperiod}}}%
+        {{hash=93c82128aca25c57cfb17e90d02136d5}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7b1362a20cfdca929170444695454ee}
+      \strng{fullhash}{a7b1362a20cfdca929170444695454ee}
+      \strng{fullhashraw}{a7b1362a20cfdca929170444695454ee}
+      \strng{bibnamehash}{a7b1362a20cfdca929170444695454ee}
+      \strng{authorbibnamehash}{a7b1362a20cfdca929170444695454ee}
+      \strng{authornamehash}{a7b1362a20cfdca929170444695454ee}
+      \strng{authorfullhash}{a7b1362a20cfdca929170444695454ee}
+      \strng{authorfullhashraw}{a7b1362a20cfdca929170444695454ee}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Sciences}
+      \field{number}{4}
+      \field{title}{Computational Fluid Dynamics Simulation Study on Aerodynamic Characteristics under Unfavorable Conditions during Flight Phase in Ski Jumping}
+      \field{volume}{14}
+      \field{year}{2024}
+      \field{pages}{1390}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/app14041390
+      \endverb
+    \endentry
+    \entry{muller2008simulation}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{hash=bff8ba09075b68193b96c9c4f715dbd8}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=fa6b3125a5cf61f2ea69c12ade9d98f7}{%
+           family={Nørstrud},
+           familyi={N\bibinitperiod},
+           given={Helge},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Vienna}%
+      }
+      \strng{namehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{fullhash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{fullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{bibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authorbibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authornamehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authorfullhash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authorfullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{editorbibnamehash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
+      \strng{editornamehash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
+      \strng{editorfullhash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
+      \strng{editorfullhashraw}{fa6b3125a5cf61f2ea69c12ade9d98f7}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Sport Aerodynamics}
+      \field{series}{CISM International Centre for Mechanical Sciences}
+      \field{title}{Computer Simulation of Ski Jumping Based on Wind Tunnel Data}
+      \field{volume}{506}
+      \field{year}{2008}
+      \field{pages}{161\bibrangedash 182}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/978-3-211-89297-8_9
+      \endverb
+    \endentry
+    \entry{jung2019optimization}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a8484a3e51cc4a162a38c3e7402e4ffb}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bff8ba09075b68193b96c9c4f715dbd8}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+        {{hash=9c453242835094f1dceef008e710a1d9}{%
+           family={Staat},
+           familyi={S\bibinitperiod},
+           given={Manfred},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{fullhash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{fullhashraw}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{bibnamehash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{authorbibnamehash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{authornamehash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{authorfullhash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{authorfullhashraw}{ec700c9331b271b66eda6d634eb64b52}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Biomechanics}
+      \field{title}{Optimization of the Flight Technique in Ski Jumping: The Influence of Wind}
+      \field{volume}{88}
+      \field{year}{2019}
+      \field{pages}{190\bibrangedash 193}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1016/j.jbiomech.2019.03.023
+      \endverb
+    \endentry
+    \entry{schmolzer2005individual}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=d5c8b12468c3fdcbbe1c9e98f845f64d}{%
+           family={Schmölzer},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d19161a7a0f2d3dd541f522428fc1baa}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b75d7761ebfb313515877d6f90c6989}
+      \strng{fullhash}{8b75d7761ebfb313515877d6f90c6989}
+      \strng{fullhashraw}{8b75d7761ebfb313515877d6f90c6989}
+      \strng{bibnamehash}{8b75d7761ebfb313515877d6f90c6989}
+      \strng{authorbibnamehash}{8b75d7761ebfb313515877d6f90c6989}
+      \strng{authornamehash}{8b75d7761ebfb313515877d6f90c6989}
+      \strng{authorfullhash}{8b75d7761ebfb313515877d6f90c6989}
+      \strng{authorfullhashraw}{8b75d7761ebfb313515877d6f90c6989}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Biomechanics}
+      \field{number}{5}
+      \field{title}{Individual Flight Styles in Ski Jumping: Results Obtained during Olympic Games Competitions}
+      \field{volume}{38}
+      \field{year}{2005}
+      \field{pages}{1055\bibrangedash 1065}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.jbiomech.2004.05.038
+      \endverb
+    \endentry
+    \entry{virmavirta2012wind}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b93492f7e9dbd1b5e9670b58f939b0d1}{%
+           family={Virmavirta},
+           familyi={V\bibinitperiod},
+           given={Mikko},
+           giveni={M\bibinitperiod}}}%
+        {{hash=12610f0ebd14212132a5e24d4118ff12}{%
+           family={Kivekäs},
+           familyi={K\bibinitperiod},
+           given={Juha},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{fullhash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{fullhashraw}{01164efec020f2445c4f57dec5a4246f}
+      \strng{bibnamehash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{authorbibnamehash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{authornamehash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{authorfullhash}{01164efec020f2445c4f57dec5a4246f}
+      \strng{authorfullhashraw}{01164efec020f2445c4f57dec5a4246f}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sports Biomechanics}
+      \field{number}{3}
+      \field{title}{The Effect of Wind on Jumping Distance in Ski Jumping---Fairness Assessed}
+      \field{volume}{11}
+      \field{year}{2012}
+      \field{pages}{358\bibrangedash 369}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1080/14763141.2011.637119
+      \endverb
+    \endentry
+    \entry{jung2018wind}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a8484a3e51cc4a162a38c3e7402e4ffb}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bff8ba09075b68193b96c9c4f715dbd8}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+        {{hash=9c453242835094f1dceef008e710a1d9}{%
+           family={Staat},
+           familyi={S\bibinitperiod},
+           given={Manfred},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{fullhash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{fullhashraw}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{bibnamehash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{authorbibnamehash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{authornamehash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{authorfullhash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{authorfullhashraw}{ec700c9331b271b66eda6d634eb64b52}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Biomechanics}
+      \field{title}{Wind and Fairness in Ski Jumping: A Computer Modelling Analysis}
+      \field{volume}{75}
+      \field{year}{2018}
+      \field{pages}{147\bibrangedash 153}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.jbiomech.2018.05.001
+      \endverb
+    \endentry
+    \entry{jung2021windcorrigendum}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a8484a3e51cc4a162a38c3e7402e4ffb}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bff8ba09075b68193b96c9c4f715dbd8}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+        {{hash=9c453242835094f1dceef008e710a1d9}{%
+           family={Staat},
+           familyi={S\bibinitperiod},
+           given={Manfred},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{fullhash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{fullhashraw}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{bibnamehash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{authorbibnamehash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{authornamehash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{authorfullhash}{ec700c9331b271b66eda6d634eb64b52}
+      \strng{authorfullhashraw}{ec700c9331b271b66eda6d634eb64b52}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{110690}
+      \field{journaltitle}{Journal of Biomechanics}
+      \field{title}{Corrigendum to ``Wind and Fairness in Ski Jumping: A Computer Modelling Analysis'' [J. Biomech. 75 (2018) 147--153]}
+      \field{volume}{128}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1016/j.jbiomech.2021.110690
+      \endverb
+    \endentry
+    \entry{piprek2018multibody}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=1bc30c1a32eaccaed8ac773e045a44ca}{%
+           family={Piprek},
+           familyi={P\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3f8c4259e6ab532463b64770d5538089}{%
+           family={Glas},
+           familyi={G\bibinitperiod},
+           given={Franziska},
+           giveni={F\bibinitperiod}}}%
+        {{hash=6245d4ea1aeffd70ffd7f5d82b96779d}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Xiang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=814058a6db1bc02d000a5fa8181a84e6}{%
+           family={Bessone},
+           familyi={B\bibinitperiod},
+           given={Veronica},
+           giveni={V\bibinitperiod}}}%
+        {{hash=4dae4efe0f1988868526e7d82548900b}{%
+           family={Petrat},
+           familyi={P\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=78d91ec8bf6f101ba4ac4bed2285cba3}{%
+           family={Bittner},
+           familyi={B\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0be9187a6606480819fc7791c865e755}{%
+           family={Holzapfel},
+           familyi={H\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{6570e83dc580635bafea2117d2064a6e}
+      \strng{fullhash}{0ece681a19f65c156bd23d5f1cfc2cc7}
+      \strng{fullhashraw}{0ece681a19f65c156bd23d5f1cfc2cc7}
+      \strng{bibnamehash}{6570e83dc580635bafea2117d2064a6e}
+      \strng{authorbibnamehash}{6570e83dc580635bafea2117d2064a6e}
+      \strng{authornamehash}{6570e83dc580635bafea2117d2064a6e}
+      \strng{authorfullhash}{0ece681a19f65c156bd23d5f1cfc2cc7}
+      \strng{authorfullhashraw}{0ece681a19f65c156bd23d5f1cfc2cc7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{321}
+      \field{journaltitle}{Proceedings}
+      \field{number}{6}
+      \field{title}{Multi-Body Ski Jumper Model with Nonlinear Dynamic Inversion Muscle Control for Trajectory Optimization}
+      \field{volume}{2}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.3390/proceedings2060321
+      \endverb
+    \endentry
+    \entry{piprek2018robust}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=1bc30c1a32eaccaed8ac773e045a44ca}{%
+           family={Piprek},
+           familyi={P\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0be9187a6606480819fc7791c865e755}{%
+           family={Holzapfel},
+           familyi={H\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{69e75a6ba829efcb4992e2ca71248086}
+      \strng{fullhash}{69e75a6ba829efcb4992e2ca71248086}
+      \strng{fullhashraw}{69e75a6ba829efcb4992e2ca71248086}
+      \strng{bibnamehash}{69e75a6ba829efcb4992e2ca71248086}
+      \strng{authorbibnamehash}{69e75a6ba829efcb4992e2ca71248086}
+      \strng{authornamehash}{69e75a6ba829efcb4992e2ca71248086}
+      \strng{authorfullhash}{69e75a6ba829efcb4992e2ca71248086}
+      \strng{authorfullhashraw}{69e75a6ba829efcb4992e2ca71248086}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{320}
+      \field{journaltitle}{Proceedings}
+      \field{number}{6}
+      \field{title}{Robust Trajectory Optimization of a Ski Jumper for Uncertainty Influence and Safety Quantification}
+      \field{volume}{2}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.3390/proceedings2060320
+      \endverb
+    \endentry
+    \entry{muller2008performance}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{hash=bff8ba09075b68193b96c9c4f715dbd8}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=fa6b3125a5cf61f2ea69c12ade9d98f7}{%
+           family={Nørstrud},
+           familyi={N\bibinitperiod},
+           given={Helge},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Vienna}%
+      }
+      \strng{namehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{fullhash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{fullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{bibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authorbibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authornamehash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authorfullhash}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{authorfullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
+      \strng{editorbibnamehash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
+      \strng{editornamehash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
+      \strng{editorfullhash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
+      \strng{editorfullhashraw}{fa6b3125a5cf61f2ea69c12ade9d98f7}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Sport Aerodynamics}
+      \field{isbn}{978-3-211-89296-1}
+      \field{note}{Online ISBN: 978-3-211-89297-8}
+      \field{series}{CISM International Centre for Mechanical Sciences}
+      \field{title}{Performance factors in ski jumping}
+      \field{volume}{506}
+      \field{year}{2008}
+      \field{pages}{139\bibrangedash 160}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/978-3-211-89297-8_8
+      \endverb
+    \endentry
+    \entry{raissi2019physics}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=95a17c39168b9e6b8812f207b4e036c1}{%
+           family={Raissi},
+           familyi={R\bibinitperiod},
+           given={Maziar},
+           giveni={M\bibinitperiod}}}%
+        {{hash=197d71332633e07aa578718628fdc405}{%
+           family={Perdikaris},
+           familyi={P\bibinitperiod},
+           given={Paris},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bfaf154b1f300f885a75adce4c6b773e}{%
+           family={Karniadakis},
+           familyi={K\bibinitperiod},
+           given={George\bibnamedelima Em},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{767366a7d0fdde767496da8385111e76}
+      \strng{fullhash}{767366a7d0fdde767496da8385111e76}
+      \strng{fullhashraw}{767366a7d0fdde767496da8385111e76}
+      \strng{bibnamehash}{767366a7d0fdde767496da8385111e76}
+      \strng{authorbibnamehash}{767366a7d0fdde767496da8385111e76}
+      \strng{authornamehash}{767366a7d0fdde767496da8385111e76}
+      \strng{authorfullhash}{767366a7d0fdde767496da8385111e76}
+      \strng{authorfullhashraw}{767366a7d0fdde767496da8385111e76}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{title}{Physics-Informed Neural Networks: A Deep Learning Framework for Solving Forward and Inverse Problems Involving Nonlinear Partial Differential Equations}
+      \field{volume}{378}
+      \field{year}{2019}
+      \field{pages}{686\bibrangedash 707}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/j.jcp.2018.10.045
       \endverb
     \endentry
     \entry{Cai2021_PINN_FluidMechanics}{article}{}{}
@@ -141,13 +1194,13 @@
       \strng{namehash}{61726ce182153bce3cdf8d7fd435b6ce}
       \strng{fullhash}{5723c593b707185c0d6d901f8bfbdf5d}
       \strng{fullhashraw}{5723c593b707185c0d6d901f8bfbdf5d}
-      \strng{bibnamehash}{5723c593b707185c0d6d901f8bfbdf5d}
-      \strng{authorbibnamehash}{5723c593b707185c0d6d901f8bfbdf5d}
+      \strng{bibnamehash}{61726ce182153bce3cdf8d7fd435b6ce}
+      \strng{authorbibnamehash}{61726ce182153bce3cdf8d7fd435b6ce}
       \strng{authornamehash}{61726ce182153bce3cdf8d7fd435b6ce}
       \strng{authorfullhash}{5723c593b707185c0d6d901f8bfbdf5d}
       \strng{authorfullhashraw}{5723c593b707185c0d6d901f8bfbdf5d}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Acta Mechanica Sinica}
@@ -160,466 +1213,6 @@
       \verb{doi}
       \verb 10.1007/s10409-021-01148-1
       \endverb
-    \endentry
-    \entry{fang2020trajectory}{article}{}{}
-      \name{author}{6}{}{%
-        {{hash=a62d273a7329e7640aceb70d2ddc5c8b}{%
-           family={Fang},
-           familyi={F\bibinitperiod},
-           given={Xiao},
-           giveni={X\bibinitperiod}}}%
-        {{hash=ae4e4194a9debb3a30df737b23bf6f83}{%
-           family={Grüter},
-           familyi={G\bibinitperiod},
-           given={Benedikt},
-           giveni={B\bibinitperiod}}}%
-        {{hash=1bc30c1a32eaccaed8ac773e045a44ca}{%
-           family={Piprek},
-           familyi={P\bibinitperiod},
-           given={Patrick},
-           giveni={P\bibinitperiod}}}%
-        {{hash=50f678168093ea98afed88491fd52966}{%
-           family={Bessone},
-           familyi={B\bibinitperiod},
-           given={Valentina},
-           giveni={V\bibinitperiod}}}%
-        {{hash=9d7d7b8f30479ae8ecb8855a263117d2}{%
-           family={Petrat},
-           familyi={P\bibinitperiod},
-           given={Jens},
-           giveni={J\bibinitperiod}}}%
-        {{hash=0be9187a6606480819fc7791c865e755}{%
-           family={Holzapfel},
-           familyi={H\bibinitperiod},
-           given={Florian},
-           giveni={F\bibinitperiod}}}%
-      }
-      \strng{namehash}{fe985e431dffa91ab76d6c8fb5327775}
-      \strng{fullhash}{c7abe766959b67042ab92f56fdf70fa9}
-      \strng{fullhashraw}{c7abe766959b67042ab92f56fdf70fa9}
-      \strng{bibnamehash}{c7abe766959b67042ab92f56fdf70fa9}
-      \strng{authorbibnamehash}{c7abe766959b67042ab92f56fdf70fa9}
-      \strng{authornamehash}{fe985e431dffa91ab76d6c8fb5327775}
-      \strng{authorfullhash}{c7abe766959b67042ab92f56fdf70fa9}
-      \strng{authorfullhashraw}{c7abe766959b67042ab92f56fdf70fa9}
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Sensors}
-      \field{number}{7}
-      \field{title}{Ski Jumping Trajectory Reconstruction Using Wearable Sensors via Extended {Rauch-Tung-Striebel} Smoother with State Constraints}
-      \field{volume}{20}
-      \field{year}{2020}
-      \field{pages}{1995}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3390/s20071995
-      \endverb
-    \endentry
-    \entry{muller2008performance}{incollection}{}{}
-      \name{author}{1}{}{%
-        {{hash=bff8ba09075b68193b96c9c4f715dbd8}{%
-           family={Müller},
-           familyi={M\bibinitperiod},
-           given={Wolfram},
-           giveni={W\bibinitperiod}}}%
-      }
-      \name{editor}{1}{}{%
-        {{hash=fa6b3125a5cf61f2ea69c12ade9d98f7}{%
-           family={Nørstrud},
-           familyi={N\bibinitperiod},
-           given={Helge},
-           giveni={H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer, Vienna}%
-      }
-      \strng{namehash}{bff8ba09075b68193b96c9c4f715dbd8}
-      \strng{fullhash}{bff8ba09075b68193b96c9c4f715dbd8}
-      \strng{fullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
-      \strng{bibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
-      \strng{authorbibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
-      \strng{authornamehash}{bff8ba09075b68193b96c9c4f715dbd8}
-      \strng{authorfullhash}{bff8ba09075b68193b96c9c4f715dbd8}
-      \strng{authorfullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
-      \strng{editorbibnamehash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
-      \strng{editornamehash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
-      \strng{editorfullhash}{fa6b3125a5cf61f2ea69c12ade9d98f7}
-      \strng{editorfullhashraw}{fa6b3125a5cf61f2ea69c12ade9d98f7}
-      \field{extraname}{1}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Sport Aerodynamics}
-      \field{isbn}{978-3-211-89296-1}
-      \field{note}{Online ISBN: 978-3-211-89297-8}
-      \field{series}{CISM International Centre for Mechanical Sciences}
-      \field{title}{Performance factors in ski jumping}
-      \field{volume}{506}
-      \field{year}{2008}
-      \field{pages}{139\bibrangedash 160}
-      \range{pages}{22}
-      \verb{doi}
-      \verb 10.1007/978-3-211-89297-8_8
-      \endverb
-    \endentry
-    \entry{CERN_SkiJump_Physics}{report}{}{}
-      \name{author}{1}{}{%
-        {{hash=bff8ba09075b68193b96c9c4f715dbd8}{%
-           family={Müller},
-           familyi={M\bibinitperiod},
-           given={Wolfram},
-           giveni={W\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {CERN}%
-      }
-      \strng{namehash}{bff8ba09075b68193b96c9c4f715dbd8}
-      \strng{fullhash}{bff8ba09075b68193b96c9c4f715dbd8}
-      \strng{fullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
-      \strng{bibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
-      \strng{authorbibnamehash}{bff8ba09075b68193b96c9c4f715dbd8}
-      \strng{authornamehash}{bff8ba09075b68193b96c9c4f715dbd8}
-      \strng{authorfullhash}{bff8ba09075b68193b96c9c4f715dbd8}
-      \strng{authorfullhashraw}{bff8ba09075b68193b96c9c4f715dbd8}
-      \field{extraname}{2}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{CERN report on the aerodynamics and physics of ski jumping}
-      \field{title}{The physics of ski jumping}
-      \field{type}{techreport}
-      \field{year}{2006}
-      \verb{urlraw}
-      \verb https://cds.cern.ch/record/1009275/files/p269.pdf
-      \endverb
-      \verb{url}
-      \verb https://cds.cern.ch/record/1009275/files/p269.pdf
-      \endverb
-    \endentry
-    \entry{Plestenjak_NUM}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=a07526e402a3c71acc0ee54f96543a20}{%
-           family={Plestenjak},
-           familyi={P\bibinitperiod},
-           given={Bor},
-           giveni={B\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {DMFA-založništvo}%
-      }
-      \strng{namehash}{a07526e402a3c71acc0ee54f96543a20}
-      \strng{fullhash}{a07526e402a3c71acc0ee54f96543a20}
-      \strng{fullhashraw}{a07526e402a3c71acc0ee54f96543a20}
-      \strng{bibnamehash}{a07526e402a3c71acc0ee54f96543a20}
-      \strng{authorbibnamehash}{a07526e402a3c71acc0ee54f96543a20}
-      \strng{authornamehash}{a07526e402a3c71acc0ee54f96543a20}
-      \strng{authorfullhash}{a07526e402a3c71acc0ee54f96543a20}
-      \strng{authorfullhashraw}{a07526e402a3c71acc0ee54f96543a20}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Slovenian textbook on numerical methods}
-      \field{title}{Razširjen uvod v numerične metode}
-      \field{year}{2016}
-    \endentry
-    \entry{shiny_python}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=2b475ea115c6be635e6a6aaeaf18e343}{%
-           family={{Posit Team}},
-           familyi={P\bibinitperiod}}}%
-      }
-      \strng{namehash}{2b475ea115c6be635e6a6aaeaf18e343}
-      \strng{fullhash}{2b475ea115c6be635e6a6aaeaf18e343}
-      \strng{fullhashraw}{2b475ea115c6be635e6a6aaeaf18e343}
-      \strng{bibnamehash}{2b475ea115c6be635e6a6aaeaf18e343}
-      \strng{authorbibnamehash}{2b475ea115c6be635e6a6aaeaf18e343}
-      \strng{authornamehash}{2b475ea115c6be635e6a6aaeaf18e343}
-      \strng{authorfullhash}{2b475ea115c6be635e6a6aaeaf18e343}
-      \strng{authorfullhashraw}{2b475ea115c6be635e6a6aaeaf18e343}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-29}
-      \field{title}{Shiny for Python}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://shiny.posit.co/py/
-      \endverb
-      \verb{url}
-      \verb https://shiny.posit.co/py/
-      \endverb
-    \endentry
-    \entry{schwinn2022xlength}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=5c0be88ffaeedc45ac7b0e093b5247d1}{%
-           family={Schwinn},
-           familyi={S\bibinitperiod},
-           given={Leo},
-           giveni={L\bibinitperiod}}}%
-        {{hash=77ecda9ada89cf7b63d13c88415512aa}{%
-           family={Raab},
-           familyi={R\bibinitperiod},
-           given={René},
-           giveni={R\bibinitperiod}}}%
-        {{hash=119f043336d489bc84d839efe92b7b7f}{%
-           family={Nguyen},
-           familyi={N\bibinitperiod},
-           given={Arne},
-           giveni={A\bibinitperiod}}}%
-        {{hash=479f8454262e9fbf9674713963282420}{%
-           family={Zanca},
-           familyi={Z\bibinitperiod},
-           given={Dario},
-           giveni={D\bibinitperiod}}}%
-        {{hash=6e27a34bacfed09f0f547167affa9740}{%
-           family={Eskofier},
-           familyi={E\bibinitperiod},
-           given={Bjoern\bibnamedelima M.},
-           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \strng{namehash}{95bbdcc614cbee75684204ab7a1b4dc0}
-      \strng{fullhash}{304917bd83f83df77ecd7d8a6cf1cea2}
-      \strng{fullhashraw}{304917bd83f83df77ecd7d8a6cf1cea2}
-      \strng{bibnamehash}{304917bd83f83df77ecd7d8a6cf1cea2}
-      \strng{authorbibnamehash}{304917bd83f83df77ecd7d8a6cf1cea2}
-      \strng{authornamehash}{95bbdcc614cbee75684204ab7a1b4dc0}
-      \strng{authorfullhash}{304917bd83f83df77ecd7d8a6cf1cea2}
-      \strng{authorfullhashraw}{304917bd83f83df77ecd7d8a6cf1cea2}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Sensors}
-      \field{number}{21}
-      \field{title}{{xLength}: Predicting Expected Ski Jump Length Shortly after Take-Off Using Deep Learning}
-      \field{volume}{22}
-      \field{year}{2022}
-      \field{pages}{8474}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3390/s22218474
-      \endverb
-    \endentry
-    \entry{SSM_YouTube}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=169a74445568cfe3813efef9f79de225}{%
-           family={Serrano.Academy},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{169a74445568cfe3813efef9f79de225}
-      \strng{fullhash}{169a74445568cfe3813efef9f79de225}
-      \strng{fullhashraw}{169a74445568cfe3813efef9f79de225}
-      \strng{bibnamehash}{169a74445568cfe3813efef9f79de225}
-      \strng{authorbibnamehash}{169a74445568cfe3813efef9f79de225}
-      \strng{authornamehash}{169a74445568cfe3813efef9f79de225}
-      \strng{authorfullhash}{169a74445568cfe3813efef9f79de225}
-      \strng{authorfullhashraw}{169a74445568cfe3813efef9f79de225}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://youtu.be/g1AqUhP00Do}}
-      \field{note}{State‐Space Model (SSM) video}
-      \field{title}{State‐Space Model (SSM) tutorial}
-      \field{year}{2025}
-    \endentry
-    \entry{skisprungschanzen_letalnica}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=fd9ac98d5d57396fb4df573dcffd6f3d}{%
-           family={{Ski Jumping Hill Archive, skisprungschanzen.com}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{fd9ac98d5d57396fb4df573dcffd6f3d}
-      \strng{fullhash}{fd9ac98d5d57396fb4df573dcffd6f3d}
-      \strng{fullhashraw}{fd9ac98d5d57396fb4df573dcffd6f3d}
-      \strng{bibnamehash}{fd9ac98d5d57396fb4df573dcffd6f3d}
-      \strng{authorbibnamehash}{fd9ac98d5d57396fb4df573dcffd6f3d}
-      \strng{authornamehash}{fd9ac98d5d57396fb4df573dcffd6f3d}
-      \strng{authorfullhash}{fd9ac98d5d57396fb4df573dcffd6f3d}
-      \strng{authorfullhashraw}{fd9ac98d5d57396fb4df573dcffd6f3d}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://www.skisprungschanzen.com/EN/Ski+Jumps/SLO-Slovenia/Planica/0475-Letalnica/}}
-      \field{note}{Accessed: 2025-09-12}
-      \field{title}{Letalnica (Letalnica bratov Gorišek), Planica, Slovenia — Ski Jumping Hill Archive}
-      \field{year}{2025}
-    \endentry
-    \entry{SkiJumping_Book}{book}{}{}
-      \name{editor}{1}{}{%
-        {{hash=22dfdbf9a3cc3e2137863a9a3a774b26}{%
-           family={Thompson},
-           familyi={T\bibinitperiod},
-           given={Ava},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Publifye AS}%
-      }
-      \strng{namehash}{22dfdbf9a3cc3e2137863a9a3a774b26}
-      \strng{fullhash}{22dfdbf9a3cc3e2137863a9a3a774b26}
-      \strng{fullhashraw}{22dfdbf9a3cc3e2137863a9a3a774b26}
-      \strng{bibnamehash}{22dfdbf9a3cc3e2137863a9a3a774b26}
-      \strng{editorbibnamehash}{22dfdbf9a3cc3e2137863a9a3a774b26}
-      \strng{editornamehash}{22dfdbf9a3cc3e2137863a9a3a774b26}
-      \strng{editorfullhash}{22dfdbf9a3cc3e2137863a9a3a774b26}
-      \strng{editorfullhashraw}{22dfdbf9a3cc3e2137863a9a3a774b26}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labelnamesource}{editor}
-      \field{labeltitlesource}{title}
-      \field{note}{Found via Google Books at \url{https://www.google.si/books/edition/Ski\_Jumping/G2pPEQAAQBAJ?hl=en&gbpv=0}}
-      \field{title}{Ski Jumping}
-      \field{year}{2025}
-    \endentry
-    \entry{vanWieringen2015ridge}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=ff3388cee5607ea4b85de7e183af17c3}{%
-           family={Wieringen},
-           familyi={W\bibinitperiod},
-           given={Wessel\bibnamedelima N.},
-           giveni={W\bibinitperiod\bibinitdelim N\bibinitperiod},
-           prefix={van},
-           prefixi={v\bibinitperiod}}}%
-      }
-      \strng{namehash}{ff3388cee5607ea4b85de7e183af17c3}
-      \strng{fullhash}{ff3388cee5607ea4b85de7e183af17c3}
-      \strng{fullhashraw}{ff3388cee5607ea4b85de7e183af17c3}
-      \strng{bibnamehash}{ff3388cee5607ea4b85de7e183af17c3}
-      \strng{authorbibnamehash}{ff3388cee5607ea4b85de7e183af17c3}
-      \strng{authornamehash}{ff3388cee5607ea4b85de7e183af17c3}
-      \strng{authorfullhash}{ff3388cee5607ea4b85de7e183af17c3}
-      \strng{authorfullhashraw}{ff3388cee5607ea4b85de7e183af17c3}
-      \field{sortinit}{v}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{arXiv preprint arXiv:1509.09169}
-      \field{note}{Revision v8, submitted 30 September 2015; revised 27 June 2023}
-      \field{title}{Lecture Notes on Ridge Regression}
-      \field{year}{2015}
-      \verb{doi}
-      \verb 10.48550/arXiv.1509.09169
-      \endverb
-    \endentry
-    \entry{virmavirta2019aerodynamics}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=b93492f7e9dbd1b5e9670b58f939b0d1}{%
-           family={Virmavirta},
-           familyi={V\bibinitperiod},
-           given={Mikko},
-           giveni={M\bibinitperiod}}}%
-        {{hash=12610f0ebd14212132a5e24d4118ff12}{%
-           family={Kivekäs},
-           familyi={K\bibinitperiod},
-           given={Juha},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{01164efec020f2445c4f57dec5a4246f}
-      \strng{fullhash}{01164efec020f2445c4f57dec5a4246f}
-      \strng{fullhashraw}{01164efec020f2445c4f57dec5a4246f}
-      \strng{bibnamehash}{01164efec020f2445c4f57dec5a4246f}
-      \strng{authorbibnamehash}{01164efec020f2445c4f57dec5a4246f}
-      \strng{authornamehash}{01164efec020f2445c4f57dec5a4246f}
-      \strng{authorfullhash}{01164efec020f2445c4f57dec5a4246f}
-      \strng{authorfullhashraw}{01164efec020f2445c4f57dec5a4246f}
-      \field{sortinit}{V}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Sports Engineering}
-      \field{number}{1}
-      \field{title}{Aerodynamics of an isolated ski jumping ski}
-      \field{volume}{22}
-      \field{year}{2019}
-      \field{pages}{1\bibrangedash 6}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1007/s12283-019-0298-1
-      \endverb
-    \endentry
-    \entry{StatQuest_NN_YouTube}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=1d458e4fcf946ae0f9f09391ced3775c}{%
-           family={Josh\bibnamedelima Starmer},
-           familyi={J\bibinitperiod\bibinitdelim S\bibinitperiod},
-           given={StatQuest},
-           giveni={S\bibinitperiod},
-           prefix={with},
-           prefixi={w\bibinitperiod}}}%
-      }
-      \strng{namehash}{1d458e4fcf946ae0f9f09391ced3775c}
-      \strng{fullhash}{1d458e4fcf946ae0f9f09391ced3775c}
-      \strng{fullhashraw}{1d458e4fcf946ae0f9f09391ced3775c}
-      \strng{bibnamehash}{1d458e4fcf946ae0f9f09391ced3775c}
-      \strng{authorbibnamehash}{1d458e4fcf946ae0f9f09391ced3775c}
-      \strng{authornamehash}{1d458e4fcf946ae0f9f09391ced3775c}
-      \strng{authorfullhash}{1d458e4fcf946ae0f9f09391ced3775c}
-      \strng{authorfullhashraw}{1d458e4fcf946ae0f9f09391ced3775c}
-      \field{sortinit}{w}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://youtu.be/CqOfi41LfDw}}
-      \field{note}{Neural networks introduction video}
-      \field{title}{Neural Networks Tutorial}
-      \field{year}{2025}
-    \endentry
-    \entry{zecha2018convolutional}{inproceedings}{}{}
-      \name{author}{5}{}{%
-        {{hash=9132f49f9f226ac000015112b8ed45f1}{%
-           family={Zecha},
-           familyi={Z\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=f0e24523a631aaf777589c6fcd271a1e}{%
-           family={Eggert},
-           familyi={E\bibinitperiod},
-           given={Christoph},
-           giveni={C\bibinitperiod}}}%
-        {{hash=6939186917ae22ca3309e0762b148691}{%
-           family={Einfalt},
-           familyi={E\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-        {{hash=ebc232f25cc5938e552bab1725fe20b9}{%
-           family={Brehm},
-           familyi={B\bibinitperiod},
-           given={Stefan},
-           giveni={S\bibinitperiod}}}%
-        {{hash=42799a7004bdddef8e2efeda20abcc68}{%
-           family={Lienhart},
-           familyi={L\bibinitperiod},
-           given={Rainer},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{4df883fa59096c4bd12e93af006e323a}
-      \strng{fullhash}{7ac1239c8ef93ad623ce890a10513e14}
-      \strng{fullhashraw}{7ac1239c8ef93ad623ce890a10513e14}
-      \strng{bibnamehash}{7ac1239c8ef93ad623ce890a10513e14}
-      \strng{authorbibnamehash}{7ac1239c8ef93ad623ce890a10513e14}
-      \strng{authornamehash}{4df883fa59096c4bd12e93af006e323a}
-      \strng{authorfullhash}{7ac1239c8ef93ad623ce890a10513e14}
-      \strng{authorfullhashraw}{7ac1239c8ef93ad623ce890a10513e14}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 1st International Workshop on Multimedia Content Analysis in Sports}
-      \field{title}{A Convolutional Sequence to Sequence Model for Multimodal Dynamics Prediction in Ski Jumps}
-      \field{year}{2018}
-      \field{pages}{11\bibrangedash 19}
-      \range{pages}{9}
     \endentry
   \enddatalist
 \endrefsection

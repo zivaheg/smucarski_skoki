@@ -96,15 +96,15 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>9</bcf:value>
+      <bcf:value>3</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>2</bcf:value>
+      <bcf:value>3</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>9</bcf:value>
+      <bcf:value>3</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
@@ -172,7 +172,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortingtemplatename</bcf:key>
-      <bcf:value>nty</bcf:value>
+      <bcf:value>none</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortsets</bcf:key>
@@ -204,7 +204,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useprefix</bcf:key>
-      <bcf:value>1</bcf:value>
+      <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useafterword</bcf:key>
@@ -331,15 +331,15 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>9</bcf:value>
+      <bcf:value>3</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>2</bcf:value>
+      <bcf:value>3</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>9</bcf:value>
+      <bcf:value>3</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
@@ -419,7 +419,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useprefix</bcf:key>
-      <bcf:value>1</bcf:value>
+      <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useafterword</bcf:key>
@@ -643,12 +643,6 @@
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
     <bcf:option datatype="boolean">subentry</bcf:option>
-    <bcf:option datatype="boolean">halid</bcf:option>
-    <bcf:option datatype="boolean">swhid</bcf:option>
-    <bcf:option datatype="boolean">shortswhid</bcf:option>
-    <bcf:option datatype="boolean">swlabels</bcf:option>
-    <bcf:option datatype="boolean">vcs</bcf:option>
-    <bcf:option datatype="boolean">license</bcf:option>
     <bcf:option datatype="boolean">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="integer">mincrossrefs</bcf:option>
     <bcf:option datatype="integer">minxrefs</bcf:option>
@@ -880,22 +874,6 @@
   </bcf:datafieldset>
   <!-- SOURCEMAP -->
   <bcf:sourcemap>
-    <bcf:maps datatype="bibtex" map_overwrite="1" level="style">
-      <bcf:map>
-        <bcf:map_step map_field_source="swhid" map_match="\s" map_replace=""/>
-      </bcf:map>
-      <bcf:map>
-        <bcf:map_step map_field_source="swhid"/>
-        <bcf:map_step map_field_set="swhidcore" map_origfieldval="1"/>
-        <bcf:map_step map_field_source="swhidcore" map_match=";.*" map_replace=""/>
-      </bcf:map>
-    </bcf:maps>
-    <bcf:maps datatype="bibtex" level="style">
-      <bcf:map>
-        <bcf:map_step map_type_source="artifactsoftware" map_type_target="software"/>
-        <bcf:map_step map_type_source="artifactdataset" map_type_target="dataset"/>
-      </bcf:map>
-    </bcf:maps>
     <bcf:maps datatype="bibtex" level="driver">
       <bcf:map>
         <bcf:map_step map_field_set="day" map_null="1"/>
@@ -1078,21 +1056,6 @@
       <bcf:field source="shorthandintro" skip="true"/>
       <bcf:field source="sortkey" skip="true"/>
     </bcf:inherit>
-    <bcf:inherit>
-      <bcf:type_pair source="software" target="softwareversion"/>
-      <bcf:type_pair source="software" target="softwaremodule"/>
-      <bcf:type_pair source="software" target="codefragment"/>
-      <bcf:field source="*" target="*"/>
-    </bcf:inherit>
-    <bcf:inherit>
-      <bcf:type_pair source="softwareversion" target="softwaremodule"/>
-      <bcf:type_pair source="softwareversion" target="codefragment"/>
-      <bcf:field source="*" target="*"/>
-    </bcf:inherit>
-    <bcf:inherit>
-      <bcf:type_pair source="softwaremodule" target="codefragment"/>
-      <bcf:field source="*" target="*"/>
-    </bcf:inherit>
   </bcf:inheritance>
   <!-- UNIQUENAME TEMPLATES -->
   <bcf:uniquenametemplate name="global">
@@ -1184,10 +1147,6 @@
       <bcf:entrytype>unpublished</bcf:entrytype>
       <bcf:entrytype>video</bcf:entrytype>
       <bcf:entrytype skip_output="true">xdata</bcf:entrytype>
-      <bcf:entrytype>software</bcf:entrytype>
-      <bcf:entrytype>softwareversion</bcf:entrytype>
-      <bcf:entrytype>softwaremodule</bcf:entrytype>
-      <bcf:entrytype>codefragment</bcf:entrytype>
     </bcf:entrytypes>
     <bcf:fields>
       <bcf:field fieldtype="field" datatype="integer">sortyear</bcf:field>
@@ -1392,20 +1351,6 @@
       <bcf:field fieldtype="field" format="xsv" datatype="option" skip_output="true">relatedoptions</bcf:field>
       <bcf:field fieldtype="field" datatype="range">pages</bcf:field>
       <bcf:field fieldtype="field" datatype="code">execute</bcf:field>
-      <bcf:field fieldtype="field" datatype="literal">numpages</bcf:field>
-      <bcf:field fieldtype="field" datatype="literal">articleno</bcf:field>
-      <bcf:field fieldtype="list" datatype="uri">urls</bcf:field>
-      <bcf:field fieldtype="list" datatype="literal">school</bcf:field>
-      <bcf:field fieldtype="field" datatype="literal">key</bcf:field>
-      <bcf:field fieldtype="field" datatype="literal">lastaccessed</bcf:field>
-      <bcf:field fieldtype="field" datatype="literal">distinctURL</bcf:field>
-      <bcf:field fieldtype="field" datatype="literal">introducedin</bcf:field>
-      <bcf:field fieldtype="list" datatype="literal">license</bcf:field>
-      <bcf:field fieldtype="field" datatype="uri">repository</bcf:field>
-      <bcf:field fieldtype="field" datatype="verbatim">hal_id</bcf:field>
-      <bcf:field fieldtype="field" datatype="verbatim">hal_version</bcf:field>
-      <bcf:field fieldtype="field" datatype="verbatim">swhid</bcf:field>
-      <bcf:field fieldtype="field" datatype="verbatim">swhidcore</bcf:field>
     </bcf:fields>
     <bcf:entryfields>
       <bcf:field>abstract</bcf:field>
@@ -2169,155 +2114,6 @@
       <bcf:field>type</bcf:field>
       <bcf:field>venue</bcf:field>
     </bcf:entryfields>
-    <bcf:entryfields>
-      <bcf:field>numpages</bcf:field>
-    </bcf:entryfields>
-    <bcf:entryfields>
-      <bcf:field>articleno</bcf:field>
-    </bcf:entryfields>
-    <bcf:entryfields>
-      <bcf:field>urls</bcf:field>
-    </bcf:entryfields>
-    <bcf:entryfields>
-      <bcf:entrytype>thesis</bcf:entrytype>
-      <bcf:field>school</bcf:field>
-    </bcf:entryfields>
-    <bcf:entryfields>
-      <bcf:field>key</bcf:field>
-    </bcf:entryfields>
-    <bcf:entryfields>
-      <bcf:field>lastaccessed</bcf:field>
-    </bcf:entryfields>
-    <bcf:entryfields>
-      <bcf:field>distinctURL</bcf:field>
-    </bcf:entryfields>
-    <bcf:entryfields>
-      <bcf:entrytype>software</bcf:entrytype>
-      <bcf:field>abstract</bcf:field>
-      <bcf:field>author</bcf:field>
-      <bcf:field>date</bcf:field>
-      <bcf:field>doi</bcf:field>
-      <bcf:field>editor</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
-      <bcf:field>file</bcf:field>
-      <bcf:field>hal_id</bcf:field>
-      <bcf:field>hal_version</bcf:field>
-      <bcf:field>institution</bcf:field>
-      <bcf:field>license</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>note</bcf:field>
-      <bcf:field>organization</bcf:field>
-      <bcf:field>publisher</bcf:field>
-      <bcf:field>related</bcf:field>
-      <bcf:field>relatedstring</bcf:field>
-      <bcf:field>repository</bcf:field>
-      <bcf:field>swhid</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urldate</bcf:field>
-      <bcf:field>version</bcf:field>
-      <bcf:field>year</bcf:field>
-    </bcf:entryfields>
-    <bcf:entryfields>
-      <bcf:entrytype>softwareversion</bcf:entrytype>
-      <bcf:field>abstract</bcf:field>
-      <bcf:field>author</bcf:field>
-      <bcf:field>crossref</bcf:field>
-      <bcf:field>date</bcf:field>
-      <bcf:field>doi</bcf:field>
-      <bcf:field>editor</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
-      <bcf:field>file</bcf:field>
-      <bcf:field>hal_id</bcf:field>
-      <bcf:field>hal_version</bcf:field>
-      <bcf:field>institution</bcf:field>
-      <bcf:field>introducedin</bcf:field>
-      <bcf:field>license</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>note</bcf:field>
-      <bcf:field>organization</bcf:field>
-      <bcf:field>publisher</bcf:field>
-      <bcf:field>related</bcf:field>
-      <bcf:field>relatedstring</bcf:field>
-      <bcf:field>relatedtype</bcf:field>
-      <bcf:field>repository</bcf:field>
-      <bcf:field>subtitle</bcf:field>
-      <bcf:field>swhid</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urldate</bcf:field>
-      <bcf:field>version</bcf:field>
-      <bcf:field>year</bcf:field>
-    </bcf:entryfields>
-    <bcf:entryfields>
-      <bcf:entrytype>softwaremodule</bcf:entrytype>
-      <bcf:field>abstract</bcf:field>
-      <bcf:field>author</bcf:field>
-      <bcf:field>crossref</bcf:field>
-      <bcf:field>date</bcf:field>
-      <bcf:field>doi</bcf:field>
-      <bcf:field>editor</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
-      <bcf:field>file</bcf:field>
-      <bcf:field>hal_id</bcf:field>
-      <bcf:field>hal_version</bcf:field>
-      <bcf:field>institution</bcf:field>
-      <bcf:field>introducedin</bcf:field>
-      <bcf:field>license</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>note</bcf:field>
-      <bcf:field>organization</bcf:field>
-      <bcf:field>publisher</bcf:field>
-      <bcf:field>related</bcf:field>
-      <bcf:field>relatedstring</bcf:field>
-      <bcf:field>relatedtype</bcf:field>
-      <bcf:field>repository</bcf:field>
-      <bcf:field>subtitle</bcf:field>
-      <bcf:field>swhid</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urldate</bcf:field>
-      <bcf:field>version</bcf:field>
-      <bcf:field>year</bcf:field>
-    </bcf:entryfields>
-    <bcf:entryfields>
-      <bcf:entrytype>codefragment</bcf:entrytype>
-      <bcf:field>abstract</bcf:field>
-      <bcf:field>author</bcf:field>
-      <bcf:field>crossref</bcf:field>
-      <bcf:field>date</bcf:field>
-      <bcf:field>doi</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
-      <bcf:field>file</bcf:field>
-      <bcf:field>hal_id</bcf:field>
-      <bcf:field>hal_version</bcf:field>
-      <bcf:field>institution</bcf:field>
-      <bcf:field>introducedin</bcf:field>
-      <bcf:field>license</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>note</bcf:field>
-      <bcf:field>organization</bcf:field>
-      <bcf:field>publisher</bcf:field>
-      <bcf:field>related</bcf:field>
-      <bcf:field>relatedstring</bcf:field>
-      <bcf:field>relatedtype</bcf:field>
-      <bcf:field>repository</bcf:field>
-      <bcf:field>subtitle</bcf:field>
-      <bcf:field>swhid</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urldate</bcf:field>
-      <bcf:field>version</bcf:field>
-      <bcf:field>year</bcf:field>
-    </bcf:entryfields>
     <bcf:multiscriptfields>
       <bcf:field>abstract</bcf:field>
       <bcf:field>addendum</bcf:field>
@@ -2569,46 +2365,6 @@
         <bcf:field>gender</bcf:field>
       </bcf:constraint>
     </bcf:constraints>
-    <bcf:constraints>
-      <bcf:entrytype>software</bcf:entrytype>
-      <bcf:constraint type="mandatory">
-        <bcf:fieldor>
-          <bcf:field>author</bcf:field>
-          <bcf:field>editor</bcf:field>
-        </bcf:fieldor>
-        <bcf:field>title</bcf:field>
-        <bcf:field>url</bcf:field>
-        <bcf:field>year</bcf:field>
-      </bcf:constraint>
-    </bcf:constraints>
-    <bcf:constraints>
-      <bcf:entrytype>softwareversion</bcf:entrytype>
-      <bcf:constraint type="mandatory">
-        <bcf:fieldor>
-          <bcf:field>author</bcf:field>
-          <bcf:field>editor</bcf:field>
-        </bcf:fieldor>
-        <bcf:field>title</bcf:field>
-        <bcf:field>url</bcf:field>
-        <bcf:field>version</bcf:field>
-        <bcf:field>year</bcf:field>
-      </bcf:constraint>
-    </bcf:constraints>
-    <bcf:constraints>
-      <bcf:entrytype>softwaremodule</bcf:entrytype>
-      <bcf:constraint type="mandatory">
-        <bcf:field>author</bcf:field>
-        <bcf:field>subtitle</bcf:field>
-        <bcf:field>url</bcf:field>
-        <bcf:field>year</bcf:field>
-      </bcf:constraint>
-    </bcf:constraints>
-    <bcf:constraints>
-      <bcf:entrytype>codefragment</bcf:entrytype>
-      <bcf:constraint type="mandatory">
-        <bcf:field>url</bcf:field>
-      </bcf:constraint>
-    </bcf:constraints>
   </bcf:datamodel>
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
@@ -2616,66 +2372,62 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">refs.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">SkiJumping_Book</bcf:citekey>
-    <bcf:citekey order="1" intorder="2">fang2020trajectory</bcf:citekey>
-    <bcf:citekey order="1" intorder="3">schwinn2022xlength</bcf:citekey>
-    <bcf:citekey order="1" intorder="4">zecha2018convolutional</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">SSM_YouTube</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">fang2020trajectory</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">schwinn2022xlength</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">zecha2018convolutional</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">aoki1990state</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">Plestenjak_NUM</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">vanWieringen2015ridge</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">virmavirta2019aerodynamics</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">skisprungschanzen_letalnica</bcf:citekey>
-    <bcf:citekey order="10" intorder="2">3dmdb_skijumping_planica</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">skisprungschanzen_letalnica</bcf:citekey>
-    <bcf:citekey order="11" intorder="2">3dmdb_skijumping_planica</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">SkiJumping_Book</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">StatQuest_NN_YouTube</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">Cai2021_PINN_FluidMechanics</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">CERN_SkiJump_Physics</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">SSM_YouTube</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">bergmann2025state_space_model</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">bergmann2025state_space_model</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">shiny_python</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">muller2008performance</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">muller1996dynamics</bcf:citekey>
+    <bcf:citekey order="1" intorder="2">meile2006aerodynamics</bcf:citekey>
+    <bcf:citekey order="1" intorder="3">seo2004optimal</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">fang2020trajectory</bcf:citekey>
+    <bcf:citekey order="2" intorder="2">schwinn2022xlength</bcf:citekey>
+    <bcf:citekey order="2" intorder="3">zecha2018convolutional</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">aoki1990state</bcf:citekey>
+    <bcf:citekey order="3" intorder="2">ljung1999system</bcf:citekey>
+    <bcf:citekey order="3" intorder="3">bjorck1996least</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">hoerl1970ridge</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">sarkka2013bayesian</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">fang2020trajectory</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">schwinn2022xlength</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">zecha2018convolutional</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">seo2004aerodynamic</bcf:citekey>
+    <bcf:citekey order="9" intorder="2">virmavirta2019aerodynamics</bcf:citekey>
+    <bcf:citekey order="9" intorder="3">barnes2022flight</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">meile2006aerodynamics</bcf:citekey>
+    <bcf:citekey order="10" intorder="2">ryu2015aerodynamic</bcf:citekey>
+    <bcf:citekey order="10" intorder="3">yamamoto2022transient</bcf:citekey>
+    <bcf:citekey order="10" intorder="4">hu2024unfavorable</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">muller2008simulation</bcf:citekey>
+    <bcf:citekey order="11" intorder="2">seo2004optimal</bcf:citekey>
+    <bcf:citekey order="11" intorder="3">jung2019optimization</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">schmolzer2005individual</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">virmavirta2012wind</bcf:citekey>
+    <bcf:citekey order="13" intorder="2">jung2018wind</bcf:citekey>
+    <bcf:citekey order="13" intorder="3">jung2021windcorrigendum</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">piprek2018multibody</bcf:citekey>
+    <bcf:citekey order="14" intorder="2">piprek2018robust</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">fang2020trajectory</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">schwinn2022xlength</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">zecha2018convolutional</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">muller2008simulation</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">meile2006aerodynamics</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">muller2008performance</bcf:citekey>
+    <bcf:citekey order="30" intorder="2">virmavirta2019aerodynamics</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">raissi2019physics</bcf:citekey>
+    <bcf:citekey order="31" intorder="2">Cai2021_PINN_FluidMechanics</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">piprek2018robust</bcf:citekey>
+    <bcf:citekey order="32" intorder="2">muller1996dynamics</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
-  <bcf:sortingtemplate name="nty">
+  <bcf:sortingtemplate name="none">
     <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
     </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2">year</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="6">
-      <bcf:sortitem order="1">volume</bcf:sortitem>
-      <bcf:sortitem literal="1" order="2">0</bcf:sortitem>
+    <bcf:sort order="2">
+      <bcf:sortitem order="1">intciteorder</bcf:sortitem>
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
   <bcf:datalist section="0"
-                name="nty/global//global/global/global"
+                name="none/global//global/global/global"
                 type="entry"
-                sortingtemplatename="nty"
+                sortingtemplatename="none"
                 sortingnamekeytemplatename="global"
                 labelprefix=""
                 uniquenametemplatename="global"
