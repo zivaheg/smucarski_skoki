@@ -1,0 +1,399 @@
+{
+  "trajectory_error_actual_start_m": {
+    "mean": 1.349872283816675,
+    "median": 1.2066909638302254,
+    "sample_std": 0.6900829590626334,
+    "ci95_t": [
+      1.2543705699973775,
+      1.4453739976359725
+    ],
+    "min": 0.3058588790415401,
+    "max": 4.730122826987828
+  },
+  "trajectory_error_training_mean_start_m": {
+    "mean": 1.3930746694398108,
+    "median": 1.2680785558605463,
+    "sample_std": 0.6769173820326142,
+    "ci95_t": [
+      1.2993949614435447,
+      1.486754377436077
+    ],
+    "min": 0.3387518177997611,
+    "max": 4.828361550682733
+  },
+  "trajectory_error_constant_velocity_m": {
+    "mean": 58.32875676212732,
+    "median": 59.20122464593346,
+    "sample_std": 14.044967439844573,
+    "ci95_t": [
+      56.385050656323244,
+      60.272462867931395
+    ],
+    "min": 25.482554037799606,
+    "max": 148.34464719162145
+  },
+  "trajectory_error_training_average_path_m": {
+    "mean": 2.6437267840922103,
+    "median": 2.1834138876166373,
+    "sample_std": 2.342951452533152,
+    "ci95_t": [
+      2.319481885455292,
+      2.9679716827291287
+    ],
+    "min": 0.31763076616532704,
+    "max": 18.950500794710035
+  },
+  "endpoint_error_actual_start_m": {
+    "mean": 5.727278204412736,
+    "median": 4.563114298268666,
+    "sample_std": 4.065658621298685,
+    "ci95_t": [
+      5.164625032009177,
+      6.289931376816295
+    ],
+    "min": 0.8205733188608422,
+    "max": 28.18307214656786
+  },
+  "landing_distance_absolute_error_actual_start_m": {
+    "mean": 4.5232054796656485,
+    "median": 3.3513536724537403,
+    "sample_std": 4.332073485699029,
+    "ci95_t": [
+      3.9236827167251356,
+      5.122728242606161
+    ],
+    "min": 0.017567214102768958,
+    "max": 27.70858639846395
+  },
+  "spectral_radius": {
+    "mean": 1.0135651361553912,
+    "median": 1.0135653305575774,
+    "sample_std": 3.055944804267704e-05,
+    "ci95_t": [
+      1.0135609069831981,
+      1.0135693653275843
+    ],
+    "min": 1.0134274389486426,
+    "max": 1.0136960011352552
+  },
+  "model": {
+    "name": "kinematic_speed_state_wind_posture",
+    "description": "Independent 7-state/19-control conditional reconstruction model",
+    "state_names": [
+      "x",
+      "y",
+      "z",
+      "vx",
+      "vy",
+      "vz",
+      "resulting_speed"
+    ],
+    "control_names": [
+      "wind_speed_takeoff",
+      "wind_speed_middle",
+      "wind_speed_landing",
+      "wind_tangent_takeoff",
+      "wind_tangent_middle",
+      "wind_tangent_landing",
+      "crosswind_takeoff",
+      "crosswind_middle",
+      "crosswind_landing",
+      "turbulence_takeoff",
+      "turbulence_middle",
+      "turbulence_landing",
+      "opening_angle",
+      "roll_left",
+      "roll_right",
+      "yaw_left",
+      "yaw_right",
+      "stall_left",
+      "stall_right"
+    ],
+    "state_dimension": 7,
+    "control_dimension": 19,
+    "state_control_overlap": [],
+    "ridge_alpha": 10.0,
+    "fit_intercept": false,
+    "feature_standardization": false
+  },
+  "dataset": {
+    "accepted_jumps": 203,
+    "samples_min": 88,
+    "samples_median": 137.0,
+    "samples_mean": 136.6206896551724,
+    "samples_max": 164,
+    "duration_seconds_min": 4.3500000000000005,
+    "duration_seconds_median": 6.800000000000001,
+    "duration_seconds_mean": 6.7810344827586215,
+    "duration_seconds_max": 8.15,
+    "sample_interval_seconds": 0.05,
+    "source_archive": "simulation/2024_03_Planica_12_winds/cleaned/normalized_corrected/combined_dataset.npz"
+  },
+  "timestamp_sensitivity_no_repair": {
+    "jumps": 144,
+    "trajectory_error_actual_start_m": {
+      "mean": 1.4216758073402245,
+      "median": 1.3369452799615384,
+      "sample_std": 0.7337511150246867,
+      "ci95_t": [
+        1.3008091319833461,
+        1.5425424826971028
+      ],
+      "min": 0.3259495504172959,
+      "max": 4.790893633171781
+    }
+  },
+  "production_fit": {
+    "transitions": 27531,
+    "spectral_radius_A": 1.0135659262944514,
+    "rank_A": 7,
+    "rank_B": 7,
+    "rank_C": 4,
+    "one_step_all_state_rmse": 0.5093840500507248,
+    "one_step_position_rmse_m": 0.031921684842343034,
+    "matrix_shapes": {
+      "A": [
+        7,
+        7
+      ],
+      "B": [
+        7,
+        19
+      ],
+      "C": [
+        4,
+        7
+      ],
+      "D": [
+        4,
+        19
+      ]
+    }
+  },
+  "candidate_comparison": [
+    {
+      "variant": "kinematic_wind_speed_posture",
+      "role": "diagnostic",
+      "state_dimension": 6,
+      "control_dimension": 20,
+      "state_control_overlap": 0,
+      "trajectory_mean_m": 1.3404633307906595,
+      "trajectory_median_m": 1.1855813275153735,
+      "mean_start_trajectory_mean_m": 1.34612223289652,
+      "endpoint_mean_m": 3.551958247960488,
+      "terminal_distance_mae_m": 1.6627308580389906,
+      "spectral_radius_mean": 1.0135710949126624,
+      "elapsed_seconds": 4.478819800016936
+    },
+    {
+      "variant": "kinematic_speed_state_wind_posture",
+      "role": "primary",
+      "state_dimension": 7,
+      "control_dimension": 19,
+      "state_control_overlap": 0,
+      "trajectory_mean_m": 1.349872283816675,
+      "trajectory_median_m": 1.2066909638302254,
+      "mean_start_trajectory_mean_m": 1.3930746694398108,
+      "endpoint_mean_m": 5.727278204412736,
+      "terminal_distance_mae_m": 4.5232054796656485,
+      "spectral_radius_mean": 1.0135651361553912,
+      "elapsed_seconds": 4.850919699994847
+    },
+    {
+      "variant": "full_state_wind_only",
+      "role": "notebook_7_variant",
+      "state_dimension": 14,
+      "control_dimension": 12,
+      "state_control_overlap": 0,
+      "trajectory_mean_m": 1.8716435903624529,
+      "trajectory_median_m": 1.691029182997168,
+      "mean_start_trajectory_mean_m": 1.902917176979801,
+      "endpoint_mean_m": 7.6097448039283275,
+      "terminal_distance_mae_m": 5.537903528716264,
+      "spectral_radius_mean": 1.0127337403224939,
+      "elapsed_seconds": 4.8737180000171065
+    },
+    {
+      "variant": "kinematic_wind_posture",
+      "role": "ablation_no_speed",
+      "state_dimension": 6,
+      "control_dimension": 19,
+      "state_control_overlap": 0,
+      "trajectory_mean_m": 6.807719694483478,
+      "trajectory_median_m": 4.840766600599186,
+      "mean_start_trajectory_mean_m": 6.480821086609312,
+      "endpoint_mean_m": 33.931599141610235,
+      "terminal_distance_mae_m": 33.349728792457555,
+      "spectral_radius_mean": 1.0136401905094907,
+      "elapsed_seconds": 4.620626299991272
+    },
+    {
+      "variant": "kinematic_wind_only",
+      "role": "notebook_5_variant",
+      "state_dimension": 6,
+      "control_dimension": 12,
+      "state_control_overlap": 0,
+      "trajectory_mean_m": 8.161060240098537,
+      "trajectory_median_m": 5.709566698776623,
+      "mean_start_trajectory_mean_m": 7.725446828618225,
+      "endpoint_mean_m": 40.004988286011724,
+      "terminal_distance_mae_m": 39.18369347277615,
+      "spectral_radius_mean": 1.014537029118823,
+      "elapsed_seconds": 3.4417634999845177
+    }
+  ],
+  "paired_difference_vs_current": {
+    "trajectory_error_actual_start_m": {
+      "mean": 0.010411694040210846,
+      "median": 0.011006339390382869,
+      "sample_std": 0.2833885386500552,
+      "ci95_t": [
+        -0.028806911146894022,
+        0.04963029922731572
+      ],
+      "min": -0.8208764602652727,
+      "max": 1.571876851354948,
+      "fraction_new_lower": 0.4827586206896552
+    },
+    "trajectory_error_training_mean_start_m": {
+      "mean": 0.0478367360622656,
+      "median": 0.0023456345085612895,
+      "sample_std": 0.28534096658266467,
+      "ci95_t": [
+        0.008347931167684765,
+        0.08732554095684644
+      ],
+      "min": -0.8413275538267087,
+      "max": 1.3130143016460105,
+      "fraction_new_lower": 0.4975369458128079
+    },
+    "endpoint_error_actual_start_m": {
+      "mean": 2.1722818902399728,
+      "median": 1.3117726569144166,
+      "sample_std": 2.870258700868222,
+      "ci95_t": [
+        1.7750620756686843,
+        2.569501704811261
+      ],
+      "min": -1.9135986303234929,
+      "max": 17.392976989441667,
+      "fraction_new_lower": 0.19704433497536947
+    },
+    "landing_distance_absolute_error_actual_start_m": {
+      "mean": 2.8390356306604976,
+      "median": 2.2713178746087124,
+      "sample_std": 3.3154668760285237,
+      "ci95_t": [
+        2.380202725697983,
+        3.297868535623012
+      ],
+      "min": -2.6614381768964392,
+      "max": 18.80314204116823,
+      "fraction_new_lower": 0.19704433497536947
+    }
+  },
+  "mechanism_diagnostics": {
+    "speed_mae_m_per_s": {
+      "mean": 0.6762390244105435,
+      "median": 0.5587934700591833,
+      "sample_std": 0.4555760008385297,
+      "ci95_t": [
+        0.6131911135997618,
+        0.7392869352213253
+      ],
+      "min": 0.159165408669451,
+      "max": 3.348374885005342
+    },
+    "terminal_speed_error_m_per_s": {
+      "mean": -0.06643015050911114,
+      "median": 0.019383204195825954,
+      "sample_std": 1.6335110976647715,
+      "ci95_t": [
+        -0.2924944335363757,
+        0.15963413251815342
+      ],
+      "min": -6.9265837695801835,
+      "max": 4.257901782831208
+    },
+    "endpoint_dx_m": {
+      "mean": -0.01008605507818131,
+      "median": -0.4791673937599228,
+      "sample_std": 5.204716705918747,
+      "ci95_t": [
+        -0.7303753461430462,
+        0.7102032359866837
+      ],
+      "min": -13.972244673399459,
+      "max": 21.298330836618902
+    },
+    "endpoint_dy_m": {
+      "mean": -0.07101869485357512,
+      "median": 0.43031925234905666,
+      "sample_std": 2.740754380257278,
+      "ci95_t": [
+        -0.45031619384972066,
+        0.3082788041425705
+      ],
+      "min": -11.30208821261795,
+      "max": 7.845442247905602
+    },
+    "endpoint_dz_m": {
+      "mean": 0.10839538441206602,
+      "median": 0.46894026902029395,
+      "sample_std": 3.8569276948808473,
+      "ci95_t": [
+        -0.4253711723488313,
+        0.6421619411729633
+      ],
+      "min": -18.28029502639373,
+      "max": 13.151684893292526
+    },
+    "terminal_distance_signed_error_m": {
+      "mean": -0.05188917246016501,
+      "median": -0.33749000606567847,
+      "sample_std": 6.270951026717656,
+      "ci95_t": [
+        -0.9197363819346749,
+        0.8159580370143449
+      ],
+      "min": -18.141271303898804,
+      "max": 27.70858639846395
+    },
+    "correlations": {
+      "speed_mae_vs_terminal_distance_absolute_error": {
+        "r": 0.7977857145521496,
+        "p_value": 4.807869987720242e-46
+      },
+      "terminal_speed_error_vs_terminal_distance_signed_error": {
+        "r": 0.586358809477272,
+        "p_value": 3.878637200498763e-20
+      },
+      "duration_vs_terminal_distance_absolute_error": {
+        "r": 0.015544811688273662,
+        "p_value": 0.8257737224390646
+      },
+      "duration_vs_trajectory_error": {
+        "r": 0.3085330087642312,
+        "p_value": 7.5162586828680616e-06
+      }
+    },
+    "progress_aligned_mean_error_m": {
+      "25": {
+        "independent_recursive_speed": 1.782895738311691,
+        "measured_speed_control": 1.5175457921600117
+      },
+      "50": {
+        "independent_recursive_speed": 2.707548628567974,
+        "measured_speed_control": 2.0081755587043997
+      },
+      "75": {
+        "independent_recursive_speed": 3.991698104946148,
+        "measured_speed_control": 2.6178312615957795
+      },
+      "100": {
+        "independent_recursive_speed": 5.727278204412737,
+        "measured_speed_control": 3.551958247960488
+      }
+    }
+  }
+}
