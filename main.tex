@@ -127,7 +127,7 @@ This study & Ridge-estimated linear SSM (state-space model) & Initial state, zon
 
 The Ski Association of Slovenia supplied the jump records from men's training at the ski flying hill (Letalnica bratov Gorišek) in Planica during the March 2024 event. Project documentation records 223 originally supplied CSV (comma-separated values) files that use semicolon delimiters. The present reproducibility package begins after initial screening and contains 203 of them. Each file represents one jump and contains position, height above ground, relative time, Cartesian coordinates, seven ski-orientation angles, three speed variables, and a compound field with measurements from 12 wind sensors. The athlete in every supplied filename is anonymized and consequently, neither the number of athletes nor model performance for each athlete separately can be determined from the available material. This is reported as a dataset limitation rather than treated as a single-athlete dataset.
 
-Nineteen files were removed before the current 203-file folder was assembled. The documented screening criteria were (i) one or more empty columns, (ii) successive $X$, $Y$, or $Z$ values implying a physically impossible displacement across the hill within one sampling interval (a coordinate ``teleportation'') or (iii) measurements stoping mid jump. The retained records contain 88--164 samples (median 137, mean 136.62), corresponding to 4.35--8.15~s (median 6.80~s) at the 0.05~s interval. The derived terminal-coordinate distance $\sqrt{X_{\mathrm{end}}^2+Z_{\mathrm{end}}^2}$ ranges from 117.78 to 242.35~m (median 208.74~m, mean $205.54\pm21.37$~m).
+Twenty files were removed before the current 203-file folder was assembled. The documented screening criteria were (i) one or more empty columns, (ii) successive $X$, $Y$, or $Z$ values implying a physically impossible displacement across the hill within one sampling interval (a coordinate ``teleportation'') or (iii) measurements stoping mid jump. The retained records contain 88--164 samples (median 137, mean 136.62), corresponding to 4.35--8.15~s (median 6.80~s) at the 0.05~s interval. The derived terminal-coordinate distance $\sqrt{X_{\mathrm{end}}^2+Z_{\mathrm{end}}^2}$ ranges from 117.78 to 242.35~m (median 208.74~m, mean $205.54\pm21.37$~m).
 
 These criteria distinguish unusable files from isolated missing cells. After file screening and temporal resampling, 21 missing roll-angle cells remained in four otherwise valid sequences: 18 left-roll values and three right-roll values. They were imputed by forward fill followed by backward fill. All 21 gaps were internal, so forward fill supplied the values and the backward-fill fallback did not alter them. No wind, coordinate, speed, opening-angle, yaw, or stalling-angle value required this imputation, and no rejected file was restored by it.
 
@@ -146,7 +146,9 @@ For sample $k$, let $\mathbf{x}_k\in\mathbb{R}^{14}$ be the state, $\mathbf{u}_k
 \mathbf{x}_{k+1} &= A\mathbf{x}_k+B\mathbf{u}_k+\boldsymbol{\epsilon}_k,\label{eq:state}\\
 \mathbf{y}_{k} &= C\mathbf{x}_k+D\mathbf{u}_k+\boldsymbol{\eta}_k,\label{eq:obs}
 \end{align}
-where $A\in\mathbb{R}^{14\times14}$, $B\in\mathbb{R}^{14\times20}$, $C\in\mathbb{R}^{4\times14}$, and $D\in\mathbb{R}^{4\times20}$. The state order is
+where $A\in\mathbb{R}^{14\times14}$, $B\in\mathbb{R}^{14\times20}$, $C\in\mathbb{R}^{4\times14}$, and $D\in\mathbb{R}^{4\times20}$. 
+As we can see in Equations~\eqref{eq:state} and~\eqref{eq:obs} the simulated states are independent from simulated observations, and the observation equation is included to specify the complete fitted system. The matricies $C$ and $D$ are estimated, but unused in the trajectory simulation. 
+The state order is
 \[
 [X,Y,Z,v_X,v_Y,v_Z,s,o,r_L,r_R,y_L,y_R,a_L,a_R]^{\mathsf T},
 \]
@@ -176,7 +178,7 @@ The independent model uses the same corrected sequences, ridge penalty, fold ass
 \begin{figure}[htb]
   \centering
   \includegraphics[width=\linewidth]{shema_matrik.png}
-  \caption{Dimensions and information flow of the fitted linear state-space model. Trajectories are generated recursively with the state equation. The observation equation is included to specify the complete fitted system.}
+  \caption{Dimensions and information flow of the fitted linear state-space model. Trajectories are generated recursively with the state equation. The observation equation is included to specify the complete fitted system. In the article we depict state $h(t)$ as $x_k$, control $u(t)$ as $u_k$, and observation $y(t)$ as $y_k$.}
   \label{fig:matrices}
 \end{figure}
 
@@ -184,7 +186,7 @@ The independent model uses the same corrected sequences, ridge penalty, fold ass
 
 Two initial-state conditions answer RQ2. The measured-start condition uses the first state of the held-out jump. The mean-start condition averages the first states of training jumps only and recomputes that average in every fold. The same training-only rule is used for the average-path baseline. This avoids the information leakage that would occur if a single full-dataset average were reused during cross-validation.
 
-After evaluation, a production model is fit to all 203 accepted jumps for deployment. The website asset contains a 139-sample reference profile, spanning 6.90~s from its first to last state at 0.05-s intervals. This is a control-profile length, not a training horizon: the same transition matrices are fitted to all transitions from variable-length jumps. The simulator continues beyond the reference profile when necessary to find first hill contact, up to the maximum stored sequence length of 164 samples (8.15~s), while holding the last body-control values constant. Its default initial state and control profiles are descriptive full-dataset quantities and are not used to calculate cross-validation scores.
+After evaluation, a production model is fit to all 203 accepted jumps for deployment. The website asset contains a 139-sample reference profile, spanning 6.90~s from its first to last state at 0.05-s intervals. This is a control-profile length, not a training horizon: the same transition matrices are fitted to all transitions from variable-length jumps. The simulator continues beyond the reference profile when necessary to find first hill contact, up to the maximum stored sequence length of 164 samples (8.15~s), while holding the last body-control values constant. Its default initial state and control profiles are descriptive full-dataset quantities and are not used to calculate cross-validation scores. These procedures are distinct: the cross-validated endpoint and terminal-coordinate-distance errors reported below concern reconstructions over the recorded jump duration and do not validate the website's hill-contact calculation, including extrapolation beyond the reference profile.
 
 \subsection{Cross-validation and error measures}\label{sec:evaluation}
 
@@ -318,7 +320,7 @@ The 8.15~s limit marks the end of the observed data range, not a discontinuity i
 
 Other entries of $A$ and $B$ are partial regression coefficients: they describe associations with the next state after accounting for the other predictors, not isolated physical effects. Because wind, posture, speed, and flight phase are correlated, ridge regression can distribute shared predictive information among several coefficients and individual signs and magnitudes may therefore change even when predictions remain similar.
 
-Because speed and posture appear in both the state and control vectors, their separate coefficients in $A$ and $B$ are not uniquely identifiable and should not be interpreted individually. The formulations in Table~\ref{tab:independent} therefore test whether accurate reconstruction depends on this overlap.
+Because speed and posture appear in both the state and control vectors, their separate coefficients in $A$ and $B$ cannot be separately identified and should not be interpreted individually. The formulations in Table~\ref{tab:independent} therefore test whether accurate reconstruction depends on this overlap.
 
 \section{Discussion}\label{sec:discussion}
 
@@ -326,7 +328,7 @@ RQ1 is answered by a mean held-out spatial error of 1.34~m under measured contro
 
 The medians, standard deviations, confidence intervals, and maximum errors show variation between jumps that the mean alone would conceal. Computing the initial-state and average-path quantities from training jumps only prevents held-out data from entering either calculation. However, choices such as $\alpha$ and feature design were informed by this dataset, and the alternative formulations were not tested on new data. A separate test event, or model selection performed entirely within each training fold, would be needed for a confirmatory performance estimate. Direct numerical ranking against related works from Table~\ref{tab:related} would also be misleading because studies use different inputs and do not report Equation~\eqref{eq:error} on the same jumps.
 
-Retaining the 14-state website model is a deployment choice, not a claim that overlapping vectors are more physically correct. The interface exposes adjustable speed and posture profiles and highlights endpoint error and the terminal coordinate-distance measure. For these outputs, the deployed model's errors of 3.55 and 1.68~m are materially lower than the recursive-speed model's 5.73 and 4.52~m. Prescribing speed also prevents its recursive error from accumulating along the longitudinal trajectory. The six-state diagnostic with measured speed performs almost identically without duplicating state variables, showing that the supplied speed profile provides the useful information. This formulation is therefore a candidate for a simpler future deployment. The website continues to describe all slider responses as conditional model associations, not causal effects.
+Retaining the 14-state website model is a deployment choice, not a claim that overlapping vectors are more physically correct. The interface exposes adjustable speed and posture profiles and highlights endpoint error and the terminal coordinate-distance measure. For these outputs, the deployed model's errors of 3.55 and 1.68~m are materially lower than the recursive-speed model's 5.73 and 4.52~m. Prescribing speed also prevents its recursive error from accumulating along the longitudinal trajectory. Although the six-state measured-speed model achieves nearly identical reconstruction accuracy, we retain the 14-state model in the website to preserve continuity with the original implementation and its evaluated configuration. This is an implementation choice, not evidence of greater predictive accuracy or physical realism, particularly because state--control overlap limits the interpretation of individual coefficients. The six-state model remains a more parsimonious candidate for future deployment.
 
 \subsection{Limitations and scope}
 
@@ -339,7 +341,7 @@ The website makes the fitted model inspectable but is not a validated coaching o
 
 \subsection{Future work}
 
-Future datasets should retain an anonymized athlete identifier, cover several events and hills, and record body mass and equipment. Evaluations should select hyperparameters using training data only, scale the features, test nonlinear state-space models and matched physics baselines, and use trajectory metrics that retain timing information. Methods that constrain stability may also prevent divergence over long horizons. A model with physical constraints could keep resultant speed consistent with its velocity components, while a learned policy could replace future measured posture or speed profiles. The six-state formulation with measured speed requires prospective validation before it can replace the website model. After external validation, safety margins, hill design, wind compensation, and athlete feedback should be studied using physics-based flight simulations developed for safety and fairness \cite{muller1996dynamics}, together with trajectory-optimization methods that explicitly account for uncertainty in factors such as wind and body mass \cite{piprek2018robust}.
+Future datasets should retain an anonymized athlete identifier, cover several events and hills, and record body mass and equipment. Future evaluations should use data from additional events and hills, scale the features, test nonlinear state-space models and matched physics-based baselines, and use trajectory metrics that retain timing information. Methods that constrain stability may also prevent divergence over long horizons. A model with physical constraints could keep resultant speed consistent with its velocity components, while a learned policy could replace future measured posture or speed profiles. The six-state formulation with measured speed requires prospective validation before it can replace the website model. After external validation, safety margins, hill design, wind compensation, and athlete feedback should be studied using physics-based flight simulations developed for safety and fairness \cite{muller1996dynamics}, together with trajectory-optimization methods that explicitly account for uncertainty in factors such as wind and body mass \cite{piprek2018robust}.
 
 \section{Conclusion}\label{sec:conclusion}
 
@@ -357,7 +359,7 @@ ARIS (Slovenian Research and Innovation Agency) supported this work through the 
 \par}
 
 \subsection*{Artificial-Intelligence-Assisted Tools}
-OpenAI Codex was used during revision to assist with language editing and consistency checking. The authors reviewed the resulting text, code, and numerical outputs and remain responsible for their accuracy, originality, and interpretation.
+OpenAI Codex was used during revision to assist with language editing and consistency checking. The authors reviewed the resulting text and numerical outputs and remain responsible for their accuracy, originality, and interpretation.
 
 \printbibliography[title={References}]
 \end{document}

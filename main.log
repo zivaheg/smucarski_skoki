@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  17 OCT 2026 21:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  18 OCT 2026 17:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -610,30 +610,30 @@ Package pdftex.def Info: architecture.png  used on input line 66.
 
 [4]
 
-<shema_matrik.png, id=210, 1107.13625pt x 720.6925pt>
+<shema_matrik.png, id=212, 1107.13625pt x 720.6925pt>
 File: shema_matrik.png Graphic file (type png)
 <use shema_matrik.png>
-Package pdftex.def Info: shema_matrik.png  used on input line 178.
+Package pdftex.def Info: shema_matrik.png  used on input line 180.
 (pdftex.def)             Requested size: 234.73523pt x 152.80147pt.
 
 
-[5 <./shema_matrik.png>]
+[5]
 
 
 
-[6]
-<website_screenshot_light.png, id=232, 934.99312pt x 737.00343pt>
+[6 <./shema_matrik.png>]
+<website_screenshot_light.png, id=234, 934.99312pt x 737.00343pt>
 File: website_screenshot_light.png Graphic file (type png)
 <use website_screenshot_light.png>
-Package pdftex.def Info: website_screenshot_light.png  used on input line 213.
+Package pdftex.def Info: website_screenshot_light.png  used on input line 215.
 (pdftex.def)             Requested size: 464.3522pt x 366.02675pt.
-<revision_trajectory_representative.pdf, id=235, 750.4501pt x 409.594pt>
+
+
+<revision_trajectory_representative.pdf, id=237, 750.4501pt x 409.594pt>
 File: revision_trajectory_representative.pdf Graphic file (type pdf)
 <use revision_trajectory_representative.pdf>
-Package pdftex.def Info: revision_trajectory_representative.pdf  used on input line 245.
+Package pdftex.def Info: revision_trajectory_representative.pdf  used on input line 247.
 (pdftex.def)             Requested size: 459.51051pt x 250.80194pt.
-
-
 
 
 [7]
@@ -642,10 +642,10 @@ Package pdftex.def Info: revision_trajectory_representative.pdf  used on input l
 
 [8 <./website_screenshot_light.png>]
 
-<independent_model_error_progression.pdf, id=264, 411.4986pt x 244.73134pt>
+<independent_model_error_progression.pdf, id=266, 411.4986pt x 244.73134pt>
 File: independent_model_error_progression.pdf Graphic file (type pdf)
 <use independent_model_error_progression.pdf>
-Package pdftex.def Info: independent_model_error_progression.pdf  used on input line 308.
+Package pdftex.def Info: independent_model_error_progression.pdf  used on input line 310.
 (pdftex.def)             Requested size: 234.73523pt x 139.6066pt.
 
 
@@ -683,15 +683,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  17787 strings out of 473523
  311246 string characters out of 5715598
- 1135414 words of memory out of 5000000
+ 1136520 words of memory out of 5000000
  40730 multiletter control sequences out of 15000+600000
  579590 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,81p,1792b,1485s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,15n,81p,1792b,1486s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (14 pages, 2345181 bytes).
+Output written on main.pdf (14 pages, 2346358 bytes).
 PDF statistics:
- 1000 PDF objects out of 1000 (max. 8388607)
+ 1002 PDF objects out of 1200 (max. 8388607)
  85 named destinations out of 1000 (max. 500000)
  210 words of extra memory for PDF output out of 10000 (max. 10000000)
 

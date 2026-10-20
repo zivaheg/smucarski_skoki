@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1792264799.12546 "main.bcf" "main.bbl" "main" 1792265636.7412 0
-  "main.bcf" 1792265636 110729 0ae56af88c40cf0eca07362ee2345867 "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1792336827.63669 -1
+  "main.bcf" 1792336826 110729 0ae56af88c40cf0eca07362ee2345867 "pdflatex"
   "refs.bib" 1791032094 12409 618b48baf3526c31ddd6a2e327126a7d ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1792265633.8166 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/main.tex" "main.pdf" "main" 1792265636.74468 0
+["pdflatex"] 1792336823.53177 "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/main.tex" "main.pdf" "main" 1792336827.63854 0
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1774961679 188945 f90228b2c2ed7e43d9b39352231d9eef ""
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1762539596 28976 6a0f181fe3219276315023b1ecb710d4 ""
   "C:/Users/vsi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1762540159 31952 83ae5dfc6c5b0d0bf9d9f99356374e5a ""
@@ -148,13 +148,13 @@
   "C:/Users/vsi/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "Informat.sty" 1789563715 3799 68343e2a67012f762a049e7dd7db743b ""
   "architecture.png" 1792264818 1501742 56ae3ea6dd9ffc0c8b5b6d24383094c7 ""
-  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/main.tex" 1792265628 48962 8de54d212c513bb167600e9784b26c95 ""
+  "c:/Users/vsi/Desktop/ijs/smucarski_skoki/project/main.tex" 1792336816 49784 a46fa1315410b359ec685ab2fc038bdf ""
   "independent_model_error_progression.pdf" 1790940634 17481 2d703c5e71e9af230420243d32204025 ""
-  "main.aux" 1792265636 16739 be5e70ef798fe3f51e0bede0c8e8ec48 "pdflatex"
+  "main.aux" 1792336826 16951 faa2b3f8be31dfbebf58c3306c4d0107 "pdflatex"
   "main.bbl" 1792264891 50186 bce9dd6afd3f6fa7447acbed33dec556 "biber main"
-  "main.out" 1792265636 4550 4a0eeff670621dea839ec3a568e2d9c2 "pdflatex"
-  "main.run.xml" 1792265636 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
-  "main.tex" 1792265628 48962 8de54d212c513bb167600e9784b26c95 ""
+  "main.out" 1792336826 4550 4a0eeff670621dea839ec3a568e2d9c2 "pdflatex"
+  "main.run.xml" 1792336826 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
+  "main.tex" 1792336816 49784 a46fa1315410b359ec685ab2fc038bdf ""
   "revision_trajectory_representative.pdf" 1790941948 29566 c6902ae2fd03d93abe42ebe4bce23d2b ""
   "shema_matrik.png" 1780157824 339361 2fad51185fda1a4316a20cfff865bf21 ""
   "website_screenshot_light.png" 1790937782 178299 a7e145af75fa78a41d4442f3725368b1 ""
