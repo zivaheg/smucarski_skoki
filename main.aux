@@ -92,9 +92,9 @@
 \newlabel{sec:processing}{{3.2}{3}{Coordinate, wind, and temporal processing}{subsection.3.2}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Positioning relative to representative state-space, deep-learning, and aerodynamic ski-jump studies. Numerical errors are not placed in one ranking because the studies predict different quantities from different sensors and populations.}}{4}{table.1}\protected@file@percent }
 \newlabel{tab:related}{{1}{4}{Positioning relative to representative state-space, deep-learning, and aerodynamic ski-jump studies. Numerical errors are not placed in one ranking because the studies predict different quantities from different sensors and populations}{table.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Methodology}{4}{section.4}\protected@file@percent }
-\newlabel{sec:method}{{4}{4}{Methodology}{section.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}State-space formulation}{4}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Methodology}{5}{section.4}\protected@file@percent }
+\newlabel{sec:method}{{4}{5}{Methodology}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}State-space formulation}{5}{subsection.4.1}\protected@file@percent }
 \newlabel{eq:state}{{1}{5}{State-space formulation}{equation.1}{}}
 \newlabel{eq:obs}{{2}{5}{State-space formulation}{equation.2}{}}
 \newlabel{eq:ridge}{{3}{5}{State-space formulation}{equation.3}{}}
@@ -106,12 +106,12 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Cross-validation and error measures}{6}{subsection.4.4}\protected@file@percent }
 \newlabel{sec:evaluation}{{4.4}{6}{Cross-validation and error measures}{subsection.4.4}{}}
 \newlabel{eq:error}{{5}{6}{Cross-validation and error measures}{equation.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Interactive website}{6}{subsection.4.5}\protected@file@percent }
-\newlabel{sec:website}{{4.5}{6}{Interactive website}{subsection.4.5}{}}
 \abx@aux@cite{0}{raissi2019physics}
 \abx@aux@segm{0}{0}{raissi2019physics}
 \abx@aux@cite{0}{Cai2021_PINN_FluidMechanics}
 \abx@aux@segm{0}{0}{Cai2021_PINN_FluidMechanics}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Interactive website}{7}{subsection.4.5}\protected@file@percent }
+\newlabel{sec:website}{{4.5}{7}{Interactive website}{subsection.4.5}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Results}{7}{section.5}\protected@file@percent }
 \newlabel{sec:results}{{5}{7}{Results}{section.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Held-out trajectory reconstruction}{7}{subsection.5.1}\protected@file@percent }
@@ -123,20 +123,20 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Independent state--control sensitivity analysis}{8}{subsection.5.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Representative measured and reconstructed trajectories under the measured-start condition. The columns jointly approximate the 10th, 50th, and 90th percentiles of measured $d_{\mathrm  {coord}}$ while remaining close to the median held-out trajectory error, they are not best-case selections. The lower row exposes time-progress-aligned separation that is difficult to see at the full X--Z scale. Here $d_{\mathrm  {coord}}$ is the derived coordinate displacement, not official hill-surface jump length, and $E$ is Equation~\eqref  {eq:error}.}}{9}{figure.4}\protected@file@percent }
 \newlabel{fig:examples}{{4}{9}{Representative measured and reconstructed trajectories under the measured-start condition. The columns jointly approximate the 10th, 50th, and 90th percentiles of measured $d_{\mathrm {coord}}$ while remaining close to the median held-out trajectory error, they are not best-case selections. The lower row exposes time-progress-aligned separation that is difficult to see at the full X--Z scale. Here $d_{\mathrm {coord}}$ is the derived coordinate displacement, not official hill-surface jump length, and $E$ is Equation~\eqref {eq:error}}{figure.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Stability and parameter interpretation}{9}{subsection.5.4}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Wind-feature sensitivity using the corrected timestamp data, the same 203 jump-level LOOCV folds, and fixed $\alpha =10$. Errors are means across held-out jumps, paired confidence intervals are two-sided Student-$t$ intervals for per-jump differences from the zone-mean model.}}{10}{table.3}\protected@file@percent }
 \newlabel{tab:windfeatures}{{3}{10}{Wind-feature sensitivity using the corrected timestamp data, the same 203 jump-level LOOCV folds, and fixed $\alpha =10$. Errors are means across held-out jumps, paired confidence intervals are two-sided Student-$t$ intervals for per-jump differences from the zone-mean model}{table.3}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Structural sensitivity results across the same 203 LOOCV folds. ``Overlap'' counts features appearing in both state and control vectors. Path is the mean of Equation~\eqref  {eq:error},endpoint is mean three-dimensional endpoint error.}}{10}{table.4}\protected@file@percent }
 \newlabel{tab:independent}{{4}{10}{Structural sensitivity results across the same 203 LOOCV folds. ``Overlap'' counts features appearing in both state and control vectors. Path is the mean of Equation~\eqref {eq:error},endpoint is mean three-dimensional endpoint error}{table.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Stability and parameter interpretation}{10}{subsection.5.4}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Mean spatial separation at matched percentages of flight progress for two models with non-overlapping state and control variables. The seven-state model predicts speed recursively, while the six-state model receives measured speed as a control. The widening gap shows speed-related error accumulating toward the endpoint.}}{11}{figure.5}\protected@file@percent }
 \newlabel{fig:independent-progress}{{5}{11}{Mean spatial separation at matched percentages of flight progress for two models with non-overlapping state and control variables. The seven-state model predicts speed recursively, while the six-state model receives measured speed as a control. The widening gap shows speed-related error accumulating toward the endpoint}{figure.5}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{11}{section.6}\protected@file@percent }
 \newlabel{sec:discussion}{{6}{11}{Discussion}{section.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Limitations and scope}{11}{subsection.6.1}\protected@file@percent }
 \abx@aux@cite{0}{muller1996dynamics}
 \abx@aux@segm{0}{0}{muller1996dynamics}
 \abx@aux@cite{0}{piprek2018robust}
 \abx@aux@segm{0}{0}{piprek2018robust}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Limitations and scope}{12}{subsection.6.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Future work}{12}{subsection.6.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{12}{section.7}\protected@file@percent }
 \newlabel{sec:conclusion}{{7}{12}{Conclusion}{section.7}{}}

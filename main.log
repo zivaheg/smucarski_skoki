@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  18 OCT 2026 17:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.11)  20 OCT 2026 14:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -561,14 +561,17 @@ Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
 Package biblatex Info: Reference section=0 on input line 25.
 Package biblatex Info: Reference segment=0 on input line 25.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
  (C:\Users\vsi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -577,26 +580,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-Underfull \hbox (badness 2418) in paragraph at lines 62--63
+Underfull \hbox (badness 2418) in paragraph at lines 61--62
 []\T1/cmr/m/n/10.95 The con-tri-bu-tions are: (i) a fully spec-i-
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 62--63
+Underfull \hbox (badness 2401) in paragraph at lines 61--62
 \T1/cmr/m/n/10.95 fied 14-state, 20-control model and leakage-
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 62--63
+Underfull \hbox (badness 1354) in paragraph at lines 61--62
 \T1/cmr/m/n/10.95 tra-jec-tory, end-point, and terminal-coordinate-
  []
 
 <architecture.png, id=122, 1678.27pt x 944.52875pt>
 File: architecture.png Graphic file (type png)
 <use architecture.png>
-Package pdftex.def Info: architecture.png  used on input line 66.
+Package pdftex.def Info: architecture.png  used on input line 65.
 (pdftex.def)             Requested size: 234.73523pt x 132.10341pt.
 
+
+
+Underfull \vbox (badness 5260) has occurred while \output is active []
 
 
 
@@ -605,6 +611,12 @@ Package pdftex.def Info: architecture.png  used on input line 66.
 
 
 [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -613,11 +625,14 @@ Package pdftex.def Info: architecture.png  used on input line 66.
 <shema_matrik.png, id=212, 1107.13625pt x 720.6925pt>
 File: shema_matrik.png Graphic file (type png)
 <use shema_matrik.png>
-Package pdftex.def Info: shema_matrik.png  used on input line 180.
+Package pdftex.def Info: shema_matrik.png  used on input line 181.
 (pdftex.def)             Requested size: 234.73523pt x 152.80147pt.
 
 
 [5]
+
+
+Underfull \vbox (badness 1655) has occurred while \output is active []
 
 
 
@@ -625,35 +640,54 @@ Package pdftex.def Info: shema_matrik.png  used on input line 180.
 <website_screenshot_light.png, id=234, 934.99312pt x 737.00343pt>
 File: website_screenshot_light.png Graphic file (type png)
 <use website_screenshot_light.png>
-Package pdftex.def Info: website_screenshot_light.png  used on input line 215.
+Package pdftex.def Info: website_screenshot_light.png  used on input line 216.
 (pdftex.def)             Requested size: 464.3522pt x 366.02675pt.
-
-
 <revision_trajectory_representative.pdf, id=237, 750.4501pt x 409.594pt>
 File: revision_trajectory_representative.pdf Graphic file (type pdf)
 <use revision_trajectory_representative.pdf>
-Package pdftex.def Info: revision_trajectory_representative.pdf  used on input line 247.
+Package pdftex.def Info: revision_trajectory_representative.pdf  used on input line 248.
 (pdftex.def)             Requested size: 459.51051pt x 250.80194pt.
 
 
+
+
 [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [8 <./website_screenshot_light.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<independent_model_error_progression.pdf, id=266, 411.4986pt x 244.73134pt>
-File: independent_model_error_progression.pdf Graphic file (type pdf)
-<use independent_model_error_progression.pdf>
-Package pdftex.def Info: independent_model_error_progression.pdf  used on input line 310.
-(pdftex.def)             Requested size: 234.73523pt x 139.6066pt.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 [9 <./revision_trajectory_representative.pdf>]
+<independent_model_error_progression.pdf, id=327, 411.4986pt x 244.73134pt>
+File: independent_model_error_progression.pdf Graphic file (type pdf)
+<use independent_model_error_progression.pdf>
+Package pdftex.def Info: independent_model_error_progression.pdf  used on input line 311.
+(pdftex.def)             Requested size: 234.73523pt x 139.6066pt.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [10]
+Underfull \vbox (badness 6658) has occurred while \output is active []
+
+
 
 
 
@@ -683,13 +717,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  17787 strings out of 473523
  311246 string characters out of 5715598
- 1136520 words of memory out of 5000000
+ 1136552 words of memory out of 5000000
  40730 multiletter control sequences out of 15000+600000
  579590 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,81p,1792b,1486s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\vsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/vsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (14 pages, 2346358 bytes).
+Output written on main.pdf (14 pages, 2346093 bytes).
 PDF statistics:
  1002 PDF objects out of 1200 (max. 8388607)
  85 named destinations out of 1000 (max. 500000)

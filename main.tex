@@ -1,4 +1,4 @@
-\documentclass[11pt,twoside]{article}
+\documentclass[11pt,twoside,a4paper]{article}
 
 % Official Informatica journal style (Informatica, Ljubljana, Slovenia).
 \usepackage{Informat}
@@ -23,7 +23,6 @@
 \AtBeginBibliography{\raggedright}
 
 \begin{document}
-\raggedbottom
 
 \title{Ski Jump Trajectory Reconstruction Using Ridge-Estimated Linear State-Space Models and Interactive Simulation}
 \author{Živa Hegler$^{1}$ and Neca Camlek$^1$\\
@@ -35,7 +34,7 @@
   Jožef Stefan Institute, Jamova cesta 39, 1000 Ljubljana, Slovenia\\
   \texttt{jakob.jelencic@ijs.si}, \texttt{marko.grobelnik@ijs.si},
   \texttt{dunja.mladenic@ijs.si}}
-\titleodd{Ski Jump Trajectory Reconstruction Using State-Space Models}
+\titleodd{Ski Jump Trajectory Reconstruction}
 \authoreven{Ž. Hegler et al.}
 \keywords{state-space models, ski jumping, trajectory reconstruction, ridge regression, interactive simulation}
 % \received{}
@@ -135,7 +134,9 @@ These criteria distinguish unusable files from isolated missing cells. After fil
 
 The coordinate origin is the take-off point. $X$ follows the hill, $Y$ is lateral, and $Z$ is vertical. Angles are opening angle and left/right roll, yaw, and stalling angles, the definitions follow standard ski-jump aerodynamics, describing an exact position of skies in space \cite{muller2008performance,virmavirta2019aerodynamics}. The compound wind column was split into sensor and feature fields. For each of three hill zones (sensors 1--4, 5--8, and 9--12), we average speed, tangential wind, crosswind, and turbulence, producing 12 wind controls. The separate wind timestamp is not used as a predictor. The supplied records repeat the most recent wind reading between sensor updates, the fixed-interval resampling then linearly interpolates all numeric columns, including wind. 
 
-Although the source files contain approximately metre-spaced position records, the dynamical recurrence is evaluated in time. Full timestamps in ISO 8601 date-and-time format are parsed, including hours and minutes, while the physical source-row order is preserved. The timestamp audit distinguishes non-increasing transitions from the individual timestamp cells subsequently repaired. Of the 203 accepted files, 55 contained 109 adjacent timestamp decreases, while eight contained nine adjacent duplicate timestamps. Four files belonged to both groups, so 59 unique files required timestamp repair. For each affected file, the earliest longest strictly increasing timestamp subsequence is treated as trustworthy, and timestamps outside that subsequence are reconstructed by linear interpolation between neighboring trustworthy rows, with one-sided extrapolation only at an edge. This procedure repaired 145 individual timestamp cells across the 59 affected files, the remaining 144 files required no timestamp repair. Strict increase is verified before 0.05-s resampling, an audit table is saved, and the raw source files remain unchanged. As a sensitivity check, restricting LOOCV (leave-one-out cross-validation) to the 144 accepted jumps that required no timestamp repair gave a mean trajectory error of 1.39~m, close to the 1.34~m result for the complete corrected dataset. Speeds are converted from km/h to m/s (as is standard), and directional velocities are computed as numerical gradients of $X$, $Y$, and $Z$ with respect to $\Delta t$. Predictor values retain their physical units. No z-score standardization is applied, so the ridge penalty is scale-dependent. This is a limitation of the current fit.
+Although the source files contain approximately metre-spaced position records, the dynamical recurrence is evaluated in time. Full timestamps in ISO 8601 date-and-time format are parsed, including hours and minutes, while the physical source-row order is preserved. The timestamp audit distinguishes non-increasing transitions from the individual timestamp cells subsequently repaired. Of the 203 accepted files, 55 contained 109 adjacent timestamp decreases, while eight contained nine adjacent duplicate timestamps. Four files belonged to both groups, so 59 unique files required timestamp repair. For each affected file, the earliest longest strictly increasing timestamp subsequence is treated as trustworthy, and timestamps outside that subsequence are reconstructed by linear interpolation between neighboring trustworthy rows, with one-sided extrapolation only at an edge. This procedure repaired 145 individual timestamp cells across the 59 affected files, the remaining 144 files required no timestamp repair. Strict increase is verified before 0.05-s resampling, an audit table is saved, and the raw source files remain unchanged. As a sensitivity check, restricting LOOCV (leave-one-out cross-validation) to the 144 accepted jumps that required no timestamp repair gave a mean trajectory error of 1.39~m, close to the 1.34~m result for the complete corrected dataset. Speeds are converted from km/h to m/s (as is standard), and directional velocities are computed as numerical gradients of $X$, $Y$, and $Z$ with respect to $\Delta t$. Predictor values retain their physical units. No z-score standardization is applied, so the ridge penalty is scale-dependent. This is a limitation of the current fit. 
+All subsequent analyses use this corrected and resampled dataset unless stated otherwise.
+This provides a common preprocessing basis for the model comparisons, sensitivity analyses, and website export.
 
 \section{Methodology}\label{sec:method}
 
@@ -335,9 +336,9 @@ Retaining the 14-state website model is a deployment choice, not a claim that ov
 The sample is small, comes from one hill and event, and lacks recoverable athlete identities and physiological covariates. Rejected files may introduce selection bias. The spatial metric does not capture timing mismatches between the measured and predicted trajectories. Fixed-interval interpolation may smooth rapid changes, while forward-filling the 21 missing roll-angle values holds the last observed angle constant across each gap. Timestamp reconstruction assumes that physical source-row order is reliable and that corrupted time values can be interpolated between trustworthy neighbors. The similar 1.39~m result in the 144-jump no-repair sensitivity analysis is reassuring, but validation against a separate record of the original measurement times would be preferable. The previous website reference profile is a separately averaged descriptive control profile and begins slightly before the take-off origin. This affects only the website's default simulation and has no effect on the cross-validation results. Unstandardized ridge regression penalizes features differently according to their units. Comparisons of the alternative model structures and the reported correlations cannot establish that speed error causes coordinate-distance error. The principal limitation is that the posture and speed profiles in the deployed model's control vector include future measurements, the independent model still uses future posture. Both are therefore conditional reconstruction and interactive response models, not causal weather-to-distance predictors.
 
 
-Applying the workflow to another repeated dynamical dataset would require redefining states and controls, validating physical units, preventing group leakage, and collecting representative training sequences. This study does not establish accuracy for another hill, event, athlete group, or sport.
+This study does not establish accuracy for another hill, event, athlete group, or sport.
 
-The website makes the fitted model inspectable but is not a validated coaching or safety system. Its static architecture removes upload and server-retention risks present in the former prototype. It still requires browser compatibility and clear communication of validity bounds.
+The website makes the fitted model inspectable but is not a validated coaching or safety system. Its static architecture removes upload and server-retention risks present in the former prototype.
 
 \subsection{Future work}
 
