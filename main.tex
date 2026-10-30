@@ -1,6 +1,6 @@
 \documentclass[11pt,twoside,a4paper]{article}
 
-% Official Informatica journal style (Informatica, Ljubljana, Slovenia).
+
 \usepackage{Informat}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -10,37 +10,40 @@
 \usepackage{array}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
 \usepackage[hidelinks]{hyperref}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 
-% Volume, page, and DOI data are assigned by the journal after acceptance.
-\def\journal{Informatica}
-\def\doi{}
 
-\usepackage[backend=biber,style=numeric,sorting=none,doi=true,url=true,isbn=false]{biblatex}
+% \def\journal{Informatica}
+% \def\doi{}
+
+\usepackage[backend=biber,style=numeric,sorting=none,doi=true,url=true,isbn=false,maxbibnames=99]{biblatex}
 \addbibresource{refs.bib}
 \renewcommand*{\bibfont}{\small}
 \AtBeginBibliography{\raggedright}
+
+%\DeclareFieldFormat{doi}{\url{https://doi.org/#1}}
 
 \begin{document}
 
 \title{Ski Jump Trajectory Reconstruction Using Ridge-Estimated Linear State-Space Models and Interactive Simulation}
 \author{Živa Hegler$^{1}$ and Neca Camlek$^1$\\
   $^1$University of Ljubljana, Ljubljana, Slovenia\\
-  \texttt{hegler.ziva0@gmail.com}, \texttt{neca.camlek@gmail.com}\\
-  %$^*$Corresponding and lead author
+  \texttt{hegler.ziva0@gmail.com} (corresponding author), \texttt{neca.camlek@gmail.com}\\
   \AndAuthor
   Jakob Jelenčič, Marko Grobelnik and Dunja Mladenić\\
   Jožef Stefan Institute, Jamova cesta 39, 1000 Ljubljana, Slovenia\\
   \texttt{jakob.jelencic@ijs.si}, \texttt{marko.grobelnik@ijs.si},
   \texttt{dunja.mladenic@ijs.si}}
-\titleodd{Ski Jump Trajectory Reconstruction}
+\titleodd{Ski Jump Trajectory}
 \authoreven{Ž. Hegler et al.}
 \keywords{state-space models, ski jumping, trajectory reconstruction, ridge regression, interactive simulation}
-% \received{}
+\received{October 30, 2026}
 
-\abstract{We conditionally reconstruct ski-jump trajectories from measured wind and jumper-configuration profiles. Of 223 supplied Planica jumps, 203 passed quality checks. A ridge-estimated 14-state, 20-control linear state-space model ($\alpha=10$) is evaluated by jump-level leave-one-out cross-validation. With the measured initial state, mean spatial trajectory error is 1.34~m, with 95\% CI (confidence interval) 1.24--1.43~m, terminal-coordinate-distance (magnitude of over/under prediction) MAE (mean absolute error) is 1.68~m. Training-fold average-path and constant-velocity baselines yield 2.64 and 58.33~m. Timestamp defects were repaired before resampling, the 144 jumps needing no repair yield a similar 1.39~m error. An additional model with non-overlapping state and control variables recursively represents speed with seven states and 19 controls. Its trajectory error remains 1.35~m, but distance MAE rises to 4.52~m. The mean transition-matrix spectral radius is 1.0135, so both models are restricted to observed horizons. We also present a client-side application for interactive controls and three-dimensional visualization. Rather than introducing a new identification algorithm, this study evaluates established state-space methods on Planica data and implements the fitted model in an interactive application.}
-\abstractSi{Predstavimo linearni model prostora stanj za rekonstrukcijo trajektorij smučarskih skokov iz Planice. Model ovrednotimo z navzkrižnim preverjanjem na 203 skokih, povprečna prostorska napaka znaša 1,34~m. Različica z ločenimi spremenljivkami stanja in vhoda doseže podobno napako poti, vendar večjo napako končne razdalje. Model je namenjen rekonstrukciji na opazovanem časovnem območju in je vključen v interaktivno spletno aplikacijo.}
+\abstract{We conditionally reconstruct ski-jump trajectories from measured wind and jumper-configuration profiles. Of 223 supplied Planica jumps, 203 passed quality checks. A ridge-estimated 14-state, 20-control linear state-space model ($\alpha=10$) is evaluated by jump-level leave-one-out cross-validation. With the measured initial state, mean spatial trajectory error is 1.34~m (95\% confidence interval (CI) 1.24--1.43~m). Terminal-coordinate-distance (magnitude of over/under prediction) mean absolute error (MAE) is 1.68~m. Training-fold average-path and constant-velocity baselines yield 2.64 and 58.33~m. Timestamp defects were repaired before resampling. The 144 jumps needing no repair yield a similar 1.39~m error. An additional model with non-overlapping state and control variables recursively represents speed with seven states and 19 controls. Its trajectory error remains 1.35~m, but distance MAE rises to 4.52~m. The mean transition-matrix spectral radius is 1.0135, so both models are restricted to observed horizons. We also present a client-side application for interactive controls and three-dimensional visualization. Rather than introducing a new identification algorithm, this study evaluates established state-space methods on Planica data and implements the fitted model in an interactive application.}
+\abstractSi{Predstavimo linearni model prostora stanj za rekonstrukcijo trajektorij smučarskih skokov iz Planice. Model ovrednotimo z navzkrižnim preverjanjem na 203 skokih. Povprečna prostorska napaka znaša 1,34~m. Različica z ločenimi spremenljivkami stanja in vhoda doseže podobno napako poti, vendar večjo napako končne razdalje. Model je namenjen rekonstrukciji na opazovanem časovnem območju in je vključen v interaktivno spletno aplikacijo.}
 
 \maketitle
 
@@ -67,7 +70,7 @@ The contributions are: (i) a fully specified 14-state, 20-control model and leak
   \label{fig:architecture}
 \end{figure}
 
-\section{Related Work}\label{sec:related}
+\section{Related work}\label{sec:related}
 
 \subsection{System identification and state-space models}
 
@@ -91,7 +94,7 @@ where
 =
 \sum_{j=1}^{p}\theta_j^2,
 \]
-and $\alpha\geq 0$ controls the strength of the penalty. It discourages excessively large coefficients and reduces sensitivity to correlated or noisy predictors, but usually shrinks coefficients toward zero rather than setting them exactly to zero. Nonlinear and uncertainty-aware extensions include extended and unscented Kalman filters (represent current uncertainty with a small set of possible states, passes each state through the nonlinear equations, and recombines the results) and particle methods \cite{sarkka2013bayesian}. This approximates the updated mean and uncertainty without the derivative-based linearization used by an extended Kalman filter. Our study uses the simpler deterministic linear formulation and asks whether it can reconstruct ski-jump paths from sparse distributed measurements.
+and $\alpha\geq 0$ controls the strength of the penalty. It discourages excessively large coefficients and reduces sensitivity to correlated or noisy predictors, but usually shrinks coefficients toward zero rather than setting them exactly to zero. Nonlinear and uncertainty-aware extensions include extended and unscented Kalman filters and particle methods \cite{sarkka2013bayesian}. An unscented Kalman filter represents current uncertainty with a small set of possible states, passes each state through the nonlinear equations, and recombines the transformed states to approximate the updated mean and uncertainty without the derivative-based linearization used by an extended Kalman filter. Our study uses the simpler deterministic linear formulation and asks whether it can reconstruct ski-jump paths from sparse distributed measurements.
 
 \subsection{Ski-jump trajectory and length estimation}
 
@@ -120,21 +123,21 @@ This study & Ridge-estimated linear SSM (state-space model) & Initial state, zon
 \label{tab:related}
 \end{table*}
 
-\section{Data and Preprocessing}\label{sec:data}
+\section{Data and preprocessing}\label{sec:data}
 
 \subsection{Dataset and quality screening}
 
-The Ski Association of Slovenia supplied the jump records from men's training at the ski flying hill (Letalnica bratov Gorišek) in Planica during the March 2024 event. Project documentation records 223 originally supplied CSV (comma-separated values) files that use semicolon delimiters. The present reproducibility package begins after initial screening and contains 203 of them. Each file represents one jump and contains position, height above ground, relative time, Cartesian coordinates, seven ski-orientation angles, three speed variables, and a compound field with measurements from 12 wind sensors. The athlete in every supplied filename is anonymized and consequently, neither the number of athletes nor model performance for each athlete separately can be determined from the available material. This is reported as a dataset limitation rather than treated as a single-athlete dataset.
+The Ski Association of Slovenia supplied the jump records from men's training at the ski flying hill (Letalnica bratov Gorišek) in Planica during the March 2024 event \cite{skiassociation2024planica}. Project documentation records 223 originally supplied CSV (comma-separated values) files that use semicolon delimiters. The present reproducibility package begins after initial screening and contains 203 of them. Each file represents one jump and contains position, height above ground, relative time, Cartesian coordinates, seven ski-orientation angles, three speed variables, and a compound field with measurements from 12 wind sensors. The athlete in every supplied filename is anonymized. Consequently, neither the number of athletes nor model performance for each athlete separately can be determined from the available material. This is reported as a dataset limitation rather than treated as a single-athlete dataset.
 
-Twenty files were removed before the current 203-file folder was assembled. The documented screening criteria were (i) one or more empty columns, (ii) successive $X$, $Y$, or $Z$ values implying a physically impossible displacement across the hill within one sampling interval (a coordinate ``teleportation'') or (iii) measurements stoping mid jump. The retained records contain 88--164 samples (median 137, mean 136.62), corresponding to 4.35--8.15~s (median 6.80~s) at the 0.05~s interval. The derived terminal-coordinate distance $\sqrt{X_{\mathrm{end}}^2+Z_{\mathrm{end}}^2}$ ranges from 117.78 to 242.35~m (median 208.74~m, mean $205.54\pm21.37$~m).
+Twenty files were removed before the current 203-file folder was assembled. The documented screening criteria were (i) one or more empty columns, (ii) successive $X$, $Y$, or $Z$ values implying a physically impossible displacement across the hill within one sampling interval (a coordinate ``teleportation'') or (iii) measurements stopping mid jump. The retained records contain 88--164 samples (median 137, mean 136.62), corresponding to 4.35--8.15~s (median 6.80~s) at the 0.05~s interval. The derived terminal-coordinate distance $\sqrt{X_{\mathrm{end}}^2+Z_{\mathrm{end}}^2}$ ranges from 117.78 to 242.35~m (median 208.74~m, mean $205.54\pm21.37$~m).
 
 These criteria distinguish unusable files from isolated missing cells. After file screening and temporal resampling, 21 missing roll-angle cells remained in four otherwise valid sequences: 18 left-roll values and three right-roll values. They were imputed by forward fill followed by backward fill. All 21 gaps were internal, so forward fill supplied the values and the backward-fill fallback did not alter them. No wind, coordinate, speed, opening-angle, yaw, or stalling-angle value required this imputation, and no rejected file was restored by it.
 
 \subsection{Coordinate, wind, and temporal processing}\label{sec:processing}
 
-The coordinate origin is the take-off point. $X$ follows the hill, $Y$ is lateral, and $Z$ is vertical. Angles are opening angle and left/right roll, yaw, and stalling angles, the definitions follow standard ski-jump aerodynamics, describing an exact position of skies in space \cite{muller2008performance,virmavirta2019aerodynamics}. The compound wind column was split into sensor and feature fields. For each of three hill zones (sensors 1--4, 5--8, and 9--12), we average speed, tangential wind, crosswind, and turbulence, producing 12 wind controls. The separate wind timestamp is not used as a predictor. The supplied records repeat the most recent wind reading between sensor updates, the fixed-interval resampling then linearly interpolates all numeric columns, including wind. 
+The coordinate origin is the take-off point. $X$ follows the hill, $Y$ is lateral, and $Z$ is vertical. The seven posture angles are the opening angle and the left and right roll, yaw, and stalling angles. These definitions follow standard ski-jump aerodynamics. Together, the angles describe the orientation of the skis in space \cite{muller2008performance,virmavirta2019aerodynamics}. The compound wind column was split into sensor and feature fields. For each of three hill zones (sensors 1--4, 5--8, and 9--12), we average speed, tangential wind, crosswind, and turbulence, producing 12 wind controls. The separate wind timestamp is not used as a predictor. The supplied records repeat the most recent wind reading between sensor updates. Fixed-interval resampling then linearly interpolates all numeric columns, including wind. 
 
-Although the source files contain approximately metre-spaced position records, the dynamical recurrence is evaluated in time. Full timestamps in ISO 8601 date-and-time format are parsed, including hours and minutes, while the physical source-row order is preserved. The timestamp audit distinguishes non-increasing transitions from the individual timestamp cells subsequently repaired. Of the 203 accepted files, 55 contained 109 adjacent timestamp decreases, while eight contained nine adjacent duplicate timestamps. Four files belonged to both groups, so 59 unique files required timestamp repair. For each affected file, the earliest longest strictly increasing timestamp subsequence is treated as trustworthy, and timestamps outside that subsequence are reconstructed by linear interpolation between neighboring trustworthy rows, with one-sided extrapolation only at an edge. This procedure repaired 145 individual timestamp cells across the 59 affected files, the remaining 144 files required no timestamp repair. Strict increase is verified before 0.05-s resampling, an audit table is saved, and the raw source files remain unchanged. As a sensitivity check, restricting LOOCV (leave-one-out cross-validation) to the 144 accepted jumps that required no timestamp repair gave a mean trajectory error of 1.39~m, close to the 1.34~m result for the complete corrected dataset. Speeds are converted from km/h to m/s (as is standard), and directional velocities are computed as numerical gradients of $X$, $Y$, and $Z$ with respect to $\Delta t$. Predictor values retain their physical units. No z-score standardization is applied, so the ridge penalty is scale-dependent. This is a limitation of the current fit. 
+Although the source files contain approximately metre-spaced position records, the dynamical recurrence is evaluated in time. Full timestamps in ISO 8601 date-and-time format are parsed, including hours and minutes, while the physical source-row order is preserved. The timestamp audit distinguishes non-increasing transitions from the individual timestamp cells subsequently repaired. Of the 203 accepted files, 55 contained 109 adjacent timestamp decreases, while eight contained nine adjacent duplicate timestamps. Four files belonged to both groups, so 59 unique files required timestamp repair. For each affected file, the earliest longest strictly increasing timestamp subsequence is treated as trustworthy, and timestamps outside that subsequence are reconstructed by linear interpolation between neighboring trustworthy rows, with one-sided extrapolation only at an edge. This procedure repaired 145 individual timestamp cells across the 59 affected files. The remaining 144 files required no timestamp repair. Strict increase is verified before 0.05-s resampling. An audit table is saved, and the raw source files remain unchanged. As a sensitivity check, restricting LOOCV (leave-one-out cross-validation) to the 144 accepted jumps that required no timestamp repair gave a mean trajectory error of 1.39~m, close to the 1.34~m result for the complete corrected dataset. Speeds are converted from km/h to m/s (as is standard), and directional velocities are computed as numerical gradients of $X$, $Y$, and $Z$ with respect to $\Delta t$. Predictor values retain their physical units. No z-score standardization is applied, so the ridge penalty is scale-dependent. This is a limitation of the current fit. 
 All subsequent analyses use this corrected and resampled dataset unless stated otherwise.
 This provides a common preprocessing basis for the model comparisons, sensitivity analyses, and website export.
 
@@ -147,15 +150,15 @@ For sample $k$, let $\mathbf{x}_k\in\mathbb{R}^{14}$ be the state, $\mathbf{u}_k
 \mathbf{x}_{k+1} &= A\mathbf{x}_k+B\mathbf{u}_k+\boldsymbol{\epsilon}_k,\label{eq:state}\\
 \mathbf{y}_{k} &= C\mathbf{x}_k+D\mathbf{u}_k+\boldsymbol{\eta}_k,\label{eq:obs}
 \end{align}
-where $A\in\mathbb{R}^{14\times14}$, $B\in\mathbb{R}^{14\times20}$, $C\in\mathbb{R}^{4\times14}$, and $D\in\mathbb{R}^{4\times20}$. 
-As we can see in Equations~\eqref{eq:state} and~\eqref{eq:obs} the simulated states are independent from simulated observations, and the observation equation is included to specify the complete fitted system. The matricies $C$ and $D$ are estimated, but unused in the trajectory simulation. 
+where $A\in\mathbb{R}^{14\times14}$, $B\in\mathbb{R}^{14\times20}$, $C\in\mathbb{R}^{4\times14}$, $D\in\mathbb{R}^{4\times20}$, $\epsilon_k \in \mathbb{R}^{14}$ and $\eta_k \in \mathbb{R}^4$.
+Equations~\eqref{eq:state} and~\eqref{eq:obs} show that the simulated states are independent of the simulated observations and that the observation equation is included to specify the complete fitted system. The matrices $C$ and $D$ are estimated but are not used in the trajectory simulation. 
 The state order is
 \[
 [X,Y,Z,v_X,v_Y,v_Z,s,o,r_L,r_R,y_L,y_R,a_L,a_R]^{\mathsf T},
 \]
-where $s$ is resulting speed, $o$ is ski opening, $r$ and $y$ are roll and yaw, and $a$ is stalling angle. The observation is $[X,Y,Z,h]^{\mathsf T}$, where $h$ is height above ground. The control contains 12 zone--wind values followed by $[s,o,r_L,r_R,y_L,y_R,a_L,a_R]^{\mathsf T}$.
+where $s$ is resultant speed, $o$ is ski opening, $r$ and $y$ are roll and yaw, and $a$ is stalling angle. The observation is $[X,Y,Z,h]^{\mathsf T}$, where $h$ is height above ground. The control contains 12 zone--wind values followed by $[s,o,r_L,r_R,y_L,y_R,a_L,a_R]^{\mathsf T}$.
 
-Speed and posture therefore appear in both state and control vectors. In the state they are quantities recursively propagated by the model, in the control they are prescribed measured profiles (or user-adjusted profiles in the website) that condition the path. This duplication makes the system useful for conditional reconstruction and finite-horizon ``what-if'' interaction, but it also means that the held-out evaluation is not a causal forecast from take-off alone. In particular, measured future posture controls from the held-out jump are available to the recursion.
+Speed and posture therefore appear in both state and control vectors. In the state, they are quantities recursively propagated by the model. In the control vector, they are prescribed measured profiles (or user-adjusted profiles on the website) that condition the path. This duplication makes the system useful for conditional reconstruction and finite-horizon ``what-if'' interaction, but it also means that the held-out evaluation is not a causal forecast from take-off alone. In particular, measured future posture controls from the held-out jump are available to the recursion.
 
 With training transitions stacked by jump, define $\Phi=[X_-\ U_-]$ and $X_+$ as the next-state matrix. The matrices are estimated jointly by
 \begin{align}
@@ -164,7 +167,7 @@ With training transitions stacked by jump, define $\Phi=[X_-\ U_-]$ and $X_+$ as
 \label{eq:ridge}\\
 \widehat{\Theta}&=\begin{bmatrix}A^{\mathsf T}\\B^{\mathsf T}\end{bmatrix}.
 \end{align}
-An analogous regression estimates $C$ and $D$, although trajectory simulation uses Equations~\eqref{eq:state} and \eqref{eq:ridge}. The estimator uses $\alpha=10$ without an intercept and scikit-learn's \texttt{Ridge} solver with its \texttt{auto} setting. This value produced satisfactory trajectory reconstructions in the original implementation. The corrected-data analysis below also places it on a broad performance plateau. Retaining it therefore preserves continuity with the original model without changing a parameter after evaluation. We used Python 3.12.2, NumPy 2.3.2, pandas 2.3.1, SciPy 1.16.1, and scikit-learn 1.7.1.
+An analogous regression estimates $C$ and $D$, although trajectory simulation uses Equations~\eqref{eq:state} and \eqref{eq:ridge}. The estimator uses $\alpha=10$ without an intercept and scikit-learn's \texttt{Ridge} solver with its \texttt{auto} setting. This value produced satisfactory trajectory reconstructions in the original implementation. The corrected-data analysis below also places it on a broad performance plateau. Retaining it therefore preserves continuity with the original model without changing a parameter after evaluation. We used Python 3.12.2 \cite{python3122}, NumPy 2.3.2 \cite{harris2020numpy}, pandas 2.3.1 \cite{pandas231}, SciPy 1.16.1 \cite{virtanen2020scipy}, and scikit-learn 1.7.1 \cite{pedregosa2011scikit}.
 
 \subsection{Independent state--control sensitivity model}\label{sec:independent}
 
@@ -172,14 +175,69 @@ To examine whether duplicating speed and posture across the state and control ve
 \[
 \widetilde{\mathbf{x}}_k=[X,Y,Z,v_X,v_Y,v_Z,s]^{\mathsf T}\in\mathbb{R}^{7},
 \]
-and its control $\widetilde{\mathbf{u}}_k\in\mathbb{R}^{19}$ contains the same 12 zone--wind values followed by the seven posture angles $[o,r_L,r_R,y_L,y_R,a_L,a_R]^{\mathsf T}$. Resulting speed is initialized from the first held-out observation and thereafter predicted recursively as a state, it is never supplied again as a control. The corresponding matrices have dimensions $\widetilde A\in\mathbb{R}^{7\times7}$, $\widetilde B\in\mathbb{R}^{7\times19}$, $\widetilde C\in\mathbb{R}^{4\times7}$, and $\widetilde D\in\mathbb{R}^{4\times19}$.
+and its control $\widetilde{\mathbf{u}}_k\in\mathbb{R}^{19}$ contains the same 12 zone--wind values followed by the seven posture angles $[o,r_L,r_R,y_L,y_R,a_L,a_R]^{\mathsf T}$. Resulting speed is initialized from the first held-out state and thereafter predicted recursively as a state. It is never supplied again as a control. The corresponding matrices have dimensions $\widetilde A\in\mathbb{R}^{7\times7}$, $\widetilde B\in\mathbb{R}^{7\times19}$, $\widetilde C\in\mathbb{R}^{4\times7}$, and $\widetilde D\in\mathbb{R}^{4\times19}$.
 
 The independent model uses the same corrected sequences, ridge penalty, fold assignments, initial-state conditions, baselines, and outcome definitions as the 14-state model. We also evaluate four diagnostic formulations: six kinematic states $(x, y, z, v_x, v_y, v_z)$ with all 20 measured controls, 14 states with wind controls only, six kinematic states with wind and posture but no speed, and six kinematic states with wind only. These variants separate the effect of feature overlap from the effect of supplying measured speed. Figure~\ref{fig:matrices} summarizes the matrix dimensions and information flow of the fitted system.
 
 \begin{figure}[htb]
   \centering
-  \includegraphics[width=\linewidth]{shema_matrik.png}
-  \caption{Dimensions and information flow of the fitted linear state-space model. Trajectories are generated recursively with the state equation. The observation equation is included to specify the complete fitted system. In the article we depict state $h(t)$ as $x_k$, control $u(t)$ as $u_k$, and observation $y(t)$ as $y_k$.}
+  \resizebox{\linewidth}{!}{%
+  \begin{tikzpicture}[
+    font=\sffamily,
+    >={Latex[length=2.2mm,width=1.5mm]},
+    flow/.style={->,line width=0.75pt,draw=black!72},
+    vector/.style={draw=blue!65!black,fill=blue!10,rounded corners=2pt,
+      line width=0.8pt,minimum width=16mm,minimum height=9mm,align=center},
+    control/.style={draw=orange!80!black,fill=orange!16,rounded corners=2pt,
+      line width=0.8pt,minimum width=16mm,minimum height=9mm,align=center},
+    matrix/.style={draw=violet!70!black,fill=violet!11,rounded corners=2pt,
+      line width=0.8pt,minimum width=17mm,minimum height=10mm,align=center},
+    result/.style={draw=teal!70!black,fill=teal!13,rounded corners=2pt,
+      line width=0.8pt,minimum width=18mm,minimum height=9mm,align=center},
+    residual/.style={draw=red!65!black,fill=red!9,rounded corners=2pt,
+      line width=0.8pt,minimum width=16mm,minimum height=8mm,align=center},
+    add/.style={circle,draw=black!65,fill=yellow!25,line width=0.8pt,
+      inner sep=0pt,minimum size=6.5mm},
+    panel/.style={font=\sffamily\bfseries\small,anchor=west,text=black!75}
+  ]
+    % State transition
+    \node[panel] at (-0.85,1.55) {STATE UPDATE};
+    \node[vector]   (xstate) at (0,0.55) {$\mathbf{x}_k$\\[-1pt]\scriptsize $14\!\times\!1$};
+    \node[control]  (ustate) at (0,-0.65) {$\mathbf{u}_k$\\[-1pt]\scriptsize $20\!\times\!1$};
+    \node[matrix]   (amat) at (2.25,0.55) {$A$\\[-1pt]\scriptsize $14\!\times\!14$};
+    \node[matrix]   (bmat) at (2.25,-0.65) {$B$\\[-1pt]\scriptsize $14\!\times\!20$};
+    \node[add]      (sumstate) at (4.55,0.55) {$+$};
+    \node[residual] (eps) at (4.55,1.55) {$\boldsymbol{\epsilon}_k$\\[-1pt]\scriptsize $14\!\times\!1$};
+    \node[result]   (xnext) at (6.25,0.55) {$\mathbf{x}_{k+1}$\\[-1pt]\scriptsize $14\!\times\!1$};
+
+    \draw[flow] (xstate) -- (amat);
+    \draw[flow] (ustate) -- (bmat);
+    \draw[flow] (amat) -- (sumstate);
+    \draw[flow] (bmat.east) -| (sumstate.south);
+    \draw[flow] (eps) -- (sumstate);
+    \draw[flow] (sumstate) -- (xnext);
+
+    \draw[black!25,line width=0.6pt] (-0.85,-1.35) -- (7.15,-1.35);
+
+    % Observation equation
+    \node[panel] at (-0.85,-1.75) {OBSERVATION MAP};
+    \node[vector]   (xobs) at (0,-2.75) {$\mathbf{x}_k$\\[-1pt]\scriptsize $14\!\times\!1$};
+    \node[control]  (uobs) at (0,-3.95) {$\mathbf{u}_k$\\[-1pt]\scriptsize $20\!\times\!1$};
+    \node[matrix]   (cmat) at (2.25,-2.75) {$C$\\[-1pt]\scriptsize $4\!\times\!14$};
+    \node[matrix]   (dmat) at (2.25,-3.95) {$D$\\[-1pt]\scriptsize $4\!\times\!20$};
+    \node[add]      (sumobs) at (4.55,-2.75) {$+$};
+    \node[residual] (eta) at (4.55,-1.75) {$\boldsymbol{\eta}_k$\\[-1pt]\scriptsize $4\!\times\!1$};
+    \node[result]   (yobs) at (6.25,-2.75) {$\mathbf{y}_k$\\[-1pt]\scriptsize $4\!\times\!1$};
+
+    \draw[flow] (xobs) -- (cmat);
+    \draw[flow] (uobs) -- (dmat);
+    \draw[flow] (cmat) -- (sumobs);
+    \draw[flow] (dmat.east) -| (sumobs.south);
+    \draw[flow] (eta) -- (sumobs);
+    \draw[flow] (sumobs) -- (yobs);
+  \end{tikzpicture}%
+  }
+  \caption{Information flow and dimensions of the fitted linear state-space model. The state equation recursively produces $\mathbf{x}_{k+1}$ from the current state $\mathbf{x}_k$ and prescribed control $\mathbf{u}_k$. The observation equation maps the same inputs to $\mathbf{y}_k$. The residual terms are $\boldsymbol{\epsilon}_k$ and $\boldsymbol{\eta}_k$. The trajectory simulations use the state equation, while the observation equation specifies the complete fitted system.}
   \label{fig:matrices}
 \end{figure}
 
@@ -187,13 +245,13 @@ The independent model uses the same corrected sequences, ridge penalty, fold ass
 
 Two initial-state conditions answer RQ2. The measured-start condition uses the first state of the held-out jump. The mean-start condition averages the first states of training jumps only and recomputes that average in every fold. The same training-only rule is used for the average-path baseline. This avoids the information leakage that would occur if a single full-dataset average were reused during cross-validation.
 
-After evaluation, a production model is fit to all 203 accepted jumps for deployment. The website asset contains a 139-sample reference profile, spanning 6.90~s from its first to last state at 0.05-s intervals. This is a control-profile length, not a training horizon: the same transition matrices are fitted to all transitions from variable-length jumps. The simulator continues beyond the reference profile when necessary to find first hill contact, up to the maximum stored sequence length of 164 samples (8.15~s), while holding the last body-control values constant. Its default initial state and control profiles are descriptive full-dataset quantities and are not used to calculate cross-validation scores. These procedures are distinct: the cross-validated endpoint and terminal-coordinate-distance errors reported below concern reconstructions over the recorded jump duration and do not validate the website's hill-contact calculation, including extrapolation beyond the reference profile.
+After evaluation, a production model is fitted to all 203 accepted jumps for deployment. The website asset contains a 139-sample reference profile, spanning 6.90~s from its first to last state at 0.05-s intervals. This is a control-profile length, not a training horizon: the same transition matrices are fitted to all transitions from variable-length jumps. The simulator continues beyond the reference profile when necessary to find first hill contact, up to the maximum stored sequence length of 164 samples (8.15~s), while holding the last body-control values constant. Its default initial state and control profiles are descriptive full-dataset quantities and are not used to calculate cross-validation scores. These procedures are distinct: the cross-validated endpoint and terminal-coordinate-distance errors reported below concern reconstructions over the recorded jump duration and do not validate the website's hill-contact calculation, including extrapolation beyond the reference profile.
 
 \subsection{Cross-validation and error measures}\label{sec:evaluation}
 
 LOOCV is performed at the jump level. For each of 203 folds, all transitions from 202 jumps are stacked to estimate the matrices, and the remaining complete jump is simulated recursively. Splitting by jump prevents transitions from the same flight from appearing in both training and test data.
 
-Because trajectories differ in duration, we evaluate spatial rather than time-indexed separation. Each curve is sorted by longitudinal $X$, duplicate $X$ values are merged by averaging $Y$ and $Z$. Let $\mathcal{G}_i$ contain the direct pair of first points and the common integer-$X$ interpolation positions for jump $i$. After the shorter curve ends, integer-$X$ points on the longer curve and its endpoint are compared with the final point of the shorter curve. For paired points $\mathbf{p}_{ij}$ and $\widehat{\mathbf{p}}_{ij}$, the trajectory error is
+Because trajectories differ in duration, we evaluate spatial rather than time-indexed separation. Each curve is sorted by longitudinal $X$. Duplicate $X$ values are merged by averaging $Y$ and $Z$. Let $\mathcal{G}_i$ contain the direct pair of first points and the common integer-$X$ interpolation positions for jump $i$. After the shorter curve ends, integer-$X$ points on the longer curve and its endpoint are compared with the final point of the shorter curve. For paired points $\mathbf{p}_{ij}$ and $\widehat{\mathbf{p}}_{ij}$, the trajectory error is
 \begin{equation}
 E_i=\frac{1}{|\mathcal{G}_i|}\sum_{j\in\mathcal{G}_i}
 \left\lVert\mathbf{p}_{ij}-\widehat{\mathbf{p}}_{ij}\right\rVert_2.
@@ -207,9 +265,9 @@ We repeat LOOCV with three predefined wind representations. The 14 states, eight
 
 \subsection{Interactive website}\label{sec:website}
 
-The retired Shiny prototype was replaced in full by a static client-side application developed in React and TypeScript. The current website is available at \url{https://smucarski-skoki.pages.dev/}. It loads versioned JSON assets containing $A$, $B$, the baseline flight, feature order, units, default profiles, ranges, and model metadata. Simulation then runs locally in the browser, no CSV upload or server-side user-data processing is provided.
+The retired Shiny prototype was replaced in full by a static client-side application developed in React 19.2.8 and TypeScript 6.0.3 \cite{react2026,typescript2026}. The current website is publicly available \cite{hegler2026website}. It loads versioned JSON assets containing $A$, $B$, the baseline flight, feature order, units, default profiles, ranges, and model metadata. Simulation then runs locally in the browser. No CSV upload or server-side user-data processing is provided.
 
-Users can apply offsets to four wind components in each of the take-off, middle, and landing zones, and to eight speed/posture profiles. The interface presents an interactive three-dimensional rendering of the sampled hill surface and simulated flight path, together with longitudinal and lateral plots and scenario presets. The rendering is implemented with Three.js, a JavaScript library that sends the scene to WebGL (Web Graphics Library), the browser's hardware-accelerated graphics interface. Three.js and WebGL affect only presentation, the state-space recurrence is calculated separately in TypeScript. Tests check matrix dimensions, exported-model parity, the first transition, finite outputs at slider extremes, and profile interpolation. Figure~\ref{fig:website} shows the new interface.
+Users can apply offsets to four wind components in each of the take-off, middle, and landing zones, and to eight speed/posture profiles. The interface presents an interactive three-dimensional rendering of the sampled hill surface and simulated flight path, together with longitudinal and lateral plots and scenario presets. The rendering is implemented with Three.js 0.185.1, a JavaScript library that sends the scene to WebGL (Web Graphics Library), the browser's hardware-accelerated graphics interface \cite{threejs2026,webgl2026}. Three.js and WebGL affect only presentation. The state-space recurrence is calculated separately in TypeScript. Tests check matrix dimensions, exported-model parity, the first transition, finite outputs at slider extremes, and profile interpolation. Figure~\ref{fig:website} shows the new interface.
 
 \begin{figure*}[t]
   \centering
@@ -222,7 +280,7 @@ Users can apply offsets to four wind components in each of the take-off, middle,
 
 \subsection{Held-out trajectory reconstruction}
 
-Table~\ref{tab:primary} reports LOOCV results for the fixed final model. The summary uses SD (sample standard deviation), CI, and MAE. With the measured initial state, the mean trajectory error is 1.34~m and the median is 1.18~m. Replacing it with the fold-specific mean initial state changes the mean only slightly, to 1.35~m. This result reflects the similarity of the accepted take-off states and it should not be generalized to unseen hills or athlete populations.
+Table~\ref{tab:primary} reports LOOCV results for the fixed final model. The summary uses SD (sample standard deviation), CI, and MAE. With the measured initial state, the mean trajectory error is 1.34~m and the median is 1.18~m. Replacing it with the fold-specific mean initial state changes the mean only slightly, to 1.35~m. This result reflects the similarity of the accepted take-off states. It should not be generalized to unseen hills or athlete populations.
 
 \begin{table}[htb]
 \centering
@@ -246,7 +304,7 @@ The endpoint error is larger than the path-average error because recursive devia
 \begin{figure*}[t]
   \centering
   \includegraphics[width=0.95\textwidth]{revision_trajectory_representative.pdf}
-  \caption{Representative measured and reconstructed trajectories under the measured-start condition. The columns jointly approximate the 10th, 50th, and 90th percentiles of measured $d_{\mathrm{coord}}$ while remaining close to the median held-out trajectory error, they are not best-case selections. The lower row exposes time-progress-aligned separation that is difficult to see at the full X--Z scale. Here $d_{\mathrm{coord}}$ is the derived coordinate displacement, not official hill-surface jump length, and $E$ is Equation~\eqref{eq:error}.}
+  \caption{Representative measured and reconstructed trajectories under the measured-start condition. The columns jointly approximate the 10th, 50th, and 90th percentiles of measured $d_{\mathrm{coord}}$ while remaining close to the median held-out trajectory error. They are not best-case selections. The lower row exposes time-progress-aligned separation that is difficult to see at the full X--Z scale. Here $d_{\mathrm{coord}}$ is the derived coordinate displacement, not official hill-surface jump length, and $E$ is Equation~\eqref{eq:error}.}
   \label{fig:examples}
 \end{figure*}
 
@@ -269,11 +327,11 @@ Zone means and their squares & 32 & 1.391 & $+0.051$ (0.008--0.095) & 3.713 & 1.
 Individual values and their squares & 104 & 1.579 & $+0.240$ (0.151--0.328) & 4.275 & 2.364 \\
 \bottomrule
 \end{tabularx}
-\caption{Wind-feature sensitivity using the corrected timestamp data, the same 203 jump-level LOOCV folds, and fixed $\alpha=10$. Errors are means across held-out jumps, paired confidence intervals are two-sided Student-$t$ intervals for per-jump differences from the zone-mean model.}
+\caption{Wind-feature sensitivity using the corrected timestamp data, the same 203 jump-level LOOCV folds, and fixed $\alpha=10$. Errors are means across held-out jumps. Paired confidence intervals are two-sided Student-$t$ intervals for per-jump differences from the zone-mean model.}
 \label{tab:windfeatures}
 \end{table*}
 
-A separate LOOCV check considered seven values of $\alpha$: 0.001, 0.01, 0.1, 1, 10, 100, and 1000. For the zone-mean model, mean path errors remain between 1.330 and 1.341~m through $\alpha=100$, then rise to 1.397~m at $\alpha=1000$. The lowest observed value is 1.330~m at $\alpha=100$. Thus, 10 lies on a broad performance plateau and remains a reasonable choice for the final model. The grid tests the sensitivity of the original setting, it was not used to replace that setting after examining the evaluation results. A hybrid physics-informed neural model \cite{raissi2019physics,Cai2021_PINN_FluidMechanics} was also explored but not retained because the available athlete and aerodynamic parameters were insufficient for a defensible matched implementation.
+A separate LOOCV check considered seven values of $\alpha$: 0.001, 0.01, 0.1, 1, 10, 100, and 1000. For the zone-mean model, mean path errors remain between 1.330 and 1.341~m through $\alpha=100$, then rise to 1.397~m at $\alpha=1000$. The lowest observed value is 1.330~m at $\alpha=100$. Thus, 10 lies on a broad performance plateau and remains a reasonable choice for the final model. The grid tests the sensitivity of the original setting. It was not used to replace that setting after examining the evaluation results. A hybrid physics-informed neural model \cite{raissi2019physics,Cai2021_PINN_FluidMechanics} was also explored but not retained because the available athlete and aerodynamic parameters were insufficient for a defensible matched implementation.
 
 \subsection{Independent state--control sensitivity analysis}
 
@@ -294,7 +352,7 @@ No-speed kinematic & Position and velocity (6) & Wind, posture (19) & 0 & 6.808 
 Kinematic wind-only & Position and velocity (6) & Wind (12) & 0 & 8.161 & 40.005 & 39.184 \\
 \bottomrule
 \end{tabularx}
-\caption{Structural sensitivity results across the same 203 LOOCV folds. ``Overlap'' counts features appearing in both state and control vectors. Path is the mean of Equation~\eqref{eq:error},endpoint is mean three-dimensional endpoint error.}
+\caption{Structural sensitivity results across the same 203 LOOCV folds. ``Overlap'' counts features appearing in both state and control vectors. Path is the mean of Equation~\eqref{eq:error}. Endpoint is mean three-dimensional endpoint error.}
 \label{tab:independent}
 \end{table*}
 
@@ -304,7 +362,7 @@ Associations across held-out jumps are summarized using Pearson's correlation co
 
 Diagnostics indicate recursive speed drift rather than a systematic directional bias. The independent model's mean speed MAE is 0.676~m/s (95\% CI 0.613--0.739~m/s). Speed MAE is strongly associated with terminal-coordinate-distance absolute error ($r=0.798$, $p<10^{-45}$), while signed terminal-speed and signed terminal-coordinate-distance errors are moderately associated ($r=0.586$, $p<10^{-19}$). Mean signed terminal-coordinate-distance error is only $-0.052$~m (95\% CI $-0.920$--0.816~m), and the mean signed $X$, $Y$, and $Z$ endpoint errors are also close to zero. Thus the degradation reflects increased between-jump dispersion and accumulated recursive error, not consistent over- or under-prediction. Flight duration is not associated with terminal-coordinate-distance absolute error ($r=0.016$, $p=0.826$), although it is moderately associated with the path metric ($r=0.309$, $p<10^{-5}$).
 
-To determine why the recursive-speed model has much larger endpoint error despite a similar mean path error, we examined how spatial separation develops over the course of the flight. Figure~\ref{fig:independent-progress} shows how mean spatial separation changes over normalized flight progress. When measured speed is supplied at every step, separation grows from 1.52~m at 25\% progress to 3.55~m at the endpoint. Recursively predicting speed increases the corresponding values to 1.78 and 5.73~m, with the gap widening throughout the flight. These values align trajectories by flight progress and therefore differ from Equation~\eqref{eq:error}, they indicate where error accumulates.
+To determine why the recursive-speed model has much larger endpoint error despite a similar mean path error, we examined how spatial separation develops over the course of the flight. Figure~\ref{fig:independent-progress} shows how mean spatial separation changes over normalized flight progress. When measured speed is supplied at every step, separation grows from 1.52~m at 25\% progress to 3.55~m at the endpoint. Recursively predicting speed increases the corresponding values to 1.78 and 5.73~m, with the gap widening throughout the flight. These values align trajectories by flight progress and therefore differ from Equation~\eqref{eq:error}. They indicate where error accumulates.
 
 \begin{figure}[htb]
   \centering
@@ -325,7 +383,7 @@ Because speed and posture appear in both the state and control vectors, their se
 
 \section{Discussion}\label{sec:discussion}
 
-RQ1 is answered by a mean held-out spatial error of 1.34~m under measured control profiles. This shows that the regularized linear recurrence summarizes jumps from the same hill and event, within the wind, posture, speed, and trajectory ranges represented in these recordings while it does not show that the model will generalize to a different event or predict a jump from weather known before take-off. RQ2 shows little aggregate penalty from a training-only mean initial state, although both conditions still use the held-out control sequence. For RQ3, the model outperforms the two simple baselines but is not asymptotically stable. RQ4 shows that state--control overlap is not necessary for accurate average-path reconstruction: the seven-state, 19-control model obtains 1.35~m. 
+RQ1 is answered by a mean held-out spatial error of 1.34~m under measured control profiles. This shows that the regularized linear recurrence summarizes jumps from the same hill and event within the wind, posture, speed, and trajectory ranges represented in these recordings. It does not show that the model will generalize to a different event or predict a jump from weather known before take-off. RQ2 shows little aggregate penalty from a training-only mean initial state, although both conditions still use the held-out control sequence. For RQ3, the model outperforms the two simple baselines but is not asymptotically stable. RQ4 shows that state--control overlap is not necessary for accurate average-path reconstruction: the seven-state, 19-control model obtains 1.35~m. 
 
 The medians, standard deviations, confidence intervals, and maximum errors show variation between jumps that the mean alone would conceal. Computing the initial-state and average-path quantities from training jumps only prevents held-out data from entering either calculation. However, choices such as $\alpha$ and feature design were informed by this dataset, and the alternative formulations were not tested on new data. A separate test event, or model selection performed entirely within each training fold, would be needed for a confirmatory performance estimate. Direct numerical ranking against related works from Table~\ref{tab:related} would also be misleading because studies use different inputs and do not report Equation~\eqref{eq:error} on the same jumps.
 
@@ -333,7 +391,7 @@ Retaining the 14-state website model is a deployment choice, not a claim that ov
 
 \subsection{Limitations and scope}
 
-The sample is small, comes from one hill and event, and lacks recoverable athlete identities and physiological covariates. Rejected files may introduce selection bias. The spatial metric does not capture timing mismatches between the measured and predicted trajectories. Fixed-interval interpolation may smooth rapid changes, while forward-filling the 21 missing roll-angle values holds the last observed angle constant across each gap. Timestamp reconstruction assumes that physical source-row order is reliable and that corrupted time values can be interpolated between trustworthy neighbors. The similar 1.39~m result in the 144-jump no-repair sensitivity analysis is reassuring, but validation against a separate record of the original measurement times would be preferable. The previous website reference profile is a separately averaged descriptive control profile and begins slightly before the take-off origin. This affects only the website's default simulation and has no effect on the cross-validation results. Unstandardized ridge regression penalizes features differently according to their units. Comparisons of the alternative model structures and the reported correlations cannot establish that speed error causes coordinate-distance error. The principal limitation is that the posture and speed profiles in the deployed model's control vector include future measurements, the independent model still uses future posture. Both are therefore conditional reconstruction and interactive response models, not causal weather-to-distance predictors.
+The sample is small, comes from one hill and event, and lacks recoverable athlete identities and physiological covariates. Rejected files may introduce selection bias. The spatial metric does not capture timing mismatches between the measured and predicted trajectories. Fixed-interval interpolation may smooth rapid changes, while forward-filling the 21 missing roll-angle values holds the last observed angle constant across each gap. Timestamp reconstruction assumes that physical source-row order is reliable and that corrupted time values can be interpolated between trustworthy neighbors. The similar 1.39~m result in the 144-jump no-repair sensitivity analysis is reassuring, but validation against a separate record of the original measurement times would be preferable. The previous website reference profile is a separately averaged descriptive control profile and begins slightly before the take-off origin. This affects only the website's default simulation and has no effect on the cross-validation results. Unstandardized ridge regression penalizes features differently according to their units. Comparisons of the alternative model structures and the reported correlations cannot establish that speed error causes coordinate-distance error. The principal limitation is that the posture and speed profiles in the deployed model's control vector include future measurements. The independent model still uses future posture. Both are therefore conditional reconstruction and interactive response models, not causal weather-to-distance predictors.
 
 
 This study does not establish accuracy for another hill, event, athlete group, or sport.
@@ -346,21 +404,26 @@ Future datasets should retain an anonymized athlete identifier, cover several ev
 
 \section{Conclusion}\label{sec:conclusion}
 
-We evaluated ridge-estimated linear state-space dynamics on 203 accepted Planica ski jumps. Jump-level LOOCV yields a mean conditional trajectory error of 1.34~m and a terminal-coordinate-distance MAE of 1.68~m, with substantial per-jump variation. Training-only average construction removes leakage from the evaluated initial-state and average-path conditions. A seven-state, 19-control sensitivity model with non-overlapping state and control variables retains comparable mean path accuracy of 1.35~m but increases terminal-coordinate-distance MAE to 4.52~m because speed must be propagated recursively. This distinguishes the effect of vector overlap from the value of supplying measured speed and supports retaining the current model for the website's finite-horizon terminal summaries, without implying higher physical realism. Both formulations improve on simple baselines over observed flight horizons, but their spectral radius exceed one and their measured future controls prohibit causal or long-range forecasting claims. The accompanying browser application replaces the earlier prototype and provides an accessible way to inspect bounded fitted-model responses. Proposed uses in safety, hill design, and other settings require validation on new events, hills, and athlete groups.
+We evaluated ridge-estimated linear state-space dynamics on 203 accepted Planica ski jumps. Jump-level LOOCV yields a mean conditional trajectory error of 1.34~m and a terminal-coordinate-distance MAE of 1.68~m, with substantial per-jump variation. Training-only average construction removes leakage from the evaluated initial-state and average-path conditions. A seven-state, 19-control sensitivity model with non-overlapping state and control variables retains comparable mean path accuracy of 1.35~m but increases terminal-coordinate-distance MAE to 4.52~m because speed must be propagated recursively. This distinguishes the effect of vector overlap from the value of supplying measured speed and supports retaining the current model for the website's finite-horizon terminal summaries, without implying higher physical realism. Both formulations improve on simple baselines over observed flight horizons, but their spectral radii exceed one and their measured future controls prohibit causal or long-range forecasting claims. The accompanying browser application replaces the earlier prototype and provides an accessible way to inspect bounded fitted-model responses. Proposed uses in safety, hill design, and other settings require validation on new events, hills, and athlete groups.
 
-\subsection*{Author Contributions}
-Živa Hegler is the lead author of the extended work and led the current software implementation, website, analysis, and manuscript revision. Neca Camlek contributed to earlier project. Jakob Jelenčič, Marko Grobelnik, and Dunja Mladenić contributed research guidance and manuscript review.
+\subsection*{Author contributions}
+Živa Hegler is the lead and corresponding author of the extended work and led the current software implementation, website, analysis, and manuscript revision. Neca Camlek contributed to the earlier project. Jakob Jelenčič, Marko Grobelnik, and Dunja Mladenić contributed research guidance and manuscript review.
 
-\subsection*{Data and Code Availability}
-The source code is available in a public \href{https://github.com/zivaheg/smucarski_skoki}{GitHub repository}. It contains the timestamp repair and preprocessing code, model training and export scripts, reproducible evaluation code, and source for the client-side website. The \href{https://smucarski-skoki.pages.dev/}{interactive website} is also publicly accessible. Raw jump files cannot be redistributed because the Ski Association of Slovenia supplied them as restricted research data. The repository therefore includes analysis code and derived summaries, but not the source CSV files.
+\subsection*{Data and code availability}
+The source code and reproducibility package are available in a public repository \cite{hegler2026repository}. It contains the timestamp repair and preprocessing code, model training and export scripts, reproducible evaluation code, and source for the client-side website. The interactive website is also publicly accessible \cite{hegler2026website}. Raw jump files cannot be redistributed because the Ski Association of Slovenia supplied them as restricted research data \cite{skiassociation2024planica}. The repository therefore includes analysis code and derived summaries, but not the source CSV files.
 
 \subsection*{Acknowledgement}
 {\raggedright
 ARIS (Slovenian Research and Innovation Agency) supported this work through the Research Program Knowledge Technologies (grant P2-0103). European Commission support came from three Horizon Europe projects: SLAIF (Slovenian Artificial Intelligence Factory; grant 101254461), ELIAS (European Lighthouse of Artificial Intelligence for Sustainability; grant 101120237), and HumAIne (Hybrid Human--Artificial Intelligence Decision Support for Enhanced Human Empowerment in Dynamic Situations; grant 101120218). We thank the Ski Association of Slovenia for providing the ski-jump data.
+
+  % i'm not sure if this is needed
+% \subsection*{Conflict of interest}
+% The authors declare no conflict of interest.
+
 \par}
 
-\subsection*{Artificial-Intelligence-Assisted Tools}
-OpenAI Codex was used during revision to assist with language editing and consistency checking. The authors reviewed the resulting text and numerical outputs and remain responsible for their accuracy, originality, and interpretation.
+\subsection*{Artificial-intelligence-assisted tools}
+OpenAI Codex was used during revision to assist with figures, language editing and consistency checking. The authors reviewed the resulting text and numerical outputs and remain responsible for their accuracy, originality, and interpretation.
 
 \printbibliography[title={References}]
 \end{document}

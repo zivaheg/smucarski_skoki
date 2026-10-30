@@ -96,7 +96,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>99</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
@@ -104,7 +104,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>99</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
@@ -331,7 +331,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>99</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
@@ -339,7 +339,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>99</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
@@ -2407,12 +2407,26 @@
     <bcf:citekey order="27" intorder="1">zecha2018convolutional</bcf:citekey>
     <bcf:citekey order="28" intorder="1">muller2008simulation</bcf:citekey>
     <bcf:citekey order="29" intorder="1">meile2006aerodynamics</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">muller2008performance</bcf:citekey>
-    <bcf:citekey order="30" intorder="2">virmavirta2019aerodynamics</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">raissi2019physics</bcf:citekey>
-    <bcf:citekey order="31" intorder="2">Cai2021_PINN_FluidMechanics</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">muller1996dynamics</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">piprek2018robust</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">skiassociation2024planica</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">muller2008performance</bcf:citekey>
+    <bcf:citekey order="31" intorder="2">virmavirta2019aerodynamics</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">python3122</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">harris2020numpy</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">pandas231</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">virtanen2020scipy</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">pedregosa2011scikit</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">react2026</bcf:citekey>
+    <bcf:citekey order="37" intorder="2">typescript2026</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">hegler2026website</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">threejs2026</bcf:citekey>
+    <bcf:citekey order="39" intorder="2">webgl2026</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">raissi2019physics</bcf:citekey>
+    <bcf:citekey order="40" intorder="2">Cai2021_PINN_FluidMechanics</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">muller1996dynamics</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">piprek2018robust</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">hegler2026repository</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">hegler2026website</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">skiassociation2024planica</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -32,8 +32,8 @@
 \abx@aux@segm{0}{0}{schwinn2022xlength}
 \abx@aux@cite{0}{zecha2018convolutional}
 \abx@aux@segm{0}{0}{zecha2018convolutional}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
-\newlabel{sec:related}{{2}{2}{Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related work}{2}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{2}{2}{Related work}{section.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}System identification and state-space models}{2}{subsection.2.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Study workflow. Raw Planica jump and wind records pass through file-level quality screening, temporal resampling, feature construction, and zone-wise wind aggregation. Ridge regression estimates the state transition and control matrices. Jump-level cross-validation evaluates held-out trajectories, while a final fit is exported as versioned JSON (JavaScript Object Notation) for the client-side website.}}{2}{figure.1}\protected@file@percent }
 \newlabel{fig:architecture}{{1}{2}{Study workflow. Raw Planica jump and wind records pass through file-level quality screening, temporal resampling, feature construction, and zone-wise wind aggregation. Ridge regression estimates the state transition and control matrices. Jump-level cross-validation evaluates held-out trajectories, while a final fit is exported as versioned JSON (JavaScript Object Notation) for the client-side website}{figure.1}{}}
@@ -79,19 +79,31 @@
 \abx@aux@segm{0}{0}{muller2008simulation}
 \abx@aux@cite{0}{meile2006aerodynamics}
 \abx@aux@segm{0}{0}{meile2006aerodynamics}
+\abx@aux@cite{0}{skiassociation2024planica}
+\abx@aux@segm{0}{0}{skiassociation2024planica}
 \abx@aux@cite{0}{muller2008performance}
 \abx@aux@segm{0}{0}{muller2008performance}
 \abx@aux@cite{0}{virmavirta2019aerodynamics}
 \abx@aux@segm{0}{0}{virmavirta2019aerodynamics}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Ski-jump trajectory and length estimation}{3}{subsection.2.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Aerodynamic simulation, technique, and safety}{3}{subsection.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Data and Preprocessing}{3}{section.3}\protected@file@percent }
-\newlabel{sec:data}{{3}{3}{Data and Preprocessing}{section.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Data and preprocessing}{3}{section.3}\protected@file@percent }
+\newlabel{sec:data}{{3}{3}{Data and preprocessing}{section.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dataset and quality screening}{3}{subsection.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Coordinate, wind, and temporal processing}{3}{subsection.3.2}\protected@file@percent }
 \newlabel{sec:processing}{{3.2}{3}{Coordinate, wind, and temporal processing}{subsection.3.2}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Positioning relative to representative state-space, deep-learning, and aerodynamic ski-jump studies. Numerical errors are not placed in one ranking because the studies predict different quantities from different sensors and populations.}}{4}{table.1}\protected@file@percent }
 \newlabel{tab:related}{{1}{4}{Positioning relative to representative state-space, deep-learning, and aerodynamic ski-jump studies. Numerical errors are not placed in one ranking because the studies predict different quantities from different sensors and populations}{table.1}{}}
+\abx@aux@cite{0}{python3122}
+\abx@aux@segm{0}{0}{python3122}
+\abx@aux@cite{0}{harris2020numpy}
+\abx@aux@segm{0}{0}{harris2020numpy}
+\abx@aux@cite{0}{pandas231}
+\abx@aux@segm{0}{0}{pandas231}
+\abx@aux@cite{0}{virtanen2020scipy}
+\abx@aux@segm{0}{0}{virtanen2020scipy}
+\abx@aux@cite{0}{pedregosa2011scikit}
+\abx@aux@segm{0}{0}{pedregosa2011scikit}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Methodology}{5}{section.4}\protected@file@percent }
 \newlabel{sec:method}{{4}{5}{Methodology}{section.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}State-space formulation}{5}{subsection.4.1}\protected@file@percent }
@@ -101,15 +113,21 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Independent state--control sensitivity model}{5}{subsection.4.2}\protected@file@percent }
 \newlabel{sec:independent}{{4.2}{5}{Independent state--control sensitivity model}{subsection.4.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Initial state and website production fit}{5}{subsection.4.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Dimensions and information flow of the fitted linear state-space model. Trajectories are generated recursively with the state equation. The observation equation is included to specify the complete fitted system. In the article we depict state $h(t)$ as $x_k$, control $u(t)$ as $u_k$, and observation $y(t)$ as $y_k$.}}{6}{figure.2}\protected@file@percent }
-\newlabel{fig:matrices}{{2}{6}{Dimensions and information flow of the fitted linear state-space model. Trajectories are generated recursively with the state equation. The observation equation is included to specify the complete fitted system. In the article we depict state $h(t)$ as $x_k$, control $u(t)$ as $u_k$, and observation $y(t)$ as $y_k$}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Information flow and dimensions of the fitted linear state-space model. The state equation recursively produces $\mathbf  {x}_{k+1}$ from the current state $\mathbf  {x}_k$ and prescribed control $\mathbf  {u}_k$. The observation equation maps the same inputs to $\mathbf  {y}_k$. The residual terms are $\boldsymbol  {\epsilon }_k$ and $\boldsymbol  {\eta }_k$. The trajectory simulations use the state equation, while the observation equation specifies the complete fitted system.}}{6}{figure.2}\protected@file@percent }
+\newlabel{fig:matrices}{{2}{6}{Information flow and dimensions of the fitted linear state-space model. The state equation recursively produces $\mathbf {x}_{k+1}$ from the current state $\mathbf {x}_k$ and prescribed control $\mathbf {u}_k$. The observation equation maps the same inputs to $\mathbf {y}_k$. The residual terms are $\boldsymbol {\epsilon }_k$ and $\boldsymbol {\eta }_k$. The trajectory simulations use the state equation, while the observation equation specifies the complete fitted system}{figure.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Cross-validation and error measures}{6}{subsection.4.4}\protected@file@percent }
 \newlabel{sec:evaluation}{{4.4}{6}{Cross-validation and error measures}{subsection.4.4}{}}
 \newlabel{eq:error}{{5}{6}{Cross-validation and error measures}{equation.5}{}}
-\abx@aux@cite{0}{raissi2019physics}
-\abx@aux@segm{0}{0}{raissi2019physics}
-\abx@aux@cite{0}{Cai2021_PINN_FluidMechanics}
-\abx@aux@segm{0}{0}{Cai2021_PINN_FluidMechanics}
+\abx@aux@cite{0}{react2026}
+\abx@aux@segm{0}{0}{react2026}
+\abx@aux@cite{0}{typescript2026}
+\abx@aux@segm{0}{0}{typescript2026}
+\abx@aux@cite{0}{hegler2026website}
+\abx@aux@segm{0}{0}{hegler2026website}
+\abx@aux@cite{0}{threejs2026}
+\abx@aux@segm{0}{0}{threejs2026}
+\abx@aux@cite{0}{webgl2026}
+\abx@aux@segm{0}{0}{webgl2026}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Interactive website}{7}{subsection.4.5}\protected@file@percent }
 \newlabel{sec:website}{{4.5}{7}{Interactive website}{subsection.4.5}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Results}{7}{section.5}\protected@file@percent }
@@ -118,15 +136,19 @@
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Held-out results across 203 LOOCV folds. SD is the sample standard deviation and CI is the two-sided Student-$t$ confidence interval for the mean. Maximum errors are 4.60, 4.70, 17.10, and 16.36~m in row order.}}{7}{table.2}\protected@file@percent }
 \newlabel{tab:primary}{{2}{7}{Held-out results across 203 LOOCV folds. SD is the sample standard deviation and CI is the two-sided Student-$t$ confidence interval for the mean. Maximum errors are 4.60, 4.70, 17.10, and 16.36~m in row order}{table.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Baselines and exploratory configurations}{7}{subsection.5.2}\protected@file@percent }
+\abx@aux@cite{0}{raissi2019physics}
+\abx@aux@segm{0}{0}{raissi2019physics}
+\abx@aux@cite{0}{Cai2021_PINN_FluidMechanics}
+\abx@aux@segm{0}{0}{Cai2021_PINN_FluidMechanics}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Current Ski Jump SSM Lab website. Controls on the left alter zone-wise wind and jumper-configuration profiles. The main panel displays the resulting finite-horizon path and hill geometry. The deployed page is static and executes the exported recurrence in the browser.}}{8}{figure.3}\protected@file@percent }
 \newlabel{fig:website}{{3}{8}{Current Ski Jump SSM Lab website. Controls on the left alter zone-wise wind and jumper-configuration profiles. The main panel displays the resulting finite-horizon path and hill geometry. The deployed page is static and executes the exported recurrence in the browser}{figure.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Independent state--control sensitivity analysis}{8}{subsection.5.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Representative measured and reconstructed trajectories under the measured-start condition. The columns jointly approximate the 10th, 50th, and 90th percentiles of measured $d_{\mathrm  {coord}}$ while remaining close to the median held-out trajectory error, they are not best-case selections. The lower row exposes time-progress-aligned separation that is difficult to see at the full X--Z scale. Here $d_{\mathrm  {coord}}$ is the derived coordinate displacement, not official hill-surface jump length, and $E$ is Equation~\eqref  {eq:error}.}}{9}{figure.4}\protected@file@percent }
-\newlabel{fig:examples}{{4}{9}{Representative measured and reconstructed trajectories under the measured-start condition. The columns jointly approximate the 10th, 50th, and 90th percentiles of measured $d_{\mathrm {coord}}$ while remaining close to the median held-out trajectory error, they are not best-case selections. The lower row exposes time-progress-aligned separation that is difficult to see at the full X--Z scale. Here $d_{\mathrm {coord}}$ is the derived coordinate displacement, not official hill-surface jump length, and $E$ is Equation~\eqref {eq:error}}{figure.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Wind-feature sensitivity using the corrected timestamp data, the same 203 jump-level LOOCV folds, and fixed $\alpha =10$. Errors are means across held-out jumps, paired confidence intervals are two-sided Student-$t$ intervals for per-jump differences from the zone-mean model.}}{10}{table.3}\protected@file@percent }
-\newlabel{tab:windfeatures}{{3}{10}{Wind-feature sensitivity using the corrected timestamp data, the same 203 jump-level LOOCV folds, and fixed $\alpha =10$. Errors are means across held-out jumps, paired confidence intervals are two-sided Student-$t$ intervals for per-jump differences from the zone-mean model}{table.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Structural sensitivity results across the same 203 LOOCV folds. ``Overlap'' counts features appearing in both state and control vectors. Path is the mean of Equation~\eqref  {eq:error},endpoint is mean three-dimensional endpoint error.}}{10}{table.4}\protected@file@percent }
-\newlabel{tab:independent}{{4}{10}{Structural sensitivity results across the same 203 LOOCV folds. ``Overlap'' counts features appearing in both state and control vectors. Path is the mean of Equation~\eqref {eq:error},endpoint is mean three-dimensional endpoint error}{table.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Representative measured and reconstructed trajectories under the measured-start condition. The columns jointly approximate the 10th, 50th, and 90th percentiles of measured $d_{\mathrm  {coord}}$ while remaining close to the median held-out trajectory error. They are not best-case selections. The lower row exposes time-progress-aligned separation that is difficult to see at the full X--Z scale. Here $d_{\mathrm  {coord}}$ is the derived coordinate displacement, not official hill-surface jump length, and $E$ is Equation~\eqref  {eq:error}.}}{9}{figure.4}\protected@file@percent }
+\newlabel{fig:examples}{{4}{9}{Representative measured and reconstructed trajectories under the measured-start condition. The columns jointly approximate the 10th, 50th, and 90th percentiles of measured $d_{\mathrm {coord}}$ while remaining close to the median held-out trajectory error. They are not best-case selections. The lower row exposes time-progress-aligned separation that is difficult to see at the full X--Z scale. Here $d_{\mathrm {coord}}$ is the derived coordinate displacement, not official hill-surface jump length, and $E$ is Equation~\eqref {eq:error}}{figure.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Wind-feature sensitivity using the corrected timestamp data, the same 203 jump-level LOOCV folds, and fixed $\alpha =10$. Errors are means across held-out jumps. Paired confidence intervals are two-sided Student-$t$ intervals for per-jump differences from the zone-mean model.}}{10}{table.3}\protected@file@percent }
+\newlabel{tab:windfeatures}{{3}{10}{Wind-feature sensitivity using the corrected timestamp data, the same 203 jump-level LOOCV folds, and fixed $\alpha =10$. Errors are means across held-out jumps. Paired confidence intervals are two-sided Student-$t$ intervals for per-jump differences from the zone-mean model}{table.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Structural sensitivity results across the same 203 LOOCV folds. ``Overlap'' counts features appearing in both state and control vectors. Path is the mean of Equation~\eqref  {eq:error}. Endpoint is mean three-dimensional endpoint error.}}{10}{table.4}\protected@file@percent }
+\newlabel{tab:independent}{{4}{10}{Structural sensitivity results across the same 203 LOOCV folds. ``Overlap'' counts features appearing in both state and control vectors. Path is the mean of Equation~\eqref {eq:error}. Endpoint is mean three-dimensional endpoint error}{table.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Stability and parameter interpretation}{10}{subsection.5.4}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Mean spatial separation at matched percentages of flight progress for two models with non-overlapping state and control variables. The seven-state model predicts speed recursively, while the six-state model receives measured speed as a control. The widening gap shows speed-related error accumulating toward the endpoint.}}{11}{figure.5}\protected@file@percent }
 \newlabel{fig:independent-progress}{{5}{11}{Mean spatial separation at matched percentages of flight progress for two models with non-overlapping state and control variables. The seven-state model predicts speed recursively, while the six-state model receives measured speed as a control. The widening gap shows speed-related error accumulating toward the endpoint}{figure.5}{}}
@@ -140,7 +162,13 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Future work}{12}{subsection.6.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{12}{section.7}\protected@file@percent }
 \newlabel{sec:conclusion}{{7}{12}{Conclusion}{section.7}{}}
-\abx@aux@read@bbl@mdfivesum{28A45D47216AD7961C8286B2E9246E7B}
+\abx@aux@cite{0}{hegler2026repository}
+\abx@aux@segm{0}{0}{hegler2026repository}
+\abx@aux@cite{0}{hegler2026website}
+\abx@aux@segm{0}{0}{hegler2026website}
+\abx@aux@cite{0}{skiassociation2024planica}
+\abx@aux@segm{0}{0}{skiassociation2024planica}
+\abx@aux@read@bbl@mdfivesum{63D51F7376E76BB5F1B5774287EFC34E}
 \abx@aux@defaultrefcontext{0}{muller1996dynamics}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{meile2006aerodynamics}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{seo2004optimal}{none/global//global/global/global}
@@ -166,7 +194,19 @@
 \abx@aux@defaultrefcontext{0}{jung2021windcorrigendum}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{piprek2018multibody}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{piprek2018robust}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{skiassociation2024planica}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{muller2008performance}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{python3122}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{harris2020numpy}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{pandas231}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{virtanen2020scipy}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{pedregosa2011scikit}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{react2026}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{typescript2026}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{hegler2026website}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{threejs2026}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{webgl2026}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{raissi2019physics}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{Cai2021_PINN_FluidMechanics}{none/global//global/global/global}
-\gdef \@abspage@last{14}
+\abx@aux@defaultrefcontext{0}{hegler2026repository}{none/global//global/global/global}
+\gdef \@abspage@last{15}

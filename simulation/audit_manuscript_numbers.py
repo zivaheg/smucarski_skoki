@@ -334,7 +334,7 @@ def main() -> None:
         ("plain-language dataset scope", "jumps from the same hill and event"),
         ("unsupported-range qualification", "denotes an evidential boundary rather than a discontinuity"),
         ("duplicated-feature qualification", "only the combined contribution $(a+b)q_k$ is identifiable"),
-        ("corrected-data wind sensitivity", "corrected-data wind-feature sensitivity supports retaining zone averaging"),
+        ("corrected-data wind sensitivity", "compares four wind representations using the corrected timestamps"),
     ):
         contains(label, fragment)
 
